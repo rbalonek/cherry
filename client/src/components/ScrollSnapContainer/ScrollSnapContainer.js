@@ -3,11 +3,14 @@ import "./ScrollSnapContainer.css";
 
 import Header from "../header/Header";
 import Project from "../project/Project";
-import Chi from "../../assets/chi/chi-carousel-1.jpg";
+import ChiOne from "../../assets/chi/chi-carousel-1.jpg";
+import ChiTwo from "../../assets/chi/chi-carousel-2.jpg";
 import Shameless from "../../assets/shameless/Portfolio-2019-FILMTV+281.jpg";
 import Affair from "../../assets/theAffair/TheAffair-S1PressKit-01.jpg";
 import Common from "../../assets/theCommon/Common-01.jpg";
 import Billions from "../../assets/billions/1st-carousel-Portfolio-2018-FILMTV174.jpg";
+import Slider from "../../slider/Slider";
+import commonx from "../../assets/commonx/CommonX-01.gif";
 
 // Chi(carousel), Common, Shameless, Affair, Billions (carousel), gif
 
@@ -18,7 +21,7 @@ export default function ScrollSnapTry() {
         <Header />
       </section>
       <section className="fullscreen">
-        <Project img={Chi} />
+        <Slider img1={ChiOne} img2={ChiTwo} />
       </section>
       <section className="fullscreen">
         <Project img={Common} />
@@ -33,7 +36,7 @@ export default function ScrollSnapTry() {
         <Project img={Billions} />
       </section>
       <section className="fullscreen">
-        <Project img={Shameless} />
+        <Project img={commonx} />
       </section>
     </div>
   );
