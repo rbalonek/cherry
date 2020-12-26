@@ -1,0 +1,38 @@
+.header-container {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* top: -5px; */
+}
+.header-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+.header-text {
+  color: white;
+}
+.logo-container {
+  width: 100%;
+  display: flex;
+}
+.logo {
+  width: 100%;
+}
+
+.down-arrow-container {
+  position: absolute;
+  top: 95vh;
+  transform: translateY(-100%);
+  width: 100%;
+  text-align: center;
+}
+.down-arrow {
+  height: 80px;
+  /* position: relative;
+  top: 60%; */
+}

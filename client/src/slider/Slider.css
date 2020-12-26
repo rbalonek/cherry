@@ -1,0 +1,46 @@
+.car-img {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 0px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 15%;
+}
+/* 
+.carousel .control-next.control-arrow:before {
+  border-left: 0px solid #fff;
+} */
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  transition: all 0.25s ease-in;
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+  position: absolute;
+  /* z-index: 2; */
+  top: 20px;
+  background: none;
+  border: 0;
+  font-size: 0px;
+}
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  margin: 0 5px;
+  display: inline-block;
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+}
+.carousel .control-prev.control-arrow {
+  left: 0;
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609019669/Cherry/Chi/ArrowLeftSmaller_qtvysv.png),
+    auto;
+}
+.carousel .control-next.control-arrow {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018860/Cherry/Chi/ArrowRightSmall_vph9uv.png),
+    auto;
+}

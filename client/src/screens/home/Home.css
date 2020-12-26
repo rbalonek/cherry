@@ -1,0 +1,14 @@
+html {
+  /* font-family: sans-serif; */
+  /* scroll-snap-type: mandatory; */
+  /* scroll-snap-points-y: repeat(100vh); */
+  /* scroll-snap-type: y mandatory; */
+}
+
+.home-container {
+  /* scroll-snap-type: y mandatory; */
+}
+
+.child {
+  /* scroll-snap-align: center; */
+}
