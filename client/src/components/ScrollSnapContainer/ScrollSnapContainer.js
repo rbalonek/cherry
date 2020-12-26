@@ -9,8 +9,10 @@ import Shameless from "../../assets/shameless/Portfolio-2019-FILMTV+281.jpg";
 import Affair from "../../assets/theAffair/TheAffair-S1PressKit-01.jpg";
 import Common from "../../assets/theCommon/Common-01.jpg";
 import Billions from "../../assets/billions/1st-carousel-Portfolio-2018-FILMTV174.jpg";
+import BillionsTwo from "../../assets/billions/onClick-Portfolio-2018-FILMTV179.jpg";
 import Slider from "../../slider/Slider";
 import commonx from "../../assets/commonx/CommonX-01.gif";
+import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 
 // Chi(carousel), Common, Shameless, Affair, Billions (carousel), gif
 
@@ -33,7 +35,7 @@ export default function ScrollSnapTry() {
         <Project img={Affair} />
       </section>
       <section className="fullscreen">
-        <Project img={Billions} />
+        <ClickableSlider img1={Billions} img2={BillionsTwo} />
       </section>
       <section className="fullscreen">
         <Project img={commonx} />
