@@ -3,6 +3,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  /* top: -5px; */
 }
 .header-text-container {
   width: 100%;
