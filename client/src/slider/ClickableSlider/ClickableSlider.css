@@ -39,3 +39,73 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018860/Cherry/Chi/ArrowRightSmall_vph9uv.png),
     auto;
 }
+
+.modalClosed {
+  display: none;
+}
+.modalOpen {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 20;
+  opacity: 0.5;
+}
+
+.modal-text-closed {
+  display: none;
+}
+
+.modal-text-open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+}
+.modal-text {
+  color: white;
+  font-size: 2vw;
+  width: 100%;
+  position: relative;
+  top: 20%;
+  left: 15%;
+}
+.name {
+  font-size: 2vw;
+  position: relative;
+  top: 13%;
+  left: 14.7%;
+}
+.season {
+  position: relative;
+  top: 10%;
+  left: 14.7%;
+}
+.client-container {
+  display: flex;
+  flex-direction: row;
+  /* width: 300px; */
+}
+.client {
+  position: relative;
+  top: 5%;
+  font-size: 25px;
+}
+.client-name {
+  top: -36%;
+  font-size: 30px;
+  left: -28%;
+}
+.proj-description {
+  display: flex;
+  width: 40%;
+  position: relative;
+  left: 14.7%;
+}
+.description-text {
+  color: white;
+  font-size: 20px;
+}
