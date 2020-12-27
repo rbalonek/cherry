@@ -2,6 +2,7 @@ import React from "react";
 import "./StickyHeader.css";
 
 import { Bounce } from "react-awesome-reveal";
+// import { Animated } from "react-animated-css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";

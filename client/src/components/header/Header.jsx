@@ -4,6 +4,7 @@ import { Animated } from "react-animated-css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
+import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
@@ -22,6 +23,9 @@ export default function Header() {
         <p className="header-text">
           Design, illustration, strong opinions and wannabe do-gooders. Say hi
         </p>
+        <div className="header-hamburger-container">
+          <img className="hamburger-header" src={hamburger} alt="hamburger" />
+        </div>
       </div>
       <Animated
         animationOut="zoomOutDown"

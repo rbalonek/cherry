@@ -4,15 +4,14 @@
   justify-content: space-between;
   height: 50px;
   position: sticky;
-  z-index: 999;
+  z-index: 10;
   top: 20px;
   width: 100%;
 }
 
 .logo-sticky {
-  /* height: 120px; */
   height: 8.9vw;
 }
 .hamburger-sticky {
-  height: 50px;
+  height: 100px;
 }

@@ -16,12 +16,21 @@
 .header-text {
   color: white;
 }
+.header-hamburger-container {
+  position: absolute;
+  right: 0%;
+  /* padding-right: 5%; */
+  /* top: 90px; */
+}
+.hamburger-header {
+  height: 100px;
+}
 .logo-container {
-  width: 100%;
+  width: 100vw;
   display: flex;
 }
 .logo {
-  width: 100%;
+  width: 100vw;
 }
 
 .down-arrow-container {
