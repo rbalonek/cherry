@@ -22,11 +22,16 @@ export default function StickyHeader() {
   return (
     <div className="sticky-header-container">
       <Bounce delay={200} fraction={0.8}>
-        <img className="logo-sticky" src={Logo} alt="logo" />
+        <img
+          className="logo-sticky"
+          src={Logo}
+          alt="logo"
+          onClick={() => window.scrollTo(0, 0)}
+        />
       </Bounce>
 
       <div className="hamburger-sticky-container">
-        <Zoom>
+        <Zoom fraction={0.8}>
           <img
             className="hamburger-sticky"
             src={hamburger}

@@ -1,13 +1,26 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Animated } from "react-animated-css";
+import { Rotate, Fade } from "react-awesome-reveal";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
+import hamburgerX from "../../assets/logo/Website-Asset_X.png";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
+  const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
+
+  const toggleHamb = () => {
+    hamburgerToggle("hamburger-opened");
+    console.log("opened!");
+  };
+
+  const hambClose = () => {
+    hamburgerToggle("hamburger-closed");
+    console.log("Closed!");
+  };
 
   const arrowClick = () => {
     setVisible(false);
@@ -24,7 +37,12 @@ export default function Header() {
           Design, illustration, strong opinions and wannabe do-gooders. Say hi
         </p>
         <div className="header-hamburger-container">
-          <img className="hamburger-header" src={hamburger} alt="hamburger" />
+          <img
+            className="hamburger-header"
+            src={hamburger}
+            alt="hamburger"
+            onClick={toggleHamb}
+          />
         </div>
       </div>
       <Animated
@@ -49,6 +67,28 @@ export default function Header() {
           alt="logo"
           onClick={arrowClick}
         ></img>
+      </div>
+      <div className={hamburgerClosed}>
+        <div className="hamburger-x-container">
+          <Rotate>
+            <img
+              className="hamburger-x"
+              alt="hamClose"
+              src={hamburgerX}
+              onClick={hambClose}
+            />
+          </Rotate>
+        </div>
+
+        <div className="hamburger-text-container">
+          <Fade>
+            <h1 className="hamburger-open-text">About</h1>
+            <h1 className="hamburger-open-text">Say Hi</h1>
+            <h1 className="hamburger-open-text">LinkedIn</h1>
+            <h1 className="hamburger-open-text">Instagram</h1>
+            <h1 className="hamburger-open-text">Twitter</h1>
+          </Fade>
+        </div>
       </div>
     </div>
   );
