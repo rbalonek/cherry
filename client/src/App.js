@@ -3,13 +3,17 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import MainContainer from "./containers/MainContainer";
 import "./App.css";
+import IntroVid from "./screens/IntroVid/IntroVid";
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/">
+        <Route path="/home">
           <MainContainer />
+        </Route>
+        <Route path="/">
+          <IntroVid />
         </Route>
       </Switch>
     </Layout>
