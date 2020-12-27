@@ -13,6 +13,7 @@ import BillionsTwo from "../../assets/billions/onClick-Portfolio-2018-FILMTV179.
 import Slider from "../../slider/Slider";
 import commonx from "../../assets/commonx/CommonX-01.gif";
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
+import StickyHeader from "../StickyHeader/StickyHeader";
 
 // Chi(carousel), Common, Shameless, Affair, Billions (carousel), gif
 
@@ -22,9 +23,11 @@ export default function ScrollSnapTry() {
       <section className="fullscreen">
         <Header />
       </section>
-      <section className="fullscreen">
+      <StickyHeader></StickyHeader>
+      <section id="sectionOne" className="fullscreen">
         <Slider img1={ChiOne} img2={ChiTwo} />
       </section>
+
       <section className="fullscreen">
         <Project img={Common} />
       </section>
