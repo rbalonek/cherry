@@ -3,7 +3,7 @@ import "./header.css";
 import { Animated } from "react-animated-css";
 import { Rotate, Fade } from "react-awesome-reveal";
 
-import Logo from "../../assets/logo/Cherry-Logo.png";
+// import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
 import hamburgerX from "../../assets/logo/Website-Asset_X.png";
@@ -71,7 +71,11 @@ export default function Header() {
             animationOutDuration={500}
             isVisible={visible}
           >
-            <img className="logo" src={Logo} alt="logo"></img>
+            <img
+              className="logo"
+              src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018415/Cherry/Chi/Cherry-LOGO-FINAL-KO_LG_1_v5vgvi.png"
+              alt="logo"
+            />
           </Animated>
         </div>
       </Animated>
