@@ -1,6 +1,7 @@
 .car-img {
   height: 100vh;
   width: 100%;
+  object-fit: cover;
 }
 
 .carousel.carousel-slider .control-arrow {

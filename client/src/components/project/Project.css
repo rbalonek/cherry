@@ -1,4 +1,14 @@
+.project-container {
+  width: 100vw;
+  height: 100vh;
+}
+.img-container {
+  width: 100vw;
+  height: 100vh;
+}
 .proj-img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin-bottom: -5px;
+  object-fit: cover;
 }

@@ -204,5 +204,10 @@
     position: relative;
     right: -80%;
     top: 5%;
+    z-index: 999;
+  }
+  .hamburger-text-container {
+    position: relative;
+    left: -5%;
   }
 }

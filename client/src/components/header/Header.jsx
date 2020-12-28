@@ -22,13 +22,23 @@ export default function Header() {
     console.log("Closed!");
   };
 
+  // if (window.innerWidth < 960) {
+  // window.innerHeight
+  // }
   const arrowClick = () => {
     setVisible(false);
-    window.scrollBy(0, 1000);
+    window.scrollBy(0, 900);
     setTimeout(() => {
       setVisible(true);
     }, 2000);
   };
+  // const arrowClick = () => {
+  //   setVisible(false);
+  //   window.scrollBy(0, 1000);
+  //   setTimeout(() => {
+  //     setVisible(true);
+  //   }, 2000);
+  // };
 
   return (
     <div className="header-container">
