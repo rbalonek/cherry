@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./StickyHeader.css";
 
 import { Bounce, Rotate, Zoom, Fade } from "react-awesome-reveal";
-// import { Animated } from "react-animated-css";
+import { Animated } from "react-animated-css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
@@ -10,6 +10,7 @@ import hamburgerX from "../../assets/logo/Website-Asset_X.png";
 
 export default function StickyHeader() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
+  const [toggleIsVis, setToggleIsVis] = useState(true);
 
   const toggleHamb = () => {
     hamburgerToggle("hamburger-opened");
@@ -19,15 +20,25 @@ export default function StickyHeader() {
     hamburgerToggle("hamburger-closed");
   };
 
+  const logoClick = () => {
+    window.scrollTo(0, 0);
+    setToggleIsVis(false);
+    setTimeout(() => {
+      setToggleIsVis(true);
+    }, 1000);
+  };
+
   return (
     <div className="sticky-header-container">
       <Bounce delay={200} fraction={0.8}>
-        <img
-          className="logo-sticky"
-          src={Logo}
-          alt="logo"
-          onClick={() => window.scrollTo(0, 0)}
-        />
+        <Animated isVisible={toggleIsVis} animationOut="fadeOut">
+          <img
+            className="logo-sticky"
+            src={Logo}
+            alt="logo"
+            onClick={logoClick}
+          />
+        </Animated>
       </Bounce>
 
       <div className="hamburger-sticky-container">
