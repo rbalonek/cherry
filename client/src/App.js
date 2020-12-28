@@ -4,6 +4,7 @@ import Layout from "./layouts/Layout";
 import MainContainer from "./containers/MainContainer";
 import "./App.css";
 import IntroVid from "./screens/IntroVid/IntroVid";
+import "./assets/fonts/HelveticaNeue-RomanOTF.otf";
 
 function App() {
   return (
