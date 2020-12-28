@@ -5,6 +5,9 @@ import Video from "../../assets/introVid/VIDEO_Intro 2.mp4";
 import "./IntroVid.css";
 
 export default function IntroVid() {
+  const VidStyle = {
+    contain: "size",
+  };
   const history = useHistory();
 
   setTimeout(() => {
@@ -25,8 +28,8 @@ export default function IntroVid() {
         // className="video-player"
         url={Video}
         width={"100vw"}
-        height={"130vh"}
-        // style={"width:100vw; height:100vh;"}
+        height={"120%"}
+        style={VidStyle}
       />
     </div>
   );

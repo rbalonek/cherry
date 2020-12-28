@@ -52,7 +52,7 @@
   text-align: center;
 }
 .down-arrow {
-  height: 80px;
+  height: 150px;
 }
 .hamburger-closed {
   display: none;
@@ -101,6 +101,9 @@
 /*              MEDIA QUERIES        */
 
 @media (max-width: 1350px) {
+  .down-arrow {
+    height: 80px;
+  }
   .header-text {
     font-size: 18px;
     top: 40%;
