@@ -3,7 +3,7 @@ import "./header.css";
 import { Animated } from "react-animated-css";
 import { Rotate, Fade } from "react-awesome-reveal";
 
-// import Logo from "../../assets/logo/Cherry-Logo.png";
+import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
 import hamburgerX from "../../assets/logo/Website-Asset_X.png";
@@ -60,25 +60,23 @@ export default function Header() {
           </Fade>
         </div>
       </div>
-      <Animated
-        animationOut="zoomOutDown"
-        animationOutDuration={300}
-        isVisible={visible}
-      >
-        <div className="logo-container">
+
+      <div className="logo-container">
+        <Animated
+          animationIn="fadeIn"
+          animationOut="zoomOutDown"
+          animationOutDuration={300}
+          isVisible={visible}
+        >
           <Animated
             animationOut="zoomOutLeft"
             animationOutDuration={500}
             isVisible={visible}
           >
-            <img
-              className="logo"
-              src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018415/Cherry/Chi/Cherry-LOGO-FINAL-KO_LG_1_v5vgvi.png"
-              alt="logo"
-            />
+            <img className="logo" src={Logo} alt="logo" />
           </Animated>
-        </div>
-      </Animated>
+        </Animated>
+      </div>
       <div className="down-arrow-container">
         <Fade delay={1000}>
           <img
