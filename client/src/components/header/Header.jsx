@@ -24,7 +24,7 @@ export default function Header() {
 
   const arrowClick = () => {
     setVisible(false);
-    window.scrollBy(0, 300);
+    window.scrollBy(0, 1000);
     setTimeout(() => {
       setVisible(true);
     }, 2000);
