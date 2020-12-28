@@ -60,6 +60,7 @@
   width: 100%;
   text-align: center;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 830px) {
@@ -76,6 +77,7 @@
     width: 100%;
     text-align: center;
   }
+
   .hamburger-open-text:hover {
     color: white;
     font-size: 40px;

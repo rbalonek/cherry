@@ -46,6 +46,7 @@ export default function Header() {
         <Fade delay={1000}>
           <p className="header-text">
             Design, illustration, strong opinions and wannabe do-gooders.
+            <span> </span>
             <span class="underline">Say hi</span>
           </p>
         </Fade>

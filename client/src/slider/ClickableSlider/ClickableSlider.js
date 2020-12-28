@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./ClickableSlider.css";
-import { Fade } from "react-awesome-reveal";
+// import { Fade } from "react-awesome-reveal";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -23,7 +23,7 @@ export default function ClickableSlider(props) {
       <div className={modal} onClick={toggleClosed}></div>
 
       <div className={modalText} onClick={toggleClosed}>
-        <div className="modal-text-container">
+        <div className="modal-text-container clickable">
           <p className="modal-text project">Project</p>
           <h2 className="modal-text name">{props.name}</h2>
           <p className="modal-text season">{props.season}</p>
@@ -50,7 +50,9 @@ export default function ClickableSlider(props) {
           <img className="car-img" alt="1" src={props.img1} />
         </div>
         <div onClick={toggleOpen}>
-          <img className="car-img" alt="2" src={props.img2} />
+          <div className="clickable">
+            <img className="car-img " alt="2" src={props.img2} />
+          </div>
         </div>
       </Carousel>
     </div>
