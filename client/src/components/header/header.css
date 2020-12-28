@@ -16,10 +16,10 @@
   font-family: "HelveticaNeue-RomanOTF";
   width: 100%;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: relative;
-  top: 15%;
+  top: 25%;
 }
 .underline {
   text-decoration: underline;
@@ -31,6 +31,7 @@
   position: absolute;
   right: 0.8%;
   z-index: 998;
+  top: -60%;
 }
 .hamburger-header {
   height: 150px;
@@ -196,7 +197,7 @@
   }
   .header-hamburger-container {
     position: absolute;
-    right: 1.4%;
+    right: 0%;
     top: 10%;
   }
   .hamburger-header {
