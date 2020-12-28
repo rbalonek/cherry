@@ -1,0 +1,19 @@
+.shameless-project-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #aacd11;
+}
+
+.shameless-img-container {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+}
+.proj-img {
+  width: 35%;
+  height: 95%;
+  align-self: center;
+  object-fit: cover;
+}

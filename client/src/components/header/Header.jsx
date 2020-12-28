@@ -22,27 +22,42 @@ export default function Header() {
     console.log("Closed!");
   };
 
+  // if (window.innerWidth < 960) {
+  // window.innerHeight
+  // }
   const arrowClick = () => {
     setVisible(false);
-    window.scrollBy(0, 300);
+    window.scrollBy(0, 900);
     setTimeout(() => {
       setVisible(true);
     }, 2000);
   };
+  // const arrowClick = () => {
+  //   setVisible(false);
+  //   window.scrollBy(0, 1000);
+  //   setTimeout(() => {
+  //     setVisible(true);
+  //   }, 2000);
+  // };
 
   return (
     <div className="header-container">
       <div className="header-text-container">
-        <p className="header-text">
-          Design, illustration, strong opinions and wannabe do-gooders. Say hi
-        </p>
+        <Fade delay={1000}>
+          <p className="header-text">
+            Design, illustration, strong opinions and wannabe do-gooders.
+            <span class="underline">Say hi</span>
+          </p>
+        </Fade>
         <div className="header-hamburger-container">
-          <img
-            className="hamburger-header"
-            src={hamburger}
-            alt="hamburger"
-            onClick={toggleHamb}
-          />
+          <Fade>
+            <img
+              className="hamburger-header"
+              src={hamburger}
+              alt="hamburger"
+              onClick={toggleHamb}
+            />
+          </Fade>
         </div>
       </div>
       <Animated
@@ -61,12 +76,14 @@ export default function Header() {
         </div>
       </Animated>
       <div className="down-arrow-container">
-        <img
-          className="down-arrow"
-          src={DownArrow}
-          alt="logo"
-          onClick={arrowClick}
-        ></img>
+        <Fade delay={1000}>
+          <img
+            className="down-arrow"
+            src={DownArrow}
+            alt="logo"
+            onClick={arrowClick}
+          />
+        </Fade>
       </div>
       <div className={hamburgerClosed}>
         <div className="hamburger-x-container">

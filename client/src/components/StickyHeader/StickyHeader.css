@@ -13,7 +13,7 @@
   height: 8.9vw;
 }
 .hamburger-sticky {
-  height: 100px;
+  height: 8.9vw;
 }
 
 .hamburger-closed {
@@ -57,4 +57,10 @@
   width: 100%;
   text-align: center;
   text-decoration: underline;
+}
+
+@media (max-width: 830px) {
+  .hamburger-x-container {
+    right: -80%;
+  }
 }
