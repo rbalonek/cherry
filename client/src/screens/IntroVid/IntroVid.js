@@ -7,9 +7,9 @@ import "./IntroVid.css";
 export default function IntroVid() {
   const history = useHistory();
 
-  // setTimeout(() => {
-  //   history.push("/home");
-  // }, 28000);
+  setTimeout(() => {
+    history.push("/home");
+  }, 28000);
 
   // const closeIntro = () => {
 
