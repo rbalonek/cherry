@@ -24,6 +24,9 @@
 .underline {
   text-decoration: underline;
 }
+.underline:hover {
+  cursor: pointer;
+}
 .header-hamburger-container {
   position: absolute;
   right: 0.8%;
@@ -31,6 +34,9 @@
 }
 .hamburger-header {
   height: 150px;
+}
+.hamburger-header:hover {
+  cursor: pointer;
 }
 .logo-container {
   width: 100vw;
@@ -53,6 +59,9 @@
 }
 .down-arrow {
   height: 150px;
+}
+.down-arrow:hover {
+  cursor: pointer;
 }
 .hamburger-closed {
   display: none;

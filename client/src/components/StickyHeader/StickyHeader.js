@@ -10,7 +10,7 @@ import hamburgerX from "../../assets/logo/Website-Asset_X.png";
 
 export default function StickyHeader() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
-  const [toggleIsVis, setToggleIsVis] = useState(true);
+  const [IsVis, setIsVis] = useState(true);
 
   const toggleHamb = () => {
     hamburgerToggle("hamburger-opened");
@@ -22,16 +22,16 @@ export default function StickyHeader() {
 
   const logoClick = () => {
     window.scrollTo(0, 0);
-    setToggleIsVis(false);
+    setIsVis(false);
     setTimeout(() => {
-      setToggleIsVis(true);
+      setIsVis(true);
     }, 1000);
   };
 
   return (
     <div className="sticky-header-container">
       <Bounce delay={200} fraction={0.8}>
-        <Animated isVisible={toggleIsVis} animationOut="fadeOut">
+        <Animated isVisible={IsVis} animationOut="fadeOut">
           <img
             className="logo-sticky"
             src={Logo}

@@ -12,8 +12,14 @@
 .logo-sticky {
   height: 8.9vw;
 }
+.logo-sticky:hover {
+  cursor: pointer;
+}
 .hamburger-sticky {
   height: 8.9vw;
+}
+.hamburger-sticky:hover {
+  cursor: pointer;
 }
 
 .hamburger-closed {
