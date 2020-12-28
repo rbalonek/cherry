@@ -13,13 +13,13 @@
   top: 30px;
 }
 .header-text {
+  font-family: "HelveticaNeue-RomanOTF";
   width: 100%;
   position: relative;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  top: 10%;
+  top: 15%;
 }
 .underline {
   text-decoration: underline;
@@ -100,24 +100,15 @@
 
 /*              MEDIA QUERIES        */
 
-@media (max-width: 1600px) {
-  .logo {
-    /* width: 100vw;
-    height: 100%;
-    position: relative;
-    top: 100%; */
-  }
-}
-
 @media (max-width: 1350px) {
   .header-text {
-    font-size: 20px;
-    top: 5%;
+    font-size: 18px;
+    top: 40%;
   }
   .header-hamburger-container {
     position: absolute;
     right: 1.4%;
-    top: -30%;
+    top: 0%;
   }
   .hamburger-header {
     height: 100px;
@@ -125,13 +116,17 @@
 }
 
 @media (max-width: 1100px) {
-  .logo {
-    /* top: 150%; */
+  .header-text {
+    font-size: 15px;
+    top: 25%;
   }
-  .hamburger-x-container {
-    position: relative;
-    right: -0%;
-    top: 5%;
+  .header-hamburger-container {
+    position: absolute;
+    right: 1.4%;
+    top: 0%;
+  }
+  .hamburger-header {
+    height: 75px;
   }
 }
 
@@ -141,19 +136,14 @@
   }
 }
 
-@media (max-width: 785px) {
-  .logo {
-    /* top: 200%;
-    width: 100%; */
-  }
+@media (max-width: 620px) {
   .header-text {
-    font-size: 15px;
-    top: 5%;
+    font-size: 12px;
   }
   .header-hamburger-container {
     position: absolute;
     right: 1.4%;
-    top: -40%;
+    top: -30%;
   }
   .hamburger-header {
     height: 70px;
@@ -186,6 +176,73 @@
   }
   .header-text {
     font-size: 10px;
+    top: 55%;
+  }
+  .header-hamburger-container {
+    position: absolute;
+    right: 1.4%;
+    top: 10%;
+  }
+  .hamburger-header {
+    height: 50px;
+  }
+  .down-arrow-container {
+    bottom: -150px;
+  }
+  .hamburger-x-container {
+    position: relative;
+    right: -80%;
+    top: 5%;
+    z-index: 999;
+  }
+  .hamburger-text-container {
+    position: relative;
+    left: -5%;
+  }
+}
+@media (max-width: 410px) {
+  .logo-container {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 35%;
+  }
+  .header-text {
+    font-size: 8px;
+    top: 55%;
+  }
+  .header-hamburger-container {
+    position: absolute;
+    right: 1.4%;
+    top: 10%;
+  }
+  .hamburger-header {
+    height: 50px;
+  }
+  .down-arrow-container {
+    bottom: -150px;
+  }
+  .hamburger-x-container {
+    position: relative;
+    right: -80%;
+    top: 5%;
+    z-index: 999;
+  }
+  .hamburger-text-container {
+    position: relative;
+    left: -5%;
+  }
+}
+
+@media (max-width: 335px) {
+  .logo-container {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 35%;
+  }
+  .header-text {
+    font-size: 6px;
     top: 55%;
   }
   .header-hamburger-container {

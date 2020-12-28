@@ -18,6 +18,7 @@
 
 .hamburger-closed {
   display: none;
+  /* transition: height 2s, width 2s; */
 }
 .hamburger-opened {
   position: absolute;
@@ -26,6 +27,7 @@
   width: 100vw;
   background-color: black;
   top: -20px;
+  /* transition: height 2s, width 2s; */
 }
 
 .hamburger-x-container {
@@ -46,14 +48,15 @@
   text-align: center;
 }
 .hamburger-open-text {
+  font-family: "AkzidenzGroteskBE-BoldEx";
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   width: 100%;
   text-align: center;
 }
 .hamburger-open-text:hover {
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   width: 100%;
   text-align: center;
   text-decoration: underline;
@@ -62,5 +65,22 @@
 @media (max-width: 830px) {
   .hamburger-x-container {
     right: -80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburger-open-text {
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .hamburger-open-text:hover {
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
   }
 }
