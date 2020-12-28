@@ -58,3 +58,9 @@
   text-align: center;
   text-decoration: underline;
 }
+
+@media (max-width: 830px) {
+  .hamburger-x-container {
+    right: -80%;
+  }
+}
