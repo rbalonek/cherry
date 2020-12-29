@@ -34,7 +34,10 @@
   top: -60%;
 }
 .hamburger-header {
-  height: 150px;
+  height: 75px;
+  position: relative;
+  right: 6%;
+  top: 10%;
 }
 .hamburger-header:hover {
   cursor: pointer;
