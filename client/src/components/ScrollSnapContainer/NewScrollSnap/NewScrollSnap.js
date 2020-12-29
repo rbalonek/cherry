@@ -49,6 +49,8 @@ export default function NewScrollSnap() {
       </div>
       <div id="billions" className="sticky-section">
         <ClickableSlider
+          scrollToUp={"affair"}
+          scrollToDown={"commonx"}
           img1={Billions}
           img2={BillionsTwo}
           name={"BILLIONS"}
@@ -60,7 +62,11 @@ export default function NewScrollSnap() {
         />
       </div>
       <div id="commonx" className="sticky-section-last">
-        <Project img={commonx} />
+        <Project
+          img={commonx}
+          scrollToUp={"billions"}
+          scrollToDown={"billions"}
+        />
       </div>
     </div>
   );
