@@ -40,3 +40,14 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018860/Cherry/Chi/ArrowRightSmall_vph9uv.png),
     auto;
 }
+.arrow-down-container {
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: 998;
+}
+.arrow-down-container:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+    auto;
+}

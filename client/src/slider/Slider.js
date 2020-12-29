@@ -6,6 +6,9 @@ import "./Slider.css";
 export default function Slider(props) {
   return (
     <div className="carousel-container">
+      <a href={`#${props.scrollTo}`}>
+        <div className="arrow-down-container" />
+      </a>
       <Carousel
         showStatus={false}
         infiniteLoop
@@ -13,7 +16,7 @@ export default function Slider(props) {
         showThumbs={false}
         autoPlay={false}
         useKeyboardArrows
-        swipeable
+        swipeable={true}
         // showArrows={false}
       >
         <div>

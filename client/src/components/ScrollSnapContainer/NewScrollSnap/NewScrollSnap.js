@@ -23,9 +23,9 @@ export default function NewScrollSnap() {
       </div>
       <StickyHeader></StickyHeader>
       <div className="sticky-section">
-        <Slider img1={ChiOne} img2={ChiTwo} />
+        <Slider img1={ChiOne} img2={ChiTwo} scrollTo={"common"} />
       </div>
-      <div className="sticky-section">
+      <div id="common" className="sticky-section">
         <Project img={Common} />
       </div>
       <div className="sticky-section">
