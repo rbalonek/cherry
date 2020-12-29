@@ -18,12 +18,17 @@ import StickyHeader from "../../StickyHeader/StickyHeader";
 export default function NewScrollSnap() {
   return (
     <div className="new-scrollsnap-container">
-      <div className="new-header-container">
+      <div id="header" className="new-header-container">
         <Header />
       </div>
       <StickyHeader></StickyHeader>
       <div className="sticky-section">
-        <Slider img1={ChiOne} img2={ChiTwo} scrollTo={"common"} />
+        <Slider
+          img1={ChiOne}
+          img2={ChiTwo}
+          scrollToDown={"common"}
+          scrollToUp={"header"}
+        />
       </div>
       <div id="common" className="sticky-section">
         <Project img={Common} />

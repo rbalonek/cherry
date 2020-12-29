@@ -6,7 +6,12 @@ import "./Slider.css";
 export default function Slider(props) {
   return (
     <div className="carousel-container">
-      <a href={`#${props.scrollTo}`}>
+      <a href={`#${props.scrollToUp}`}>
+        <div className="arrow-up-container">
+          <div className="arrow-up" />
+        </div>
+      </a>
+      <a href={`#${props.scrollToDown}`}>
         <div className="arrow-down-container" />
       </a>
       <Carousel
