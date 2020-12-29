@@ -20,6 +20,14 @@ export default function ClickableSlider(props) {
 
   return (
     <div className="carousel-container">
+      <a href={`#${props.scrollToUp}`}>
+        <div className="arrow-up-container">
+          <div className="arrow-up" />
+        </div>
+      </a>
+      <a href={`#${props.scrollToDown}`}>
+        <div className="arrow-down-container" />
+      </a>
       <div className={modal} onClick={toggleClosed}></div>
 
       <div className={modalText} onClick={toggleClosed}>
