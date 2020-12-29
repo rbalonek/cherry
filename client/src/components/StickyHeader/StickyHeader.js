@@ -7,17 +7,18 @@ import { Animated } from "react-animated-css";
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
 import hamburgerX from "../../assets/logo/Website-Asset_X.png";
+import Hamburger from "../Hamburger/Hamburger";
 
 export default function StickyHeader() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
   // const [IsVis, setIsVis] = useState(true);
 
   const toggleHamb = () => {
-    hamburgerToggle("hamburger-opened");
-  };
-
-  const hambClose = () => {
-    hamburgerToggle("hamburger-closed");
+    if (hamburgerClosed === "hamburger-closed") {
+      hamburgerToggle("hamburger-opened-sticky");
+    } else {
+      hamburgerToggle("hamburger-closed");
+    }
   };
 
   const logoClick = () => {
@@ -41,27 +42,13 @@ export default function StickyHeader() {
 
       <div className="hamburger-sticky-container">
         <Zoom fraction={0.8}>
-          <img
-            className="hamburger-sticky"
-            src={hamburger}
-            onClick={toggleHamb}
-            alt="hamburger"
-          />
+          <div className="z-index-999" onClick={toggleHamb}>
+            <Hamburger />
+          </div>
         </Zoom>
       </div>
 
       <div className={hamburgerClosed}>
-        <div className="hamburger-x-container">
-          <Rotate>
-            <img
-              className="hamburger-x"
-              alt="hamClose"
-              src={hamburgerX}
-              onClick={hambClose}
-            />
-          </Rotate>
-        </div>
-
         <div className="hamburger-text-container">
           <Fade>
             <h1 className="hamburger-open-text">About</h1>

@@ -1,3 +1,6 @@
+.z-index-999 {
+  z-index: 999;
+}
 .sticky-header-container {
   display: flex;
   flex-direction: row;
@@ -34,7 +37,7 @@
   transition: transform 0.3s ease-out; */
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
-.hamburger-opened {
+.hamburger-opened-sticky {
   transition: transform 0.3s ease-out;
   position: absolute;
   display: flex;
@@ -50,6 +53,7 @@
   /* transform: translateX(1px); */
   transition-delay: 1s;
   /* transform: scale(0.5); */
+  z-index: -1;
 }
 
 .hamburger-x-container {
