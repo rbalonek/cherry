@@ -45,6 +45,7 @@ export default function ClickableSlider(props) {
         autoPlay={false}
         useKeyboardArrows
         swipeable
+        showIndicators
       >
         <div>
           <img className="car-img" alt="1" src={props.img1} />
