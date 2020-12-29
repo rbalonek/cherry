@@ -27,7 +27,7 @@ export default function Header() {
   // }
   const arrowClick = () => {
     setVisible(false);
-    window.scrollBy(0, 900);
+    // window.scrollBy(0, 800);
     setTimeout(() => {
       setVisible(true);
     }, 2000);
@@ -80,12 +80,14 @@ export default function Header() {
       </div>
       <div className="down-arrow-container">
         <Fade delay={1000}>
-          <img
-            className="down-arrow"
-            src={DownArrow}
-            alt="logo"
-            onClick={arrowClick}
-          />
+          <a href="#chi">
+            <img
+              className="down-arrow"
+              src={DownArrow}
+              alt="logo"
+              onClick={arrowClick}
+            />
+          </a>
         </Fade>
       </div>
       <div className={hamburgerClosed}>
