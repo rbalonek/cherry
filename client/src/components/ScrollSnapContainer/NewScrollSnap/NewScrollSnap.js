@@ -22,24 +22,32 @@ export default function NewScrollSnap() {
         <Header />
       </div>
       <StickyHeader></StickyHeader>
-      <div className="sticky-section">
+      <div id="chi" className="sticky-section">
         <Slider
           img1={ChiOne}
           img2={ChiTwo}
-          scrollToDown={"common"}
           scrollToUp={"header"}
+          scrollToDown={"common"}
         />
       </div>
       <div id="common" className="sticky-section">
-        <Project img={Common} />
+        <Project img={Common} scrollToUp={"chi"} scrollToDown={"shameless"} />
       </div>
-      <div className="sticky-section">
-        <Project img={Shameless} />
+      <div id="shameless" className="sticky-section">
+        <Project
+          img={Shameless}
+          scrollToUp={"common"}
+          scrollToDown={"affair"}
+        />
       </div>
-      <div className="sticky-section">
-        <Project img={Affair} />
+      <div id="affair" className="sticky-section">
+        <Project
+          img={Affair}
+          scrollToUp={"shameless"}
+          scrollToDown={"billions"}
+        />
       </div>
-      <div className="sticky-section">
+      <div id="billions" className="sticky-section">
         <ClickableSlider
           img1={Billions}
           img2={BillionsTwo}
@@ -51,7 +59,7 @@ export default function NewScrollSnap() {
           }
         />
       </div>
-      <div className="sticky-section-last">
+      <div id="commonx" className="sticky-section-last">
         <Project img={commonx} />
       </div>
     </div>
