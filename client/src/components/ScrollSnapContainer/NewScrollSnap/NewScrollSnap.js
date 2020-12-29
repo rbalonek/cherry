@@ -13,6 +13,7 @@ import ClickableSlider from "../../../slider/ClickableSlider/ClickableSlider";
 import Billions from "../../../assets/billions/1st-carousel-Portfolio-2018-FILMTV174.jpg";
 import BillionsTwo from "../../../assets/billions/onClick-Portfolio-2018-FILMTV179.jpg";
 import commonx from "../../../assets/commonx/CommonX-01.gif";
+import StickyHeader from "../../StickyHeader/StickyHeader";
 
 export default function NewScrollSnap() {
   return (
@@ -20,6 +21,7 @@ export default function NewScrollSnap() {
       <div className="new-header-container">
         <Header />
       </div>
+      <StickyHeader></StickyHeader>
       <div className="sticky-section">
         <Slider img1={ChiOne} img2={ChiTwo} />
       </div>
