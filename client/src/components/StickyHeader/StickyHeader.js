@@ -30,16 +30,14 @@ export default function StickyHeader() {
 
   return (
     <div className="sticky-header-container">
-      <Bounce delay={200} fraction={0.8}>
-        <Animated isVisible={IsVis} animationOut="fadeOut">
-          <img
-            className="logo-sticky"
-            src={Logo}
-            alt="logo"
-            onClick={logoClick}
-          />
-        </Animated>
-      </Bounce>
+      <Zoom fraction={1}>
+        <img
+          className="logo-sticky"
+          src={Logo}
+          alt="logo"
+          onClick={logoClick}
+        />
+      </Zoom>
 
       <div className="hamburger-sticky-container">
         <Zoom fraction={0.8}>
