@@ -10,7 +10,7 @@ import hamburgerX from "../../assets/logo/Website-Asset_X.png";
 
 export default function StickyHeader() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
-  const [IsVis, setIsVis] = useState(true);
+  // const [IsVis, setIsVis] = useState(true);
 
   const toggleHamb = () => {
     hamburgerToggle("hamburger-opened");
@@ -22,10 +22,10 @@ export default function StickyHeader() {
 
   const logoClick = () => {
     window.scrollTo(0, 0);
-    setIsVis(false);
-    setTimeout(() => {
-      setIsVis(true);
-    }, 1000);
+    // setIsVis(false);
+    // setTimeout(() => {
+    //   setIsVis(true);
+    // }, 1000);
   };
 
   return (
