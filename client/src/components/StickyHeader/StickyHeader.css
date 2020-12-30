@@ -88,6 +88,19 @@
   /* text-decoration: underline; */
   cursor: pointer;
 }
+.hamburger-sticky-container {
+  position: relative;
+  right: 2%;
+  /* top: 150px; */
+}
+
+@media screen and (max-width: 6000px) and (min-width: 2800px) {
+  .hamburger-sticky-container {
+    position: relative;
+    right: 2.5%;
+    top: 150px;
+  }
+}
 
 @media (max-width: 960px) {
   .logo-sticky {
