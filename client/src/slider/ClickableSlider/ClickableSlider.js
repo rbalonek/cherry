@@ -9,7 +9,7 @@ export default function ClickableSlider(props) {
   const [modalText, modalTextToggle] = useState("modal-text-closed");
 
   const toggleOpen = () => {
-    modalToggle("modalOpen");
+    modalToggle("modalOpen clickable-modal");
     modalTextToggle("modal-text-open");
   };
 
@@ -20,10 +20,18 @@ export default function ClickableSlider(props) {
 
   return (
     <div className="carousel-container">
+      <a href={`#${props.scrollToUp}`}>
+        <div className="arrow-up-container">
+          <div className="arrow-up" />
+        </div>
+      </a>
+      <a href={`#${props.scrollToDown}`}>
+        <div className="arrow-down-container" />
+      </a>
       <div className={modal} onClick={toggleClosed}></div>
 
       <div className={modalText} onClick={toggleClosed}>
-        <div className="modal-text-container clickable">
+        <div className="modal-text-container clickable-modal">
           <p className="modal-text project">Project</p>
           <h2 className="modal-text name">{props.name}</h2>
           <p className="modal-text season">{props.season}</p>
@@ -45,6 +53,7 @@ export default function ClickableSlider(props) {
         autoPlay={false}
         useKeyboardArrows
         swipeable
+        showIndicators
       >
         <div>
           <img className="car-img" alt="1" src={props.img1} />

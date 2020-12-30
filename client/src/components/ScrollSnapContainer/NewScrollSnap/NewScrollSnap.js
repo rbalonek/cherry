@@ -18,24 +18,39 @@ import StickyHeader from "../../StickyHeader/StickyHeader";
 export default function NewScrollSnap() {
   return (
     <div className="new-scrollsnap-container">
-      <div className="new-header-container">
+      <div id="header" className="new-header-container">
         <Header />
       </div>
       <StickyHeader></StickyHeader>
-      <div className="sticky-section">
-        <Slider img1={ChiOne} img2={ChiTwo} />
+      <div id="chi" className="sticky-section">
+        <Slider
+          img1={ChiOne}
+          img2={ChiTwo}
+          scrollToUp={"header"}
+          scrollToDown={"common"}
+        />
       </div>
-      <div className="sticky-section">
-        <Project img={Common} />
+      <div id="common" className="sticky-section">
+        <Project img={Common} scrollToUp={"chi"} scrollToDown={"shameless"} />
       </div>
-      <div className="sticky-section">
-        <Project img={Shameless} />
+      <div id="shameless" className="sticky-section">
+        <Project
+          img={Shameless}
+          scrollToUp={"common"}
+          scrollToDown={"affair"}
+        />
       </div>
-      <div className="sticky-section">
-        <Project img={Affair} />
+      <div id="affair" className="sticky-section">
+        <Project
+          img={Affair}
+          scrollToUp={"shameless"}
+          scrollToDown={"billions"}
+        />
       </div>
-      <div className="sticky-section">
+      <div id="billions" className="sticky-section">
         <ClickableSlider
+          scrollToUp={"affair"}
+          scrollToDown={"commonx"}
           img1={Billions}
           img2={BillionsTwo}
           name={"BILLIONS"}
@@ -46,8 +61,12 @@ export default function NewScrollSnap() {
           }
         />
       </div>
-      <div className="sticky-section-last">
-        <Project img={commonx} />
+      <div id="commonx" className="sticky-section-last">
+        <Project
+          img={commonx}
+          scrollToUp={"billions"}
+          scrollToDown={"billions"}
+        />
       </div>
     </div>
   );

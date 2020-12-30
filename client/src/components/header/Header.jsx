@@ -5,29 +5,23 @@ import { Rotate, Fade } from "react-awesome-reveal";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
-import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
-import hamburgerX from "../../assets/logo/Website-Asset_X.png";
+import Hamburger from "../Hamburger/Hamburger";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
 
   const toggleHamb = () => {
-    hamburgerToggle("hamburger-opened");
-    console.log("opened!");
+    if (hamburgerClosed === "hamburger-closed") {
+      hamburgerToggle("hamburger-opened");
+    } else {
+      hamburgerToggle("hamburger-closed");
+    }
   };
 
-  const hambClose = () => {
-    hamburgerToggle("hamburger-closed");
-    console.log("Closed!");
-  };
-
-  // if (window.innerWidth < 960) {
-  // window.innerHeight
-  // }
   const arrowClick = () => {
     setVisible(false);
-    window.scrollBy(0, 900);
+    // window.scrollBy(0, 800);
     setTimeout(() => {
       setVisible(true);
     }, 2000);
@@ -52,12 +46,9 @@ export default function Header() {
         </Fade>
         <div className="header-hamburger-container">
           <Fade>
-            <img
-              className="hamburger-header"
-              src={hamburger}
-              alt="hamburger"
-              onClick={toggleHamb}
-            />
+            <div className="z-index-999" onClick={toggleHamb}>
+              <Hamburger />
+            </div>
           </Fade>
         </div>
       </div>
@@ -80,33 +71,24 @@ export default function Header() {
       </div>
       <div className="down-arrow-container">
         <Fade delay={1000}>
-          <img
-            className="down-arrow"
-            src={DownArrow}
-            alt="logo"
-            onClick={arrowClick}
-          />
+          <a href="#chi">
+            <img
+              className="down-arrow"
+              src={DownArrow}
+              alt="logo"
+              onClick={arrowClick}
+            />
+          </a>
         </Fade>
       </div>
       <div className={hamburgerClosed}>
-        <div className="hamburger-x-container">
-          <Rotate>
-            <img
-              className="hamburger-x"
-              alt="hamClose"
-              src={hamburgerX}
-              onClick={hambClose}
-            />
-          </Rotate>
-        </div>
-
         <div className="hamburger-text-container">
           <Fade>
-            <h1 className="hamburger-open-text">About</h1>
-            <h1 className="hamburger-open-text">Say Hi</h1>
-            <h1 className="hamburger-open-text">LinkedIn</h1>
-            <h1 className="hamburger-open-text">Instagram</h1>
-            <h1 className="hamburger-open-text">Twitter</h1>
+            <h1 className="hamburger-open-text hover-animation">About</h1>
+            <h1 className="hamburger-open-text hover-animation">Say Hi</h1>
+            <h1 className="hamburger-open-text hover-animation">LinkedIn</h1>
+            <h1 className="hamburger-open-text hover-animation">Instagram</h1>
+            <h1 className="hamburger-open-text hover-animation">Twitter</h1>
           </Fade>
         </div>
       </div>
