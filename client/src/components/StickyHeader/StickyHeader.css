@@ -54,6 +54,7 @@
   transition-delay: 1s;
   /* transform: scale(0.5); */
   z-index: -1;
+  transition: ease-in-out 2s;
 }
 
 .hamburger-x-container {

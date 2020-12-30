@@ -5,8 +5,6 @@ import { Rotate, Fade } from "react-awesome-reveal";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
-import hamburger from "../../assets/logo/Website-Asset_Hamburger.png";
-import hamburgerX from "../../assets/logo/Website-Asset_X.png";
 import Hamburger from "../Hamburger/Hamburger";
 
 export default function Header() {
