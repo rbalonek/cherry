@@ -86,11 +86,11 @@ export default function Header() {
       <div className={hamburgerClosed}>
         <div className="hamburger-text-container">
           <Fade>
-            <h1 className="hamburger-open-text">About</h1>
-            <h1 className="hamburger-open-text">Say Hi</h1>
-            <h1 className="hamburger-open-text">LinkedIn</h1>
-            <h1 className="hamburger-open-text">Instagram</h1>
-            <h1 className="hamburger-open-text">Twitter</h1>
+            <h1 className="hamburger-open-text hover-animation">About</h1>
+            <h1 className="hamburger-open-text hover-animation">Say Hi</h1>
+            <h1 className="hamburger-open-text hover-animation">LinkedIn</h1>
+            <h1 className="hamburger-open-text hover-animation">Instagram</h1>
+            <h1 className="hamburger-open-text hover-animation">Twitter</h1>
           </Fade>
         </div>
       </div>

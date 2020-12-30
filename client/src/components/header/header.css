@@ -82,15 +82,6 @@
   top: 10px;
 }
 
-.hamburger-x-container {
-  position: relative;
-  right: -95%;
-  top: 5%;
-}
-.hamburger-x {
-  height: 50px;
-}
-
 .hamburger-text-container {
   width: 100%;
   display: flex;
@@ -110,7 +101,27 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+.hover-animation {
+  display: inline-block;
+  position: relative;
+}
+.hover-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*              MEDIA QUERIES        */
