@@ -5,19 +5,10 @@ import { Rotate, Fade } from "react-awesome-reveal";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";
-import Hamburger from "../Hamburger/Hamburger";
+// import Hamburger from "../Hamburger/Hamburger";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
-  const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
-
-  const toggleHamb = () => {
-    if (hamburgerClosed === "hamburger-closed") {
-      hamburgerToggle("hamburger-opened");
-    } else {
-      hamburgerToggle("hamburger-closed");
-    }
-  };
 
   const arrowClick = () => {
     setVisible(false);
@@ -44,13 +35,6 @@ export default function Header() {
             <span class="underline">Say hi</span>
           </p>
         </Fade>
-        <div className="header-hamburger-container">
-          <Fade>
-            <div className="z-index-999" onClick={toggleHamb}>
-              <Hamburger />
-            </div>
-          </Fade>
-        </div>
       </div>
 
       <div className="logo-container">
@@ -80,17 +64,6 @@ export default function Header() {
             />
           </a>
         </Fade>
-      </div>
-      <div className={hamburgerClosed}>
-        <div className="hamburger-text-container">
-          <Fade>
-            <h1 className="hamburger-open-text hover-animation">About</h1>
-            <h1 className="hamburger-open-text hover-animation">Say Hi</h1>
-            <h1 className="hamburger-open-text hover-animation">LinkedIn</h1>
-            <h1 className="hamburger-open-text hover-animation">Instagram</h1>
-            <h1 className="hamburger-open-text hover-animation">Twitter</h1>
-          </Fade>
-        </div>
       </div>
     </div>
   );

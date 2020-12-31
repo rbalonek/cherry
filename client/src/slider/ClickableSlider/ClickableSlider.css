@@ -1,3 +1,12 @@
+.carousel .control-dots .dot {
+  margin: 0px 2px;
+  width: 4px;
+  height: 4px;
+}
+
+.carousel-container {
+  contain: content;
+}
 .arrow-up-container {
   width: 100%;
   display: flex;
@@ -21,9 +30,9 @@
   height: 30vh;
   width: 100%;
   position: absolute;
-  top: 35%;
-  z-index: 998;
+  bottom: 0;
   /* background-color: red; */
+  z-index: 998;
 }
 .arrow-down-container:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
@@ -35,7 +44,7 @@
   width: 100%;
 }
 .clickable:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_40/v1609278617/Cherry/Chi/Website-Asset_Plus_xcwsg1.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609278617/Cherry/Chi/Website-Asset_Plus_xcwsg1.png),
     auto;
 }
 
@@ -50,7 +59,7 @@
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
   transition: all 0.25s ease-in;
-  opacity: 0.1;
+  opacity: 0.01;
   filter: alpha(opacity=40);
   position: absolute;
   top: 20px;
@@ -58,6 +67,7 @@
   border: 0;
   font-size: 0px;
 }
+
 .carousel .control-arrow:before,
 .carousel.carousel-slider .control-arrow:before {
   margin: 0 5px;
@@ -68,11 +78,11 @@
 }
 .carousel .control-prev.control-arrow {
   left: 0;
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609019669/Cherry/Chi/ArrowLeftSmaller_qtvysv.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_90/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 .carousel .control-next.control-arrow {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018860/Cherry/Chi/ArrowRightSmall_vph9uv.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_270/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 
@@ -89,7 +99,7 @@
   opacity: 0.7;
 }
 .clickable-modal:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_40/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
 }
 

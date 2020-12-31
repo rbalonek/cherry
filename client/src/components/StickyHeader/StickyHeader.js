@@ -39,26 +39,6 @@ export default function StickyHeader() {
           onClick={logoClick}
         />
       </Zoom>
-
-      <div className="hamburger-sticky-container">
-        <Zoom fraction={0.8}>
-          <div className="z-index-999" onClick={toggleHamb}>
-            <Hamburger />
-          </div>
-        </Zoom>
-      </div>
-
-      <div className={hamburgerClosed}>
-        <div className="hamburger-text-container">
-          <Fade>
-            <h1 className="hamburger-open-text hover-animation">About</h1>
-            <h1 className="hamburger-open-text hover-animation">Say Hi</h1>
-            <h1 className="hamburger-open-text hover-animation">LinkedIn</h1>
-            <h1 className="hamburger-open-text hover-animation">Instagram</h1>
-            <h1 className="hamburger-open-text hover-animation">Twitter</h1>
-          </Fade>
-        </div>
-      </div>
     </div>
   );
 }

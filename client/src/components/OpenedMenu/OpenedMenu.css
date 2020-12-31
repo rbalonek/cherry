@@ -1,0 +1,37 @@
+.opened-menu-container {
+}
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+}
+.hover-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.hover-animation:hover:after {
+  transform: scaleX(0.35);
+  transform-origin: center;
+}
+.hamburger-open-text {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+.hamburger-open-text:hover {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
