@@ -1,3 +1,9 @@
+.carousel .control-dots .dot {
+  margin: 0px 2px;
+  width: 4px;
+  height: 4px;
+}
+
 .carousel-container {
   contain: content;
 }
