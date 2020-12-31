@@ -31,21 +31,7 @@ html {
   align-items: center;
   text-align: center;
 }
-.hamburger-open-text {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  color: white;
-  font-size: 50px;
-  width: 100%;
-  text-align: center;
-}
-.hamburger-open-text:hover {
-  color: white;
-  font-size: 50px;
-  width: 100%;
-  text-align: center;
-  /* text-decoration: underline; */
-  cursor: pointer;
-}
+
 .hamburger-closed {
   display: none;
 }
@@ -70,7 +56,7 @@ html {
   z-index: 99;
   transition: ease-in-out 2s;
 }
-.hamburger-open-text {
+/* .hamburger-open-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
   color: white;
   font-size: 50px;
@@ -82,9 +68,8 @@ html {
   font-size: 50px;
   width: 100%;
   text-align: center;
-  /* text-decoration: underline; */
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 6000px) and (min-width: 100px) {
   .hamburger-div {

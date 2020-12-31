@@ -18,6 +18,20 @@
   transition: transform 0.25s ease-out;
 }
 .hover-animation:hover:after {
-  transform: scaleX(0.25);
+  transform: scaleX(0.35);
   transform-origin: center;
+}
+.hamburger-open-text {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+.hamburger-open-text:hover {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
