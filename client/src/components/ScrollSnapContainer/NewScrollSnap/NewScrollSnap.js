@@ -51,28 +51,59 @@ export default function NewScrollSnap() {
 
       <StickyHeader></StickyHeader>
       <div id="chi" className="sticky-section">
-        <Slider
-          img1={ChiOne}
-          img2={ChiTwo}
+        <ClickableSlider
           scrollToUp={"header"}
           scrollToDown={"common"}
+          img1={ChiOne}
+          img2={ChiTwo}
+          name={"Chi"}
+          season={"SEASON 2"}
+          client={"Showtime"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
         />
       </div>
       <div id="common" className="sticky-section">
-        <Project img={Common} scrollToUp={"chi"} scrollToDown={"shameless"} />
+        <ClickableSlider
+          scrollToUp={"chi"}
+          scrollToDown={"shameless"}
+          img1={Common}
+          img2={Common}
+          name={"Common"}
+          season={"SEASON 2"}
+          client={"Showtime"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        />
       </div>
       <div id="shameless" className="sticky-section">
-        <Project
-          img={Shameless}
+        <ClickableSlider
           scrollToUp={"common"}
           scrollToDown={"affair"}
+          img1={Shameless}
+          img2={Shameless}
+          name={"Shameless"}
+          season={"SEASON 2"}
+          client={"Showtime"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
         />
       </div>
       <div id="affair" className="sticky-section">
-        <Project
-          img={Affair}
+        <ClickableSlider
           scrollToUp={"shameless"}
           scrollToDown={"billions"}
+          img1={Affair}
+          img2={Affair}
+          name={"AFFAIR"}
+          season={"SEASON 2"}
+          client={"Showtime"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
         />
       </div>
       <div id="billions" className="sticky-section">
@@ -90,10 +121,17 @@ export default function NewScrollSnap() {
         />
       </div>
       <div id="commonx" className="sticky-section-last">
-        <Project
-          img={commonx}
+        <ClickableSlider
           scrollToUp={"billions"}
           scrollToDown={"billions"}
+          img1={commonx}
+          img2={commonx}
+          name={"COMMON X"}
+          season={"SEASON 1"}
+          client={"Showtime"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
         />
       </div>
     </div>
