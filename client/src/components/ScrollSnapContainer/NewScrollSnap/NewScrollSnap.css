@@ -1,5 +1,5 @@
 .new-scrollsnap-container {
-  height: 1200vh;
+  /* height: 100vh; */
   background-color: black;
 }
 
@@ -10,12 +10,6 @@
 }
 
 .sticky-section {
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  height: 200vh;
-}
-.sticky-section-last {
   position: sticky;
   top: 0;
   width: 100vw;
