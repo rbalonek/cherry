@@ -1,9 +1,10 @@
+@import url("https://use.typekit.net/qnu7szh.css");
+
 .header-container {
   background-color: black;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
 }
 .z-index-999 {
   z-index: 999;
@@ -16,7 +17,7 @@
   top: 30px;
 }
 .header-text {
-  font-family: "HelveticaNeue-RomanOTF";
+  font-family: "degular";
   width: 100%;
   position: relative;
   font-size: 20px;
