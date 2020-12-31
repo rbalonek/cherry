@@ -10,11 +10,8 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/home">
-          <MainContainer />
-        </Route>
         <Route path="/">
-          <IntroVid />
+          <MainContainer />
         </Route>
       </Switch>
     </Layout>
