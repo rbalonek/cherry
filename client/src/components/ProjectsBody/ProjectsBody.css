@@ -1,0 +1,10 @@
+.non-sticky-section {
+  width: 100vw;
+  height: 100vh;
+}
+.sticky-section-last {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+}
