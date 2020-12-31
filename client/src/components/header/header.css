@@ -108,7 +108,7 @@
   text-align: center; */
   /* text-decoration: underline; */
 }
-.hover-animation {
+/* .hover-animation {
   display: inline-block;
   position: relative;
 }
@@ -127,7 +127,7 @@
 .hover-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 /*              MEDIA QUERIES        */
 

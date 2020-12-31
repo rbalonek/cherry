@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   top: 0%;
 }
 .arrow-up {
@@ -55,12 +55,13 @@
   transition: all 0.25s ease-in;
   opacity: 0.01;
   filter: alpha(opacity=40);
-  position: relative;
+  position: absolute;
   top: 20px;
   background: none;
   border: 0;
   font-size: 0px;
 }
+
 .carousel .control-arrow:before,
 .carousel.carousel-slider .control-arrow:before {
   margin: 0 5px;
@@ -71,11 +72,11 @@
 }
 .carousel .control-prev.control-arrow {
   left: 0;
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609019669/Cherry/Chi/ArrowLeftSmaller_qtvysv.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_90/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 .carousel .control-next.control-arrow {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609018860/Cherry/Chi/ArrowRightSmall_vph9uv.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_270/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 

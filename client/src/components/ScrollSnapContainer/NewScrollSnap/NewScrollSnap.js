@@ -6,6 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import StickyHeader from "../../StickyHeader/StickyHeader";
 import HamburgerSticky from "../../StickyHeader/HamburgerSticky";
 import ProjectsBody from "../../ProjectsBody/ProjectsBody";
+import OpenedMenu from "../../OpenedMenu/OpenedMenu";
 
 export default function NewScrollSnap() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
@@ -22,11 +23,7 @@ export default function NewScrollSnap() {
       <div className={hamburgerClosed}>
         <div className="hamburger-text-container">
           <Fade>
-            <h1 className="hamburger-open-text hover-animation">About</h1>
-            <h1 className="hamburger-open-text hover-animation">Say Hi</h1>
-            <h1 className="hamburger-open-text hover-animation">LinkedIn</h1>
-            <h1 className="hamburger-open-text hover-animation">Instagram</h1>
-            <h1 className="hamburger-open-text hover-animation">Twitter</h1>
+            <OpenedMenu />
           </Fade>
         </div>
       </div>
