@@ -1,3 +1,6 @@
+.carousel-container {
+  contain: content;
+}
 .arrow-up-container {
   width: 100%;
   display: flex;
@@ -20,10 +23,10 @@
 .arrow-down-container {
   height: 30vh;
   width: 100%;
-  position: relative;
-  top: 35%;
-  z-index: 998;
+  position: absolute;
+  bottom: 0;
   /* background-color: red; */
+  z-index: 998;
 }
 .arrow-down-container:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),

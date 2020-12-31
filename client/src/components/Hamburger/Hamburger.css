@@ -53,7 +53,16 @@
   transform: rotate(-45deg);
 }
 
+@media screen and (max-width: 1999px) and (min-width: 1000px) {
+  .menu-btn {
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 3999px) and (min-width: 2000px) {
+  .menu-btn {
+    height: 150px;
+  }
   .menu-btn__burger {
     width: 60px;
     height: 4px;
@@ -73,6 +82,9 @@
 }
 
 @media screen and (min-width: 4000px) {
+  .menu-btn {
+    height: 200px;
+  }
   .menu-btn__burger {
     width: 100px;
     height: 8px;
