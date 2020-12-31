@@ -51,11 +51,11 @@ export default function ClickableSlider(props) {
         showIndicators={false}
         showThumbs={false}
         autoPlay={false}
-        useKeyboardArrows
+        useKeyboardArrows={true}
         swipeable
         showIndicators
       >
-        <div>
+        <div onClick={toggleOpen} className="clickable">
           <img className="car-img" alt="1" src={props.img1} />
         </div>
         <div onClick={toggleOpen}>
