@@ -18,7 +18,7 @@
   transition: transform 0.25s ease-out;
 }
 .hover-animation:hover:after {
-  transform: scaleX(0.35);
+  transform: scaleX(0.25);
   transform-origin: center;
 }
 .hamburger-open-text {
@@ -34,4 +34,10 @@
   width: 100%;
   text-align: center;
   cursor: pointer;
+}
+.LinkedIn:hover:after {
+  transform: scaleX(0.35);
+}
+.Instagram:hover:after {
+  transform: scaleX(0.35);
 }
