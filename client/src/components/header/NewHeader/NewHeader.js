@@ -6,20 +6,24 @@ import logo from "../../../assets/logo/Cherry-Logo.png";
 
 export default function NewHeader() {
   const [inView, setInView] = useState(true);
-  const Chi = document.getElementById("chi");
+  const [imgHeight, newImgHeight] = useState("new-header-logo");
+
+  // const Chi = document.getElementById("chi");
 
   const DownArrowClick = () => {
-    Chi.scrollIntoView();
+    document.getElementById("chi").scrollIntoView();
     setInView(false);
+    newImgHeight("new-header-logo-clicked");
     setTimeout(() => {
       setInView(true);
+      newImgHeight("new-header-logo");
     }, 1000);
   };
 
   return (
     <div className="new-header-container" onClick={DownArrowClick}>
       <div className="new-header-logo-container">
-        <img style={{ height: 50 }} alt="logo" src={logo} />
+        <img className={imgHeight} alt="logo" src={logo} />
       </div>
       <div className="new-header-text-container">
         <Animated

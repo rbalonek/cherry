@@ -11,9 +11,18 @@
 }
 .new-header-logo-container {
   position: relative;
-  left: 8%;
+  left: 6%;
 }
+
 .new-header-logo {
+  height: 4vw;
+  /* height: calc(50px + 4vw); */
+}
+.new-header-logo-clicked {
+  height: 5vw;
+  /* height: calc(70px + 4vw); */
+  /* opacity: 0; */
+  transition-duration: 1000ms;
 }
 .new-header-text-container {
   height: 100%;
