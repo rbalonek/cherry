@@ -36,7 +36,7 @@ export default function NewHeader() {
             We're Cherry and this is a short intro that changes. This version
             has a small logo at the top that slides into position as a person
             scrolls down. Here's an email link :{" "}
-            <span style={{ textDecoration: "underline" }}>Say hi.</span>
+            <span className="hi-email">Say hi.</span>
           </p>
         </Animated>
       </div>
