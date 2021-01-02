@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/qnu7szh.css");
+
+.new-header-container {
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+    auto;
+}
+.new-header-text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.new-header-text {
+  color: white;
+  font-family: "degular";
+  align-self: center;
+  padding: 5%;
+  font-size: 5vw;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

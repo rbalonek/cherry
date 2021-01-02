@@ -7,6 +7,7 @@ import StickyHeader from "../../StickyHeader/StickyHeader";
 import HamburgerSticky from "../../StickyHeader/HamburgerSticky";
 import ProjectsBody from "../../ProjectsBody/ProjectsBody";
 import OpenedMenu from "../../OpenedMenu/OpenedMenu";
+import NewHeader from "../../header/NewHeader/NewHeader";
 
 export default function NewScrollSnap() {
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
@@ -33,7 +34,7 @@ export default function NewScrollSnap() {
       </div>
 
       <div id="header" className="new-header-container">
-        <Header />
+        <NewHeader />
       </div>
       <StickyHeader />
       <ProjectsBody></ProjectsBody>
