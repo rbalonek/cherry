@@ -5,6 +5,7 @@ import MainContainer from "./containers/MainContainer";
 import "./App.css";
 import IntroVid from "./screens/IntroVid/IntroVid";
 import "./assets/fonts/HelveticaNeue-RomanOTF.otf";
+import About from "./screens/About/About";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/">
           <MainContainer />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
       </Switch>
     </Layout>

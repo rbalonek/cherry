@@ -1,0 +1,32 @@
+@import url("https://use.typekit.net/qnu7szh.css");
+
+.about-logo {
+  width: calc(200px + 14vw);
+  position: relative;
+  top: 10px;
+  left: 2%;
+}
+.about-x-container {
+  width: 95%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 2%;
+  right: 2%;
+}
+.about-xOut {
+  /* width: 50px; */
+  width: calc(20px + 2vw);
+}
+.about-xOut:hover {
+  cursor: pointer;
+}
+
+.about-text-container {
+  padding: 5%;
+}
+.about-text {
+  color: white;
+  font-family: Degular;
+  font-size: calc(15px + 2vw);
+}
