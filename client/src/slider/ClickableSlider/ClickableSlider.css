@@ -42,6 +42,7 @@
 .car-img {
   height: 100vh;
   width: 100%;
+  object-fit: cover;
 }
 .clickable:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609278617/Cherry/Chi/Website-Asset_Plus_xcwsg1.png),
