@@ -1,0 +1,103 @@
+.modal-container {
+  position: absolute;
+  height: 100%;
+}
+.modal-text-container {
+  position: relative;
+  top: 10%;
+  padding: 10%;
+}
+.modal-text {
+  color: white;
+}
+.client-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.client {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  position: relative;
+  font-size: calc(15px + 0.5vw);
+  left: 6%;
+}
+.client-name {
+  font-family: "Degular";
+  font-size: calc(15px + 0.5vw);
+  position: relative;
+  left: 10.5%;
+  top: -4px;
+}
+.project-container {
+  display: flex;
+  align-items: center;
+}
+.project {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  font-size: calc(15px + 0.5vw);
+  position: relative;
+  left: 6%;
+}
+.project-name {
+  font-family: "Degular";
+  font-size: calc(15px + 0.5vw);
+  position: relative;
+  left: 11%;
+  top: -8px;
+}
+.information {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  position: relative;
+  font-size: calc(15px + 0.5vw);
+}
+
+.proj-description {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.description-text {
+  color: white;
+  font-size: calc(13px + 0.5vw);
+  font-family: Degular;
+  position: relative;
+  left: 4%;
+}
+
+/* 
+@media (max-width: 715px) {
+  .name {
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: 20px;
+    position: relative;
+    margin-top: 0px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -20px;
+    width: 130px;
+    left: 7.5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .client-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -20px;
+    width: 130px;
+    left: 6.5%;
+  }
+  .proj-description {
+    display: flex;
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  .modal-text-container {
+    top: 30%;
+  }
+} */
