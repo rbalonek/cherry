@@ -74,7 +74,6 @@ export default function ClickableSlider(props) {
             season={props.season}
             client={props.client}
             description={props.description}
-            showIndicators={true}
           />
         </div>
       )}
