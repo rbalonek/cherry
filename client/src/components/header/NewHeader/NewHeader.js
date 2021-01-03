@@ -11,6 +11,13 @@ export default function NewHeader() {
 
   // const Chi = document.getElementById("chi");
 
+  let pageHeight = window.innerHeight;
+
+  const DownArrowCell = () => {
+    window.scrollBy(0, pageHeight);
+    console.log(pageHeight);
+  };
+
   const DownArrowClick = () => {
     document.getElementById("chi").scrollIntoView();
     setInView(false);
@@ -62,7 +69,7 @@ export default function NewHeader() {
                 </p>
               </Animated>
             </div>
-            <div className="cell-down-arrow-container" onClick={DownArrowClick}>
+            <div className="cell-down-arrow-container" onClick={DownArrowCell}>
               <img
                 className="cell-down-arrow"
                 src={downArrow}
