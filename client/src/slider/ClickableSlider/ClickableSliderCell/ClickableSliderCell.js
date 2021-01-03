@@ -41,7 +41,7 @@ export default function ClickableSliderCell(props) {
         <Carousel
           showStatus={false}
           infiniteLoop
-          showIndicators={false}
+          showIndicators={true}
           showThumbs={false}
           autoPlay={false}
           useKeyboardArrows={true}
@@ -57,12 +57,6 @@ export default function ClickableSliderCell(props) {
             </div>
           </div>
         </Carousel>
-        <img
-          onClick={toggleOpen}
-          className="info-button-cell"
-          src={info}
-          alt="info"
-        />
       </div>
     </div>
   );
