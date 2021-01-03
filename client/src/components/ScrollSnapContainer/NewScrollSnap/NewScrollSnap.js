@@ -21,11 +21,11 @@ export default function NewScrollSnap() {
   // };
   return (
     <div className="new-scrollsnap-container">
-      <StickyHeader />
-
       <div id="header" className="new-header-container">
         <NewHeader />
       </div>
+
+      <StickyHeader />
 
       <ProjectsBody></ProjectsBody>
     </div>

@@ -1,7 +1,7 @@
 .carousel .control-dots .dot {
-  margin: 0px 2px;
-  width: 4px;
-  height: 4px;
+  margin: 0px calc(2px + 0.25vw);
+  width: calc(3px + 0.25vw);
+  height: calc(3px + 0.25vw);
 }
 
 .carousel-container {
@@ -22,7 +22,7 @@
   z-index: 99;
 }
 .arrow-up:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_180/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/a_180/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 
@@ -35,7 +35,7 @@
   z-index: 998;
 }
 .arrow-down-container:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 
@@ -45,7 +45,7 @@
   object-fit: cover;
 }
 .clickable:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609278617/Cherry/Chi/Website-Asset_Plus_xcwsg1.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609278617/Cherry/Chi/Website-Asset_Plus_xcwsg1.png),
     auto;
 }
 
@@ -79,11 +79,11 @@
 }
 .carousel .control-prev.control-arrow {
   left: 0;
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_90/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/a_90/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 .carousel .control-next.control-arrow {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/a_270/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/a_270/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
 
@@ -100,7 +100,7 @@
   opacity: 0.7;
 }
 .clickable-modal:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
 }
 
@@ -118,6 +118,6 @@
   font-family: "Degular";
 }
 .modal-text-open:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
 }
