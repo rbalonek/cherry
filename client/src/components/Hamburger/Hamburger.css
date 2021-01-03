@@ -1,5 +1,5 @@
 .menu-btn {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,8 +8,9 @@
   height: 50px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  /* left: 94vw; */
-  /* top: -20px; */
+  left: 95vw;
+  top: 10px;
+  z-index: 990;
 }
 .menu-btn__burger {
   width: 30px;
@@ -100,5 +101,21 @@
   }
   .menu-btn__burger::after {
     transform: translateY(25px);
+  }
+}
+@media (max-width: 800px) {
+  .menu-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80px; */
+    /* width: 100%; */
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    left: 90%;
+    top: 10px;
+    z-index: 990;
   }
 }

@@ -22,9 +22,6 @@ export default function NewHeader() {
 
   return (
     <div className="new-header-container" onClick={DownArrowClick}>
-      <div className="new-header-logo-container">
-        <img className={imgHeight} alt="logo" src={logo} />
-      </div>
       <div className="new-header-text-container">
         <Animated
           animationIn="fadeIn"
