@@ -1,7 +1,7 @@
 .carousel .control-dots .dot {
-  margin: 0px 2px;
-  width: 4px;
-  height: 4px;
+  margin: 0px calc(2px + 0.25vw);
+  width: calc(3px + 0.25vw);
+  height: calc(3px + 0.25vw);
 }
 
 .carousel-container {
