@@ -28,7 +28,7 @@ export default function NewScrollSnap() {
           </Fade>
         </div>
       </div>
-
+      <StickyHeader />
       <div className="hamburger-div" onClick={toggleHamb}>
         <HamburgerSticky />
       </div>
@@ -36,7 +36,7 @@ export default function NewScrollSnap() {
       <div id="header" className="new-header-container">
         <NewHeader />
       </div>
-      <StickyHeader />
+
       <ProjectsBody></ProjectsBody>
     </div>
   );
