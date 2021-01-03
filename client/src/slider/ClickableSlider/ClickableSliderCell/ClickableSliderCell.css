@@ -6,12 +6,6 @@
   width: 100%;
   object-fit: cover;
 }
-.info-button-cell {
-  height: 100px;
-  width: 100px;
-  position: relative;
-  bottom: 600px;
-}
 
 .modalClosed {
   display: none;

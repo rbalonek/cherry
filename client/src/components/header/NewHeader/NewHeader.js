@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NewHeader.css";
+import zenscroll from "zenscroll";
 
 import { Animated } from "react-animated-css";
 import logo from "../../../assets/logo/Cherry-Logo.png";
@@ -9,12 +10,19 @@ export default function NewHeader() {
   const [inView, setInView] = useState(true);
   const [imgHeight, newImgHeight] = useState("new-header-logo");
 
+  // var chi = document.getElementById("chi");
+
+  //
+
   // const Chi = document.getElementById("chi");
 
   let pageHeight = window.innerHeight;
 
   const DownArrowCell = () => {
-    window.scrollBy(0, pageHeight);
+    zenscroll.toY(pageHeight);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(chi);
+    // window.scrollBy(0, pageHeight);
     console.log(pageHeight);
   };
 
@@ -27,7 +35,6 @@ export default function NewHeader() {
       newImgHeight("new-header-logo");
     }, 1000);
   };
-  var w = window.innerWidth;
 
   return (
     <>
