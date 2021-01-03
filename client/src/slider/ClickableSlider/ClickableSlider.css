@@ -117,3 +117,7 @@
   position: absolute;
   font-family: "Degular";
 }
+.modal-text-open:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_80/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
+    auto;
+}

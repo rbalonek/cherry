@@ -2,102 +2,105 @@
   position: absolute;
   height: 100%;
 }
-.modal-text-container {
-  position: relative;
-  top: 10%;
-  padding: 10%;
+.modal-container:hover {
+  cursor: pointer;
 }
+.bold-container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+  left: 50px;
+}
+.bold-text {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  color: white;
+  font-size: calc(15px + 0.5vw);
+  align-self: flex-end;
+}
+.props-container {
+  position: absolute;
+  left: 250px;
+  top: 28.5%;
+}
+
 .modal-text {
   color: white;
 }
-.client-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.client {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  position: relative;
-  font-size: calc(15px + 0.5vw);
-  left: 6%;
-}
+
 .client-name {
   font-family: "Degular";
   font-size: calc(15px + 0.5vw);
   position: relative;
-  left: 10.5%;
-  top: -4px;
+  /* left: 10.5%;
+  top: -4px; */
 }
-.project-container {
-  display: flex;
-  align-items: center;
-}
-.project {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  font-size: calc(15px + 0.5vw);
-  position: relative;
-  left: 6%;
-}
+
 .project-name {
   font-family: "Degular";
   font-size: calc(15px + 0.5vw);
   position: relative;
-  left: 11%;
-  top: -8px;
+  top: 8px;
+  /* left: 11%; */
+  /* 
+  top: -8px; */
 }
-.information {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  position: relative;
-  font-size: calc(15px + 0.5vw);
-}
-
-.proj-description {
-  display: flex;
-  position: relative;
-  width: 100%;
+.description-text-container {
+  width: 60vw;
 }
 .description-text {
   color: white;
-  font-size: calc(13px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   font-family: Degular;
   position: relative;
-  left: 4%;
+  top: 20px;
 }
 
-/* 
-@media (max-width: 715px) {
-  .name {
-    font-family: "AkzidenzGroteskBE-BoldEx";
-    font-size: 20px;
-    position: relative;
-    margin-top: 0px;
+@media screen and (max-width: 3000px) and (min-width: 2000px) {
+  .props-container {
+    top: 29%;
+    left: 300px;
   }
-  .client-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: -20px;
-    width: 130px;
-    left: 7.5%;
+}
+@media (min-width: 3000px) {
+  .props-container {
+    top: 29%;
+    left: 500px;
+  }
+  .bold-container {
+    left: 100px;
   }
 }
 
-@media (max-width: 425px) {
-  .client-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: -20px;
-    width: 130px;
-    left: 6.5%;
+@media (max-width: 640px) {
+  .description-text-container {
+    width: 40vw;
   }
-  .proj-description {
-    display: flex;
-    width: 80%;
-    position: relative;
-    left: 10%;
+}
+
+@media (max-width: 430px) {
+  .props-container {
+    position: absolute;
+    left: 200px;
+    top: 28.5%;
   }
-  .modal-text-container {
-    top: 30%;
+  .description-text-container {
+    width: 40vw;
   }
-} */
+}
+
+@media (max-width: 350px) {
+  .bold-container {
+    left: 10px;
+  }
+  .props-container {
+    position: absolute;
+    left: 140px;
+    top: 28.5%;
+  }
+  .description-text-container {
+    width: 45vw;
+  }
+}

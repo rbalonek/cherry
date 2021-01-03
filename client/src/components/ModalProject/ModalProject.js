@@ -4,19 +4,15 @@ import "./ModalProject.css";
 export default function ModalProject(props) {
   return (
     <div className="modal-container clickable-modal">
-      <div className="modal-text-container">
-        <div className="client-container">
-          <h2 className="modal-text client">CLIENT</h2>
-          <p className="modal-text client-name">{props.client}</p>
-        </div>
-
-        <div className="project-container">
-          <h2 className="modal-text project">Project</h2>
-          <p className="modal-text project-name">{props.name}</p>
-        </div>
-
-        <div className="proj-description">
-          <h2 className="modal-text information">Information</h2>
+      <div className="bold-container">
+        <h2 className="bold-text">Client</h2>
+        <h2 className="bold-text">Project</h2>
+        <h2 className="bold-text">Information</h2>
+      </div>
+      <div className="props-container">
+        <p className="modal-text client-name">{props.client}</p>
+        <p className="modal-text project-name">{props.name}</p>
+        <div className="description-text-container">
           <p className="description-text"> {props.description} </p>
         </div>
       </div>
