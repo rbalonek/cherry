@@ -57,3 +57,25 @@
     background-position: 0% 50%;
   }
 }
+
+/* CELLL */
+.cell-down-arrow-container {
+  position: relative;
+  bottom: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cell-down-arrow {
+  height: 150px;
+}
+
+@media (max-width: 414px) {
+  .cell-down-arrow-container {
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
