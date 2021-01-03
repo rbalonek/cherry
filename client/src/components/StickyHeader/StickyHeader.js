@@ -38,7 +38,14 @@ export default function StickyHeader({ toggle }) {
           </Fade>
         </div>
       </div>
-      <img className="logo-sticky" src={Logo} alt="logo" onClick={logoClick} />
+      <Fade fraction={1} delay={1000}>
+        <img
+          className="logo-sticky"
+          src={Logo}
+          alt="logo"
+          onClick={logoClick}
+        />
+      </Fade>
       <div onClick={toggleHamb}>
         <Hamburger />
       </div>
