@@ -22,6 +22,12 @@
   left: 20px;
   top: 0px;
 }
+/* .logo-sticky-clicked {
+  height: calc(6vw + 1.5vw);
+  position: relative;
+  left: 20px;
+  top: 0px;
+} */
 .logo-sticky:hover {
   cursor: pointer;
 }

@@ -11,6 +11,7 @@ import OpenedMenu from "../OpenedMenu/OpenedMenu";
 export default function StickyHeader({ toggle }) {
   // const [IsVis, setIsVis] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
+  // const [logo, logoToggle] = useState('logo-sticky')
 
   const toggleHamb = () => {
     if (hamburgerClosed === "hamburger-closed") {
