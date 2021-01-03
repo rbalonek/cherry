@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 // import { Fade } from "react-awesome-reveal";
 
@@ -31,18 +32,11 @@ export default function ClickableSlider(props) {
       <div className={modal} onClick={toggleClosed}></div>
 
       <div className={modalText} onClick={toggleClosed}>
-        <div className="modal-text-container clickable-modal">
-          <p className="modal-text project">Project</p>
-          <h2 className="modal-text name">{props.name}</h2>
-          <p className="modal-text season">{props.season}</p>
-          <div className="client-container">
-            <p className="modal-text client">CLIENT</p>
-            <p className="modal-text client-name">{props.client}</p>
-          </div>
-          <div className="proj-description">
-            <p className="description-text"> {props.description} </p>
-          </div>
-        </div>
+        <ModalProject
+          client={props.client}
+          name={props.name}
+          description={props.description}
+        />
       </div>
 
       <Carousel

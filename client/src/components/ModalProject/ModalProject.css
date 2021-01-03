@@ -1,0 +1,106 @@
+.modal-container {
+  position: absolute;
+  height: 100%;
+}
+.modal-container:hover {
+  cursor: pointer;
+}
+.bold-container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+  left: 50px;
+}
+.bold-text {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  color: white;
+  font-size: calc(15px + 0.5vw);
+  align-self: flex-end;
+}
+.props-container {
+  position: absolute;
+  left: 250px;
+  top: 28.5%;
+}
+
+.modal-text {
+  color: white;
+}
+
+.client-name {
+  font-family: "Degular";
+  font-size: calc(15px + 0.5vw);
+  position: relative;
+  /* left: 10.5%;
+  top: -4px; */
+}
+
+.project-name {
+  font-family: "Degular";
+  font-size: calc(15px + 0.5vw);
+  position: relative;
+  top: 8px;
+  /* left: 11%; */
+  /* 
+  top: -8px; */
+}
+.description-text-container {
+  width: 60vw;
+}
+.description-text {
+  color: white;
+  font-size: calc(10px + 0.5vw);
+  font-family: Degular;
+  position: relative;
+  top: 20px;
+}
+
+@media screen and (max-width: 3000px) and (min-width: 2000px) {
+  .props-container {
+    top: 29%;
+    left: 300px;
+  }
+}
+@media (min-width: 3000px) {
+  .props-container {
+    top: 29%;
+    left: 500px;
+  }
+  .bold-container {
+    left: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .description-text-container {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .props-container {
+    position: absolute;
+    left: 200px;
+    top: 28.5%;
+  }
+  .description-text-container {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .bold-container {
+    left: 10px;
+  }
+  .props-container {
+    position: absolute;
+    left: 140px;
+    top: 28.5%;
+  }
+  .description-text-container {
+    width: 45vw;
+  }
+}
