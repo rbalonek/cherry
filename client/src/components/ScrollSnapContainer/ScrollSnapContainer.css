@@ -55,6 +55,13 @@ html {
   transition-delay: 1s;
   z-index: 99;
   transition: ease-in-out 2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  position: sticky;
+  z-index: 900;
+  top: 0px;
 }
 /* .hamburger-open-text {
   font-family: "AkzidenzGroteskBE-BoldEx";

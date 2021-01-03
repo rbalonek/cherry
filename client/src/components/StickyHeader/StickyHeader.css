@@ -8,15 +8,19 @@
   height: 1px;
   position: sticky;
   z-index: 9;
-  top: 20px;
+  top: 0px;
   width: 100%;
+}
+.ham-div {
+  height: 50px;
+  width: 50px;
 }
 
 .logo-sticky {
-  height: 8.9vw;
+  height: calc(6vw + 1.5vw);
   position: relative;
   left: 20px;
-  top: -20px;
+  top: 0px;
 }
 .logo-sticky:hover {
   cursor: pointer;
