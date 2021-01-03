@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/qnu7szh.css");
+/* @import url("https://use.typekit.net/qnu7szh.css");
 
 .header-container {
   background-color: black;
@@ -52,7 +52,6 @@
   position: absolute;
   height: 100vh;
   align-items: center;
-  /* top: 30%; */
 }
 .logo {
   width: 100vw;
@@ -68,12 +67,11 @@
   text-align: center;
 }
 .down-arrow {
-  /* height: 150px; */
   height: calc(150px + 0.5vw);
 }
 .down-arrow:hover {
   cursor: pointer;
-}
+} */
 /* .hamburger-closed {
   display: none;
 }
@@ -130,7 +128,7 @@
 } */
 
 /*              MEDIA QUERIES        */
-
+/* 
 @media screen and (max-width: 6000px) and (min-width: 2800px) {
   .header-hamburger-container {
     right: 2.5%;
@@ -158,7 +156,6 @@
   }
   .header-hamburger-container {
     position: absolute;
-    /* right: 0.4%; */
     top: -10%;
   }
   .hamburger-header {
@@ -193,7 +190,6 @@
   }
   .header-hamburger-container {
     position: absolute;
-    /* right: 1.4%; */
     top: -30%;
   }
   .hamburger-header {
@@ -202,7 +198,6 @@
 }
 @media (max-width: 585px) {
   .logo {
-    /* top: 150%; */
   }
   .header-text {
     font-size: 10px;
@@ -219,12 +214,6 @@
 }
 
 @media (max-width: 500px) {
-  /* .logo-container {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 35%;
-  } */
   .header-text {
     font-size: 10px;
     top: 55%;
@@ -246,18 +235,8 @@
     top: 5%;
     z-index: 999;
   }
-  /* .hamburger-text-container {
-    position: relative;
-    left: -5%;
-  } */
 }
 @media (max-width: 410px) {
-  /* .logo-container {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 35%;
-  } */
   .header-text {
     font-size: 8px;
     top: 55%;
@@ -279,19 +258,9 @@
     top: 5%;
     z-index: 999;
   }
-  /* .hamburger-text-container {
-    position: relative;
-    left: -5%;
-  } */
 }
 
 @media (max-width: 335px) {
-  /* .logo-container {
-    width: 100vw;
-    display: flex;
-    position: absolute;
-    top: 35%;
-  } */
   .header-text {
     font-size: 6px;
     top: 55%;
@@ -313,19 +282,12 @@
     top: 5%;
     z-index: 999;
   }
-  /* .hamburger-text-container {
-    position: relative;
-    left: -5%;
-  } */
 }
 
 @media (max-height: 450px) {
-  /* .logo {
-    top: -70px;
-  } */
 }
 @media (max-height: 350px) {
   .down-arrow {
     height: 50px;
   }
-}
+} */
