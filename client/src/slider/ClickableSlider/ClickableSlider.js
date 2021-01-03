@@ -46,7 +46,7 @@ export default function ClickableSlider(props) {
             <Carousel
               showStatus={false}
               infiniteLoop
-              showIndicators={false}
+              showIndicators={true}
               showThumbs={false}
               autoPlay={false}
               useKeyboardArrows={true}
@@ -74,6 +74,7 @@ export default function ClickableSlider(props) {
             season={props.season}
             client={props.client}
             description={props.description}
+            showIndicators={true}
           />
         </div>
       )}
