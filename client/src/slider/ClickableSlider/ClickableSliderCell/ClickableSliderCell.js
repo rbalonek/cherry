@@ -57,12 +57,6 @@ export default function ClickableSliderCell(props) {
             </div>
           </div>
         </Carousel>
-        <img
-          onClick={toggleOpen}
-          className="info-button-cell"
-          src={info}
-          alt="info"
-        />
       </div>
     </div>
   );
