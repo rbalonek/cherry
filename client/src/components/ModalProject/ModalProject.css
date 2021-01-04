@@ -31,7 +31,7 @@
 }
 
 .client-name {
-  font-family: "Degular";
+  font-family: "Deregular";
   font-size: calc(15px + 0.5vw);
   position: relative;
   /* left: 10.5%;
@@ -39,7 +39,7 @@
 }
 
 .project-name {
-  font-family: "Degular";
+  font-family: "Deregular";
   font-size: calc(15px + 0.5vw);
   position: relative;
   top: 8px;
@@ -53,7 +53,7 @@
 .description-text {
   color: white;
   font-size: calc(10px + 0.5vw);
-  font-family: Degular;
+  font-family: Deregular;
   position: relative;
   top: 20px;
 }
