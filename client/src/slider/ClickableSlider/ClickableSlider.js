@@ -4,7 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
-// import { Fade } from "react-awesome-reveal";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
