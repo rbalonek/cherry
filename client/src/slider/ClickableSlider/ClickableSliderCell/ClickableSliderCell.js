@@ -46,13 +46,13 @@ export default function ClickableSliderCell(props) {
           autoPlay={false}
           useKeyboardArrows={true}
           swipeable
-          showArrows={true}
+          showArrows={false}
         >
           <div className="clickable-cell">
             <img className="car-img-cell" alt="1" src={props.img1} />
           </div>
           <div onClick={toggleOpen}>
-            <div className="clickable-cell">
+            <div className="clickable-cell ">
               <img className="car-img-cell " alt="2" src={props.img2} />
             </div>
           </div>

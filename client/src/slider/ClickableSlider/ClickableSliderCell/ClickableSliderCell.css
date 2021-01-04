@@ -66,3 +66,11 @@
     content: "";
   }
 }
+
+@media (max-width: 770px) {
+  .carousel .control-dots .dot {
+    margin: 2% calc(1.01px + 0.25vw);
+    width: calc(8px + 0.5vw);
+    height: calc(8px + 0.5vw);
+  }
+}

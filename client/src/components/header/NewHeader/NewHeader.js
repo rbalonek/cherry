@@ -8,7 +8,7 @@ import downArrow from "../../../assets/logo/Website-Asset_DownArrow.png";
 
 export default function NewHeader() {
   const [inView, setInView] = useState(true);
-  const [imgHeight, newImgHeight] = useState("new-header-logo");
+  // const [imgHeight, newImgHeight] = useState("new-header-logo");
 
   // var chi = document.getElementById("chi");
 
@@ -29,11 +29,11 @@ export default function NewHeader() {
   const DownArrowClick = () => {
     document.getElementById("chi").scrollIntoView();
     setInView(false);
-    newImgHeight("new-header-logo-clicked");
-    setTimeout(() => {
-      setInView(true);
-      newImgHeight("new-header-logo");
-    }, 1000);
+    // newImgHeight("new-header-logo-clicked");
+    // setTimeout(() => {
+    //   setInView(true);
+    //   newImgHeight("new-header-logo");
+    // }, 1000);
   };
 
   return (

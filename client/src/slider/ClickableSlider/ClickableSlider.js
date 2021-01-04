@@ -148,10 +148,10 @@ export default function ClickableSlider(props) {
           <ClickableSliderCell
             scrollToUp={props.scrollToUp}
             scrollToDown={props.scrollToDown}
-            img1={props.img1}
-            img2={props.img2}
-            img3={props.img3}
-            img4={props.img4}
+            img1={props.cellimg1}
+            img2={props.cellimg2}
+            img3={props.cellimg3}
+            img4={props.cellimg4}
             name={props.name}
             season={props.season}
             client={props.client}
