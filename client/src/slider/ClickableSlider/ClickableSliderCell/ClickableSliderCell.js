@@ -38,25 +38,83 @@ export default function ClickableSliderCell(props) {
           />
         </div>
 
-        <Carousel
-          showStatus={false}
-          infiniteLoop
-          showIndicators={true}
-          showThumbs={false}
-          autoPlay={false}
-          useKeyboardArrows={true}
-          swipeable
-          showArrows={false}
-        >
-          <div className="clickable-cell">
-            <img className="car-img-cell" alt="1" src={props.img1} />
-          </div>
-          <div onClick={toggleOpen}>
-            <div className="clickable-cell ">
-              <img className="car-img-cell " alt="2" src={props.img2} />
+        {props.img3 === undefined ? (
+          <Carousel
+            showStatus={false}
+            infiniteLoop
+            showIndicators={true}
+            showThumbs={false}
+            autoPlay={false}
+            useKeyboardArrows={false}
+            swipeable
+          >
+            <div onClick={toggleOpen} className="clickable-cell">
+              <img className="car-img-cell" alt="1" src={props.img1} />
             </div>
-          </div>
-        </Carousel>
+            <div onClick={toggleOpen}>
+              <div className="clickable-cell">
+                <img className="car-img-cell " alt="2" src={props.img2} />
+              </div>
+            </div>
+          </Carousel>
+        ) : (
+          <>
+            {props.img4 === undefined ? (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img className="car-img-cell" alt="1" src={props.img1} />
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="2" src={props.img2} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="3" src={props.img3} />
+                  </div>
+                </div>
+              </Carousel>
+            ) : (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img className="car-img-cell" alt="1" src={props.img1} />
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="2" src={props.img2} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="3" src={props.img3} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="4" src={props.img4} />
+                  </div>
+                </div>
+              </Carousel>
+            )}
+          </>
+        )}
       </div>
     </div>
   );
