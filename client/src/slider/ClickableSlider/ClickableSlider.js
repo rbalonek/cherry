@@ -84,29 +84,62 @@ export default function ClickableSlider(props) {
                 </div>
               </Carousel>
             ) : (
-              <Carousel
-                showStatus={false}
-                infiniteLoop
-                showIndicators={true}
-                showThumbs={false}
-                autoPlay={false}
-                useKeyboardArrows={true}
-                swipeable
-              >
-                <div onClick={toggleOpen} className="clickable">
-                  <img className="car-img" alt="1" src={props.img1} />
-                </div>
-                <div onClick={toggleOpen}>
-                  <div className="clickable">
-                    <img className="car-img " alt="2" src={props.img2} />
-                  </div>
-                </div>
-                <div onClick={toggleOpen}>
-                  <div className="clickable">
-                    <img className="car-img " alt="3" src={props.img3} />
-                  </div>
-                </div>
-              </Carousel>
+              <>
+                {props.img4 === undefined ? (
+                  <Carousel
+                    showStatus={false}
+                    infiniteLoop
+                    showIndicators={true}
+                    showThumbs={false}
+                    autoPlay={false}
+                    useKeyboardArrows={true}
+                    swipeable
+                  >
+                    <div onClick={toggleOpen} className="clickable">
+                      <img className="car-img" alt="1" src={props.img1} />
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="2" src={props.img2} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="3" src={props.img3} />
+                      </div>
+                    </div>
+                  </Carousel>
+                ) : (
+                  <Carousel
+                    showStatus={false}
+                    infiniteLoop
+                    showIndicators={true}
+                    showThumbs={false}
+                    autoPlay={false}
+                    useKeyboardArrows={true}
+                    swipeable
+                  >
+                    <div onClick={toggleOpen} className="clickable">
+                      <img className="car-img" alt="1" src={props.img1} />
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="2" src={props.img2} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="3" src={props.img3} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="4" src={props.img4} />
+                      </div>
+                    </div>
+                  </Carousel>
+                )}
+              </>
             )}
           </div>
         </div>
@@ -117,6 +150,8 @@ export default function ClickableSlider(props) {
             scrollToDown={props.scrollToDown}
             img1={props.img1}
             img2={props.img2}
+            img3={props.img3}
+            img4={props.img4}
             name={props.name}
             season={props.season}
             client={props.client}

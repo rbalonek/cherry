@@ -41,6 +41,7 @@ export default function ProjectsBody() {
             img1={project.fields.img1}
             img2={project.fields.img2}
             img3={project.fields.img3}
+            img4={project.fields.img4}
             name={project.fields.name}
             client={project.fields.client}
             description={project.fields.description}
