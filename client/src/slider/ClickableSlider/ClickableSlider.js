@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
+import zenscroll from "zenscroll";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -19,19 +20,37 @@ export default function ClickableSlider(props) {
     modalTextToggle("modal-text-closed");
   };
 
+  let pageHeight = window.innerHeight;
+
+  // var up = document.getElementById(`#${props.scrollToUp}`);
+  // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
+  const ArrowUp100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToUp);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(up);
+    // window.scrollBy(0, pageHeight);
+    // console.log("up");
+  };
+
+  const ArrowDown100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToDown);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(scrollingDown);
+    // window.scrollBy(0, pageHeight);
+    // console.log("down");
+  };
+
   return (
     <>
       {window.innerWidth > 770 ? (
         <div>
           <div className="carousel-container">
-            <a href={`#${props.scrollToUp}`}>
-              <div className="arrow-up-container">
-                <div className="arrow-up" />
-              </div>
-            </a>
-            <a href={`#${props.scrollToDown}`}>
-              <div className="arrow-down-container" />
-            </a>
+            <div className="arrow-up-container" onClick={ArrowUp100Vh}>
+              <div className="arrow-up" />
+            </div>
+
+            <div className="arrow-down-container" onClick={ArrowDown100Vh} />
+
             <div className={modal} onClick={toggleClosed}></div>
 
             <div className={modalText} onClick={toggleClosed}>
@@ -39,6 +58,7 @@ export default function ClickableSlider(props) {
                 client={props.client}
                 name={props.name}
                 description={props.description}
+                descriptionTwo={props.descriptionTwo}
               />
             </div>
 
@@ -84,6 +104,7 @@ export default function ClickableSlider(props) {
             season={props.season}
             client={props.client}
             description={props.description}
+            descriptionTwo={props.descriptionTwo}
           />
         </div>
       )}
