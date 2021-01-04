@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ClickableSliderCell.css";
 import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
-import info from "../../../assets/logo/info.png";
+
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
