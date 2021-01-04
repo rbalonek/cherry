@@ -64,24 +64,50 @@ export default function ClickableSlider(props) {
               />
             </div>
 
-            <Carousel
-              showStatus={false}
-              infiniteLoop
-              showIndicators={true}
-              showThumbs={false}
-              autoPlay={false}
-              useKeyboardArrows={true}
-              swipeable
-            >
-              <div onClick={toggleOpen} className="clickable">
-                <img className="car-img" alt="1" src={props.img1} />
-              </div>
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img2} />
+            {props.img3 === undefined ? (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={true}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable">
+                  <img className="car-img" alt="1" src={props.img1} />
                 </div>
-              </div>
-            </Carousel>
+                <div onClick={toggleOpen}>
+                  <div className="clickable">
+                    <img className="car-img " alt="2" src={props.img2} />
+                  </div>
+                </div>
+              </Carousel>
+            ) : (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={true}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable">
+                  <img className="car-img" alt="1" src={props.img1} />
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable">
+                    <img className="car-img " alt="2" src={props.img2} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable">
+                    <img className="car-img " alt="3" src={props.img3} />
+                  </div>
+                </div>
+              </Carousel>
+            )}
           </div>
         </div>
       ) : (
