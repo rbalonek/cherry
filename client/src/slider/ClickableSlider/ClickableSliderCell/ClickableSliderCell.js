@@ -4,17 +4,17 @@ import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
 import info from "../../../assets/logo/info.png";
 export default function ClickableSliderCell(props) {
-  const [modal, modalToggle] = useState("modalClosed-cell");
-  const [modalText, modalTextToggle] = useState("modal-text-closed-cell");
+  const [modal, modalToggle] = useState("modalClosed");
+  const [modalText, modalTextToggle] = useState("modal-text-closed");
 
   const toggleOpen = () => {
-    modalToggle("modalOpen-cell clickable-modal-cell");
-    modalTextToggle("modal-text-open-cell");
+    modalToggle("modalOpen clickable-modal");
+    modalTextToggle("modal-text-open");
   };
 
   const toggleClosed = () => {
-    modalToggle("modalClosed-cell");
-    modalTextToggle("modal-text-closed-cell");
+    modalToggle("modalClosed");
+    modalTextToggle("modal-text-closed");
   };
 
   return (
