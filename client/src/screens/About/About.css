@@ -17,6 +17,8 @@
 .about-xOut {
   /* width: 50px; */
   width: calc(20px + 2vw);
+  position: fixed;
+  top: 10px;
 }
 .about-xOut:hover {
   cursor: pointer;
@@ -27,6 +29,6 @@
 }
 .about-text {
   color: white;
-  font-family: Degular;
+  font-family: Deregular;
   font-size: calc(15px + 2vw);
 }
