@@ -40,6 +40,8 @@ export default function ClickableSlider(props) {
     // console.log("down");
   };
 
+  console.log(props.img3);
+
   return (
     <>
       {window.innerWidth > 770 ? (
@@ -74,20 +76,9 @@ export default function ClickableSlider(props) {
               <div onClick={toggleOpen} className="clickable">
                 <img className="car-img" alt="1" src={props.img1} />
               </div>
-
               <div onClick={toggleOpen}>
                 <div className="clickable">
                   <img className="car-img " alt="2" src={props.img2} />
-                </div>
-              </div>
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img1} />
-                </div>
-              </div>
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img1} />
                 </div>
               </div>
             </Carousel>

@@ -29,7 +29,7 @@ export default function ProjectsBody() {
       console.log(fetchFullScreenProjects);
     };
     apiCall();
-  }, [invokeFetch]);
+  }, []);
 
   return (
     <div>
@@ -51,7 +51,3 @@ export default function ProjectsBody() {
     </div>
   );
 }
-
-// <div id="chi" className="non-sticky-section">
-
-// </div>

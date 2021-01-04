@@ -10,7 +10,7 @@ export default function NewHeader() {
   const [inView, setInView] = useState(true);
   const [imgHeight, newImgHeight] = useState("new-header-logo");
 
-  var chi = document.getElementById("chi");
+  // var chi = document.getElementById("chi");
 
   //
 
