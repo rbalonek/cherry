@@ -40,7 +40,7 @@ export default function ClickableSlider(props) {
     // console.log("down");
   };
 
-  console.log(props.img3);
+  // console.log(props.img3);
 
   return (
     <>

@@ -26,10 +26,10 @@ export default function ProjectsBody() {
         }
       );
       invokeFetch(data.data.records);
-      console.log(fetchFullScreenProjects);
+      // console.log(fetchFullScreenProjects);
     };
     apiCall();
-  }, []);
+  }, [fetchFullScreenProjects]);
 
   return (
     <div>
