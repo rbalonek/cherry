@@ -59,13 +59,14 @@ export default function NewHeader() {
         <div>
           <div className="new-header-container" onClick={DownArrowClick}>
             <div className="new-header-text-container">
-              <Animated
-                animationIn="fadeIn"
-                animationOut="fadeOut"
-                animationOutDuration={300}
-                isVisible={inView}
-              >
-                {fetchQuotes.length ? (
+              {fetchQuotes.length ? (
+                <Animated
+                  animationIn="fadeIn"
+                  animationInDuration={3000}
+                  animationOut="fadeOut"
+                  animationOutDuration={300}
+                  isVisible={inView}
+                >
                   <p className="new-header-text">
                     {fetchQuotes[0].fields.paragraph1}
                     <br />
@@ -76,10 +77,10 @@ export default function NewHeader() {
                       {fetchQuotes[0].fields.paragraph3}
                     </span>
                   </p>
-                ) : (
-                  <p></p>
-                )}
-              </Animated>
+                </Animated>
+              ) : (
+                <p></p>
+              )}
             </div>
           </div>
         </div>
