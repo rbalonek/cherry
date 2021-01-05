@@ -5,6 +5,8 @@ import ModalProject from "../../../components/ModalProject/ModalProject";
 import zenscroll from "zenscroll";
 import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { Animated } from "react-animated-css";
+
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
@@ -45,18 +47,25 @@ export default function ClickableSliderCell(props) {
         <div className={modal} onClick={toggleClosed}></div>
 
         <div className={modalText} onClick={toggleClosed}>
-          <ModalProject
-            client={props.client}
-            name={props.name}
-            description={props.description}
-            descriptionTwo={props.descriptionTwo}
-            keyart={props.keyart}
-            identity={props.identity}
-            motiongfx={props.motiongfx}
-            copy={props.copy}
-            retouching={props.retouching}
-            photoartdirection={props.photoartdirection}
-          />
+          <Animated
+            animationIn="fadeIn"
+            animationInDuration={2000}
+            animationOut="fadeOut"
+            animationOutDuration={100}
+          >
+            <ModalProject
+              client={props.client}
+              name={props.name}
+              description={props.description}
+              descriptionTwo={props.descriptionTwo}
+              keyart={props.keyart}
+              identity={props.identity}
+              motiongfx={props.motiongfx}
+              copy={props.copy}
+              retouching={props.retouching}
+              photoartdirection={props.photoartdirection}
+            />
+          </Animated>
         </div>
 
         {props.img3 === undefined ? (

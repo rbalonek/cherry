@@ -107,6 +107,8 @@
   background-color: black;
   z-index: 999;
   opacity: 0.7;
+  transition-duration: 3000ms;
+  transition: 3000ms;
 }
 /* .clickable-modal:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
