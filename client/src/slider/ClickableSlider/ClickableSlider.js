@@ -5,7 +5,6 @@ import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
 import zenscroll from "zenscroll";
-import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Animated } from "react-animated-css";
 
 export default function ClickableSlider(props) {

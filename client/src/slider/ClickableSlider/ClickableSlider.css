@@ -3,15 +3,6 @@
   width: calc(3px + 0.5vw);
   height: calc(3px + 0.5vw);
 }
-.AiOutlineInfoCircle-container {
-  /* contain: content;
-  position: relative;
-  bottom: 37px;
-  z-index: 999;
-  left: 10%;
-  width: 50px;
-  background-color: red; */
-}
 
 .carousel-container {
   contain: content;
