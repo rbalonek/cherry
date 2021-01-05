@@ -5,6 +5,7 @@ import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import logo from "../../../assets/logo/Cherry-Logo.png";
 import downArrow from "../../../assets/logo/Website-Asset_DownArrow.png";
+import { FiChevronDown } from "react-icons/fi";
 
 export default function NewHeader() {
   const [inView, setInView] = useState(true);
@@ -49,10 +50,9 @@ export default function NewHeader() {
                 isVisible={inView}
               >
                 <p className="new-header-text">
-                  We're Cherry. <br />
-                  <br /> A multi-disciplinary design studio based in Austin and
-                  New York. This is a short intro that cycles through several
-                  versions on refresh and we can update as we see fit.
+                  This is Cherry. <br />
+                  <br /> We're a multi-disciplinary art & design studio
+                  specializing in branding for film & television.
                   <br /> <br />
                   <span className="hi-email">Say hi.</span>
                 </p>
@@ -71,19 +71,18 @@ export default function NewHeader() {
                 isVisible={inView}
               >
                 <p className="new-header-text">
-                  We're Cherry. <br />
-                  <br /> A multi-disciplinary design studio based in Austin and
-                  New York. This is a short intro that cycles through several
-                  versions on refresh and we can update as we see fit.
+                  This is Cherry. <br />
+                  <br /> We're a multi-disciplinary art & design studio
+                  specializing in branding for film & television.
                   <br /> <br />
-                  <span className="hi-email">Say hi.</span>
+                  <span className="hi-email">Say hi!</span>
                 </p>
               </Animated>
             </div>
             <div className="cell-down-arrow-container" onClick={DownArrowCell}>
-              <img
+              <FiChevronDown
                 className="cell-down-arrow"
-                src={downArrow}
+                color="white"
                 alt="cell-down"
               />
             </div>
