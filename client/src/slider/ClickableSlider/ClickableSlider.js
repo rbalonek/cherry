@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
-// import { Fade } from "react-awesome-reveal";
+import zenscroll from "zenscroll";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -20,19 +20,39 @@ export default function ClickableSlider(props) {
     modalTextToggle("modal-text-closed");
   };
 
+  let pageHeight = window.innerHeight;
+
+  // var up = document.getElementById(`#${props.scrollToUp}`);
+  // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
+  const ArrowUp100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToUp);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(up);
+    // window.scrollBy(0, pageHeight);
+    // console.log("up");
+  };
+
+  const ArrowDown100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToDown);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(scrollingDown);
+    // window.scrollBy(0, pageHeight);
+    // console.log("down");
+  };
+
+  // console.log(props.img3);
+
   return (
     <>
       {window.innerWidth > 770 ? (
         <div>
           <div className="carousel-container">
-            <a href={`#${props.scrollToUp}`}>
-              <div className="arrow-up-container">
-                <div className="arrow-up" />
-              </div>
-            </a>
-            <a href={`#${props.scrollToDown}`}>
-              <div className="arrow-down-container" />
-            </a>
+            <div className="arrow-up-container" onClick={ArrowUp100Vh}>
+              <div className="arrow-up" />
+            </div>
+
+            <div className="arrow-down-container" onClick={ArrowDown100Vh} />
+
             <div className={modal} onClick={toggleClosed}></div>
 
             <div className={modalText} onClick={toggleClosed}>
@@ -40,38 +60,87 @@ export default function ClickableSlider(props) {
                 client={props.client}
                 name={props.name}
                 description={props.description}
+                descriptionTwo={props.descriptionTwo}
               />
             </div>
 
-            <Carousel
-              showStatus={false}
-              infiniteLoop
-              showIndicators={true}
-              showThumbs={false}
-              autoPlay={false}
-              useKeyboardArrows={true}
-              swipeable
-            >
-              <div onClick={toggleOpen} className="clickable">
-                <img className="car-img" alt="1" src={props.img1} />
-              </div>
-
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img2} />
+            {props.img3 === undefined ? (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={true}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable">
+                  <img className="car-img" alt="1" src={props.img1} />
                 </div>
-              </div>
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img1} />
+                <div onClick={toggleOpen}>
+                  <div className="clickable">
+                    <img className="car-img " alt="2" src={props.img2} />
+                  </div>
                 </div>
-              </div>
-              <div onClick={toggleOpen}>
-                <div className="clickable">
-                  <img className="car-img " alt="2" src={props.img1} />
-                </div>
-              </div>
-            </Carousel>
+              </Carousel>
+            ) : (
+              <>
+                {props.img4 === undefined ? (
+                  <Carousel
+                    showStatus={false}
+                    infiniteLoop
+                    showIndicators={true}
+                    showThumbs={false}
+                    autoPlay={false}
+                    useKeyboardArrows={true}
+                    swipeable
+                  >
+                    <div onClick={toggleOpen} className="clickable">
+                      <img className="car-img" alt="1" src={props.img1} />
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="2" src={props.img2} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="3" src={props.img3} />
+                      </div>
+                    </div>
+                  </Carousel>
+                ) : (
+                  <Carousel
+                    showStatus={false}
+                    infiniteLoop
+                    showIndicators={true}
+                    showThumbs={false}
+                    autoPlay={false}
+                    useKeyboardArrows={true}
+                    swipeable
+                  >
+                    <div onClick={toggleOpen} className="clickable">
+                      <img className="car-img" alt="1" src={props.img1} />
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="2" src={props.img2} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="3" src={props.img3} />
+                      </div>
+                    </div>
+                    <div onClick={toggleOpen}>
+                      <div className="clickable">
+                        <img className="car-img " alt="4" src={props.img4} />
+                      </div>
+                    </div>
+                  </Carousel>
+                )}
+              </>
+            )}
           </div>
         </div>
       ) : (
@@ -79,12 +148,15 @@ export default function ClickableSlider(props) {
           <ClickableSliderCell
             scrollToUp={props.scrollToUp}
             scrollToDown={props.scrollToDown}
-            img1={props.img1}
-            img2={props.img2}
+            img1={props.cellimg1}
+            img2={props.cellimg2}
+            img3={props.cellimg3}
+            img4={props.cellimg4}
             name={props.name}
             season={props.season}
             client={props.client}
             description={props.description}
+            descriptionTwo={props.descriptionTwo}
           />
         </div>
       )}

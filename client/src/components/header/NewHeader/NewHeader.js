@@ -8,7 +8,7 @@ import downArrow from "../../../assets/logo/Website-Asset_DownArrow.png";
 
 export default function NewHeader() {
   const [inView, setInView] = useState(true);
-  const [imgHeight, newImgHeight] = useState("new-header-logo");
+  // const [imgHeight, newImgHeight] = useState("new-header-logo");
 
   var chi = document.getElementById("chi");
 
@@ -29,10 +29,10 @@ export default function NewHeader() {
   const DownArrowClick = () => {
     document.getElementById("chi").scrollIntoView();
     setInView(false);
-    newImgHeight("new-header-logo-clicked");
+    // newImgHeight("new-header-logo-clicked");
     setTimeout(() => {
       setInView(true);
-      newImgHeight("new-header-logo");
+      // newImgHeight("new-header-logo");
     }, 1000);
   };
 
@@ -45,7 +45,7 @@ export default function NewHeader() {
               <Animated
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                animationInDuration={100}
+                animationOutDuration={300}
                 isVisible={inView}
               >
                 <p className="new-header-text">
@@ -71,9 +71,11 @@ export default function NewHeader() {
                 isVisible={inView}
               >
                 <p className="new-header-text">
-                  We're Cherry and this is a short intro that changes. This
-                  version has a small logo at the top that slides into position
-                  as a person scrolls down. Here's an email link :{" "}
+                  We're Cherry. <br />
+                  <br /> A multi-disciplinary design studio based in Austin and
+                  New York. This is a short intro that cycles through several
+                  versions on refresh and we can update as we see fit.
+                  <br /> <br />
                   <span className="hi-email">Say hi.</span>
                 </p>
               </Animated>

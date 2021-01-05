@@ -3,13 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 80px; */
-  /* width: 100%; */
   height: 50px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   left: 95vw;
-  top: 10px;
+  top: -20px;
   z-index: 990;
 }
 .menu-btn__burger {
@@ -54,37 +52,11 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 1999px) and (min-width: 1000px) {
-  .menu-btn {
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 3999px) and (min-width: 2000px) {
-  .menu-btn {
-    height: 150px;
-  }
-  .menu-btn__burger {
-    width: 60px;
-    height: 4px;
-  }
-
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
-    width: 60px;
-    height: 4px;
-  }
-  .menu-btn__burger::before {
-    transform: translateY(-15px);
-  }
-  .menu-btn__burger::after {
-    transform: translateY(15px);
-  }
-}
-
 @media screen and (min-width: 4000px) {
   .menu-btn {
     height: 200px;
+    left: 96vw;
+    top: 0px;
   }
   .menu-btn__burger {
     width: 100px;
@@ -103,19 +75,79 @@
     transform: translateY(25px);
   }
 }
+@media screen and (max-width: 3999px) and (min-width: 2500px) {
+  .menu-btn {
+    height: 150px;
+    left: 96vw;
+    top: -0px;
+  }
+  .menu-btn__burger {
+    width: 60px;
+    height: 4px;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    width: 60px;
+    height: 4px;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-15px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(15px);
+  }
+}
+@media screen and (max-width: 2499px) and (min-width: 2000px) {
+  .menu-btn {
+    height: 150px;
+    left: 96vw;
+    top: -30px;
+  }
+}
+@media screen and (max-width: 1999px) and (min-width: 1000px) {
+  .menu-btn {
+    height: 100px;
+    left: 95vw;
+    top: -20px;
+  }
+}
+@media screen and (max-width: 999px) and (min-width: 801px) {
+  .menu-btn {
+    left: 95vw;
+    top: 0px;
+  }
+}
+
 @media (max-width: 800px) {
+  .menu-btn {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* left: 93%; */
+    top: 10px;
+    z-index: 990;
+  }
+  .menu-btn__burger {
+    /* position: relative;
+    z-index: 999; */
+  }
+}
+@media (max-width: 500px) {
   .menu-btn {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 80px; */
-    /* width: 100%; */
     height: 50px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     left: 90%;
-    top: 10px;
+    top: -5px;
     z-index: 990;
   }
 }

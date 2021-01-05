@@ -14,6 +14,8 @@ export default function ModalProject(props) {
         <p className="modal-text project-name">{props.name}</p>
         <div className="description-text-container">
           <p className="description-text"> {props.description} </p>
+          <br />
+          <p className="description-text"> {props.descriptionTwo} </p>
         </div>
       </div>
     </div>

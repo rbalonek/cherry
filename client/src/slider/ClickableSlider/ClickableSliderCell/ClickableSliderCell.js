@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./ClickableSliderCell.css";
 import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
-import info from "../../../assets/logo/info.png";
+
 export default function ClickableSliderCell(props) {
-  const [modal, modalToggle] = useState("modalClosed-cell");
-  const [modalText, modalTextToggle] = useState("modal-text-closed-cell");
+  const [modal, modalToggle] = useState("modalClosed");
+  const [modalText, modalTextToggle] = useState("modal-text-closed");
 
   const toggleOpen = () => {
-    modalToggle("modalOpen-cell clickable-modal-cell");
-    modalTextToggle("modal-text-open-cell");
+    modalToggle("modalOpen clickable-modal");
+    modalTextToggle("modal-text-open");
   };
 
   const toggleClosed = () => {
-    modalToggle("modalClosed-cell");
-    modalTextToggle("modal-text-closed-cell");
+    modalToggle("modalClosed");
+    modalTextToggle("modal-text-closed");
   };
 
   return (
@@ -38,25 +38,83 @@ export default function ClickableSliderCell(props) {
           />
         </div>
 
-        <Carousel
-          showStatus={false}
-          infiniteLoop
-          showIndicators={true}
-          showThumbs={false}
-          autoPlay={false}
-          useKeyboardArrows={true}
-          swipeable
-          showArrows={true}
-        >
-          <div className="clickable-cell">
-            <img className="car-img-cell" alt="1" src={props.img1} />
-          </div>
-          <div onClick={toggleOpen}>
-            <div className="clickable-cell">
-              <img className="car-img-cell " alt="2" src={props.img2} />
+        {props.img3 === undefined ? (
+          <Carousel
+            showStatus={false}
+            infiniteLoop
+            showIndicators={true}
+            showThumbs={false}
+            autoPlay={false}
+            useKeyboardArrows={false}
+            swipeable
+          >
+            <div onClick={toggleOpen} className="clickable-cell">
+              <img className="car-img-cell" alt="1" src={props.img1} />
             </div>
-          </div>
-        </Carousel>
+            <div onClick={toggleOpen}>
+              <div className="clickable-cell">
+                <img className="car-img-cell " alt="2" src={props.img2} />
+              </div>
+            </div>
+          </Carousel>
+        ) : (
+          <>
+            {props.img4 === undefined ? (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img className="car-img-cell" alt="1" src={props.img1} />
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="2" src={props.img2} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="3" src={props.img3} />
+                  </div>
+                </div>
+              </Carousel>
+            ) : (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img className="car-img-cell" alt="1" src={props.img1} />
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="2" src={props.img2} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="3" src={props.img3} />
+                  </div>
+                </div>
+                <div onClick={toggleOpen}>
+                  <div className="clickable-cell">
+                    <img className="car-img-cell " alt="4" src={props.img4} />
+                  </div>
+                </div>
+              </Carousel>
+            )}
+          </>
+        )}
       </div>
     </div>
   );

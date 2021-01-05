@@ -17,10 +17,10 @@
 }
 
 .logo-sticky {
-  height: calc(6vw + 1.5vw);
-  position: relative;
-  left: 20px;
-  top: 5px;
+  height: calc(5vw + 1.5vw);
+  position: absolute;
+  left: 10px;
+  top: 0px;
 }
 /* .logo-sticky-clicked {
   height: calc(6vw + 1.5vw);
@@ -78,6 +78,6 @@
 
 @media (max-width: 830px) {
   .logo-sticky {
-    top: 20px;
+    top: 5px;
   }
 }

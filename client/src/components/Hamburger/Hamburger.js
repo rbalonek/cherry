@@ -31,9 +31,13 @@ export default function Hamburger() {
   return (
     <div>
       <div className={open} onClick={clicked}>
-        <Fade fraction={1} delay={1000}>
+        {window.innerWidth > 770 ? (
+          <Fade fraction={1} delay={1000}>
+            <div className="menu-btn__burger"></div>
+          </Fade>
+        ) : (
           <div className="menu-btn__burger"></div>
-        </Fade>
+        )}
       </div>
     </div>
   );
