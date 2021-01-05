@@ -61,6 +61,12 @@ export default function ClickableSlider(props) {
                 name={props.name}
                 description={props.description}
                 descriptionTwo={props.descriptionTwo}
+                keyart={props.keyart}
+                identity={props.identity}
+                motiongfx={props.motiongfx}
+                copy={props.copy}
+                retouching={props.retouching}
+                photoartdirection={props.photoartdirection}
               />
             </div>
 
@@ -157,6 +163,12 @@ export default function ClickableSlider(props) {
             client={props.client}
             description={props.description}
             descriptionTwo={props.descriptionTwo}
+            keyart={props.keyart}
+            identity={props.identity}
+            motiongfx={props.motiongfx}
+            copy={props.copy}
+            retouching={props.retouching}
+            photoartdirection={props.photoartdirection}
           />
         </div>
       )}
