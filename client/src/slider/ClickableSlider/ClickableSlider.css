@@ -99,10 +99,10 @@
   z-index: 999;
   opacity: 0.7;
 }
-.clickable-modal:hover {
+/* .clickable-modal:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
-}
+} */
 
 .modal-text-closed {
   display: none;
@@ -218,10 +218,10 @@
     z-index: 999;
     opacity: 0.7;
   }
-  .clickable-modal:hover {
+  /* .clickable-modal:hover {
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
       auto;
-  }
+  } */
 
   .modal-text-closed {
     display: none;
