@@ -1,6 +1,37 @@
 .carousel-container-cell {
   contain: content;
+  /* position: absolute;
+  widows: 100%;
+  display: flex; */
 }
+.arrow-up-container-cell,
+.arrow-down-container-cell {
+  z-index: 9;
+  /* width: 100%; */
+}
+.arrow-up-cell,
+.arrow-down-cell {
+  height: 50px;
+  z-index: 999;
+}
+.arrow-up-container-cell {
+  position: fixed;
+  bottom: 0px;
+}
+.arrow-up-cell {
+  transform: rotate(180deg);
+  position: relative;
+  left: 200px;
+}
+.arrow-down-container-cell {
+  position: fixed;
+  bottom: 0px;
+}
+.arrow-down-cell {
+  position: relative;
+  left: 500px;
+}
+
 .car-img-cell {
   height: 100vh;
   width: 200%;

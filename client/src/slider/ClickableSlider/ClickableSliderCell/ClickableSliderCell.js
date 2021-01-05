@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./ClickableSliderCell.css";
 import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
+import zenscroll from "zenscroll";
+import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
 
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -17,17 +19,29 @@ export default function ClickableSliderCell(props) {
     modalTextToggle("modal-text-closed");
   };
 
+  let pageHeight = window.innerHeight;
+
+  // var up = document.getElementById(`#${props.scrollToUp}`);
+  // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
+  const ArrowUp100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToUp);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(up);
+    // window.scrollBy(0, pageHeight);
+    console.log("up");
+  };
+
+  const ArrowDown100Vh = () => {
+    zenscroll.toY(pageHeight * props.scrollToDown);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(scrollingDown);
+    // window.scrollBy(0, pageHeight);
+    console.log("down");
+  };
+
   return (
     <div>
       <div className="carousel-container-cell">
-        <a href={`#${props.scrollToUp}`}>
-          <div className="arrow-up-container-cell">
-            <div className="arrow-up-cell" />
-          </div>
-        </a>
-        <a href={`#${props.scrollToDown}`}>
-          <div className="arrow-down-container-cell" />
-        </a>
         <div className={modal} onClick={toggleClosed}></div>
 
         <div className={modalText} onClick={toggleClosed}>
@@ -119,3 +133,25 @@ export default function ClickableSliderCell(props) {
     </div>
   );
 }
+
+// <a href={`#${props.scrollToUp}`}>
+// <div className="arrow-up-container-cell">
+//   <img
+//     className="arrow-up-cell"
+//     alt="arrowUp"
+//     src={arrowDown}
+//     onClick={ArrowUp100Vh}
+//   />
+// </div>
+// </a>
+
+// <a href={`#${props.scrollToDown}`}>
+// <div className="arrow-down-container-cell">
+//   <img
+//     className="arrow-down-cell"
+//     alt="arrowDown"
+//     src={arrowDown}
+//     onClick={ArrowDown100Vh}
+//   />
+// </div>
+// </a>
