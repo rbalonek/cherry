@@ -21,7 +21,7 @@ export default function ProjectsBody() {
       // console.log(fetchFullScreenProjects);
     };
     apiCall();
-  }, [fetchFullScreenProjects]);
+  }, [invokeFetch]);
 
   return (
     <div>
