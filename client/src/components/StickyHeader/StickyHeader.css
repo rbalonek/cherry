@@ -81,3 +81,11 @@
     top: 5px;
   }
 }
+
+@media (max-width: 770px) {
+  .logo-sticky {
+    left: 5%;
+    top: 0px;
+    height: 13vw;
+  }
+}

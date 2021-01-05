@@ -8,11 +8,12 @@ import NewHeader from "../../header/NewHeader/NewHeader";
 export default function NewScrollSnap() {
   return (
     <div className="new-scrollsnap-container">
+      {window.innerWidth < 770 && <StickyHeader />}
       <div id="header" className="new-header-container">
         <NewHeader />
       </div>
 
-      <StickyHeader />
+      {window.innerWidth > 770 && <StickyHeader />}
 
       <ProjectsBody></ProjectsBody>
     </div>
