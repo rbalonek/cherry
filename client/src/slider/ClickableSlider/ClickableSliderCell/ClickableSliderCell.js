@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
 import zenscroll from "zenscroll";
 import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
-
+import { AiOutlineInfoCircle } from "react-icons/ai";
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
@@ -69,10 +69,10 @@ export default function ClickableSliderCell(props) {
             useKeyboardArrows={false}
             swipeable
           >
-            <div onClick={toggleOpen} className="clickable-cell">
+            <div className="clickable-cell">
               <img className="car-img-cell" alt="1" src={props.img1} />
             </div>
-            <div onClick={toggleOpen}>
+            <div>
               <div className="clickable-cell">
                 <img className="car-img-cell " alt="2" src={props.img2} />
               </div>
@@ -90,15 +90,15 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div onClick={toggleOpen} className="clickable-cell">
+                <div className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
-                <div onClick={toggleOpen}>
+                <div>
                   <div className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
-                <div onClick={toggleOpen}>
+                <div>
                   <div className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
@@ -114,20 +114,20 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div onClick={toggleOpen} className="clickable-cell">
+                <div className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
-                <div onClick={toggleOpen}>
+                <div>
                   <div className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
-                <div onClick={toggleOpen}>
+                <div>
                   <div className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
                 </div>
-                <div onClick={toggleOpen}>
+                <div>
                   <div className="clickable-cell">
                     <img className="car-img-cell " alt="4" src={props.img4} />
                   </div>
@@ -136,6 +136,9 @@ export default function ClickableSliderCell(props) {
             )}
           </>
         )}
+      </div>
+      <div className="AiOutlineInfoCircle-container" onClick={toggleOpen}>
+        <AiOutlineInfoCircle color="white" size="2em" />
       </div>
     </div>
   );

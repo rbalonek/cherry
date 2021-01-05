@@ -5,6 +5,7 @@ import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
 import zenscroll from "zenscroll";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");

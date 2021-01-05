@@ -4,6 +4,15 @@
   widows: 100%;
   display: flex; */
 }
+.AiOutlineInfoCircle-container {
+  contain: content;
+  position: relative;
+  bottom: 37px;
+  /* z-index: 9; */
+  left: 10%;
+  width: 50px;
+  /* background-color: red; */
+}
 .arrow-up-container-cell,
 .arrow-down-container-cell {
   z-index: 9;
@@ -63,9 +72,6 @@
   z-index: 999;
   position: absolute;
   font-family: "degular";
-}
-
-@media (max-width: 770px) {
 }
 
 @media (max-width: 770px) {
