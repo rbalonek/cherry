@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
 
 import { Animated } from "react-animated-css";
-import logo from "../../../assets/logo/Cherry-Logo.png";
-import downArrow from "../../../assets/logo/Website-Asset_DownArrow.png";
+import { FiChevronDown } from "react-icons/fi";
+import axios from "axios";
 
 export default function NewHeader() {
   const [inView, setInView] = useState(true);
+  const [fetchQuotes, invokeFetchQuotes] = useState([]);
+
+  useEffect(() => {
+    const apiCall = async () => {
+      const data = await axios.get(
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          },
+        }
+      );
+      invokeFetchQuotes(data.data.records);
+      // console.log(fetchQuotes);
+    };
+    apiCall();
+  }, [invokeFetchQuotes]);
   // const [imgHeight, newImgHeight] = useState("new-header-logo");
 
   var chi = document.getElementById("chi");
@@ -48,14 +65,20 @@ export default function NewHeader() {
                 animationOutDuration={300}
                 isVisible={inView}
               >
-                <p className="new-header-text">
-                  We're Cherry. <br />
-                  <br /> A multi-disciplinary design studio based in Austin and
-                  New York. This is a short intro that cycles through several
-                  versions on refresh and we can update as we see fit.
-                  <br /> <br />
-                  <span className="hi-email">Say hi.</span>
-                </p>
+                {fetchQuotes.length ? (
+                  <p className="new-header-text">
+                    {fetchQuotes[0].fields.paragraph1}
+                    <br />
+                    <br />
+                    {fetchQuotes[0].fields.paragraph2}
+                    <br /> <br />
+                    <span className="hi-email">
+                      {fetchQuotes[0].fields.paragraph3}
+                    </span>
+                  </p>
+                ) : (
+                  <p></p>
+                )}
               </Animated>
             </div>
           </div>
@@ -70,20 +93,26 @@ export default function NewHeader() {
                 animationInDuration={100}
                 isVisible={inView}
               >
-                <p className="new-header-text">
-                  We're Cherry. <br />
-                  <br /> A multi-disciplinary design studio based in Austin and
-                  New York. This is a short intro that cycles through several
-                  versions on refresh and we can update as we see fit.
-                  <br /> <br />
-                  <span className="hi-email">Say hi.</span>
-                </p>
+                {fetchQuotes.length ? (
+                  <p className="new-header-text">
+                    {fetchQuotes[0].fields.paragraph1}
+                    <br />
+                    <br />
+                    {fetchQuotes[0].fields.paragraph2}
+                    <br /> <br />
+                    <span className="hi-email">
+                      {fetchQuotes[0].fields.paragraph3}
+                    </span>
+                  </p>
+                ) : (
+                  <p></p>
+                )}
               </Animated>
             </div>
             <div className="cell-down-arrow-container" onClick={DownArrowCell}>
-              <img
+              <FiChevronDown
                 className="cell-down-arrow"
-                src={downArrow}
+                color="white"
                 alt="cell-down"
               />
             </div>
