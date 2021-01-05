@@ -30,10 +30,10 @@ export default function NewHeader() {
     document.getElementById("chi").scrollIntoView();
     setInView(false);
     // newImgHeight("new-header-logo-clicked");
-    // setTimeout(() => {
-    //   setInView(true);
-    //   newImgHeight("new-header-logo");
-    // }, 1000);
+    setTimeout(() => {
+      setInView(true);
+      // newImgHeight("new-header-logo");
+    }, 1000);
   };
 
   return (
@@ -45,7 +45,7 @@ export default function NewHeader() {
               <Animated
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                animationInDuration={100}
+                animationOutDuration={300}
                 isVisible={inView}
               >
                 <p className="new-header-text">

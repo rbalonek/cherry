@@ -59,7 +59,12 @@
     height: 100px;
   }
 }
-
+@media screen and (max-width: 999px) and (min-width: 801px) {
+  .menu-btn {
+    left: 93vw;
+    top: 10px;
+  }
+}
 @media screen and (max-width: 3999px) and (min-width: 2000px) {
   .menu-btn {
     height: 150px;
