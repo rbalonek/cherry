@@ -2,6 +2,7 @@
 
 .new-header-container {
   height: 100vh;
+  /* background-color: black; */
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -13,6 +14,23 @@
   position: relative;
   left: 6%;
   top: 1%;
+}
+.vid-logo-container {
+  width: 100vw;
+  position: absolute;
+  top: 100px;
+}
+
+.vid-about {
+  width: 100vw;
+  position: absolute;
+  top: -100px;
+}
+
+.about-logo {
+  position: absolute;
+  width: 100vw;
+  /* top: 100px; */
 }
 
 .new-header-logo {

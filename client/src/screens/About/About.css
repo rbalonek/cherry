@@ -1,27 +1,5 @@
 @import url("https://use.typekit.net/qnu7szh.css");
-.vid-logo-container {
-  width: 100vh;
-  height: auto;
-  display: flex;
-  /* contain: content; */
-  position: relative;
-  /* background-image: url("https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"); */
-  top: 0;
-  /* justify-content: center; */
-  /* left: 200px; */
-  /* background-color: red; */
-  /* background-image: url("https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609886302/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO_dvmpzg.png"); */
-}
-.vid-about {
-  width: 70vw;
-  height: 100%;
-}
-.about-logo {
-  width: 100vw;
-  position: absolute;
-  /* height: 1000px; */
-  /* top: -100px; */
-}
+
 .about-x-container {
   width: 95%;
   position: sticky;
