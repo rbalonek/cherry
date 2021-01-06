@@ -10,7 +10,7 @@ export default function ProjectsBody() {
   useEffect(() => {
     const apiCall = async () => {
       const data = await axios.get(
-        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/FullScreenProjects?view=Grid%20view",
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/HighlightedProjects?view=Grid%20view",
         {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,

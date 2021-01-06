@@ -53,6 +53,21 @@ export default function NewHeader() {
     }, 1000);
   };
 
+  // <div className="vid-logo-container">
+  //       <video
+  //         className="vid-about"
+  //         autoPlay
+  //          loop
+  //         muted
+  //         src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+  //       />
+  //       <img
+  //         alt="logo"
+  //         src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609886302/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO3_gfxqdi.png"
+  //         className="about-logo"
+  //       />
+  //     </div>
+
   return (
     <>
       {window.innerWidth > 770 ? (

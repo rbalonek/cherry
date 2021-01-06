@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import "./About.css";
 
-import logo from "../../assets/logo/Cherry-Logo.png";
-
 import xOut from "../../assets/logo/Website-Asset_X.png";
 
 // <img
@@ -22,19 +20,6 @@ export default function About() {
           src={xOut}
           className="about-xOut"
           onClick={() => history.push("/")}
-        />
-      </div>
-      <div className="vid-logo-container">
-        <video
-          className="vid-about"
-          autoPlay
-          muted
-          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
-        />
-        <img
-          alt="logo"
-          src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609886302/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO3_gfxqdi.png"
-          className="about-logo"
         />
       </div>
 
