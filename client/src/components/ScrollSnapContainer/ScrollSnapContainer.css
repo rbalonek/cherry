@@ -56,14 +56,13 @@ html {
   width: 100vw;
   background-color: black;
   transition-delay: 1s;
-  z-index: 99;
   transition: ease-in-out 2s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100vh;
   position: sticky;
-  z-index: 900;
+  z-index: -1;
   top: 0px;
 }
 /* .hamburger-open-text {
