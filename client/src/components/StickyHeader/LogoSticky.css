@@ -8,6 +8,15 @@
   top: 0px;
   width: 100%;
 }
+.logo-sticky {
+  height: calc(5vw + 1.5vw);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.logo-sticky:hover {
+  cursor: pointer;
+}
 .show-none {
   display: none;
 }

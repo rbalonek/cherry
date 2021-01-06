@@ -38,7 +38,7 @@ export default function HamburgerSticky(props) {
         </Fade>
       ) : (
         <img
-          className={props.click}
+          className="logo-sticky"
           src={Logo}
           alt="logo"
           // onClick={logoClick}

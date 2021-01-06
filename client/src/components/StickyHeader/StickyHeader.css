@@ -16,21 +16,22 @@
   width: 50px;
 }
 
-.logo-sticky {
+/* .logo-sticky {
   height: calc(5vw + 1.5vw);
   position: absolute;
   left: 10px;
   top: 0px;
 }
+.logo-sticky:hover {
+  cursor: pointer;
+} */
 /* .logo-sticky-clicked {
   height: calc(6vw + 1.5vw);
   position: relative;
   left: 20px;
   top: 0px;
 } */
-.logo-sticky:hover {
-  cursor: pointer;
-}
+
 .hamburger-sticky {
   height: 75px;
   position: relative;
@@ -70,22 +71,21 @@
 }
 
 @media (max-width: 960px) {
-  .logo-sticky {
+  /* .logo-sticky {
     height: 7.9vw;
-    /* left: 30px; */
-  }
+  } */
 }
 
 @media (max-width: 830px) {
-  .logo-sticky {
+  /* .logo-sticky {
     top: 5px;
-  }
+  } */
 }
 
 @media (max-width: 770px) {
-  .logo-sticky {
+  /* .logo-sticky {
     left: 5%;
     top: 0px;
     height: 13vw;
-  }
+  } */
 }
