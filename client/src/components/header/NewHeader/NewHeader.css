@@ -47,7 +47,7 @@
 .about-logo {
   position: absolute;
   width: 100vw;
-  top: 0;
+  top: -5px;
   /* top: 100px; */
 }
 

@@ -87,6 +87,22 @@ export default function NewHeader() {
       ) : (
         <div>
           <div className="new-header-container">
+            <div className="vid-logo-container">
+              <Fade delay={1000}>
+                <video
+                  className="vid-about"
+                  autoPlay={true}
+                  loop
+                  muted
+                  src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+                />
+              </Fade>
+              <img
+                alt="logo"
+                src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609959569/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO4_z46it6.png"
+                className="about-logo"
+              />
+            </div>
             <div className="cell-down-arrow-container" onClick={DownArrowCell}>
               <FiChevronDown
                 className="cell-down-arrow"
