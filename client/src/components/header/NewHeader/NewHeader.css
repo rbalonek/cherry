@@ -2,6 +2,7 @@
 
 .new-header-container {
   height: 100vh;
+  width: 100vw;
   background-color: black;
 
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -99,8 +100,8 @@
 
 /* CELLL */
 .cell-down-arrow-container {
-  position: relative;
-  bottom: 200px;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -123,11 +124,7 @@
 
 @media (max-width: 414px) {
   .cell-down-arrow-container {
-    position: relative;
-    bottom: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    bottom: 30px;
   }
   .new-header-text-container {
     height: 100vh;
@@ -140,11 +137,11 @@
   }
 }
 @media (max-width: 412px) {
-  .cell-down-arrow-container {
+  /* .cell-down-arrow-container {
     position: relative;
     bottom: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
-  }
+  } */
 }
