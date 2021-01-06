@@ -6,11 +6,11 @@ import Home from "../screens/home/Home";
 export default function MainContainer() {
   return (
     <Switch>
-      <Route path="/about">
-        <About />
-      </Route>
-      <Route path="/">
+      <Route exact path="/" component={Home}>
         <Home />
+      </Route>
+      <Route path="/about" component={About}>
+        <About />
       </Route>
     </Switch>
   );
