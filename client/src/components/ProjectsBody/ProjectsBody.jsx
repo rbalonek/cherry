@@ -4,7 +4,7 @@ import axios from "axios";
 
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 
-export default function ProjectsBody() {
+export default function ProjectsBody(props) {
   const [fetchFullScreenProjects, invokeFetch] = useState([]);
 
   useEffect(() => {
@@ -28,6 +28,8 @@ export default function ProjectsBody() {
       {fetchFullScreenProjects.map((project) => (
         <div id={project.fields.idname} className="non-sticky-section">
           <ClickableSlider
+            handleClick={props.handleClick}
+            handleClickHamburger={props.handleClickHamburger}
             scrollToUp={project.fields.scrollUp}
             scrollToDown={project.fields.scrollDown}
             img1={project.fields.img1}

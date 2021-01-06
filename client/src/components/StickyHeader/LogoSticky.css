@@ -8,6 +8,9 @@
   top: 0px;
   width: 100%;
 }
+.show-none {
+  display: none;
+}
 
 .z-index-999 {
   z-index: 999;

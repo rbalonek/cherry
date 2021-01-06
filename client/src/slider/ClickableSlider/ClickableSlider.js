@@ -14,11 +14,15 @@ export default function ClickableSlider(props) {
   const toggleOpen = () => {
     modalToggle("modalOpen clickable-modal");
     modalTextToggle("modal-text-open");
+    props.handleClickHamburger("show-none");
+    props.handleClick("show-none");
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
+    props.handleClick("logo-sticky");
+    props.handleClickHamburger("menu-btn");
   };
 
   let pageHeight = window.innerHeight;
@@ -74,6 +78,7 @@ export default function ClickableSlider(props) {
                   copy={props.copy}
                   retouching={props.retouching}
                   photoartdirection={props.photoartdirection}
+                  // img1={props.img1}
                 />
               </Animated>
             </div>

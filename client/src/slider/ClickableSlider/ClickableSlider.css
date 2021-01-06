@@ -4,6 +4,10 @@
   height: calc(3px + 0.5vw);
 }
 
+.show-none {
+  display: none;
+}
+
 .carousel-container {
   contain: content;
 }

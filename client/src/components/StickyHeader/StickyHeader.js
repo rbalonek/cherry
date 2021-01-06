@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./StickyHeader.css";
-
 import { Bounce, Rotate, Zoom, Fade } from "react-awesome-reveal";
 import { Animated } from "react-animated-css";
-
 // import Logo from "../../assets/logo/Cherry-Logo.png";
 import Hamburger from "../Hamburger/Hamburger";
 import OpenedMenu from "../OpenedMenu/OpenedMenu";
 
-export default function StickyHeader({ toggle }) {
+export default function StickyHeader(props) {
   // const [IsVis, setIsVis] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
   // const [logo, logoToggle] = useState('logo-sticky')
@@ -40,9 +38,14 @@ export default function StickyHeader({ toggle }) {
       </div>
 
       <div onClick={toggleHamb}>
-        <Animated animationIn="fadeIn" animationInDelay={2000}>
-          <Hamburger />
-        </Animated>
+        <Fade
+          // animationIn="fadeIn"
+          // animationInDelay={2000}
+          delay={2000}
+          triggerOnce={true}
+        >
+          <Hamburger showHamburger={props.showHamburger} />
+        </Fade>
       </div>
     </div>
   );
