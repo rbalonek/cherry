@@ -21,7 +21,7 @@ export default function ProjectsBody() {
       // console.log(fetchFullScreenProjects);
     };
     apiCall();
-  }, [fetchFullScreenProjects]);
+  }, [invokeFetch]);
 
   return (
     <div>
@@ -42,6 +42,12 @@ export default function ProjectsBody() {
             client={project.fields.client}
             description={project.fields.description}
             descriptionTwo={project.fields.descriptionTwo}
+            keyart={project.fields.keyart}
+            identity={project.fields.identity}
+            motiongfx={project.fields.motiongfx}
+            copy={project.fields.copy}
+            retouching={project.fields.retouching}
+            photoartdirection={project.fields.photoartdirection}
           />
         </div>
       ))}

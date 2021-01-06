@@ -5,6 +5,7 @@ import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
 import zenscroll from "zenscroll";
+import { Animated } from "react-animated-css";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -56,12 +57,25 @@ export default function ClickableSlider(props) {
             <div className={modal} onClick={toggleClosed}></div>
 
             <div className={modalText} onClick={toggleClosed}>
-              <ModalProject
-                client={props.client}
-                name={props.name}
-                description={props.description}
-                descriptionTwo={props.descriptionTwo}
-              />
+              <Animated
+                animationIn="fadeIn"
+                animationInDuration={2000}
+                animationOut="fadeOut"
+                animationOutDuration={100}
+              >
+                <ModalProject
+                  client={props.client}
+                  name={props.name}
+                  description={props.description}
+                  descriptionTwo={props.descriptionTwo}
+                  keyart={props.keyart}
+                  identity={props.identity}
+                  motiongfx={props.motiongfx}
+                  copy={props.copy}
+                  retouching={props.retouching}
+                  photoartdirection={props.photoartdirection}
+                />
+              </Animated>
             </div>
 
             {props.img3 === undefined ? (
@@ -157,6 +171,12 @@ export default function ClickableSlider(props) {
             client={props.client}
             description={props.description}
             descriptionTwo={props.descriptionTwo}
+            keyart={props.keyart}
+            identity={props.identity}
+            motiongfx={props.motiongfx}
+            copy={props.copy}
+            retouching={props.retouching}
+            photoartdirection={props.photoartdirection}
           />
         </div>
       )}

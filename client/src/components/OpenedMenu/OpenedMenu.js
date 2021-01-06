@@ -14,10 +14,11 @@ export default function OpenedMenu() {
       >
         About
       </h1>
+      <h1 className=" hover-animation identity">Key Art</h1>
+      <h1 className=" hover-animation identity">Identity</h1>
+      <h1 className=" hover-animation ">Package</h1>
+      <h1 className=" hover-animation about">Ideas</h1>
       <h1 className=" hover-animation about">Say Hi</h1>
-      <h1 className=" hover-animation ">LinkedIn</h1>
-      <h1 className=" hover-animation ">Just Cuz</h1>
-      <h1 className=" hover-animation about">Twitter</h1>
     </div>
   );
 }
