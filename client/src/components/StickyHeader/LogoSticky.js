@@ -5,7 +5,8 @@ import "./LogoSticky.css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 
-export default function HamburgerSticky() {
+export default function HamburgerSticky(props) {
+  // const [showElement, toggleElement] = useState("logo-sticky");
   // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
 
   // const toggleHamb = () => {
@@ -22,13 +23,14 @@ export default function HamburgerSticky() {
   //   //   setIsVis(true);
   //   // }, 1000);
   // };
+  // console.log(props.click);
 
   return (
     <div className="sticky-logo-container">
       {window.innerWidth > 770 ? (
         <Fade fraction={1} delay={1000}>
           <img
-            className="logo-sticky"
+            className={props.showLogo}
             src={Logo}
             alt="logo"
             // onClick={logoClick}
@@ -36,7 +38,7 @@ export default function HamburgerSticky() {
         </Fade>
       ) : (
         <img
-          className="logo-sticky"
+          className={props.click}
           src={Logo}
           alt="logo"
           // onClick={logoClick}
