@@ -103,7 +103,7 @@
   width: 100vw;
   background-color: black;
   z-index: 999;
-  opacity: 0.7;
+  opacity: 0.8;
   transition-duration: 3000ms;
   transition: 3000ms;
 }
@@ -224,7 +224,7 @@
     width: 100vw;
     background-color: black;
     z-index: 999;
-    opacity: 0.7;
+    opacity: 0.8;
   }
   /* .clickable-modal:hover {
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),

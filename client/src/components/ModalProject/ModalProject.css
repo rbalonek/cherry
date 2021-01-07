@@ -11,16 +11,16 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
 }
-
+.modal-text {
+  color: white;
+}
 .modal-project-text-container {
   position: relative;
   top: 20%;
   padding-left: 10%;
   padding-right: 10%;
-  /* display: flex;
-  flex-direction: column; */
-
-  /* background-color: red; */
+  left: 10%;
+  max-width: 850px;
 }
 /* .bold-container {
   position: absolute;
@@ -37,44 +37,29 @@
   color: white;
   font-size: calc(10px + 1.5vw);
   align-self: flex-end;
-}
-/* .props-container {
-  position: absolute;
-  left: 250px;
-  top: 28.5%;
-} */
-
-.modal-text {
-  color: white;
+  margin-bottom: 1%;
 }
 
 .client-name {
   font-family: "degular";
-  font-size: calc(23px + 1.5vw);
+  /* font-size: calc(23px + 1.5vw); */
+  font-size: 18pt;
   position: relative;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
-/* .project-name {
-  font-family: "degular";
-  font-size: calc(15px + 0.5vw);
-  position: relative;
-  top: 8px;
-} */
-/* .description-text-container {
-  width: 60vw;
-} */
 .description-text-container {
   margin-top: -20px;
 }
 
 .description-text {
   color: white;
-  font-size: calc(15px + 1.5vw);
+  /* font-size: calc(15px + 1.5vw); */
+  font-size: 18pt;
   font-family: "degular";
   /* font-family: Deregular; */
   position: relative;
-  top: 20px;
+  top: 0px;
 }
 .what-did-container {
   margin-top: 50px;
@@ -82,34 +67,72 @@
 
 .project-keywords {
   font-family: "degular";
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(20px + 0.5vw);
   text-decoration: underline;
   margin-top: -5px;
   margin-bottom: -3px;
+  color: grey;
 }
 .project-keywords:hover {
   cursor: pointer;
+  color: white;
 }
 
-@media screen and (max-width: 3000px) and (min-width: 2000px) {
-  /* .props-container {
-    top: 29%;
-    left: 300px;
-  } */
+@media (min-width: 3000px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 20%;
+    max-width: 850px;
+  }
+  .bold-text {
+    font-size: 18pt;
+    /* font-size: calc(10px + 0.5vw); */
+  }
+}
+
+@media screen and (max-width: 3000px) and (min-width: 2500px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 20%;
+    max-width: 850px;
+  }
+  .bold-text {
+    font-size: 18pt;
+    /* font-size: calc(10px + 0.5vw); */
+  }
+}
+
+@media screen and (max-width: 2499px) and (min-width: 1500px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 20%;
+    max-width: 850px;
+  }
 }
 
 @media (max-width: 1500px) {
   .bold-text {
-    font-size: calc(10px + 1vw);
+    font-size: 18pt;
+    /* font-size: calc(10px + 0.5vw); */
   }
   .client-name {
-    font-size: calc(23px + 1vw);
+    font-size: calc(20px + 0.5vw);
   }
   .description-text {
+    top: 0px;
     font-size: calc(15px + 1vw);
   }
   .project-keywords {
-    font-size: calc(20px + 1vw);
+    font-size: calc(20px + 0.5vw);
   }
 }
 @media (max-width: 1000px) {
