@@ -6,6 +6,7 @@ import "./App.css";
 import "./assets/fonts/HelveticaNeue-RomanOTF.otf";
 import About from "./screens/About/About";
 import Home from "./screens/home/Home.jsx";
+import Projects from "./screens/Projects/Projects";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/about" component={About}>
           <About />
+        </Route>
+        <Route path="/projects" component={Projects}>
+          <Projects />
         </Route>
       </Switch>
     </Layout>
