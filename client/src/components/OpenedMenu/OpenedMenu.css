@@ -19,7 +19,7 @@
   text-align: center;
   cursor: pointer;
   margin: 0;
-  /* margin-bottom: 20px; */
+  margin-bottom: 2px;
 }
 .hover-animation:after {
   content: "";
@@ -53,18 +53,21 @@
   cursor: pointer;
 }
 .about:hover:after {
-  transform: scaleX(0.7);
+  transform: scaleX(0.6);
 }
 .keyart:hover:after {
-  transform: scaleX(0.82);
+  transform: scaleX(0.7);
+}
+.branding:hover:after {
+  transform: scaleX(0.85);
 }
 .identity:hover:after {
   transform: scaleX(0.84);
 }
 .ideas:hover:after {
-  transform: scaleX(0.65);
+  transform: scaleX(0.55);
 }
 .sayhi:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
     auto;
 }
