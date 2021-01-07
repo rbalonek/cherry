@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 }
+.vid-about-opened-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .hover-animation {
   display: inline-block;
@@ -14,7 +19,7 @@
   text-align: center;
   cursor: pointer;
   margin: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .hover-animation:after {
   content: "";
@@ -50,6 +55,16 @@
 .about:hover:after {
   transform: scaleX(0.7);
 }
+.keyart:hover:after {
+  transform: scaleX(0.82);
+}
 .identity:hover:after {
-  transform: scaleX(0.8);
+  transform: scaleX(0.84);
+}
+.ideas:hover:after {
+  transform: scaleX(0.65);
+}
+.sayhi:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
+    auto;
 }
