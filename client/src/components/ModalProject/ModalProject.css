@@ -33,6 +33,7 @@
 } */
 .bold-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
   font-size: calc(10px + 0.5vw);
   align-self: flex-end;

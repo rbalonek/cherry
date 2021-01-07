@@ -85,7 +85,7 @@
 @media (max-width: 500px) {
   .carousel .control-dots .dot {
     margin: 2% calc(1.01px + 0.25vw);
-    width: calc(8px + 0.5vw);
-    height: calc(8px + 0.5vw);
+    width: calc(4px + 0.5vw);
+    height: calc(4px + 0.5vw);
   }
 }

@@ -9,7 +9,7 @@
   width: 100%;
 }
 .logo-sticky {
-  height: calc(5vw + 1.5vw);
+  height: calc(7.5vw + 1.5vw);
   position: absolute;
   left: 10px;
   top: 0px;
@@ -83,6 +83,7 @@
 }
 .hamburger-open-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
   width: 100%;
