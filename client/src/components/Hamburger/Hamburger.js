@@ -4,7 +4,7 @@ import "./Hamburger.css";
 
 export default function Hamburger(props) {
   const [menu, menuToggle] = useState(false);
-  // const [open, setOpen] = useState("menu-btn");
+  const [open, setOpen] = useState("");
   // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
 
   // const toggleHamb = () => {
@@ -15,15 +15,17 @@ export default function Hamburger(props) {
   //   }
   // };
 
+  const menuHide = props.showHamburger;
+
   const clicked = () => {
     if (menu === true) {
       menuToggle(false);
-      // setOpen("menu-btn");
+      setOpen("");
       // hamburgerToggle("hamburger-closed");
       // console.log("closed");
     } else {
       menuToggle(true);
-      // setOpen("menu-btn open");
+      setOpen(" open");
       // hamburgerToggle("hamburger-opened-sticky");
       // console.log("Open");
     }
@@ -32,7 +34,7 @@ export default function Hamburger(props) {
   // console.log(props.showHamburger);
   return (
     <div>
-      <div className={props.showHamburger} onClick={clicked}>
+      <div className={menuHide + open} onClick={clicked}>
         {window.innerWidth > 770 ? (
           <Fade fraction={1} delay={1000} triggerOnce={true}>
             <div className="menu-btn__burger"></div>

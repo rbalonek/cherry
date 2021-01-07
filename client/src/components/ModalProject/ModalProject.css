@@ -14,7 +14,7 @@
 
 .modal-project-text-container {
   position: relative;
-  top: 15%;
+  top: 20%;
   padding-left: 10%;
   padding-right: 10%;
   /* display: flex;
@@ -33,8 +33,9 @@
 } */
 .bold-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(10px + 1.5vw);
   align-self: flex-end;
 }
 /* .props-container {
@@ -49,7 +50,7 @@
 
 .client-name {
   font-family: "degular";
-  font-size: calc(23px + 0.5vw);
+  font-size: calc(23px + 1.5vw);
   position: relative;
   margin-top: -5px;
 }
@@ -66,9 +67,10 @@
 .description-text-container {
   margin-top: -20px;
 }
+
 .description-text {
   color: white;
-  font-size: calc(15px + 0.5vw);
+  font-size: calc(15px + 1.5vw);
   font-family: "degular";
   /* font-family: Deregular; */
   position: relative;
@@ -80,7 +82,7 @@
 
 .project-keywords {
   font-family: "degular";
-  font-size: calc(20px + 0.5vw);
+  font-size: calc(20px + 1.5vw);
   text-decoration: underline;
   margin-top: -5px;
   margin-bottom: -3px;
@@ -95,14 +97,34 @@
     left: 300px;
   } */
 }
-@media (min-width: 3000px) {
-  /* .props-container {
-    top: 29%;
-    left: 500px;
+
+@media (max-width: 1500px) {
+  .bold-text {
+    font-size: calc(10px + 1vw);
   }
-  .bold-container {
-    left: 100px;
-  } */
+  .client-name {
+    font-size: calc(23px + 1vw);
+  }
+  .description-text {
+    font-size: calc(15px + 1vw);
+  }
+  .project-keywords {
+    font-size: calc(20px + 1vw);
+  }
+}
+@media (max-width: 1000px) {
+  .bold-text {
+    font-size: calc(10px + 0.5vw);
+  }
+  .client-name {
+    font-size: calc(23px + 0.5vw);
+  }
+  .description-text {
+    font-size: calc(15px + 0.5vw);
+  }
+  .project-keywords {
+    font-size: calc(20px + 0.5vw);
+  }
 }
 
 @media (max-width: 640px) {

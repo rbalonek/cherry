@@ -1,9 +1,11 @@
 .carousel .control-dots .dot {
-  margin: 3% calc(0.01px + 0.25vw);
-  width: calc(3px + 0.5vw);
-  height: calc(3px + 0.5vw);
+  margin: 0% calc(0.01px + 0.25vw);
+  width: calc(0.5px + 0.5vw);
+  height: calc(0.5px + 0.5vw);
 }
-
+.carousel .control-dots .dot {
+  box-shadow: none;
+}
 .show-none {
   display: none;
 }
@@ -245,5 +247,34 @@
   .modal-text-open:hover {
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
       auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .carousel .control-dots .dot {
+    margin: 1% calc(0.01px + 0.25vw);
+    width: calc(0.5px + 0.5vw);
+    height: calc(0.5px + 0.5vw);
+  }
+}
+
+@media (max-width: 770px) {
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 25px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
   }
 }
