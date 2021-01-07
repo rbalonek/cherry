@@ -64,6 +64,9 @@
 .what-did-container {
   margin-top: 50px;
 }
+.what-did-container:hover {
+  cursor: pointer;
+}
 
 .project-keywords {
   font-family: "degular";
