@@ -64,3 +64,7 @@
 .ideas:hover:after {
   transform: scaleX(0.65);
 }
+.sayhi:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
+    auto;
+}

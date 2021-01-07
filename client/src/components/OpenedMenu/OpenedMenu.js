@@ -33,7 +33,7 @@ export default function OpenedMenu() {
       <h1 className=" hover-animation identity">Identity</h1>
       <h1 className=" hover-animation ">Package</h1>
       <h1 className=" hover-animation ideas">Ideas</h1>
-      <h1 className=" hover-animation about">Say Hi</h1>
+      <h1 className=" hover-animation about sayhi">Say Hi</h1>
     </div>
   );
 }
