@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./StickyHeader.css";
-
 import { Bounce, Rotate, Zoom, Fade } from "react-awesome-reveal";
 import { Animated } from "react-animated-css";
-
-import Logo from "../../assets/logo/Cherry-Logo.png";
+// import Logo from "../../assets/logo/Cherry-Logo.png";
 import Hamburger from "../Hamburger/Hamburger";
 import OpenedMenu from "../OpenedMenu/OpenedMenu";
 
-export default function StickyHeader({ toggle }) {
+export default function StickyHeader(props) {
   // const [IsVis, setIsVis] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
   // const [logo, logoToggle] = useState('logo-sticky')
@@ -21,13 +19,13 @@ export default function StickyHeader({ toggle }) {
     }
   };
 
-  const logoClick = () => {
-    window.scrollTo(0, 0);
-    // setIsVis(false);
-    // setTimeout(() => {
-    //   setIsVis(true);
-    // }, 1000);
-  };
+  // const logoClick = () => {
+  //   window.scrollTo(0, 0);
+  //   // setIsVis(false);
+  //   // setTimeout(() => {
+  //   //   setIsVis(true);
+  //   // }, 1000);
+  // };
 
   return (
     <div className="sticky-header-container">
@@ -38,26 +36,16 @@ export default function StickyHeader({ toggle }) {
           </Fade>
         </div>
       </div>
-      {window.innerWidth > 770 ? (
-        <Fade fraction={1} delay={1000}>
-          <img
-            className="logo-sticky"
-            src={Logo}
-            alt="logo"
-            onClick={logoClick}
-          />
-        </Fade>
-      ) : (
-        <img
-          className="logo-sticky"
-          src={Logo}
-          alt="logo"
-          onClick={logoClick}
-        />
-      )}
 
       <div onClick={toggleHamb}>
-        <Hamburger />
+        <Fade
+          // animationIn="fadeIn"
+          // animationInDelay={2000}
+          delay={2000}
+          triggerOnce={true}
+        >
+          <Hamburger showHamburger={props.showHamburger} />
+        </Fade>
       </div>
     </div>
   );

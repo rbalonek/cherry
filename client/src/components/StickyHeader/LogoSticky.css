@@ -1,3 +1,26 @@
+.sticky-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1px;
+  position: sticky;
+  z-index: 8;
+  top: 0px;
+  width: 100%;
+}
+.logo-sticky {
+  height: calc(7.5vw + 1.5vw);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.logo-sticky:hover {
+  cursor: pointer;
+}
+.show-none {
+  display: none;
+}
+
 .z-index-999 {
   z-index: 999;
 }
@@ -60,6 +83,7 @@
 }
 .hamburger-open-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
   width: 100%;

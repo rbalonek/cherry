@@ -2,34 +2,52 @@
 
 .new-header-container {
   height: 100vh;
-  /* background-color: black; */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 100vw;
+  background-color: black;
+
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite; */
 
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
+.fade-out-onLoad {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: absolute;
+}
+
+.fade-out {
+  display: none;
+  animation-duration: 2s;
+}
+
 .new-header-logo-container {
   position: relative;
   left: 6%;
   top: 1%;
 }
+
 .vid-logo-container {
   width: 100vw;
   position: absolute;
-  top: 100px;
+  top: 30%;
 }
 
 .vid-about {
   width: 100vw;
   position: absolute;
-  top: -100px;
+  top: 0px;
+  /* top: -100px; */
 }
 
 .about-logo {
   position: absolute;
   width: 100vw;
+  top: -5px;
   /* top: 100px; */
 }
 
@@ -82,8 +100,8 @@
 
 /* CELLL */
 .cell-down-arrow-container {
-  position: relative;
-  bottom: 200px;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -106,11 +124,7 @@
 
 @media (max-width: 414px) {
   .cell-down-arrow-container {
-    position: relative;
-    bottom: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    bottom: 30px;
   }
   .new-header-text-container {
     height: 100vh;
@@ -123,11 +137,11 @@
   }
 }
 @media (max-width: 412px) {
-  .cell-down-arrow-container {
+  /* .cell-down-arrow-container {
     position: relative;
     bottom: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
-  }
+  } */
 }

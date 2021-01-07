@@ -2,18 +2,24 @@
   display: flex;
   flex-direction: column;
 }
+.vid-about-opened-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .hover-animation {
   display: inline-block;
   position: relative;
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
   width: 100%;
   text-align: center;
   cursor: pointer;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 .hover-animation:after {
   content: "";
@@ -33,6 +39,7 @@
 }
 .hamburger-open-text {
   font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
   width: 100%;
@@ -46,8 +53,21 @@
   cursor: pointer;
 }
 .about:hover:after {
+  transform: scaleX(0.6);
+}
+.keyart:hover:after {
   transform: scaleX(0.7);
 }
+.branding:hover:after {
+  transform: scaleX(0.85);
+}
 .identity:hover:after {
-  transform: scaleX(0.8);
+  transform: scaleX(0.84);
+}
+.ideas:hover:after {
+  transform: scaleX(0.55);
+}
+.sayhi:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
+    auto;
 }
