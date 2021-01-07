@@ -42,6 +42,32 @@ export default function About() {
           <br /> To build better futures at scale.
         </p>
       </div>
+      <div className="bios-container">
+        <div className="david-bio">
+          <p className="white">PARTNER/CREATIVE DIRECTOR</p>
+          <h2 className="white">David Irlanda</h2>
+          <p className="white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div className="greg-bio">
+          <p className="white">PARTNER/CREATIVE DIRECTOR</p>
+          <h2 className="white">Greg Zadrozny</h2>
+          <p className="white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
