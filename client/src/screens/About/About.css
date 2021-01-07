@@ -31,17 +31,45 @@
 }
 .white {
   color: white;
+  z-index: 999;
 }
+.vid-about-hov-menu {
+  position: absolute;
+  opacity: 0;
+}
+.vid-about-hovered-menu {
+  position: absolute;
+  opacity: 0.7;
+}
+
 .bios-container {
   display: flex;
   flex-direction: row;
 }
 .david-bio {
   padding: 20px;
-  background-color: blue;
+  /* background-color: black; */
+  z-index: 999;
+  border-radius: 10px;
+}
+.david-bio-hovered {
+  padding: 20px;
+  background-color: black;
+  z-index: 999;
+  border-radius: 10px;
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
+    auto;
 }
 
 .greg-bio {
   padding: 20px;
-  background-color: red;
+  z-index: 999;
+}
+.greg-bio-hovered {
+  padding: 20px;
+  background-color: black;
+  z-index: 999;
+  border-radius: 10px;
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610047428/Cherry/Cherry%20Clients/Logos/gregface_vcajko.png),
+    auto;
 }

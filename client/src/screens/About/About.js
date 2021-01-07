@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./About.css";
 
@@ -11,9 +11,32 @@ import xOut from "../../assets/logo/Website-Asset_X.png";
 // />
 
 export default function About() {
+  const [background, changeBackground] = useState("vid-about-hov-menu ");
+  const [davidBio, changeDavidBio] = useState("david-bio");
+  const [gregBio, changeGregBio] = useState("greg-bio");
   const history = useHistory();
+
+  const hovDavid = () => {
+    changeBackground("vid-about-hovered-menu");
+    changeDavidBio("david-bio-hovered");
+    changeGregBio("greg-bio");
+    // changeBackground("vid-about-hov-menu")
+  };
+  const hovGreg = () => {
+    changeBackground("vid-about-hovered-menu");
+    changeGregBio("greg-bio-hovered");
+    changeDavidBio("david-bio");
+  };
+
   return (
     <div>
+      <video
+        className={background}
+        autoPlay
+        loop
+        muted
+        src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+      />
       <div className="about-x-container">
         <img
           alt="xOut"
@@ -43,7 +66,11 @@ export default function About() {
         </p>
       </div>
       <div className="bios-container">
-        <div className="david-bio">
+        <div
+          className={davidBio}
+          onMouseEnter={hovDavid}
+          onMouseLeave={() => changeBackground("vid-about-hov-menu")}
+        >
           <p className="white">PARTNER/CREATIVE DIRECTOR</p>
           <h2 className="white">David Irlanda</h2>
           <p className="white">
@@ -55,7 +82,11 @@ export default function About() {
             pariatur.
           </p>
         </div>
-        <div className="greg-bio">
+        <div
+          className={gregBio}
+          onMouseEnter={hovGreg}
+          onMouseLeave={() => changeBackground("vid-about-hov-menu")}
+        >
           <p className="white">PARTNER/CREATIVE DIRECTOR</p>
           <h2 className="white">Greg Zadrozny</h2>
           <p className="white">
