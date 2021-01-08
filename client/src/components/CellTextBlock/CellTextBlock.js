@@ -1,6 +1,14 @@
 import React from "react";
+import { FiChevronDown } from "react-icons/fi";
+import zenscroll from "zenscroll";
 
 export default function CellTextBlock(props) {
+  let pageHeight = window.innerHeight;
+
+  const DownArrowCell = () => {
+    zenscroll.toY(pageHeight * 2);
+  };
+
   return (
     <div
       style={{
@@ -32,6 +40,14 @@ export default function CellTextBlock(props) {
           </>
         )}
       </p>
+
+      <div className="cell-down-arrow-container" onClick={DownArrowCell}>
+        <FiChevronDown
+          className="cell-down-arrow"
+          color="white"
+          alt="cell-down"
+        />
+      </div>
     </div>
   );
 }

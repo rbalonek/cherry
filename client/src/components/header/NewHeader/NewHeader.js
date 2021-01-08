@@ -43,7 +43,7 @@ export default function NewHeader(props) {
     // zenscroll.intoView(chi);
     // zenscroll.to(chi);
     // window.scrollBy(0, pageHeight);
-    console.log(pageHeight);
+    // console.log(pageHeight);
   };
 
   const DownArrowClick = () => {
