@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 export default function ProjectsStickyHeader() {
   const history = useHistory();
   return (
-    <div>
+    <div style={{ position: "sticky", top: "0" }}>
       <img
         onClick={() => history.push("/")}
         style={{ width: "150px" }}
