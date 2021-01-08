@@ -28,9 +28,10 @@ export default function ProjectsStickyHeader() {
       />
       <div
         style={{
-          position: "absolute",
+          position: "relative",
           right: "30px",
-          top: "0px",
+          top: "-40px",
+          zIndex: "999",
           // backgroundColor: "blue",
         }}
       >
