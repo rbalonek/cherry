@@ -124,31 +124,6 @@ export default function NewHeader(props) {
       ) : (
         <div>
           <div className="new-header-container">
-            <div>
-              {props.headerText.length ? (
-                <Fade delay={2000}>
-                  <p className="airtable-header-text">
-                    {props.headerText[0].fields.paragraph1}
-                    <span> </span>
-                    <span className="airtable-header-text-underlined">
-                      {" "}
-                      {props.headerText[0].fields.underlined}
-                    </span>
-                  </p>
-                </Fade>
-              ) : (
-                <Fade delay={2000}>
-                  <p className="airtable-header-text">
-                    Design, illustration, strong opinions and wannabe
-                    do-gooders.
-                    <span> </span>
-                    <span className="airtable-header-text-underlined">
-                      Say Hi
-                    </span>
-                  </p>
-                </Fade>
-              )}
-            </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <video

@@ -18,7 +18,9 @@
   cursor: pointer;
 }
 .show-none {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  height: 100px;
 }
 
 .z-index-999 {

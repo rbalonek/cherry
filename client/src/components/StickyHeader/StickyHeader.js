@@ -38,14 +38,7 @@ export default function StickyHeader(props) {
       </div>
 
       <div onClick={toggleHamb}>
-        <Fade
-          // animationIn="fadeIn"
-          // animationInDelay={2000}
-          delay={2000}
-          triggerOnce={true}
-        >
-          <Hamburger showHamburger={props.showHamburger} />
-        </Fade>
+        <Hamburger showHamburger={props.showHamburger} />
       </div>
     </div>
   );

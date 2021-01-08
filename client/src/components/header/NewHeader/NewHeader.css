@@ -17,12 +17,12 @@
   color: white;
   text-align: center;
   position: relative;
-  top: 10px;
-  font-family: "degular";
+  top: 50px;
+  font-family: "deregular";
 }
 .airtable-header-text-underlined {
   text-decoration: underline;
-  font-family: "degular";
+  font-family: "deregular";
 }
 .airtable-header-text-underlined:hover {
   cursor: pointer;
@@ -54,17 +54,17 @@
 }
 
 .vid-about {
-  width: 100vw;
+  width: 94vw;
   position: absolute;
   top: 0px;
-  /* top: -100px; */
+  left: 3.5%;
 }
 
 .about-logo {
   position: absolute;
-  width: 100vw;
-  top: -5px;
-  /* top: 100px; */
+  width: 95vw;
+  top: -20px;
+  left: 3%;
 }
 
 .new-header-logo {

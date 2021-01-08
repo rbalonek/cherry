@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./NewScrollSnap.css";
 import axios from "axios";
-
+import { Animated } from "react-animated-css";
 import StickyHeader from "../../StickyHeader/StickyHeader";
 import ProjectsBody from "../../ProjectsBody/ProjectsBody";
 import NewHeader from "../../header/NewHeader/NewHeader";
@@ -50,6 +50,7 @@ export default function NewScrollSnap() {
   return (
     <div className="new-scrollsnap-container">
       <StickyHeader showHamburger={showHamburger} />
+
       <div id="header" className="new-header-container">
         <NewHeader headerText={headerText} />
       </div>

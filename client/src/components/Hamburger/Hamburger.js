@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { Animated } from "react-animated-css";
 import "./Hamburger.css";
 
 export default function Hamburger(props) {
@@ -36,9 +37,15 @@ export default function Hamburger(props) {
     <div>
       <div className={menuHide + open} onClick={clicked}>
         {window.innerWidth > 770 ? (
-          <Fade fraction={1} delay={1000} triggerOnce={true}>
+          <Animated
+            animationIn="fadeInDownBig"
+            animationInDelay={1000}
+            animationInDuration={1500}
+            triggerOnce={true}
+            // isVisible={true}
+          >
             <div className="menu-btn__burger"></div>
-          </Fade>
+          </Animated>
         ) : (
           <div className="menu-btn__burger"></div>
         )}
