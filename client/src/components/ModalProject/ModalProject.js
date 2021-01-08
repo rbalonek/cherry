@@ -1,7 +1,9 @@
 import React from "react";
 import "./ModalProject.css";
+import { useHistory } from "react-router-dom";
 
 export default function ModalProject(props) {
+  const history = useHistory();
   return (
     <div className="modal-container clickable-modal">
       <div className="modal-project-text-container">
@@ -15,12 +17,40 @@ export default function ModalProject(props) {
         </div>
         <div className="what-did-container">
           <h2 className="bold-text">WHAT WE DID</h2>
-          <p className="modal-text project-keywords">{props.keyart}</p>
-          <p className="modal-text project-keywords">{props.identity}</p>
-          <p className="modal-text project-keywords">{props.motiongfx}</p>
-          <p className="modal-text project-keywords">{props.copy}</p>
-          <p className="modal-text project-keywords">{props.retouching}</p>
-          <p className="modal-text project-keywords">
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/keyart")}
+          >
+            {props.keyart}
+          </p>
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/identity")}
+          >
+            {props.identity}
+          </p>
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/motiongfx")}
+          >
+            {props.motiongfx}
+          </p>
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/copy")}
+          >
+            {props.copy}
+          </p>
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/retouching")}
+          >
+            {props.retouching}
+          </p>
+          <p
+            className="modal-text project-keywords"
+            onClick={() => history.push("/photoartdirection")}
+          >
             {props.photoartdirection}
           </p>
         </div>

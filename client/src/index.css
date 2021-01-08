@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "HelveticaNeue-RomanOTF", sans-serif;
+    "HelveticaNeue-RomanOTF", "Berthold-Akzidenz-Grotesk",
+    "AkzidenzGroteskBE-BoldEx", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
