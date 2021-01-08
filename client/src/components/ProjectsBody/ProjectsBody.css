@@ -1,12 +1,7 @@
-.scroll-snap-container {
-  scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
 .non-sticky-section {
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 .sticky-section-last {
   position: sticky;
