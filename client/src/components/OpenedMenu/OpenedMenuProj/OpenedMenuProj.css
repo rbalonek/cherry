@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AkzidenzGroteskBE-BoldEx"),
+    url(../../../assets//fonts//AkzidenzGroteskBE-BoldEx.otf) format("opentype");
+}
+
+.opened-menu-container-proj {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+.vid-about-opened-menu-proj {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.hover-animation-proj {
+  display: inline-block;
+  position: relative;
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.hover-animation-proj:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.hover-animation-proj:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.hamburger-open-text-proj {
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+.hamburger-open-text-proj:hover {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.about-proj:hover:after {
+  transform: scaleX(0.22);
+}
+.keyart-proj:hover:after {
+  transform: scaleX(0.25);
+}
+.branding-proj:hover:after {
+  transform: scaleX(0.33);
+}
+.packaging-proj:hover:after {
+  transform: scaleX(0.38);
+}
+/* .identity-proj:hover:after {
+  transform: scaleX(0.4);
+} */
+.ideas-proj:hover:after {
+  transform: scaleX(0.2);
+}
+.sayhi-proj:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
+    auto;
+}
