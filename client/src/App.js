@@ -13,17 +13,8 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route exact path="/" component={Home}>
+        <Route path="/" component={Home}>
           <MainContainer />
-        </Route>
-        <Route path="/about" component={About}>
-          <About />
-        </Route>
-        <Route path="/projects" component={Projects}>
-          <Projects />
-        </Route>
-        <Route path="/logos" component={ProjLogos}>
-          <ProjLogos />
         </Route>
       </Switch>
     </Layout>
