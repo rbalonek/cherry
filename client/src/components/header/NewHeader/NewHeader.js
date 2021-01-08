@@ -12,22 +12,25 @@ export default function NewHeader() {
   // const [fetchVideo, invokeFetchVideo] = useState([]);
   // const [visible, setVisible] = useState(true);
   // const [classSet, setClassSet] = useState("fade-out-onLoad");
+  const [headerText, invokeHeaderText] = useState([]);
 
-  // useEffect(() => {
-  //   const apiCall = async () => {
-  //     const data = await axios.get(
-  //       "https://api.airtable.com/v0/appVey7bH2bLRXZsC/VideoForLogo?view=Grid%20view",
-  //       {
-  //         headers: {
-  //           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //         },
-  //       }
-  //     );
-  //     invokeFetchVideo(data.data.records);
-  //     // console.log(fetchVideo[0].fields.link);
-  //   };
-  //   apiCall();
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      const apiCall = async () => {
+        const data = await axios.get(
+          "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+            },
+          }
+        );
+        invokeHeaderText(data.data.records);
+        // console.log(headerText);
+      };
+      apiCall();
+    }, 1000);
+  }, []);
 
   // const [imgHeight, newImgHeight] = useState("new-header-logo");
   // var chi = document.getElementById("chi");
@@ -61,11 +64,45 @@ export default function NewHeader() {
   //   return () => clearTimeout(timer);
   // }, []);
 
+  // <div className="header-text-container">
+  //       <Fade delay={1000}>
+  // <p className="header-text">
+  //   Design, illustration, strong opinions and wannabe do-gooders.
+  //   <span> </span>
+  //   <span class="underline">Say hi</span>
+  // </p>
+  //       </Fade>
+
   return (
     <>
       {window.innerWidth > 770 ? (
         <div>
           <div className="new-header-container" onClick={DownArrowClick}>
+            <div>
+              {headerText.length ? (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    {headerText[0].fields.paragraph1}
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      {" "}
+                      {headerText[0].fields.underlined}
+                    </span>
+                  </p>
+                </Fade>
+              ) : (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    Design, illustration, strong opinions and wannabe
+                    do-gooders.
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      Say Hi
+                    </span>
+                  </p>
+                </Fade>
+              )}
+            </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <video
@@ -87,6 +124,31 @@ export default function NewHeader() {
       ) : (
         <div>
           <div className="new-header-container">
+            <div>
+              {headerText.length ? (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    {headerText[0].fields.paragraph1}
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      {" "}
+                      {headerText[0].fields.underlined}
+                    </span>
+                  </p>
+                </Fade>
+              ) : (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    Design, illustration, strong opinions and wannabe
+                    do-gooders.
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      Say Hi
+                    </span>
+                  </p>
+                </Fade>
+              )}
+            </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <video
