@@ -3,6 +3,7 @@ import "./ProjectsBody.css";
 import axios from "axios";
 
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
+import CellTextBlock from "../CellTextBlock/CellTextBlock";
 
 export default function ProjectsBody(props) {
   const [fetchFullScreenProjects, invokeFetch] = useState([]);
