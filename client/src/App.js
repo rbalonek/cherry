@@ -7,6 +7,7 @@ import "./assets/fonts/HelveticaNeue-RomanOTF.otf";
 import About from "./screens/About/About";
 import Home from "./screens/home/Home.jsx";
 import Projects from "./screens/Projects/Projects";
+import ProjLogos from "./screens/Projects/ProjLogos/ProjLogos";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/projects" component={Projects}>
           <Projects />
+        </Route>
+        <Route path="/logos" component={ProjLogos}>
+          <ProjLogos />
         </Route>
       </Switch>
     </Layout>
