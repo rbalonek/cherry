@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import { Fade } from "react-awesome-reveal";
 
 import ProjectsNavBar from "./ProjectsNavBar/ProjectsNavBar";
 import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
@@ -39,3 +40,14 @@ export default function Projects(props) {
     </div>
   );
 }
+
+// <div
+//                     style={{
+//                       backgroundImage: `url( ${project.fields.img1} )`,
+//                       height: "100%",
+//                       width: "auto",
+//                       backgroundPosition: "center",
+//                       backgroundSize: "cover",
+//                       backgroundRepeat: "no-repeat",
+//                     }}
+//                   />
