@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CellTextBlock() {
+export default function CellTextBlock(props) {
   return (
     <div
       style={{
@@ -20,8 +20,16 @@ export default function CellTextBlock() {
           paddingRight: "20px",
         }}
       >
-        We're an art & design studio specializing in branding for film and
-        television.
+        {props.headerText.length ? (
+          <p>{props.headerText[0].fields.cellBlurb}</p>
+        ) : (
+          <>
+            <p>
+              We're an art & design studio specializing in branding for film &
+              television.
+            </p>
+          </>
+        )}
       </p>
     </div>
   );

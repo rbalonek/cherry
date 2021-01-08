@@ -5,32 +5,32 @@ import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { Fade } from "react-awesome-reveal";
 import { FiChevronDown } from "react-icons/fi";
-import axios from "axios";
+// import axios from "axios";
 
-export default function NewHeader() {
+export default function NewHeader(props) {
   // const [inView, setInView] = useState(true);
   // const [fetchVideo, invokeFetchVideo] = useState([]);
   // const [visible, setVisible] = useState(true);
   // const [classSet, setClassSet] = useState("fade-out-onLoad");
-  const [headerText, invokeHeaderText] = useState([]);
+  // const [headerText, invokeHeaderText] = useState([]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      const apiCall = async () => {
-        const data = await axios.get(
-          "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-            },
-          }
-        );
-        invokeHeaderText(data.data.records);
-        // console.log(headerText);
-      };
-      apiCall();
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     const apiCall = async () => {
+  //       const data = await axios.get(
+  //         "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+  //         {
+  //           headers: {
+  //             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+  //           },
+  //         }
+  //       );
+  //       invokeHeaderText(data.data.records);
+  //       // console.log(headerText);
+  //     };
+  //     apiCall();
+  //   }, 1000);
+  // }, []);
 
   // const [imgHeight, newImgHeight] = useState("new-header-logo");
   // var chi = document.getElementById("chi");
@@ -79,14 +79,14 @@ export default function NewHeader() {
         <div>
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
-              {headerText.length ? (
+              {props.headerText.length ? (
                 <Fade delay={2000}>
                   <p className="airtable-header-text">
-                    {headerText[0].fields.paragraph1}
+                    {props.headerText[0].fields.paragraph1}
                     <span> </span>
                     <span className="airtable-header-text-underlined">
                       {" "}
-                      {headerText[0].fields.underlined}
+                      {props.headerText[0].fields.underlined}
                     </span>
                   </p>
                 </Fade>
@@ -125,14 +125,14 @@ export default function NewHeader() {
         <div>
           <div className="new-header-container">
             <div>
-              {headerText.length ? (
+              {props.headerText.length ? (
                 <Fade delay={2000}>
                   <p className="airtable-header-text">
-                    {headerText[0].fields.paragraph1}
+                    {props.headerText[0].fields.paragraph1}
                     <span> </span>
                     <span className="airtable-header-text-underlined">
                       {" "}
-                      {headerText[0].fields.underlined}
+                      {props.headerText[0].fields.underlined}
                     </span>
                   </p>
                 </Fade>

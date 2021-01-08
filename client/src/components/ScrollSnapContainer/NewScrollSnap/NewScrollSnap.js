@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewScrollSnap.css";
+import axios from "axios";
 
 import StickyHeader from "../../StickyHeader/StickyHeader";
 import ProjectsBody from "../../ProjectsBody/ProjectsBody";
@@ -10,6 +11,25 @@ import CellTextBlock from "../../CellTextBlock/CellTextBlock";
 export default function NewScrollSnap() {
   const [showLogo, toggleShowLogo] = useState("logo-sticky");
   const [showHamburger, toggleShowHamburger] = useState("menu-btn");
+  const [headerText, invokeHeaderText] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      const apiCall = async () => {
+        const data = await axios.get(
+          "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+            },
+          }
+        );
+        invokeHeaderText(data.data.records);
+        // console.log(headerText);
+      };
+      apiCall();
+    }, 1000);
+  }, []);
 
   const handleClick = () => {
     if (showLogo == "logo-sticky") {
@@ -31,10 +51,10 @@ export default function NewScrollSnap() {
     <div className="new-scrollsnap-container">
       <StickyHeader showHamburger={showHamburger} />
       <div id="header" className="new-header-container">
-        <NewHeader />
+        <NewHeader headerText={headerText} />
       </div>
 
-      {window.innerWidth < 770 && <CellTextBlock />}
+      {window.innerWidth < 770 && <CellTextBlock headerText={headerText} />}
 
       <LogoSticky showLogo={showLogo} />
       <ProjectsBody
