@@ -45,6 +45,7 @@ export default function CellTextBlock(props) {
         <FiChevronDown
           className="cell-down-arrow"
           color="white"
+          opacity=".5"
           alt="cell-down"
         />
       </div>

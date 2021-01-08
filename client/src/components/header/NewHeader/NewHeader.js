@@ -144,6 +144,7 @@ export default function NewHeader(props) {
               <FiChevronDown
                 className="cell-down-arrow"
                 color="white"
+                opacity=".5"
                 alt="cell-down"
               />
             </div>
