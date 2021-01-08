@@ -26,7 +26,7 @@ export default function NewHeader() {
           }
         );
         invokeHeaderText(data.data.records);
-        // console.log(headerText[0].fields.underlined);
+        // console.log(headerText);
       };
       apiCall();
     }, 1000);
@@ -79,24 +79,29 @@ export default function NewHeader() {
         <div>
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
-              <Fade delay={2000}>
-                <p
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    position: "relative",
-                    top: "10px",
-                    fontFamily: "degular",
-                  }}
-                >
-                  {headerText[0].fields.paragraph1}
-                  <span> </span>
-                  <span style={{ textDecoration: "underline" }}>
-                    {" "}
-                    {headerText[0].fields.underlined}
-                  </span>
-                </p>
-              </Fade>
+              {headerText.length ? (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    {headerText[0].fields.paragraph1}
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      {" "}
+                      {headerText[0].fields.underlined}
+                    </span>
+                  </p>
+                </Fade>
+              ) : (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    Design, illustration, strong opinions and wannabe
+                    do-gooders.
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      Say Hi
+                    </span>
+                  </p>
+                </Fade>
+              )}
             </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
@@ -119,6 +124,31 @@ export default function NewHeader() {
       ) : (
         <div>
           <div className="new-header-container">
+            <div>
+              {headerText.length ? (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    {headerText[0].fields.paragraph1}
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      {" "}
+                      {headerText[0].fields.underlined}
+                    </span>
+                  </p>
+                </Fade>
+              ) : (
+                <Fade delay={2000}>
+                  <p className="airtable-header-text">
+                    Design, illustration, strong opinions and wannabe
+                    do-gooders.
+                    <span> </span>
+                    <span className="airtable-header-text-underlined">
+                      Say Hi
+                    </span>
+                  </p>
+                </Fade>
+              )}
+            </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <video

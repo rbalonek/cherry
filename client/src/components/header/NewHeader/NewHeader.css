@@ -12,6 +12,22 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_DownArrow_crqris.png),
     auto;
 }
+
+.airtable-header-text {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  font-family: "degular";
+}
+.airtable-header-text-underlined {
+  text-decoration: underline;
+  font-family: "degular";
+}
+.airtable-header-text-underlined:hover {
+  cursor: pointer;
+}
+
 .fade-out-onLoad {
   background-color: black;
   width: 100vw;
@@ -119,6 +135,14 @@
     padding-left: 10%;
     padding-right: 10%;
     font-size: 7.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .airtable-header-text,
+  .airtable-header-text-underlined {
+    font-size: 12px;
+    top: 40px;
   }
 }
 
