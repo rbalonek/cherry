@@ -11,20 +11,31 @@ export default function Projects(props) {
     <div style={{ width: "100vw" }}>
       <ProjectsStickyHeader />
       <ProjectsNavBar />
-      {projects.map((project) => (
-        <>
-          {project.fields.MainProjectPhoto === true && (
-            <>
-              <p style={{ color: "white" }}>{project.fields.copy}</p>
-              <img
-                style={{ width: "200px" }}
-                alt={project.fields.img1}
-                src={project.fields.img1}
-              />
-            </>
-          )}
-        </>
-      ))}
+
+      <div className="masonry">
+        {projects.map((project) => (
+          <>
+            {project.fields.MainProjectPhoto === true && (
+              <>
+                <div className="masonry-brick">
+                  <img
+                    style={{
+                      // height: " -webkit-fill-available",
+                      // height: "250px",
+                      // width: "unset",
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                      // overflow: "hidden",
+                    }}
+                    alt={project.fields.img1}
+                    src={project.fields.img1}
+                  />
+                </div>
+              </>
+            )}
+          </>
+        ))}
+      </div>
     </div>
   );
 }

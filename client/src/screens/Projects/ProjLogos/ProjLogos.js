@@ -12,9 +12,8 @@ export default function ProjLogos(props) {
         <>
           {project.fields.logo && (
             <>
-              <p style={{ color: "white" }}>{project.fields.logo}</p>
               <img
-                style={{ width: "200px" }}
+                style={{ width: "200px", padding: "20px" }}
                 alt={project.fields.img1}
                 src={project.fields.img1}
               />
