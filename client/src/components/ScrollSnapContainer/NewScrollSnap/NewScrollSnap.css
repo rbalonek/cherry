@@ -2,12 +2,15 @@
   /* height: 100vh; */
   width: 100vw;
   background-color: black;
+  scroll-snap-type: inline proximity;
+  -webkit-overflow-scrolling: touch;
 }
 
 .new-header-container {
   position: sticky;
   top: 0;
   width: 100vw;
+  scroll-snap-align: start;
 }
 
 .sticky-section {

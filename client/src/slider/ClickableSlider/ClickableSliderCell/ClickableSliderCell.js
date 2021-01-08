@@ -22,28 +22,71 @@ export default function ClickableSliderCell(props) {
   };
 
   let pageHeight = window.innerHeight;
+  let common = document.getElementById("common");
 
-  // var up = document.getElementById(`#${props.scrollToUp}`);
-  // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
+  var up = props.scrollToUp;
+  var scrollingDown = props.scrollToDown;
+  // console.log("up", props.scrollToUp);
+  // console.log("up", props.scrollToUp);
+  // console.log("down", scrollingDown);
   const ArrowUp100Vh = () => {
-    zenscroll.toY(pageHeight * props.scrollToUp);
+    // zenscroll.toY(pageHeight * props.scrollToUp);
+    // zenscroll.intoView(common);
+    zenscroll.to(up);
+    // window.scrollBy(0, pageHeight);
+    // console.log("up");
+  };
+  // console.log(pageHeight * props.scrollToDown);
+  // console.log("down scrolls", props.scrollToDown);
+
+  const ArrowDown100Vh = () => {
+    zenscroll.toY(pageHeight * (props.scrollToDown + 1));
+    // zenscroll.intoView(common);
+    // zenscroll.to(scrollingDown);
+    // window.scrollBy(0, pageHeight);
+    // console.log("down");
+  };
+  const ScrollUp100Vh = () => {
+    // zenscroll.toY(window.innerHeight * props.scrollToUp);
+    // zenscroll.toY(pageHeight);
     // zenscroll.intoView(chi);
     // zenscroll.to(up);
     // window.scrollBy(0, pageHeight);
-    console.log("up");
+    // console.log("up");
   };
-
-  const ArrowDown100Vh = () => {
-    zenscroll.toY(pageHeight * props.scrollToDown);
-    // zenscroll.intoView(chi);
+  const ScrollDown100Vh = () => {
+    // zenscroll.toY(pageHeight);
+    zenscroll.intoView(common);
     // zenscroll.to(scrollingDown);
+    // zenscroll.toY(0, pageHeight);
+    // console.log("down");
     // window.scrollBy(0, pageHeight);
-    console.log("down");
   };
 
+  // var scrollableElement = document.body; //document.getElementById("carousel-container-cell"); //
+
+  // scrollableElement.addEventListener("wheel", checkScrollDirection);
+
+  // function checkScrollDirection(event) {
+  //   if (checkScrollDirectionIsUp(event)) {
+  //     console.log("UP");
+  //     zenscroll.toY(0, pageHeight);
+  //   } else {
+  //     console.log("Down");
+  //     zenscroll.toY(0, -pageHeight);
+  //   }
+  // }
+
+  // function checkScrollDirectionIsUp(event) {
+  //   if (event.wheelDelta) {
+  //     // return event.wheelDelta > 0;
+  //   }
+  //   // return event.deltaY < 0;
+  // }
+  // // onClick={ScrollDown100Vh}
   return (
     <div>
-      <div className="carousel-container-cell">
+      <div id="carousel-container-cell" className="carousel-container-cell">
         <div className={modal} onClick={toggleClosed}></div>
 
         <div className={modalText} onClick={toggleClosed}>
