@@ -1,8 +1,12 @@
 import React from "react";
+import ProjectsNavBar from "../ProjectsNavBar/ProjectsNavBar";
+import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 
 export default function ProjRetouching(props) {
   return (
     <div>
+      <ProjectsStickyHeader />
+      <ProjectsNavBar />
       {props.projects.map((project) => (
         <>
           {project.fields.retouching && (

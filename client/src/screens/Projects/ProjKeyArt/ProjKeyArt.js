@@ -1,9 +1,14 @@
 import React from "react";
 import "./ProjKeyArt.css";
 
+import ProjectsNavBar from "../ProjectsNavBar/ProjectsNavBar";
+import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
+
 export default function ProjKeyArt(props) {
   return (
-    <div>
+    <div style={{ width: "100vw" }}>
+      <ProjectsStickyHeader />
+      <ProjectsNavBar />
       {props.projects.map((project) => (
         <>
           {project.fields.keyart && (

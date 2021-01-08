@@ -1,9 +1,13 @@
 import React from "react";
+import ProjectsNavBar from "../ProjectsNavBar/ProjectsNavBar";
+import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjLogos.css";
 
 export default function ProjLogos(props) {
   return (
-    <div>
+    <div style={{ width: "100vw" }}>
+      <ProjectsStickyHeader />
+      <ProjectsNavBar />
       {props.projects.map((project) => (
         <>
           {project.fields.logo && (

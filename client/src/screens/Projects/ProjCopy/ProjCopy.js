@@ -1,9 +1,14 @@
 import React from "react";
 import "./ProjCopy.css";
 
+import ProjectsNavBar from "../ProjectsNavBar/ProjectsNavBar";
+import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
+
 export default function ProjCopy(props) {
   return (
-    <div>
+    <div style={{ width: "100vw" }}>
+      <ProjectsStickyHeader />
+      <ProjectsNavBar />
       {props.projects.map((project) => (
         <>
           {project.fields.copy && (

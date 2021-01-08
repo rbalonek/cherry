@@ -1,9 +1,13 @@
 import React from "react";
+import ProjectsNavBar from "../ProjectsNavBar/ProjectsNavBar";
+import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjMotionGfx.css";
 
 export default function ProjMotionGfx(props) {
   return (
     <div>
+      <ProjectsStickyHeader />
+      <ProjectsNavBar />
       {props.projects.map((project) => (
         <>
           {project.fields.motiongfx && (
