@@ -14,40 +14,49 @@ export default function ProjectsNavBar() {
         }}
       >
         <h3
-          style={{ color: "white" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => history.push("/projects")}
         >
           All Projects
         </h3>
-        <h3 style={{ color: "white" }} onClick={() => history.push("/logos")}>
+        <h3
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() => history.push("/logos")}
+        >
           LOGO
         </h3>
-        <h3 style={{ color: "white" }} onClick={() => history.push("/keyart")}>
+        <h3
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() => history.push("/keyart")}
+        >
           Key Art
         </h3>
         <h3
-          style={{ color: "white" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => history.push("/identity")}
         >
           Identity
         </h3>
         <h3
-          style={{ color: "white" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => history.push("/motiongfx")}
         >
           Motion GFX
         </h3>
-        <h3 style={{ color: "white" }} onClick={() => history.push("/copy")}>
+        <h3
+          style={{ color: "white", cursor: "pointer" }}
+          onClick={() => history.push("/copy")}
+        >
           Copy
         </h3>
         <h3
-          style={{ color: "white" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => history.push("/retouching")}
         >
           Retouching
         </h3>
         <h3
-          style={{ color: "white" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => history.push("/photoartdirection")}
         >
           Photo Art Direction
