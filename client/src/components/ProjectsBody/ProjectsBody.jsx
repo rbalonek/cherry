@@ -24,7 +24,7 @@ export default function ProjectsBody(props) {
   }, [invokeFetch]);
 
   return (
-    <div>
+    <div className="scroll-snap-container">
       {fetchFullScreenProjects.map((project) => (
         <div id={project.fields.idname} className="non-sticky-section">
           <ClickableSlider
