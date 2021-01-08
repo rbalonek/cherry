@@ -10,6 +10,7 @@ export default function CellTextBlock(props) {
         position: "relative",
         display: "flex",
         alignItems: "center",
+        scrollSnapAlign: "start",
       }}
     >
       <p
