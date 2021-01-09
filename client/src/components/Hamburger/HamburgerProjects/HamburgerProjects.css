@@ -1,3 +1,10 @@
+.proj-menu {
+  /* position: relative;
+  top: -5px; */
+  margin-top: -25px;
+  /* padding-left: 20px; */
+}
+
 .menu-projects-hamb {
   position: absolute;
   top: -25px;
@@ -9,7 +16,7 @@
 .open-menu {
   display: inline;
   position: absolute;
-  top: -8px;
+  top: -20px;
 }
 .menu-btn-proj {
   position: relative;

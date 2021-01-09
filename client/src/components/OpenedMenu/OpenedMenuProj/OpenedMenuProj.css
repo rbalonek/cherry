@@ -86,3 +86,14 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
     auto;
 }
+
+@media screen and (max-width: 5999px) and (min-width: 2000px) {
+  .hover-animation-proj {
+    font-size: calc(40px + 7vw);
+  }
+}
+@media screen and (max-width: 1999px) and (min-width: 1000px) {
+  .hover-animation-proj {
+    font-size: calc(40px + 3vw);
+  }
+}

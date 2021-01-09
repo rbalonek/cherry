@@ -28,7 +28,12 @@ export default function OpenedMenuProj() {
       <h1 className=" hover-animation-proj about-proj" onClick={clickedAbout}>
         About
       </h1>
-      <h1 className=" hover-animation-proj keyart-proj">Key Art</h1>
+      <h1
+        className=" hover-animation-proj keyart-proj"
+        onClick={() => history.push("/keyart")}
+      >
+        Key Art
+      </h1>
       <h1 className=" hover-animation-proj branding-proj">Branding</h1>
       <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
       <h1 className=" hover-animation-proj ideas-proj">Ideas</h1>
