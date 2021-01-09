@@ -6,16 +6,21 @@ import "./ClickableSlider.css";
 import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
+import { useLockBodyScroll, useToggle } from "react-use";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
+  const [locked, toggleLocked] = useToggle(false);
+
+  useLockBodyScroll(locked);
 
   const toggleOpen = () => {
     modalToggle("modalOpen clickable-modal");
     modalTextToggle("modal-text-open");
     props.handleClickHamburger("show-none");
     props.handleClick("show-none");
+    toggleLocked();
   };
 
   const toggleClosed = () => {
@@ -23,6 +28,7 @@ export default function ClickableSlider(props) {
     modalTextToggle("modal-text-closed");
     props.handleClick("logo-sticky");
     props.handleClickHamburger("menu-btn");
+    toggleLocked();
   };
 
   let pageHeight = window.innerHeight;
