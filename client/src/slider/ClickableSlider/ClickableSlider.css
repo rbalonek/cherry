@@ -1,11 +1,22 @@
 .carousel .control-dots .dot {
-  margin: 0% calc(0.01px + 0.25vw);
+  margin: 0% calc(0.01px + 0.2vw);
   width: calc(0.5px + 0.5vw);
   height: calc(0.5px + 0.5vw);
 }
 .carousel .control-dots .dot {
   box-shadow: none;
 }
+/* .carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: red;
+} */
+
+/* .carousel .control-dots .dot {
+  background-color: white;
+} */
+
 .show-none {
   /* display: none; */
   opacity: 0;
