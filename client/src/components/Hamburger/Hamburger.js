@@ -42,6 +42,7 @@ export default function Hamburger(props) {
             animationInDelay={1000}
             animationInDuration={1500}
             triggerOnce={true}
+
             // isVisible={true}
           >
             <div className="menu-btn__burger"></div>
