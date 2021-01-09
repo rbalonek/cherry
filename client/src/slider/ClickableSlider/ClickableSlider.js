@@ -21,7 +21,6 @@ export default function ClickableSlider(props) {
     props.handleClickHamburger("show-none");
     props.handleClick("show-none");
     toggleLocked();
-    ///
   };
 
   const toggleClosed = () => {
