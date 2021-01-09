@@ -1,0 +1,12 @@
+.projects-nav-text {
+  color: white;
+  cursor: pointer;
+  justify-content: space-around;
+  font-size: calc(10px + 0.5vw);
+}
+
+@media (max-width: 550px) {
+  .projects-nav-text {
+    font-size: calc(5px + 0.5vw);
+  }
+}

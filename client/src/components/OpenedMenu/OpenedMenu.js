@@ -29,7 +29,12 @@ export default function OpenedMenu() {
       <h1 className=" hover-animation about" onClick={clickedAbout}>
         About
       </h1>
-      <h1 className=" hover-animation keyart">Key Art</h1>
+      <h1
+        className=" hover-animation keyart"
+        onClick={() => history.push("/keyart")}
+      >
+        Key Art
+      </h1>
       <h1 className=" hover-animation branding">Branding</h1>
       <h1 className=" hover-animation ">Packaging</h1>
       <h1 className=" hover-animation ideas">Ideas</h1>

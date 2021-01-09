@@ -8,7 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 // import axios from "axios";
 
 export default function NewHeader(props) {
-  // const [inView, setInView] = useState(true);
+  const [inView, setInView] = useState(true);
   // const [fetchVideo, invokeFetchVideo] = useState([]);
   // const [visible, setVisible] = useState(true);
   // const [classSet, setClassSet] = useState("fade-out-onLoad");
@@ -40,6 +40,10 @@ export default function NewHeader(props) {
 
   const DownArrowCell = () => {
     zenscroll.toY(pageHeight);
+    setInView(false);
+    setTimeout(() => {
+      setInView(true);
+    }, 1000);
     // zenscroll.intoView(chi);
     // zenscroll.to(chi);
     // window.scrollBy(0, pageHeight);
@@ -48,6 +52,10 @@ export default function NewHeader(props) {
 
   const DownArrowClick = () => {
     document.getElementById("chi").scrollIntoView();
+    setInView(false);
+    setTimeout(() => {
+      setInView(true);
+    }, 1000);
     // setInView(false);
     // newImgHeight("new-header-logo-clicked");
     // setTimeout(() => {
@@ -80,7 +88,14 @@ export default function NewHeader(props) {
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
               {props.headerText.length ? (
-                <Fade delay={2000}>
+                <Animated
+                  animationInDelay={2000}
+                  animationIn="fadeIn"
+                  animationOut="fadeOut"
+                  animationInDuration={1000}
+                  animationOutDuration={500}
+                  isVisible={inView}
+                >
                   <p className="airtable-header-text">
                     {props.headerText[0].fields.paragraph1}
                     <span> </span>
@@ -89,9 +104,16 @@ export default function NewHeader(props) {
                       {props.headerText[0].fields.underlined}
                     </span>
                   </p>
-                </Fade>
+                </Animated>
               ) : (
-                <Fade delay={2000}>
+                <Animated
+                  animationInDelay={2000}
+                  animationIn="fadeIn"
+                  animationOut="fadeOut"
+                  animationInDuration={1000}
+                  animationOutDuration={500}
+                  isVisible={inView}
+                >
                   <p className="airtable-header-text">
                     Design, illustration, strong opinions and wannabe
                     do-gooders.
@@ -100,11 +122,18 @@ export default function NewHeader(props) {
                       Say Hi
                     </span>
                   </p>
-                </Fade>
+                </Animated>
               )}
             </div>
             <div className="vid-logo-container">
-              <Fade delay={1000}>
+              <Animated
+                animationInDelay={1000}
+                animationIn="fadeIn"
+                animationOut="fadeOut"
+                animationInDuration={1000}
+                animationOutDuration={500}
+                isVisible={inView}
+              >
                 <video
                   className="vid-about"
                   autoPlay
@@ -112,7 +141,7 @@ export default function NewHeader(props) {
                   muted
                   src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
                 />
-              </Fade>
+              </Animated>
               <img
                 alt="logo"
                 src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609959569/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO4_z46it6.png"
@@ -124,31 +153,6 @@ export default function NewHeader(props) {
       ) : (
         <div>
           <div className="new-header-container">
-            <div>
-              {props.headerText.length ? (
-                <Fade delay={2000}>
-                  <p className="airtable-header-text">
-                    {props.headerText[0].fields.paragraph1}
-                    <span> </span>
-                    <span className="airtable-header-text-underlined">
-                      {" "}
-                      {props.headerText[0].fields.underlined}
-                    </span>
-                  </p>
-                </Fade>
-              ) : (
-                <Fade delay={2000}>
-                  <p className="airtable-header-text">
-                    Design, illustration, strong opinions and wannabe
-                    do-gooders.
-                    <span> </span>
-                    <span className="airtable-header-text-underlined">
-                      Say Hi
-                    </span>
-                  </p>
-                </Fade>
-              )}
-            </div>
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <video
@@ -169,6 +173,7 @@ export default function NewHeader(props) {
               <FiChevronDown
                 className="cell-down-arrow"
                 color="white"
+                opacity=".5"
                 alt="cell-down"
               />
             </div>

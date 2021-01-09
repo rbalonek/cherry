@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ProjectsStickyHeader.css";
 import Logo from "../../../assets/logo/Cherry-Logo.png";
 import { useHistory } from "react-router-dom";
 import HamburgerProjects from "../../../components/Hamburger/HamburgerProjects/HamburgerProjects";
@@ -19,22 +20,14 @@ export default function ProjectsStickyHeader() {
   // };
 
   return (
-    <div style={{ position: "sticky", top: "0" }}>
+    <div style={{ position: "sticky", top: "10px" }}>
       <img
         onClick={() => history.push("/")}
-        style={{ width: "150px" }}
+        style={{ width: "150px", position: "relative", left: "20px" }}
         src={Logo}
         alt="logo"
       />
-      <div
-        style={{
-          position: "relative",
-          right: "30px",
-          top: "-40px",
-          zIndex: "999",
-          // backgroundColor: "blue",
-        }}
-      >
+      <div className="hamburger-holder-project">
         <HamburgerProjects />
       </div>
     </div>
