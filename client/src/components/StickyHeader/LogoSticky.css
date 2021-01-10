@@ -9,9 +9,9 @@
   width: 100%;
 }
 .logo-sticky {
-  height: calc(7.5vw + 1.5vw);
+  height: calc(15px + 5vw);
   position: absolute;
-  left: 10px;
+  left: 1%;
   top: 0px;
 }
 .logo-sticky:hover {
@@ -100,5 +100,8 @@
   cursor: pointer;
 }
 
-media screen and (max-width: 6000px) and (min-width: 2800px) {
+@media screen and (max-width: 6000px) and (min-width: 2800px) {
+  /* .logo-sticky {
+    height: calc(80px + 5vw);
+  } */
 }

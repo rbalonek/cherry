@@ -7,8 +7,8 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   /* left: 93.5vw; */
-  left: 94vw;
-  top: 0px;
+  left: 95vw;
+  top: 5px;
   z-index: 990;
   opacity: 1;
 }
@@ -69,23 +69,24 @@
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
 }
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
-@media (min-width: 2000px) {
+@media (min-width: 4000px) {
   .menu-btn {
-    top: 20px;
-    left: 94.5vw;
+    top: 80px;
+    left: 96.5vw;
   }
   .menu-btn__burger {
-    width: 60px;
-    height: 5.5px;
+    width: 70px;
+    height: 3px;
   }
 
   .menu-btn__burger::before,
   .menu-btn__burger::after {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 5.5px;
+    width: 70px;
+    height: 3px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -104,9 +105,61 @@
     position: absolute;
     top: -15px;
     left: -20px;
-    /* background-color: red; */
     opacity: 0.2;
     border-radius: 30%;
+  }
+}
+
+@media screen and (max-width: 4000px) and (min-width: 3000px) {
+  .menu-btn {
+    top: 50px;
+    left: 96vw;
+  }
+  .menu-btn__burger {
+    width: 60px;
+    height: 3px;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-20px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(20px);
+  }
+  .menu-btn-cursor-container {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    opacity: 0.2;
+    border-radius: 30%;
+  }
+}
+
+@media screen and (max-width: 2999px) and (min-width: 2000px) {
+  .menu-btn {
+    top: 20px;
+    left: 96.5vw;
+  }
+}
+
+@media screen and (max-width: 1999px) and (min-width: 1500px) {
+  .menu-btn {
+    top: 15px;
+    left: 95.5vw;
   }
 }
 
