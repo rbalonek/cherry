@@ -19,10 +19,12 @@
   position: relative;
   top: 50px;
   font-family: "deregular";
+  font-size: calc(10px + 0.5vw);
 }
 .airtable-header-text-underlined {
   text-decoration: underline;
   font-family: "deregular";
+  font-size: calc(10px + 0.5vw);
 }
 .airtable-header-text-underlined:hover {
   cursor: pointer;
