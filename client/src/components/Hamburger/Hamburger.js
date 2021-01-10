@@ -45,7 +45,9 @@ export default function Hamburger(props) {
 
             // isVisible={true}
           >
-            <div className="menu-btn__burger"></div>
+            <div className="menu-btn__burger">
+              <div className="menu-btn-cursor-container"></div>
+            </div>
           </Animated>
         ) : (
           <div className="menu-btn__burger"></div>

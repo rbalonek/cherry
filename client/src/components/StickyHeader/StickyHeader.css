@@ -8,7 +8,7 @@
   height: 1px;
   position: sticky;
   z-index: 9;
-  top: 0px;
+  top: 0;
   width: 100%;
 }
 .ham-div {
@@ -61,6 +61,12 @@
   right: 2%;
   top: 150px;
 } */
+
+@media (min-width: 2000px) {
+  /* .sticky-header-container {
+    top: 5%;
+  } */
+}
 
 @media screen and (max-width: 6000px) and (min-width: 2800px) {
   /* .hamburger-sticky-container {
