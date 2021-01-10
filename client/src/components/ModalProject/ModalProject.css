@@ -3,6 +3,7 @@
 .modal-container {
   position: absolute;
   height: 100%;
+  width: 100%;
 }
 .modal-container:hover {
   cursor: pointer;
@@ -16,7 +17,7 @@
 }
 .modal-project-text-container {
   position: relative;
-  top: 10%;
+  top: 20%;
   padding-left: 10%;
   padding-right: 10%;
   left: 10%;
@@ -35,31 +36,35 @@
   font-family: "AkzidenzGroteskBE-BoldEx";
   /* font-family: Akzidenz; */
   color: white;
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(10px + 0.5vw);
   align-self: flex-end;
   margin-bottom: 1%;
+}
+.challenge {
+  margin-top: 20px;
 }
 
 .client-name {
   font-family: "degular";
   /* font-size: calc(23px + 1.5vw); */
-  font-size: 18pt;
+  font-size: calc(10px + 0.5vw);
   position: relative;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 .description-text-container {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .description-text {
   color: white;
   /* font-size: calc(15px + 1.5vw); */
-  font-size: 18pt;
+  font-size: calc(10px + 0.5vw);
   font-family: "degular";
   /* font-family: Deregular; */
   position: relative;
   top: 0px;
+  width: 80%;
 }
 .what-did-container {
   margin-top: 50px;
@@ -71,7 +76,7 @@
 
 .project-keywords {
   font-family: "degular";
-  font-size: calc(20px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   text-decoration: underline;
   margin-top: -5px;
   margin-bottom: -3px;
@@ -80,6 +85,27 @@
 .project-keywords:hover {
   cursor: pointer;
   color: white;
+}
+
+@media (min-width: 4001px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 10%;
+    max-width: 1500px;
+  }
+}
+@media screen and (max-width: 4000px) and (min-width: 2000px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 10%;
+    max-width: 1250px;
+  }
 }
 
 /* @media (min-width: 3000px) {
