@@ -1,9 +1,5 @@
 html {
-  /* font-family: sans-serif; */
-  /* scroll-snap-type: mandatory; */
-  /* scroll-snap-points-y: repeat(100vh); */
   scroll-snap-type: y mandatory;
-  /* -webkit-overflow-scrolling: touch; */
   scroll-behavior: smooth;
 }
 
@@ -65,22 +61,8 @@ html {
   z-index: -1;
   top: 0px;
 }
-/* .hamburger-open-text {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  color: white;
-  font-size: 50px;
-  width: 100%;
-  text-align: center;
-}
-.hamburger-open-text:hover {
-  color: white;
-  font-size: 50px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-} */
 
-@media screen and (max-width: 6000px) and (min-width: 100px) {
+/* @media screen and (max-width: 6000px) and (min-width: 100px) {
   .hamburger-div {
     position: relative;
     top: 0.2%;
@@ -92,4 +74,4 @@ html {
     position: relative;
     left: 90vw;
   }
-}
+} */

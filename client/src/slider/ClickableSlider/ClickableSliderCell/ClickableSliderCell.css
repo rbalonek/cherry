@@ -74,7 +74,7 @@
   font-family: "degular";
 }
 
-@media (max-width: 770px) {
+/* @media (max-width: 770px) {
   .carousel .control-dots .dot {
     margin: -1.5% calc(1.01px + 0.25vw);
     width: calc(8px + 0.5vw);
@@ -88,4 +88,4 @@
     width: calc(4px + 0.5vw);
     height: calc(4px + 0.5vw);
   }
-}
+} */

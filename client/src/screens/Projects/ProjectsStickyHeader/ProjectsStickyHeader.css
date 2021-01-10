@@ -1,14 +1,12 @@
 .hamburger-holder-project {
   position: absolute;
-  /* right: "30px", */
   top: 10px;
   z-index: 999;
 }
-
+/* 
 @media (max-width: 999px) {
   .hamburger-holder-project {
     position: absolute;
-    /* right: "30px", */
     top: 15px;
   }
 }
@@ -19,4 +17,4 @@
     right: 70px;
     top: 25px;
   }
-}
+} */

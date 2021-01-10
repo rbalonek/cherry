@@ -81,7 +81,7 @@
     auto;
 }
 
-@media screen and (max-width: 5999px) and (min-width: 2000px) {
+/* @media screen and (max-width: 5999px) and (min-width: 2000px) {
   .hover-animation {
     font-size: calc(40px + 7vw);
   }
@@ -90,4 +90,4 @@
   .hover-animation {
     font-size: calc(40px + 3vw);
   }
-}
+} */

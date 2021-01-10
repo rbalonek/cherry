@@ -82,7 +82,7 @@
   color: white;
 }
 
-@media (min-width: 3000px) {
+/* @media (min-width: 3000px) {
   .modal-project-text-container {
     position: relative;
     top: 20%;
@@ -93,7 +93,6 @@
   }
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
 }
 
@@ -108,7 +107,6 @@
   }
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
 }
 
@@ -126,7 +124,6 @@
 @media (max-width: 1500px) {
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
   .client-name {
     font-size: calc(20px + 0.5vw);
@@ -177,26 +174,7 @@
 }
 
 @media (max-width: 430px) {
-  /* .props-container {
-    position: absolute;
-    left: 200px;
-    top: 28.5%;
-  }
-  .description-text-container {
-    width: 40vw;
-  } */
 }
 
 @media (max-width: 350px) {
-  /* .bold-container {
-    left: 10px;
-  }
-  .props-container {
-    position: absolute;
-    left: 140px;
-    top: 28.5%;
-  }
-  .description-text-container {
-    width: 45vw;
-  } */
-}
+} */
