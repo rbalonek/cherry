@@ -106,3 +106,15 @@
     height: 100vh;
   }
 }
+
+@media (max-width: 600px) {
+  .about-xOut {
+    /* width: 50px; */
+    width: 30px;
+    height: 30px;
+    /* position: sticky; */
+    top: 5px;
+    right: 10px;
+    z-index: 999;
+  }
+}
