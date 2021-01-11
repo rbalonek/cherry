@@ -3,17 +3,23 @@ import "./HamburgerProjects.css";
 import OpenedMenu from "../../OpenedMenu/OpenedMenu";
 import OpenedMenuProj from "../../OpenedMenu/OpenedMenuProj/OpenedMenuProj";
 
+import { useLockBodyScroll, useToggle } from "react-use";
+
 export default function HamburgerProjects() {
   const [hambClosed, hambToggle] = useState("menu-btn proj-menu");
   const [menuClosed, toggleMenu] = useState("closed-menu");
+  const [locked, toggleLocked] = useToggle(false);
+  useLockBodyScroll(locked);
 
   const toggleHamb = () => {
     if (hambClosed === "menu-btn proj-menu") {
       hambToggle("menu-btn open");
       toggleMenu("open-menu");
+      toggleLocked();
     } else {
       hambToggle("menu-btn proj-menu");
       toggleMenu("closed-menu");
+      toggleLocked();
     }
   };
 

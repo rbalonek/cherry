@@ -5,17 +5,22 @@ import { Animated } from "react-animated-css";
 // import Logo from "../../assets/logo/Cherry-Logo.png";
 import Hamburger from "../Hamburger/Hamburger";
 import OpenedMenu from "../OpenedMenu/OpenedMenu";
+import { useLockBodyScroll, useToggle } from "react-use";
 
 export default function StickyHeader(props) {
   // const [IsVis, setIsVis] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
   // const [logo, logoToggle] = useState('logo-sticky')
+  const [locked, toggleLocked] = useToggle(false);
+  useLockBodyScroll(locked);
 
   const toggleHamb = () => {
     if (hamburgerClosed === "hamburger-closed") {
       hamburgerToggle("hamburger-opened-sticky");
+      toggleLocked();
     } else {
       hamburgerToggle("hamburger-closed");
+      toggleLocked();
     }
   };
 
