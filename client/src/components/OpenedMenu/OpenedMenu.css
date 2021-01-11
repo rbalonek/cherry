@@ -82,13 +82,21 @@
     auto;
 }
 
-/* @media screen and (max-width: 5999px) and (min-width: 2000px) {
+@media screen and (max-width: 5999px) and (min-width: 2000px) {
   .hover-animation {
     font-size: calc(40px + 7vw);
+  }
+  .hover-animation:after {
+    height: calc(3px + 0.5vw);
+    bottom: 15px;
   }
 }
 @media screen and (max-width: 1999px) and (min-width: 1000px) {
   .hover-animation {
     font-size: calc(40px + 3vw);
   }
-} */
+  .hover-animation:after {
+    height: 6px;
+    bottom: 9px;
+  }
+}

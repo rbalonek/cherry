@@ -16,9 +16,9 @@
 }
 .vid-about-opened-menu-proj {
   position: absolute;
-  top: -5px;
+  /* top: -5px; */
   left: 0;
-  height: 100vh;
+  height: 105vh;
 }
 
 .hover-animation-proj {

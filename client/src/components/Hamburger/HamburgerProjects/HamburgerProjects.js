@@ -18,13 +18,13 @@ export default function HamburgerProjects() {
   };
 
   return (
-    <>
+    <div>
       <div className={menuClosed}>
         <OpenedMenuProj />
       </div>
       <div className={hambClosed} onClick={toggleHamb}>
         <div className="menu-btn__burger" />
       </div>
-    </>
+    </div>
   );
 }

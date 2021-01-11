@@ -12,7 +12,7 @@
 }
 .about-xOut {
   /* width: 50px; */
-  width: calc(20px + 2vw);
+  width: calc(16px + 2vw);
   /* position: sticky; */
   top: 10px;
   z-index: 999;
