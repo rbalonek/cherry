@@ -109,4 +109,37 @@
     animation: gradient 10s ease infinite;
     justify-content: center;
   }
+  .about:hover:after {
+    transform: scaleX(0.25);
+  }
+  .keyart:hover:after {
+    transform: scaleX(0.25);
+  }
+  .branding:hover:after {
+    transform: scaleX(0.4);
+  }
+  .packaging:hover:after {
+    transform: scaleX(0.45);
+  }
+  .ideas:hover:after {
+    transform: scaleX(0.25);
+  }
+}
+
+@media (min-width: 1100px) {
+  .about:hover:after {
+    transform: scaleX(0.2);
+  }
+  .keyart:hover:after {
+    transform: scaleX(0.2);
+  }
+  .branding:hover:after {
+    transform: scaleX(0.2);
+  }
+  .packaging:hover:after {
+    transform: scaleX(0.1);
+  }
+  .ideas:hover:after {
+    transform: scaleX(0.2);
+  }
 }

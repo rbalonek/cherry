@@ -194,6 +194,12 @@
   }
 }
 
+@media (max-width: 420px) {
+  .menu-btn {
+    top: -10px;
+  }
+}
+
 /* @media screen and (min-width: 4000px) {
   .menu-btn {
     height: 200px;

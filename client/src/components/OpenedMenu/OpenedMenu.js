@@ -40,7 +40,7 @@ export default function OpenedMenu() {
         Key Art
       </h1>
       <h1 className=" hover-animation branding">Branding</h1>
-      <h1 className=" hover-animation ">Packaging</h1>
+      <h1 className=" hover-animation packaging ">Packaging</h1>
       <h1 className=" hover-animation ideas">Ideas</h1>
       <h1 className=" hover-animation about sayhi">Say Hi</h1>
     </div>

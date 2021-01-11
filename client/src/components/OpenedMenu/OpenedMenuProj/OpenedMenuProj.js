@@ -49,13 +49,13 @@ export default function OpenedMenuProj() {
       ) : (
         <div className="opened-menu-container-proj-cell">
           <h1
-            className=" hover-animation-proj about-proj"
+            className=" hover-animation-proj-mobile about-proj"
             onClick={clickedAbout}
           >
             About
           </h1>
           <h1
-            className=" hover-animation-proj keyart-proj"
+            className=" hover-animation-proj-mobile keyart-proj"
             onClick={() => history.push("/keyart")}
           >
             Key Art
@@ -63,7 +63,7 @@ export default function OpenedMenuProj() {
           <h1 className=" hover-animation-proj branding-proj">Branding</h1>
           <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
           <h1 className=" hover-animation-proj ideas-proj">Ideas</h1>
-          <h1 className=" hover-animation-proj about-proj sayhi-proj">
+          <h1 className=" hover-animation-proj about-proj sayhi-proj-mobile">
             Say Hi
           </h1>
         </div>

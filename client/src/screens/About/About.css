@@ -101,9 +101,13 @@
     auto;
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 1500px) {
   .about-container {
     height: 100vh;
+  }
+  .bios-container {
+    position: absolute;
+    bottom: 0;
   }
 }
 

@@ -155,7 +155,7 @@ export default function NewHeader(props) {
           <div className="new-header-container">
             <div className="vid-logo-container">
               <Fade delay={1000}>
-                <div className="vid-about"></div>
+                <div className="vid-about-mobile"></div>
               </Fade>
               <img
                 alt="logo"

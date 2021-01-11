@@ -54,8 +54,14 @@
   position: absolute;
   top: 30%;
 }
-
 .vid-about {
+  width: 94vw;
+  position: absolute;
+  top: 0px;
+  left: 3.5%;
+}
+
+.vid-about-mobile {
   width: 94vw;
   height: 20vh;
   position: absolute;

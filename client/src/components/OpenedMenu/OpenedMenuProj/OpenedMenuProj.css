@@ -101,6 +101,19 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
     auto;
 }
+.hover-animation-proj-mobile {
+  display: inline-block;
+  position: relative;
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 2px;
+}
 
 /* @media screen and (max-width: 5999px) and (min-width: 2000px) {
   .hover-animation-proj {
@@ -113,15 +126,25 @@
   }
 }
 
-@media (max-width: 770px) {
-  .vid-about-opened-menu-proj {
-    position: absolute;
-    top: -15px;
-    left: -100vw;
-    height: 100vh;
-  }
-  .hover-animation-proj {
-    right: 91vw;
-    top: -1%;
-  }
+
 } */
+@media (max-width: 770px) {
+  .about-proj:hover:after {
+    transform: scaleX(0.25);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.25);
+  }
+  .branding-proj:hover:after {
+    transform: scaleX(0.4);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.45);
+  }
+  /* .identity-proj:hover:after {
+  transform: scaleX(0.4);
+} */
+  .ideas-proj:hover:after {
+    transform: scaleX(0.25);
+  }
+}
