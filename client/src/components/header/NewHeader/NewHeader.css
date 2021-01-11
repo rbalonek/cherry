@@ -119,7 +119,7 @@
 /* CELLL */
 .cell-down-arrow-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
