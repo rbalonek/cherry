@@ -25,7 +25,7 @@ export default function MainContainer() {
         }
       );
       inVokeProjects(data.data.records);
-      console.log(projects);
+      // console.log(projects);
     };
     apiCall();
   }, []);

@@ -4,7 +4,7 @@ import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 
 export default function ProjPhotoArtDirection(props) {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <ProjectsStickyHeader />
       <ProjectsNavBar />
       {props.projects.map((project) => (

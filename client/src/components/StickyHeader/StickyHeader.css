@@ -8,29 +8,13 @@
   height: 1px;
   position: sticky;
   z-index: 9;
-  top: 0px;
+  top: 0;
   width: 100%;
 }
 .ham-div {
   height: 50px;
   width: 50px;
 }
-
-/* .logo-sticky {
-  height: calc(5vw + 1.5vw);
-  position: absolute;
-  left: 10px;
-  top: 0px;
-}
-.logo-sticky:hover {
-  cursor: pointer;
-} */
-/* .logo-sticky-clicked {
-  height: calc(6vw + 1.5vw);
-  position: relative;
-  left: 20px;
-  top: 0px;
-} */
 
 .hamburger-sticky {
   height: 75px;
@@ -41,26 +25,8 @@
   cursor: pointer;
 }
 
-/* .hamburger-closed {
-  transition: transform 0.3s ease-out;
-  display: none;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-} */
-
-/* .hamburger-text-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
-/* .hamburger-sticky-container {
-  position: relative;
-  right: 2%;
-  top: 150px;
-} */
+@media (min-width: 2000px) {
+}
 
 @media screen and (max-width: 6000px) and (min-width: 2800px) {
   /* .hamburger-sticky-container {
@@ -88,4 +54,8 @@
     top: 0px;
     height: 13vw;
   } */
+  .burger-menu-position-main {
+    position: relative;
+    right: 2%;
+  }
 }

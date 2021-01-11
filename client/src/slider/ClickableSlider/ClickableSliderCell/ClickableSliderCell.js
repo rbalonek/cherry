@@ -6,19 +6,24 @@ import zenscroll from "zenscroll";
 import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Animated } from "react-animated-css";
+import { useLockBodyScroll, useToggle } from "react-use";
 
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
+  const [locked, toggleLocked] = useToggle(false);
+  useLockBodyScroll(locked);
 
   const toggleOpen = () => {
     modalToggle("modalOpen clickable-modal");
     modalTextToggle("modal-text-open");
+    toggleLocked();
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
+    toggleLocked();
   };
 
   let pageHeight = window.innerHeight;

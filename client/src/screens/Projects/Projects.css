@@ -28,3 +28,10 @@
 .masonry-brick:nth-child(4n + 1):nth-child(4n + 4) {
   width: 380px;
 }
+
+/* FIX LATER - only cropping hamb menu b/c not enough projects */
+@media (min-width: 1300px) {
+  .projects-screen-container {
+    height: 100vh;
+  }
+}

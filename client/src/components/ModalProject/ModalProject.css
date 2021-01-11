@@ -3,6 +3,7 @@
 .modal-container {
   position: absolute;
   height: 100%;
+  width: 100%;
 }
 .modal-container:hover {
   cursor: pointer;
@@ -16,7 +17,7 @@
 }
 .modal-project-text-container {
   position: relative;
-  top: 10%;
+  top: 20%;
   padding-left: 10%;
   padding-right: 10%;
   left: 10%;
@@ -35,31 +36,35 @@
   font-family: "AkzidenzGroteskBE-BoldEx";
   /* font-family: Akzidenz; */
   color: white;
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(10px + 0.5vw);
   align-self: flex-end;
   margin-bottom: 1%;
+}
+.challenge {
+  margin-top: 20px;
 }
 
 .client-name {
   font-family: "degular";
   /* font-size: calc(23px + 1.5vw); */
-  font-size: 18pt;
+  font-size: calc(10px + 0.5vw);
   position: relative;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 .description-text-container {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .description-text {
   color: white;
   /* font-size: calc(15px + 1.5vw); */
-  font-size: 18pt;
+  font-size: calc(10px + 0.5vw);
   font-family: "degular";
   /* font-family: Deregular; */
   position: relative;
   top: 0px;
+  width: 80%;
 }
 .what-did-container {
   margin-top: 50px;
@@ -71,7 +76,7 @@
 
 .project-keywords {
   font-family: "degular";
-  font-size: calc(20px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   text-decoration: underline;
   margin-top: -5px;
   margin-bottom: -3px;
@@ -82,7 +87,52 @@
   color: white;
 }
 
-@media (min-width: 3000px) {
+@media screen and (max-width: 6000px) and (min-width: 4001px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 10%;
+    max-width: 2500px;
+  }
+  .project-keywords {
+    font-size: calc(23px + 1vw);
+  }
+  .client-name {
+    font-size: calc(23px + 1vw);
+  }
+  .bold-text {
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(50px + 0.5vw);
+    margin-bottom: 1%;
+  }
+  .description-text {
+    color: white;
+    font-size: calc(40px + 0.5vw);
+    font-family: "degular";
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 4000px) and (min-width: 2000px) {
+  .modal-project-text-container {
+    position: relative;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    left: 10%;
+    max-width: 1250px;
+  }
+}
+@media (max-width: 430px) {
+  .modal-project-text-container {
+    top: 30%;
+  }
+}
+
+/* @media (min-width: 3000px) {
   .modal-project-text-container {
     position: relative;
     top: 20%;
@@ -93,7 +143,6 @@
   }
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
 }
 
@@ -108,7 +157,6 @@
   }
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
 }
 
@@ -126,7 +174,6 @@
 @media (max-width: 1500px) {
   .bold-text {
     font-size: 18pt;
-    /* font-size: calc(10px + 0.5vw); */
   }
   .client-name {
     font-size: calc(20px + 0.5vw);
@@ -177,26 +224,7 @@
 }
 
 @media (max-width: 430px) {
-  /* .props-container {
-    position: absolute;
-    left: 200px;
-    top: 28.5%;
-  }
-  .description-text-container {
-    width: 40vw;
-  } */
 }
 
 @media (max-width: 350px) {
-  /* .bold-container {
-    left: 10px;
-  }
-  .props-container {
-    position: absolute;
-    left: 140px;
-    top: 28.5%;
-  }
-  .description-text-container {
-    width: 45vw;
-  } */
-}
+} */

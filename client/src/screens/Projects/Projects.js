@@ -9,7 +9,7 @@ export default function Projects(props) {
   const projects = props.projects;
 
   return (
-    <div style={{ width: "100vw" }}>
+    <div className="projects-screen-container">
       <ProjectsStickyHeader />
       <ProjectsNavBar />
 

@@ -5,7 +5,7 @@ import "./ProjIdentity.css";
 
 export default function ProjIdentity(props) {
   return (
-    <div style={{ width: "100vw" }}>
+    <div style={{ width: "100vw", height: "100vh" }}>
       <ProjectsStickyHeader />
       <ProjectsNavBar />
       {props.projects.map((project) => (
