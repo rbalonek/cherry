@@ -126,6 +126,11 @@
     max-width: 1250px;
   }
 }
+@media (max-width: 430px) {
+  .modal-project-text-container {
+    top: 30%;
+  }
+}
 
 /* @media (min-width: 3000px) {
   .modal-project-text-container {

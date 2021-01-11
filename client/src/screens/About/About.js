@@ -30,14 +30,19 @@ export default function About() {
   // style={{ height: "100vh" }}
   return (
     <div className="about-container">
-      <video
-        className={background}
-        autoPlay
-        loop
-        muted
-        src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610303314/Cherry/Cherry%20Clients/Verical_Color_Cherry3_zhtrxp.mp4"
-        // src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
-      />
+      {window.innerWidth > 770 ? (
+        <video
+          className={background}
+          autoPlay
+          loop
+          muted
+          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610303314/Cherry/Cherry%20Clients/Verical_Color_Cherry3_zhtrxp.mp4"
+          // src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+        />
+      ) : (
+        <div></div>
+      )}
+
       <div className="about-x-container">
         <img
           alt="xOut"
