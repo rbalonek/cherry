@@ -176,7 +176,7 @@
 
 @media (max-width: 770px) {
   .menu-btn {
-    left: 93%;
+    /* right: 20px; */
     top: 10px;
     opacity: 1;
   }
@@ -184,7 +184,7 @@
 
 @media (max-width: 600px) {
   .menu-btn {
-    left: 90%;
+    /* left: 90%; */
     top: -5px;
     opacity: 1;
   }

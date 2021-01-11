@@ -41,9 +41,10 @@ export default function StickyHeader(props) {
           </Fade>
         </div>
       </div>
-
-      <div onClick={toggleHamb}>
-        <Hamburger showHamburger={props.showHamburger} />
+      <div className="burger-menu-position-main">
+        <div onClick={toggleHamb}>
+          <Hamburger showHamburger={props.showHamburger} />
+        </div>
       </div>
     </div>
   );
