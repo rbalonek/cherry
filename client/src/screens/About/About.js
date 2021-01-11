@@ -27,15 +27,16 @@ export default function About() {
     changeGregBio("greg-bio-hovered");
     changeDavidBio("david-bio");
   };
-
+  // style={{ height: "100vh" }}
   return (
-    <div>
+    <div className="about-container">
       <video
         className={background}
         autoPlay
         loop
         muted
-        src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+        src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610303314/Cherry/Cherry%20Clients/Verical_Color_Cherry3_zhtrxp.mp4"
+        // src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
       />
       <div className="about-x-container">
         <img
@@ -52,11 +53,9 @@ export default function About() {
           <br />
           <br /> We are an independent design and communications studio that
           combines creativity and craft into ideas and experiences that improve
-          people’s lives.
-          <br />
-          <br />​ We are an independent design and communications studio that
-          combine creativity, craft and technology into ideas and experiences
-          that improve people’s lives.
+          people’s lives. We are an independent design and communications studio
+          that combine creativity, craft and technology into ideas and
+          experiences that improve people’s lives.
           <br />
           <br /> To make brands that can’t be ignored.
           <br />
@@ -71,9 +70,17 @@ export default function About() {
           onMouseEnter={hovDavid}
           onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
-          <p className="white">PARTNER/CREATIVE DIRECTOR</p>
-          <h2 className="white">David Irlanda</h2>
-          <p className="white">
+          <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
+          <h2 className="white name">David Irlanda</h2>
+          <p className="white bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p className="white bio-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -87,9 +94,17 @@ export default function About() {
           onMouseEnter={hovGreg}
           onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
-          <p className="white">PARTNER/CREATIVE DIRECTOR</p>
-          <h2 className="white">Greg Zadrozny</h2>
-          <p className="white">
+          <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
+          <h2 className="white name">Greg Zadrozny</h2>
+          <p className="white bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p className="white bio-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
