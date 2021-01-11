@@ -155,13 +155,7 @@ export default function NewHeader(props) {
           <div className="new-header-container">
             <div className="vid-logo-container">
               <Fade delay={1000}>
-                <video
-                  className="vid-about"
-                  autoPlay={true}
-                  loop
-                  muted
-                  src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
-                />
+                <div className="vid-about"></div>
               </Fade>
               <img
                 alt="logo"

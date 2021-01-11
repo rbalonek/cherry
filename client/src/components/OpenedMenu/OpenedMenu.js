@@ -18,13 +18,18 @@ export default function OpenedMenu() {
 
   return (
     <div className="opened-menu-container">
-      <video
-        className="vid-about-opened-menu"
-        autoPlay
-        loop
-        muted
-        src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
-      />
+      {window.innerWidth > 770 ? (
+        <video
+          className="vid-about-opened-menu"
+          autoPlay
+          loop
+          muted
+          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+        />
+      ) : (
+        <div></div>
+      )}
+
       <h1 className=" hover-animation about" onClick={clickedAbout}>
         About
       </h1>
