@@ -1,8 +1,8 @@
 .proj-menu {
   /* position: relative;
   top: -5px; */
-  margin-top: -25px;
-  /* padding-left: 20px; */
+  /* margin-top: -5px; */
+  /* top: -10px; */
 }
 
 .menu-projects-hamb {
@@ -64,4 +64,10 @@
 }
 .menu-btn.open .menu-btn-proj__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media screen and (max-width: 6000px) and (min-width: 3000px) {
+  .proj-menu {
+    top: 10px;
+  }
 }

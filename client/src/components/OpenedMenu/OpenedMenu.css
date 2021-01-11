@@ -15,6 +15,7 @@
   top: 0;
   left: 0;
   height: 100vh;
+  /* width: 100vw; */
 }
 
 .hover-animation {
@@ -35,8 +36,8 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
+  height: 3px;
+  bottom: 6px;
   left: 0;
   background-color: #fff;
   transform-origin: center;
@@ -85,9 +86,17 @@
   .hover-animation {
     font-size: calc(40px + 7vw);
   }
+  .hover-animation:after {
+    height: calc(3px + 0.5vw);
+    bottom: 15px;
+  }
 }
 @media screen and (max-width: 1999px) and (min-width: 1000px) {
   .hover-animation {
     font-size: calc(40px + 3vw);
+  }
+  .hover-animation:after {
+    height: 6px;
+    bottom: 9px;
   }
 }

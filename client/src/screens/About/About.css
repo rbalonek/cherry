@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/qnu7szh.css");
-
+.about-container {
+}
 .about-x-container {
-  width: 95%;
+  width: 98%;
   position: sticky;
   display: flex;
   justify-content: flex-end;
@@ -11,7 +12,7 @@
 }
 .about-xOut {
   /* width: 50px; */
-  width: calc(20px + 2vw);
+  width: calc(16px + 2vw);
   /* position: sticky; */
   top: 10px;
   z-index: 999;
@@ -22,29 +23,55 @@
 
 .about-text-container {
   padding: 5%;
+  position: relative;
+  /* top: -100px; */
 }
 .about-text {
   color: white;
-  font-family: "degular";
-  /* font-size: calc(15px + 2vw); */
-  font-size: 22px;
+  /* font-family: "degular"; */
+  /* font-size: calc(10px + 2vw); */
+  /* font-size: 22px; */
+  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: Akzidenz; */
+  font-size: calc(10px + 1vw);
+  line-height: 1.4;
 }
 .white {
   color: white;
   z-index: 999;
 }
+.title {
+  margin-bottom: -20px;
+  font-family: Akzidenz;
+  font-size: calc(8px + 1vw);
+}
+.name {
+  font-size: calc(20px + 1vw);
+}
 .vid-about-hov-menu {
   position: absolute;
   opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  width: 100vw;
 }
 .vid-about-hovered-menu {
   position: absolute;
   opacity: 0.7;
+  pointer-events: none;
+  z-index: -1;
+  width: 100vw;
 }
 
 .bios-container {
   display: flex;
   flex-direction: row;
+  /* position: absolute;
+  bottom: 0; */
+}
+.bio-text {
+  font-size: calc(10px + 1vw);
+  font-family: "degular";
 }
 .david-bio {
   padding: 20px;
@@ -72,4 +99,10 @@
   border-radius: 10px;
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610047428/Cherry/Cherry%20Clients/Logos/gregface_vcajko.png),
     auto;
+}
+
+@media (min-width: 2500px) {
+  .about-container {
+    height: 100vh;
+  }
 }

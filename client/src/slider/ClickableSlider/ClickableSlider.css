@@ -1,7 +1,10 @@
 .carousel .control-dots .dot {
-  margin: 0% calc(0.01px + 0.2vw);
+  /* margin: 0% calc(0.01px + 0.2vw);
   width: calc(0.5px + 0.5vw);
-  height: calc(0.5px + 0.5vw);
+  height: calc(0.5px + 0.5vw); */
+  margin: 0% 1px;
+  width: 5px;
+  height: 5px;
 }
 .carousel .control-dots .dot {
   box-shadow: none;
@@ -143,6 +146,28 @@
     auto;
 }
 
+@media (min-width: 4001px) {
+  .carousel .control-dots .dot {
+    margin: 0% 1px;
+    width: 15px;
+    height: 15px;
+  }
+  .carousel .control-dots {
+    bottom: 1.5%;
+  }
+}
+
+@media screen and (max-width: 4000px) and (min-width: 2000px) {
+  .carousel .control-dots .dot {
+    margin: 0% 1px;
+    width: 6px;
+    height: 6px;
+  }
+  .carousel .control-dots {
+    bottom: 0.5%;
+  }
+}
+
 @media (max-width: 770px) {
   .carousel-container {
     contain: content;
@@ -157,7 +182,6 @@
   .arrow-up {
     height: 25vh;
     width: 40%;
-    /* background-color: red; */
 
     z-index: 99;
   }
@@ -171,7 +195,6 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* background-color: red; */
     z-index: 998;
   }
   .arrow-down-container:hover {
@@ -239,10 +262,6 @@
     z-index: 999;
     opacity: 0.8;
   }
-  /* .clickable-modal:hover {
-    cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
-      auto;
-  } */
 
   .modal-text-closed {
     display: none;
@@ -263,7 +282,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
   .carousel .control-dots .dot {
     margin: 1% calc(0.01px + 0.25vw);
     width: calc(0.5px + 0.5vw);
@@ -290,4 +309,4 @@
     text-align: center;
     width: 100%;
   }
-}
+} */

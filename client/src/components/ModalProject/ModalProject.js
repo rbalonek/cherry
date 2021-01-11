@@ -9,7 +9,7 @@ export default function ModalProject(props) {
       <div className="modal-project-text-container">
         <h2 className="bold-text">CLIENT</h2>
         <p className="modal-text client-name">{props.client}</p>
-        <h2 className="bold-text">CHALLENGE</h2>
+        <h2 className="bold-text challenge">CHALLENGE</h2>
         <div className="description-text-container">
           <p className="description-text"> {props.description} </p>
 
