@@ -54,4 +54,8 @@
     top: 0px;
     height: 13vw;
   } */
+  .burger-menu-position-main {
+    position: relative;
+    right: 2%;
+  }
 }

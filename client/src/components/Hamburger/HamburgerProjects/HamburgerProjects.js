@@ -13,7 +13,7 @@ export default function HamburgerProjects() {
 
   const toggleHamb = () => {
     if (hambClosed === "menu-btn proj-menu") {
-      hambToggle("menu-btn open");
+      hambToggle("menu-btn open proj-menu");
       toggleMenu("open-menu");
       toggleLocked();
     } else {

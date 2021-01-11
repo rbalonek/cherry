@@ -27,6 +27,9 @@ export default function CellTextBlock(props) {
           textAlign: "center",
           paddingLeft: "20px",
           paddingRight: "20px",
+          width: "100%",
+          fontSize: "calc(15px + 1vw)",
+          fontFamily: "deregular",
         }}
       >
         {props.headerText.length ? (
