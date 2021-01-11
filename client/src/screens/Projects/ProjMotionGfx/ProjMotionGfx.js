@@ -5,7 +5,7 @@ import "./ProjMotionGfx.css";
 
 export default function ProjMotionGfx(props) {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <ProjectsStickyHeader />
       <ProjectsNavBar />
       {props.projects.map((project) => (

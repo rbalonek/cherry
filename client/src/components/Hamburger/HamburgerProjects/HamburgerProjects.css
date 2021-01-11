@@ -76,7 +76,7 @@
 @media (max-width: 770px) {
   .proj-menu {
     position: relative;
-    top: 0px;
+    top: 5px;
     left: 90vw;
     /* margin-top: -5px; */
     /* top: -10px; */
