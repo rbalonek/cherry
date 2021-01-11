@@ -87,14 +87,33 @@
   color: white;
 }
 
-@media (min-width: 4001px) {
+@media screen and (max-width: 6000px) and (min-width: 4001px) {
   .modal-project-text-container {
     position: relative;
     top: 20%;
     padding-left: 10%;
     padding-right: 10%;
     left: 10%;
-    max-width: 1500px;
+    max-width: 2500px;
+  }
+  .project-keywords {
+    font-size: calc(23px + 1vw);
+  }
+  .client-name {
+    font-size: calc(23px + 1vw);
+  }
+  .bold-text {
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(50px + 0.5vw);
+    margin-bottom: 1%;
+  }
+  .description-text {
+    color: white;
+    font-size: calc(40px + 0.5vw);
+    font-family: "degular";
+    position: relative;
+    top: 0px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 4000px) and (min-width: 2000px) {

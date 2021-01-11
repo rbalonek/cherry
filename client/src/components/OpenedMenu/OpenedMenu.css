@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* height: 100vh; */
+  height: 100vh;
   /* width: 100vw; */
 }
 
@@ -36,8 +36,8 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
+  height: 3px;
+  bottom: 6px;
   left: 0;
   background-color: #fff;
   transform-origin: center;
