@@ -6,9 +6,21 @@ import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 import ProjectsNavBar from "./ProjectsNavBar/ProjectsNavBar";
 import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
+import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
+import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
+import Slider from "../../slider/Slider";
 
 export default function Projects(props) {
+  const [hiddenCarousel, setHiddenCarousel] = useState("hide-element");
   const projects = props.projects;
+
+  const toggleCarousel = () => {
+    if (hiddenCarousel === "hide-element") {
+      setHiddenCarousel("full-screen-carousel");
+    } else {
+      setHiddenCarousel("hide-element");
+    }
+  };
 
   return (
     <div className="projects-screen-container">
@@ -40,6 +52,16 @@ export default function Projects(props) {
                                 el.classList.toggle("show-proj-info");
                                 el.classList.toggle("hide-element");
                               }}
+                              // full-screen-carousel
+                              // hide-element
+                              onClick={() => {
+                                var el = document.getElementById(
+                                  `${project.fields.id}-car`
+                                  // "car-1"
+                                );
+                                el.classList.toggle("full-screen-carousel");
+                                el.classList.toggle("hide-element");
+                              }}
                               className="projects-screen-projects-large"
                               style={{
                                 backgroundImage: `url(${project.fields.img1})`,
@@ -65,6 +87,19 @@ export default function Projects(props) {
                                     {project.fields.client}
                                   </p>
                                 </Animated>
+                              </div>
+                              <div
+                                id={`${project.fields.id}-car`}
+                                className="hide-element"
+                              >
+                                <div className="slider-holder">
+                                  <Slider
+                                    img1={project.fields.img1}
+                                    img2={project.fields.img2}
+                                    img3={project.fields.img3}
+                                    img4={project.fields.img4}
+                                  />
+                                </div>
                               </div>
                             </div>
                           </>

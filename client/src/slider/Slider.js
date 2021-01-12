@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Slider.css";
 
 export default function Slider(props) {
+  console.log(props.img1);
   return (
     <div className="carousel-container">
       <a href={`#${props.scrollToUp}`}>

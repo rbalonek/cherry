@@ -55,6 +55,18 @@
   top: 0;
 }
 
+.full-screen-carousel {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  /* background-color: blueviolet; */
+  opacity: 0.7;
+}
+.slider-holder {
+  width: 80%;
+  height: 80%;
+}
 @media (max-width: 1480px) {
   .projects-screen-projects-small {
     height: 250px;
