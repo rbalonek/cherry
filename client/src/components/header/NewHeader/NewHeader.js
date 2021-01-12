@@ -39,6 +39,7 @@ export default function NewHeader(props) {
   let pageHeight = window.innerHeight;
 
   const DownArrowCell = () => {
+    let pageHeight = window.innerHeight;
     zenscroll.toY(pageHeight);
     setInView(false);
     setTimeout(() => {
