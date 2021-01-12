@@ -26,7 +26,7 @@ export default function Hamburger(props) {
       // console.log("closed");
     } else {
       menuToggle(true);
-      setOpen("  open leftIsh");
+      setOpen("  open ");
       // hamburgerToggle("hamburger-opened-sticky");
       // console.log("Open");
     }

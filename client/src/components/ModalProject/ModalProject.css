@@ -126,6 +126,49 @@
     max-width: 1250px;
   }
 }
+@media (max-width: 770px) {
+  .modal-project-text-container {
+    top: 20%;
+  }
+  .bold-text {
+    font-size: 22px;
+  }
+  .client-name {
+    font-size: 20px;
+    margin-top: -13px;
+  }
+  .description-text {
+    font-size: 20px;
+    /* top: 5px; */
+  }
+  .project-keywords {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .modal-project-text-container {
+    top: 15%;
+  }
+  .bold-text {
+    font-size: 18px;
+  }
+  .client-name {
+    font-size: 15px;
+    margin-top: -5px;
+  }
+  .description-text {
+    font-size: 15px;
+    /* top: 5px; */
+  }
+  .project-keywords {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+}
+
 @media (max-width: 430px) {
   .modal-project-text-container {
     top: 30%;
