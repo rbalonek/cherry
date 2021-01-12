@@ -1,5 +1,4 @@
 .project-list-container {
-  /* height: 100vh;*/
   width: 100vw;
   display: flex;
 }
@@ -8,12 +7,9 @@
   max-width: 100%;
 }
 .project-list-left {
-  /* background-color: blue; */
-  /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   align-content: start;
-  /* width: 500px; */
   width: 50%;
   justify-content: center;
   justify-content: space-around;
@@ -22,12 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: start;
-  /* background-color: red; */
-  /* height: 100vh; */
-  /* width: 500px; */
   width: 50%;
-  /* display: inline-block; */
-  /* vertical-align: top; */
   justify-content: center;
   justify-content: space-around;
 }
@@ -48,26 +39,98 @@
   width: 100%;
 }
 
+@media (max-width: 1480px) {
+  .projects-screen-projects-small {
+    height: 250px;
+    width: 300px;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+  }
+}
+@media (max-width: 1480px) {
+  .projects-screen-projects-small {
+    height: 150px;
+    width: 200px;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+  }
+}
+
+@media (max-width: 816px) {
+  .project-list-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 60%;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .project-list-right {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: start;
+    width: 40%;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .projects-screen-projects-small {
+    height: 150px;
+    width: 300px;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+  }
+}
+
+@media (max-width: 770px) {
+  .project-container-split {
+    flex-direction: column;
+  }
+  .project-list-left {
+    width: 100%;
+  }
+  .project-list-right {
+    width: 100%;
+  }
+  .projects-screen-projects-large {
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .projects-screen-projects-wide {
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .projects-screen-projects-small {
+    height: 300px;
+    width: 100vw;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-top: 5px;
+  }
+}
+
 /* TRASH */
 
-.masonry-top {
+/* .masonry-top {
   display: flex;
   flex-flow: row wrap;
-  margin-left: -8px; /* Adjustment for the gutter */
+  margin-left: -8px; 
   width: 100%;
-  /* background-color: chartreuse; */
   padding-top: 10px;
   padding-left: 12px;
 }
 .masonry-brick {
   flex: auto;
   height: 250px;
-  /* min-width: 150px; */
-  margin: 0 8px 8px 0; /* Some gutter */
-  /* background-color: blue; */
-  /* contain: content; */
-  text-align: -webkit-center;
-}
+  margin: 0 8px 8px 0;
+  text-align: -webkit-center; }*/
+
 /* .masonry-brick:nth-child(4n + 1) {
   width: 250px;
 }
@@ -132,8 +195,3 @@ div#masonry img:nth-child(6) {
 } */
 
 /* FIX LATER - only cropping hamb menu b/c not enough projects */
-@media (min-width: 1300px) {
-  .projects-screen-container {
-    /* height: 100vh; */
-  }
-}

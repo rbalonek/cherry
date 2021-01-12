@@ -48,7 +48,7 @@ export default function Projects(props) {
                             className="projects-screen-projects-wide"
                             style={{
                               backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "70% 100%",
+                              backgroundSize: "100% 100%",
                               backgroundPosition: "center",
                             }}
                           />
