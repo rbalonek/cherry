@@ -40,7 +40,7 @@ export default function NewScrollSnap() {
   };
 
   const handleClickHamburger = () => {
-    if (showHamburger == "menu-btn") {
+    if (showHamburger === "menu-btn") {
       toggleShowHamburger("show-none");
     } else {
       toggleShowHamburger("menu-btn");

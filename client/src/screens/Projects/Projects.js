@@ -38,6 +38,234 @@ export default function Projects(props) {
                       <>
                         {project.fields.mainPhotoLarge === true && (
                           <>
+                            <Fade
+                              direction={"up"}
+                              fraction={0.2}
+                              triggerOnce={true}
+                              className="projects-screen-projects-large"
+                            >
+                              <div
+                                onMouseEnter={() => {
+                                  var el = document.getElementById(
+                                    project.fields.id
+                                  );
+                                  el.classList.toggle("show-proj-info");
+                                  el.classList.toggle("hide-element");
+                                }}
+                                onMouseLeave={() => {
+                                  var el = document.getElementById(
+                                    project.fields.id
+                                  );
+                                  el.classList.toggle("show-proj-info");
+                                  el.classList.toggle("hide-element");
+                                }}
+                                className="projects-screen-projects-large"
+                                style={{
+                                  backgroundImage: `url(${project.fields.img1})`,
+                                  backgroundSize: "100% 90%",
+                                  backgroundPosition: "center",
+                                  backgroundRepeat: "no-repeat",
+                                }}
+                              >
+                                <div
+                                  id={project.fields.id}
+                                  className="hide-element"
+                                  onClick={() =>
+                                    history.push(
+                                      `/project/${project.fields.projectname}`
+                                    )
+                                  }
+                                >
+                                  <Fade
+                                    direction={"up"}
+                                    duration={500}
+                                    cascade={true}
+                                  >
+                                    <p
+                                      style={{
+                                        color: "white",
+                                        fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                        fontSize: "calc(15px + 1vw)",
+                                      }}
+                                    >
+                                      {project.fields.projectname}
+                                    </p>
+
+                                    <p
+                                      style={{
+                                        color: "white",
+                                        fontFamily: "degular",
+                                        fontSize: "calc(15px + 1vw)",
+                                      }}
+                                    >
+                                      {project.fields.client}
+                                    </p>
+                                  </Fade>
+                                </div>
+                              </div>
+                            </Fade>
+                          </>
+                        )}
+                        {project.fields.mainPhotoSmall === true && (
+                          <>
+                            <Fade
+                              direction={"up"}
+                              fraction={0.2}
+                              triggerOnce={true}
+                              className="projects-screen-projects-small"
+                            >
+                              <div
+                                onMouseEnter={() => {
+                                  var el = document.getElementById(
+                                    project.fields.id
+                                  );
+                                  el.classList.toggle("show-proj-info");
+                                  el.classList.toggle("hide-element");
+                                }}
+                                onMouseLeave={() => {
+                                  var el = document.getElementById(
+                                    project.fields.id
+                                  );
+                                  el.classList.toggle("show-proj-info");
+                                  el.classList.toggle("hide-element");
+                                }}
+                                className="projects-screen-projects-small"
+                                style={{
+                                  backgroundImage: `url(${project.fields.img1})`,
+                                  backgroundSize: "100% 100%",
+                                  backgroundPosition: "center",
+                                  backgroundRepeat: "no-repeat",
+                                }}
+                              >
+                                <div
+                                  id={project.fields.id}
+                                  className="hide-element"
+                                  onClick={() =>
+                                    history.push(
+                                      `/project/${project.fields.projectname}`
+                                    )
+                                  }
+                                >
+                                  <Fade
+                                    direction={"up"}
+                                    duration={500}
+                                    cascade={true}
+                                  >
+                                    <p
+                                      style={{
+                                        color: "white",
+                                        fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                        fontSize: "calc(15px + 1vw)",
+                                      }}
+                                    >
+                                      {project.fields.projectname}
+                                    </p>
+
+                                    <p
+                                      style={{
+                                        color: "white",
+                                        fontFamily: "degular",
+                                        fontSize: "calc(15px + 1vw)",
+                                      }}
+                                    >
+                                      {project.fields.client}
+                                    </p>
+                                  </Fade>
+                                </div>
+                              </div>
+                            </Fade>
+                          </>
+                        )}
+                        {project.fields.mainPhotoWide === true && (
+                          <Fade
+                            direction={"up"}
+                            fraction={0.2}
+                            triggerOnce={true}
+                            className="projects-screen-projects-wide"
+                          >
+                            <div
+                              onMouseEnter={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              onMouseLeave={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              className="projects-screen-projects-wide"
+                              style={{
+                                backgroundImage: `url(${project.fields.img1})`,
+                                backgroundSize: "100% 95%",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                              }}
+                            >
+                              <div
+                                id={project.fields.id}
+                                className="hide-element"
+                                onClick={() =>
+                                  history.push(
+                                    `/project/${project.fields.projectname}`
+                                  )
+                                }
+                              >
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
+                                >
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.projectname}
+                                  </p>
+
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "degular",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.client}
+                                  </p>
+                                </Fade>
+                              </div>
+                            </div>
+                          </Fade>
+                        )}
+                      </>
+                    )}
+                  </>
+                )}
+              </>
+            ))}
+          </div>
+
+          <div className="project-list-right">
+            {projects.map((project) => (
+              <>
+                {project.fields.rightColumn === true && (
+                  <>
+                    {project.fields.MainProjectPhoto === true && (
+                      <>
+                        {project.fields.mainPhotoLarge === true && (
+                          <Fade
+                            direction={"up"}
+                            fraction={0.2}
+                            triggerOnce={true}
+                            className="projects-screen-projects-large"
+                          >
                             <div
                               onMouseEnter={() => {
                                 var el = document.getElementById(
@@ -70,9 +298,10 @@ export default function Projects(props) {
                                   )
                                 }
                               >
-                                <Animated
-                                  animationIn="fadeInUp"
-                                  animationInDuration={500}
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
                                   <p
                                     style={{
@@ -93,330 +322,146 @@ export default function Projects(props) {
                                   >
                                     {project.fields.client}
                                   </p>
-                                </Animated>
+                                </Fade>
                               </div>
                             </div>
-                          </>
+                          </Fade>
                         )}
                         {project.fields.mainPhotoSmall === true && (
-                          <div
-                            onMouseEnter={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            onMouseLeave={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
+                          <Fade
+                            direction={"up"}
+                            fraction={0.2}
+                            triggerOnce={true}
                             className="projects-screen-projects-small"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
-                              backgroundPosition: "center",
-                              backgroundRepeat: "no-repeat",
-                            }}
                           >
                             <div
-                              id={project.fields.id}
-                              className="hide-element"
-                              onClick={() =>
-                                history.push(
-                                  `/project/${project.fields.projectname}`
-                                )
-                              }
+                              onMouseEnter={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              onMouseLeave={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              className="projects-screen-projects-small"
+                              style={{
+                                backgroundImage: `url(${project.fields.img1})`,
+                                backgroundSize: "100% 100%",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                              }}
                             >
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationInDuration={500}
-                                cascade
+                              <div
+                                id={project.fields.id}
+                                className="hide-element"
+                                onClick={() =>
+                                  history.push(
+                                    `/project/${project.fields.projectname}`
+                                  )
+                                }
                               >
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
-                                  {project.fields.projectname}
-                                </p>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.projectname}
+                                  </p>
 
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "degular",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.client}
-                                </p>
-                              </Animated>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "degular",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.client}
+                                  </p>
+                                </Fade>
+                              </div>
                             </div>
-                          </div>
+                          </Fade>
                         )}
                         {project.fields.mainPhotoWide === true && (
-                          <div
-                            onMouseEnter={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            onMouseLeave={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
+                          <Fade
+                            direction={"up"}
+                            fraction={0.2}
+                            triggerOnce={true}
                             className="projects-screen-projects-wide"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 95%",
-                              backgroundPosition: "center",
-                              backgroundRepeat: "no-repeat",
-                            }}
                           >
                             <div
-                              id={project.fields.id}
-                              className="hide-element"
-                              onClick={() =>
-                                history.push(
-                                  `/project/${project.fields.projectname}`
-                                )
-                              }
+                              onMouseEnter={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              onMouseLeave={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              className="projects-screen-projects-wide"
+                              style={{
+                                backgroundImage: `url(${project.fields.img1})`,
+                                backgroundSize: "100% 90%",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                              }}
                             >
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationInDuration={500}
-                                cascade
+                              <div
+                                id={project.fields.id}
+                                className="hide-element"
+                                onClick={() =>
+                                  history.push(
+                                    `/project/${project.fields.projectname}`
+                                  )
+                                }
                               >
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
-                                  {project.fields.projectname}
-                                </p>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.projectname}
+                                  </p>
 
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "degular",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.client}
-                                </p>
-                              </Animated>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "degular",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
+                                    {project.fields.client}
+                                  </p>
+                                </Fade>
+                              </div>
                             </div>
-                          </div>
-                        )}
-                      </>
-                    )}
-                  </>
-                )}
-              </>
-            ))}
-          </div>
-
-          <div className="project-list-right">
-            {projects.map((project) => (
-              <>
-                {project.fields.rightColumn === true && (
-                  <>
-                    {project.fields.MainProjectPhoto === true && (
-                      <>
-                        {project.fields.mainPhotoLarge === true && (
-                          <div
-                            onMouseEnter={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            onMouseLeave={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            className="projects-screen-projects-large"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 90%",
-                              backgroundPosition: "center",
-                              backgroundRepeat: "no-repeat",
-                            }}
-                          >
-                            <div
-                              id={project.fields.id}
-                              className="hide-element"
-                              onClick={() =>
-                                history.push(
-                                  `/project/${project.fields.projectname}`
-                                )
-                              }
-                            >
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationInDuration={500}
-                                cascade
-                              >
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.projectname}
-                                </p>
-
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "degular",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.client}
-                                </p>
-                              </Animated>
-                            </div>
-                          </div>
-                        )}
-                        {project.fields.mainPhotoSmall === true && (
-                          <div
-                            onMouseEnter={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            onMouseLeave={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            className="projects-screen-projects-small"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
-                              backgroundPosition: "center",
-                              backgroundRepeat: "no-repeat",
-                            }}
-                          >
-                            <div
-                              id={project.fields.id}
-                              className="hide-element"
-                              onClick={() =>
-                                history.push(
-                                  `/project/${project.fields.projectname}`
-                                )
-                              }
-                            >
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationInDuration={500}
-                                cascade
-                              >
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.projectname}
-                                </p>
-
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "degular",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.client}
-                                </p>
-                              </Animated>
-                            </div>
-                          </div>
-                        )}
-                        {project.fields.mainPhotoWide === true && (
-                          <div
-                            onMouseEnter={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            onMouseLeave={() => {
-                              var el = document.getElementById(
-                                project.fields.id
-                              );
-                              el.classList.toggle("show-proj-info");
-                              el.classList.toggle("hide-element");
-                            }}
-                            className="projects-screen-projects-wide"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 90%",
-                              backgroundPosition: "center",
-                              backgroundRepeat: "no-repeat",
-                            }}
-                          >
-                            <div
-                              id={project.fields.id}
-                              className="hide-element"
-                              onClick={() =>
-                                history.push(
-                                  `/project/${project.fields.projectname}`
-                                )
-                              }
-                            >
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationInDuration={500}
-                                cascade
-                              >
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.projectname}
-                                </p>
-
-                                <p
-                                  style={{
-                                    color: "white",
-                                    fontFamily: "degular",
-                                    fontSize: "calc(15px + 1vw)",
-                                  }}
-                                >
-                                  {project.fields.client}
-                                </p>
-                              </Animated>
-                            </div>
-                          </div>
+                          </Fade>
                         )}
                       </>
                     )}
@@ -430,93 +475,3 @@ export default function Projects(props) {
     </div>
   );
 }
-
-// <div className="masonry">
-//         {projects.map((project) => (
-//           <>
-// {project.fields.MainProjectPhoto === true && (
-//   <>
-//     {project.fields.mainPhotoLarge === true && (
-//       <Animated animationIn="fadeInUp">
-//         <div
-//           className="projects-screen-projects-large"
-//           style={{
-//             backgroundImage: `url(${project.fields.img1})`,
-//             backgroundSize: "100% 100%",
-//             backgroundPosition: "center",
-//           }}
-//         ></div>
-//       </Animated>
-//     )}
-//     {project.fields.mainPhotoSmall === true && (
-//       <Fade>
-//         <img
-//           className="projects-screen-projects-small"
-//           alt={project.fields.img1}
-//           src={project.fields.img1}
-//         />
-//       </Fade>
-//     )}
-//     {project.fields.mainPhotoWide === true && (
-//       <Fade>
-//         <img
-//           className="projects-screen-projects-wide"
-//           alt={project.fields.img1}
-//           src={project.fields.img1}
-//         />
-//       </Fade>
-//     )}
-//   </>
-// )}
-//           </>
-//         ))}
-//       </div>
-
-///////////////////////////////////////////////////////
-
-// {project.fields.MainProjectPhoto === true && (
-//   <>
-//     {project.fields.mainPhotoLarge === true && (
-//       <Animated animationIn="fadeInUp">
-//         <div
-//           className="projects-screen-projects-large"
-//           style={{
-//             backgroundImage: `url(${project.fields.img1})`,
-//             backgroundSize: "100% 100%",
-//             backgroundPosition: "center",
-//           }}
-//         ></div>
-//       </Animated>
-//     )}
-//     {project.fields.mainPhotoSmall === true && (
-//       <Fade>
-// <img
-//   className="projects-screen-projects-small"
-//   alt={project.fields.img1}
-//   src={project.fields.img1}
-// />
-//       </Fade>
-//     )}
-//     {project.fields.mainPhotoWide === true && (
-//       <Fade>
-//         <img
-//           className="projects-screen-projects-wide"
-//           alt={project.fields.img1}
-//           src={project.fields.img1}
-//         />
-//       </Fade>
-//     )}
-//   </>
-// )}
-
-///////////////////////////////////////////////////
-// <div
-//                     style={{
-//                       backgroundImage: `url( ${project.fields.img1} )`,
-//                       height: "100%",
-//                       width: "auto",
-//                       backgroundPosition: "center",
-//                       backgroundSize: "cover",
-//                       backgroundRepeat: "no-repeat",
-//                     }}
-//                   />

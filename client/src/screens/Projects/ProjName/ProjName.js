@@ -2,6 +2,7 @@ import React from "react";
 import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjName.css";
 import { useHistory } from "react-router-dom";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 import arrow from "../../../assets/logo/Website-Asset_ProjectSlideshow_ArrowLeft.png";
 
@@ -14,7 +15,7 @@ export default function ProjName(props) {
   // console.log(props.projects);
 
   return (
-    <div style={{ height: "200vh" }}>
+    <div>
       <div
         style={{
           width: "100%",
@@ -23,12 +24,18 @@ export default function ProjName(props) {
           top: "20px",
         }}
       >
-        <img
+        <AttentionSeeker
+          effect={"jello"}
+          delay={1000}
           className="back-arrow-proj-name"
-          onClick={() => history.push("/projects")}
-          src={arrow}
-          alt="back-arrow"
-        />
+        >
+          <img
+            className="back-arrow-proj-name"
+            onClick={() => history.push("/projects")}
+            src={arrow}
+            alt="back-arrow"
+          />
+        </AttentionSeeker>
       </div>
 
       <ProjectsStickyHeader />
