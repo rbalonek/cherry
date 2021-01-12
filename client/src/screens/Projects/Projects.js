@@ -76,9 +76,10 @@ export default function Projects(props) {
                                     )
                                   }
                                 >
-                                  <Animated
-                                    animationIn="fadeInUp"
-                                    animationInDuration={500}
+                                  <Fade
+                                    direction={"up"}
+                                    duration={500}
+                                    cascade={true}
                                   >
                                     <p
                                       style={{
@@ -99,7 +100,7 @@ export default function Projects(props) {
                                     >
                                       {project.fields.client}
                                     </p>
-                                  </Animated>
+                                  </Fade>
                                 </div>
                               </div>
                             </Fade>
@@ -145,10 +146,10 @@ export default function Projects(props) {
                                     )
                                   }
                                 >
-                                  <Animated
-                                    animationIn="fadeInUp"
-                                    animationInDuration={500}
-                                    cascade
+                                  <Fade
+                                    direction={"up"}
+                                    duration={500}
+                                    cascade={true}
                                   >
                                     <p
                                       style={{
@@ -169,7 +170,7 @@ export default function Projects(props) {
                                     >
                                       {project.fields.client}
                                     </p>
-                                  </Animated>
+                                  </Fade>
                                 </div>
                               </div>
                             </Fade>
@@ -214,10 +215,10 @@ export default function Projects(props) {
                                   )
                                 }
                               >
-                                <Animated
-                                  animationIn="fadeInUp"
-                                  animationInDuration={500}
-                                  cascade
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
                                   <p
                                     style={{
@@ -238,7 +239,7 @@ export default function Projects(props) {
                                   >
                                     {project.fields.client}
                                   </p>
-                                </Animated>
+                                </Fade>
                               </div>
                             </div>
                           </Fade>
@@ -297,10 +298,10 @@ export default function Projects(props) {
                                   )
                                 }
                               >
-                                <Animated
-                                  animationIn="fadeInUp"
-                                  animationInDuration={500}
-                                  cascade
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
                                   <p
                                     style={{
@@ -321,7 +322,7 @@ export default function Projects(props) {
                                   >
                                     {project.fields.client}
                                   </p>
-                                </Animated>
+                                </Fade>
                               </div>
                             </div>
                           </Fade>
@@ -365,10 +366,10 @@ export default function Projects(props) {
                                   )
                                 }
                               >
-                                <Animated
-                                  animationIn="fadeInUp"
-                                  animationInDuration={500}
-                                  cascade
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
                                   <p
                                     style={{
@@ -389,7 +390,7 @@ export default function Projects(props) {
                                   >
                                     {project.fields.client}
                                   </p>
-                                </Animated>
+                                </Fade>
                               </div>
                             </div>
                           </Fade>
@@ -433,10 +434,10 @@ export default function Projects(props) {
                                   )
                                 }
                               >
-                                <Animated
-                                  animationIn="fadeInUp"
-                                  animationInDuration={500}
-                                  cascade
+                                <Fade
+                                  direction={"up"}
+                                  duration={500}
+                                  cascade={true}
                                 >
                                   <p
                                     style={{
@@ -457,7 +458,7 @@ export default function Projects(props) {
                                   >
                                     {project.fields.client}
                                   </p>
-                                </Animated>
+                                </Fade>
                               </div>
                             </div>
                           </Fade>

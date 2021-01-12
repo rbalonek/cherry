@@ -15,7 +15,7 @@ export default function ProjName(props) {
   // console.log(props.projects);
 
   return (
-    <div style={{ height: "200vh" }}>
+    <div>
       <div
         style={{
           width: "100%",
