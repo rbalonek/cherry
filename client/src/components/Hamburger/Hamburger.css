@@ -216,14 +216,12 @@
 
 @media (max-width: 770px) {
   .menu-btn {
-    /* left: -10px; */
-    /* right: 10px;
-    top: 10px; */
     top: 0px;
-    /* right: 10px; */
-    /* right: -10px; */
     left: 97vw;
     height: 50px;
+  }
+  .leftIsh {
+    left: -25px;
   }
 }
 
@@ -232,8 +230,9 @@
     left: 96vw;
     top: -5px;
     height: 50px;
-    /* top: -5px;
-    opacity: 1; */
+  }
+  .leftIsh {
+    left: -15px;
   }
 }
 
@@ -243,12 +242,18 @@
     left: 94vw;
     height: 50px;
   }
+  .leftIsh {
+    left: -20px;
+  }
 }
 @media (max-width: 350px) {
   .menu-btn {
     top: -12px;
     left: 94vw;
     height: 50px;
+  }
+  .leftIsh {
+    left: -15px;
   }
 }
 
