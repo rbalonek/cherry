@@ -50,7 +50,7 @@ export default function Hamburger(props) {
             </div>
           </Animated>
         ) : (
-          <div style={{ position: "relative", right: "10px" }}>
+          <div>
             <div className="menu-btn__burger"></div>
           </div>
         )}
