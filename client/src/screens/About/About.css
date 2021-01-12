@@ -16,6 +16,7 @@
   /* position: sticky; */
   top: 10px;
   z-index: 999;
+  height: calc(16px + 2vw);
 }
 .about-xOut:hover {
   cursor: pointer;
@@ -74,13 +75,13 @@
   font-family: "degular";
 }
 .david-bio {
-  padding: 20px;
+  padding: 40px;
   /* background-color: black; */
   z-index: 999;
   border-radius: 10px;
 }
 .david-bio-hovered {
-  padding: 20px;
+  padding: 40px;
   background-color: black;
   z-index: 999;
   border-radius: 10px;
@@ -89,11 +90,11 @@
 }
 
 .greg-bio {
-  padding: 20px;
+  padding: 40px;
   z-index: 999;
 }
 .greg-bio-hovered {
-  padding: 20px;
+  padding: 40px;
   background-color: black;
   z-index: 999;
   border-radius: 10px;
@@ -120,5 +121,29 @@
     top: 5px;
     right: 10px;
     z-index: 999;
+  }
+}
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    .about-x-container {
+      width: 98%;
+      position: sticky;
+      display: flex;
+      justify-content: flex-end;
+      top: 2%;
+      right: 2%;
+      z-index: 999;
+    }
+    .about-xOut {
+      /* width: 50px; */
+      width: calc(16px + 2vw);
+      height: calc(16px + 2vw);
+      /* position: sticky; */
+      top: 10px;
+      z-index: 999;
+    }
+    .about-xOut:hover {
+      cursor: pointer;
+    }
   }
 }
