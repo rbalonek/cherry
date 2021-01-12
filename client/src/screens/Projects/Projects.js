@@ -9,10 +9,12 @@ import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
 import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 import Slider from "../../slider/Slider";
+import { useHistory } from "react-router-dom";
 
 export default function Projects(props) {
   const [hiddenCarousel, setHiddenCarousel] = useState("hide-element");
   const projects = props.projects;
+  const history = useHistory();
 
   const toggleCarousel = () => {
     if (hiddenCarousel === "hide-element") {
@@ -25,7 +27,6 @@ export default function Projects(props) {
   return (
     <div className="projects-screen-container">
       <ProjectsStickyHeader />
-      <ProjectsNavBar />
       <div className="project-list-container">
         <div className="project-container-split">
           <div className="project-list-left">
@@ -52,16 +53,6 @@ export default function Projects(props) {
                                 el.classList.toggle("show-proj-info");
                                 el.classList.toggle("hide-element");
                               }}
-                              // full-screen-carousel
-                              // hide-element
-                              onClick={() => {
-                                var el = document.getElementById(
-                                  `${project.fields.id}-car`
-                                  // "car-1"
-                                );
-                                el.classList.toggle("full-screen-carousel");
-                                el.classList.toggle("hide-element");
-                              }}
                               className="projects-screen-projects-large"
                               style={{
                                 backgroundImage: `url(${project.fields.img1})`,
@@ -73,33 +64,36 @@ export default function Projects(props) {
                               <div
                                 id={project.fields.id}
                                 className="hide-element"
+                                onClick={() =>
+                                  history.push(
+                                    `/project/${project.fields.projectname}`
+                                  )
+                                }
                               >
                                 <Animated
                                   animationIn="fadeInUp"
-                                  animationOut="zoomOutDown"
-                                  animationInDuration={1000}
+                                  animationInDuration={500}
                                 >
-                                  <p style={{ color: "white" }}>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
                                     {project.fields.projectname}
                                   </p>
 
-                                  <p style={{ color: "white" }}>
+                                  <p
+                                    style={{
+                                      color: "white",
+                                      fontFamily: "degular",
+                                      fontSize: "calc(15px + 1vw)",
+                                    }}
+                                  >
                                     {project.fields.client}
                                   </p>
                                 </Animated>
-                              </div>
-                              <div
-                                id={`${project.fields.id}-car`}
-                                className="hide-element"
-                              >
-                                <div className="slider-holder">
-                                  <Slider
-                                    img1={project.fields.img1}
-                                    img2={project.fields.img2}
-                                    img3={project.fields.img3}
-                                    img4={project.fields.img4}
-                                  />
-                                </div>
                               </div>
                             </div>
                           </>
@@ -131,18 +125,34 @@ export default function Projects(props) {
                             <div
                               id={project.fields.id}
                               className="hide-element"
+                              onClick={() =>
+                                history.push(
+                                  `/project/${project.fields.projectname}`
+                                )
+                              }
                             >
                               <Animated
                                 animationIn="fadeInUp"
-                                animationOut="zoomOutDown"
-                                animationInDuration={1000}
+                                animationInDuration={500}
                                 cascade
                               >
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.projectname}
                                 </p>
 
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "degular",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.client}
                                 </p>
                               </Animated>
@@ -176,18 +186,34 @@ export default function Projects(props) {
                             <div
                               id={project.fields.id}
                               className="hide-element"
+                              onClick={() =>
+                                history.push(
+                                  `/project/${project.fields.projectname}`
+                                )
+                              }
                             >
                               <Animated
                                 animationIn="fadeInUp"
-                                animationOut="zoomOutDown"
-                                animationInDuration={1000}
+                                animationInDuration={500}
                                 cascade
                               >
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.projectname}
                                 </p>
 
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "degular",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.client}
                                 </p>
                               </Animated>
@@ -236,18 +262,34 @@ export default function Projects(props) {
                             <div
                               id={project.fields.id}
                               className="hide-element"
+                              onClick={() =>
+                                history.push(
+                                  `/project/${project.fields.projectname}`
+                                )
+                              }
                             >
                               <Animated
                                 animationIn="fadeInUp"
-                                animationOut="zoomOutDown"
-                                animationInDuration={1000}
+                                animationInDuration={500}
                                 cascade
                               >
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.projectname}
                                 </p>
 
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "degular",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.client}
                                 </p>
                               </Animated>
@@ -281,18 +323,34 @@ export default function Projects(props) {
                             <div
                               id={project.fields.id}
                               className="hide-element"
+                              onClick={() =>
+                                history.push(
+                                  `/project/${project.fields.projectname}`
+                                )
+                              }
                             >
                               <Animated
                                 animationIn="fadeInUp"
-                                animationOut="zoomOutDown"
-                                animationInDuration={1000}
+                                animationInDuration={500}
                                 cascade
                               >
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.projectname}
                                 </p>
 
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "degular",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.client}
                                 </p>
                               </Animated>
@@ -326,18 +384,34 @@ export default function Projects(props) {
                             <div
                               id={project.fields.id}
                               className="hide-element"
+                              onClick={() =>
+                                history.push(
+                                  `/project/${project.fields.projectname}`
+                                )
+                              }
                             >
                               <Animated
                                 animationIn="fadeInUp"
-                                animationOut="zoomOutDown"
-                                animationInDuration={1000}
+                                animationInDuration={500}
                                 cascade
                               >
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "AkzidenzGroteskBE-BoldEx",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.projectname}
                                 </p>
 
-                                <p style={{ color: "white" }}>
+                                <p
+                                  style={{
+                                    color: "white",
+                                    fontFamily: "degular",
+                                    fontSize: "calc(15px + 1vw)",
+                                  }}
+                                >
                                   {project.fields.client}
                                 </p>
                               </Animated>

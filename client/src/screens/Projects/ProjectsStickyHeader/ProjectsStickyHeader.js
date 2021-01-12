@@ -20,7 +20,7 @@ export default function ProjectsStickyHeader() {
   // };
 
   return (
-    <div style={{ position: "sticky", top: "0" }}>
+    <div style={{ position: "sticky", top: "0", marginBottom: "50px" }}>
       <img
         onClick={() => history.push("/")}
         style={{
@@ -29,6 +29,7 @@ export default function ProjectsStickyHeader() {
           left: "20px",
           top: "20px",
           width: "calc(150px + 1.5vw)",
+          cursor: "pointer",
         }}
         src={Logo}
         alt="logo"
