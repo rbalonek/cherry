@@ -20,7 +20,14 @@ export default function ProjectsStickyHeader() {
   // };
 
   return (
-    <div style={{ position: "sticky", top: "0", marginBottom: "50px" }}>
+    <div
+      style={{
+        position: "sticky",
+        top: "0",
+        marginBottom: "50px",
+        zIndex: "999",
+      }}
+    >
       <img
         onClick={() => history.push("/")}
         style={{
