@@ -6,6 +6,7 @@ export default function CellTextBlock(props) {
   let pageHeight = window.innerHeight;
 
   const DownArrowCell = () => {
+    let pageHeight = window.innerHeight;
     zenscroll.toY(pageHeight * 2);
   };
 
