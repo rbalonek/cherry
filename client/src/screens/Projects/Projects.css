@@ -3,30 +3,48 @@
   width: 100vw;
   display: flex;
 }
+.project-container-split {
+  display: flex;
+  max-width: 100%;
+}
 .project-list-left {
   /* background-color: blue; */
   /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  /* width: 500px; */
   width: 50%;
+  justify-content: center;
+  justify-content: space-around;
 }
 .project-list-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
   /* background-color: red; */
   /* height: 100vh; */
+  /* width: 500px; */
   width: 50%;
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .projects-screen-projects-large {
-  height: 400px;
+  height: 600px;
   width: 100%;
 }
 .projects-screen-projects-small {
-  height: 200px;
-  width: 48%;
+  height: 250px;
+  width: 370px;
   margin-left: 1%;
-  /* margin-right: 1%; */
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
 }
 .projects-screen-projects-wide {
-  flex: 1 1 auto;
-  height: 200px;
+  height: 400px;
   width: 100%;
 }
 

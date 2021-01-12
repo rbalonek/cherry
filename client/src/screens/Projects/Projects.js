@@ -15,82 +15,96 @@ export default function Projects(props) {
       <ProjectsStickyHeader />
       <ProjectsNavBar />
       <div className="project-list-container">
-        <div className="project-list-left">
-          {projects.map((project) => (
-            <>
-              {project.fields.leftColumn === true && (
-                <>
-                  {project.fields.MainProjectPhoto === true && (
-                    <>
-                      {project.fields.mainPhotoLarge === true && (
-                        <div
-                          className="projects-screen-projects-large"
-                          style={{
-                            backgroundImage: `url(${project.fields.img1})`,
-                            backgroundSize: "100% 100%",
-                            backgroundPosition: "center",
-                          }}
-                        ></div>
-                      )}
-                      {project.fields.mainPhotoSmall === true && (
-                        <img
-                          className="projects-screen-projects-small"
-                          alt={project.fields.img1}
-                          src={project.fields.img1}
-                        />
-                      )}
-                      {project.fields.mainPhotoWide === true && (
-                        <img
-                          className="projects-screen-projects-wide"
-                          alt={project.fields.img1}
-                          src={project.fields.img1}
-                        />
-                      )}
-                    </>
-                  )}
-                </>
-              )}
-            </>
-          ))}
-        </div>
+        <div className="project-container-split">
+          <div className="project-list-left">
+            {projects.map((project) => (
+              <>
+                {project.fields.leftColumn === true && (
+                  <>
+                    {project.fields.MainProjectPhoto === true && (
+                      <>
+                        {project.fields.mainPhotoLarge === true && (
+                          <div
+                            className="projects-screen-projects-large"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "100% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                        {project.fields.mainPhotoSmall === true && (
+                          <div
+                            className="projects-screen-projects-small"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "100% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                        {project.fields.mainPhotoWide === true && (
+                          <div
+                            className="projects-screen-projects-wide"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "70% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                      </>
+                    )}
+                  </>
+                )}
+              </>
+            ))}
+          </div>
 
-        <div className="project-list-right">
-          {projects.map((project) => (
-            <>
-              {project.fields.rightColumn === true && (
-                <>
-                  {project.fields.MainProjectPhoto === true && (
-                    <>
-                      {project.fields.mainPhotoLarge === true && (
-                        <div
-                          className="projects-screen-projects-large"
-                          style={{
-                            backgroundImage: `url(${project.fields.img1})`,
-                            backgroundSize: "100% 100%",
-                            backgroundPosition: "center",
-                          }}
-                        ></div>
-                      )}
-                      {project.fields.mainPhotoSmall === true && (
-                        <img
-                          className="projects-screen-projects-small"
-                          alt={project.fields.img1}
-                          src={project.fields.img1}
-                        />
-                      )}
-                      {project.fields.mainPhotoWide === true && (
-                        <img
-                          className="projects-screen-projects-wide"
-                          alt={project.fields.img1}
-                          src={project.fields.img1}
-                        />
-                      )}
-                    </>
-                  )}
-                </>
-              )}
-            </>
-          ))}
+          <div className="project-list-right">
+            {projects.map((project) => (
+              <>
+                {project.fields.rightColumn === true && (
+                  <>
+                    {project.fields.MainProjectPhoto === true && (
+                      <>
+                        {project.fields.mainPhotoLarge === true && (
+                          <div
+                            className="projects-screen-projects-large"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "100% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                        {project.fields.mainPhotoSmall === true && (
+                          <div
+                            className="projects-screen-projects-small"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "100% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                        {project.fields.mainPhotoWide === true && (
+                          <div
+                            className="projects-screen-projects-wide"
+                            style={{
+                              backgroundImage: `url(${project.fields.img1})`,
+                              backgroundSize: "100% 100%",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                        )}
+                      </>
+                    )}
+                  </>
+                )}
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </div>
