@@ -24,7 +24,7 @@
 }
 
 .projects-screen-projects-large {
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 .projects-screen-projects-small {
@@ -37,6 +37,22 @@
 .projects-screen-projects-wide {
   height: 400px;
   width: 100%;
+}
+
+.hide-element {
+  display: none;
+}
+
+.show-proj-info {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
 }
 
 @media (max-width: 1480px) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import { Fade } from "react-awesome-reveal";
 import { Animated } from "react-animated-css";
@@ -8,7 +8,16 @@ import ProjectsNavBar from "./ProjectsNavBar/ProjectsNavBar";
 import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
 
 export default function Projects(props) {
+  const [hoverProject, setHoverProject] = useState("hide-element");
   const projects = props.projects;
+
+  const toggleProjInfo = () => {
+    if (hoverProject === "hide-element") {
+      setHoverProject("show-proj-info");
+    } else {
+      setHoverProject("hide-element");
+    }
+  };
 
   return (
     <div className="projects-screen-container">
@@ -24,14 +33,48 @@ export default function Projects(props) {
                     {project.fields.MainProjectPhoto === true && (
                       <>
                         {project.fields.mainPhotoLarge === true && (
-                          <div
-                            className="projects-screen-projects-large"
-                            style={{
-                              backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
-                              backgroundPosition: "center",
-                            }}
-                          />
+                          <>
+                            <div
+                              // id={project.fields.id}
+                              // onMouseEnter={toggleProjInfo}
+                              // onMouseLeave={toggleProjInfo}
+                              // onClick={toggleProjInfo}
+                              onClick={() => {
+                                var el = document.getElementById(
+                                  project.fields.id
+                                );
+                                el.classList.toggle("show-proj-info");
+                                el.classList.toggle("hide-element");
+                              }}
+                              className="projects-screen-projects-large"
+                              style={{
+                                backgroundImage: `url(${project.fields.img1})`,
+                                backgroundSize: "100% 90%",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                              }}
+                            >
+                              <div
+                                id={project.fields.id}
+                                className={hoverProject}
+                              >
+                                <Animated
+                                  animationIn="fadeInUp"
+                                  animationOut="zoomOutDown"
+                                  animationInDuration={1000}
+                                  cascade
+                                >
+                                  <p style={{ color: "white" }}>
+                                    {project.fields.projectname}
+                                  </p>
+                                  <p style={{ color: "white" }}>Client</p>
+                                  <p style={{ color: "white" }}>
+                                    {project.fields.client}
+                                  </p>
+                                </Animated>
+                              </div>
+                            </div>
+                          </>
                         )}
                         {project.fields.mainPhotoSmall === true && (
                           <div
@@ -40,6 +83,7 @@ export default function Projects(props) {
                               backgroundImage: `url(${project.fields.img1})`,
                               backgroundSize: "100% 100%",
                               backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
                             }}
                           />
                         )}
@@ -48,8 +92,9 @@ export default function Projects(props) {
                             className="projects-screen-projects-wide"
                             style={{
                               backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
+                              backgroundSize: "100% 95%",
                               backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
                             }}
                           />
                         )}
@@ -73,8 +118,9 @@ export default function Projects(props) {
                             className="projects-screen-projects-large"
                             style={{
                               backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
+                              backgroundSize: "100% 90%",
                               backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
                             }}
                           />
                         )}
@@ -85,6 +131,7 @@ export default function Projects(props) {
                               backgroundImage: `url(${project.fields.img1})`,
                               backgroundSize: "100% 100%",
                               backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
                             }}
                           />
                         )}
@@ -93,8 +140,9 @@ export default function Projects(props) {
                             className="projects-screen-projects-wide"
                             style={{
                               backgroundImage: `url(${project.fields.img1})`,
-                              backgroundSize: "100% 100%",
+                              backgroundSize: "100% 90%",
                               backgroundPosition: "center",
+                              backgroundRepeat: "no-repeat",
                             }}
                           />
                         )}
