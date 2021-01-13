@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import { Animated } from "react-animated-css";
 import "./About.css";
 
 import xOut from "../../assets/logo/Website-Asset_X.png";
@@ -11,45 +12,49 @@ import xOut from "../../assets/logo/Website-Asset_X.png";
 // />
 
 export default function About() {
-  const [background, changeBackground] = useState("vid-about-hov-menu ");
-  const [davidBio, changeDavidBio] = useState("david-bio");
-  const [gregBio, changeGregBio] = useState("greg-bio");
+  // const [background, changeBackground] = useState("vid-about-hov-menu ");
+  // const [davidBio, changeDavidBio] = useState("david-bio");
+  // const [gregBio, changeGregBio] = useState("greg-bio");
+  const [visible, setVisible] = useState(true);
   const history = useHistory();
 
-  const hovDavid = () => {
-    changeBackground("vid-about-hovered-menu");
-    changeDavidBio("david-bio-hovered");
-    changeGregBio("greg-bio");
-    // changeBackground("vid-about-hov-menu")
+  const xClicked = () => {
+    setVisible(false);
+    setTimeout(() => {
+      history.push("/");
+    }, 500);
   };
-  const hovGreg = () => {
-    changeBackground("vid-about-hovered-menu");
-    changeGregBio("greg-bio-hovered");
-    changeDavidBio("david-bio");
-  };
+
+  // const hovDavid = () => {
+  //   changeBackground("vid-about-hovered-menu");
+  //   changeDavidBio("david-bio-hovered");
+  //   changeGregBio("greg-bio");
+  //   // changeBackground("vid-about-hov-menu")
+  // };
+  // const hovGreg = () => {
+  //   changeBackground("vid-about-hovered-menu");
+  //   changeGregBio("greg-bio-hovered");
+  //   changeDavidBio("david-bio");
+  // };
   // style={{ height: "100vh" }}
   return (
     <div className="about-container">
-      {window.innerWidth > 770 ? (
-        <video
-          className={background}
-          autoPlay
-          loop
-          muted
-          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610303314/Cherry/Cherry%20Clients/Verical_Color_Cherry3_zhtrxp.mp4"
-          // src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
-        />
-      ) : (
-        <div></div>
-      )}
-
       <div className="about-x-container">
-        <img
-          alt="xOut"
-          src={xOut}
+        <Animated
           className="about-xOut"
-          onClick={() => history.push("/")}
-        />
+          animationIn="rotateIn"
+          animationOut="rotateOut"
+          animationInDuration={500}
+          animationOutDuration={1000}
+          isVisible={visible}
+        >
+          <img
+            alt="xOut"
+            src={xOut}
+            className="about-xOut"
+            onClick={xClicked}
+          />
+        </Animated>
       </div>
 
       <div className="about-text-container">
@@ -71,9 +76,9 @@ export default function About() {
       </div>
       <div className="bios-container">
         <div
-          className={davidBio}
-          onMouseEnter={hovDavid}
-          onMouseLeave={() => changeBackground("vid-about-hov-menu")}
+          className="david-bio"
+          // onMouseEnter={hovDavid}
+          // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
           <h2 className="white name">David Irlanda</h2>
@@ -95,9 +100,9 @@ export default function About() {
           </p>
         </div>
         <div
-          className={gregBio}
-          onMouseEnter={hovGreg}
-          onMouseLeave={() => changeBackground("vid-about-hov-menu")}
+          className="greg-bio"
+          // onMouseEnter={hovGreg}
+          // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
           <h2 className="white name">Greg Zadrozny</h2>
