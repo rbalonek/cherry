@@ -36,18 +36,22 @@ export default function ClickableSlider(props) {
   // var up = document.getElementById(`#${props.scrollToUp}`);
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
   const ArrowUp100Vh = () => {
-    zenscroll.toY(pageHeight * props.scrollToUp);
+    let pageHeight = window.innerHeight;
+    // zenscroll.toY(pageHeight * props.scrollToUp);
+
     // zenscroll.intoView(chi);
     // zenscroll.to(up);
-    // window.scrollBy(0, pageHeight);
+    window.scrollBy(0, -pageHeight);
     // console.log("up");
   };
 
   const ArrowDown100Vh = () => {
-    zenscroll.toY(pageHeight * props.scrollToDown);
+    let pageHeight = window.innerHeight;
+    // zenscroll.toY(pageHeight * props.scrollToDown);
+
     // zenscroll.intoView(chi);
     // zenscroll.to(scrollingDown);
-    // window.scrollBy(0, pageHeight);
+    window.scrollBy(0, pageHeight);
     // console.log("down");
   };
 
