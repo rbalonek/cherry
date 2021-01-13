@@ -13,7 +13,7 @@
   /* height: calc(15px + 5vw); */
   position: absolute;
   left: 1%;
-  top: 0px;
+  top: 10px;
 }
 .logo-sticky:hover {
   cursor: pointer;
