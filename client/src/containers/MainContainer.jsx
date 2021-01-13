@@ -12,6 +12,7 @@ import ProjMotionGfx from "../screens/Projects/ProjMotionGfx/ProjMotionGfx";
 import ProjIdentity from "../screens/Projects/ProjIdentity/ProjIdentity";
 import ProjKeyArt from "../screens/Projects/ProjKeyArt/ProjKeyArt";
 import ProjName from "../screens/Projects/ProjName/ProjName";
+import ProjectsScreeen from "../screens/Projects/ProjectsScreen/ProjectsScreeen";
 
 export default function MainContainer() {
   const [projects, inVokeProjects] = useState([]);
@@ -41,6 +42,9 @@ export default function MainContainer() {
       </Route>
       <Route path="/projects" component={Projects}>
         <Projects projects={projects} />
+      </Route>
+      <Route path="/projectsscreen" component={ProjectsScreeen}>
+        <ProjectsScreeen projects={projects} />
       </Route>
       <Route path={"/project"} component={ProjName}>
         <ProjName projects={projects} />

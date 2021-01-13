@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Projects.css";
 import { Fade } from "react-awesome-reveal";
 import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
