@@ -4,6 +4,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .modal-container:hover {
   cursor: pointer;
@@ -17,11 +19,11 @@
 }
 .modal-project-text-container {
   position: relative;
-  top: 20%;
-  padding-left: 10%;
+  /* top: 25%; */
+  /* padding-left: 10%; */
   padding-right: 10%;
-  left: 10%;
-  max-width: 850px;
+  left: 32%;
+  max-width: 50%;
 }
 /* .bold-container {
   position: absolute;
@@ -68,7 +70,7 @@
 }
 .what-did-container {
   margin-top: 50px;
-  width: fit-content;
+  width: 50%;
 }
 .what-did-container:hover {
   cursor: pointer;
@@ -89,12 +91,8 @@
 
 @media screen and (max-width: 6000px) and (min-width: 4001px) {
   .modal-project-text-container {
-    position: relative;
-    top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
-    left: 10%;
-    max-width: 2500px;
+    /* top: 30%; */
+    max-width: 40%;
   }
   .project-keywords {
     font-size: calc(23px + 1vw);
@@ -117,14 +115,14 @@
   }
 }
 @media screen and (max-width: 6000px) and (min-width: 4000px) {
-  .modal-project-text-container {
+  /* .modal-project-text-container {
     position: relative;
     top: 20%;
     padding-left: 10%;
     padding-right: 10%;
     left: 10%;
     max-width: 1250px;
-  }
+  } */
   .bold-text {
     font-size: calc(30px + 0.5vw);
   }
@@ -142,14 +140,14 @@
     margin-bottom: 5px;
   }
 }
-@media screen and (max-width: 3999px) and (min-width: 2000px) {
+@media screen and (max-width: 3999px) and (min-width: 3000px) {
   .modal-project-text-container {
     position: relative;
-    top: 20%;
-    padding-left: 10%;
+    /* top: 30%; */
+    /* padding-left: 10%; */
     padding-right: 10%;
-    left: 10%;
-    max-width: 1250px;
+    left: 32%;
+    max-width: 50%;
   }
   .bold-text {
     font-size: calc(20px + 0.5vw);
@@ -168,10 +166,29 @@
     margin-bottom: 5px;
   }
 }
-@media (max-width: 770px) {
-  .modal-project-text-container {
-    top: 20%;
+
+@media screen and (max-width: 2999px) and (min-width: 2000px) {
+  .bold-text {
+    font-size: calc(20px + 0.5vw);
   }
+  .client-name {
+    font-size: calc(15px + 0.5vw);
+    margin-top: -13px;
+  }
+  .description-text {
+    font-size: calc(15px + 0.5vw);
+    /* top: 5px; */
+  }
+  .project-keywords {
+    font-size: calc(15px + 0.5vw);
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 770px) {
+  /* .modal-project-text-container {
+    top: 20%;
+  } */
   .bold-text {
     /* font-size: 22px; */
     font-size: calc(12px + 0.5vw);
@@ -194,9 +211,9 @@
   }
 }
 @media (max-width: 600px) {
-  .modal-project-text-container {
+  /* .modal-project-text-container {
     top: 15%;
-  }
+  } */
   .bold-text {
     font-size: 18px;
   }
@@ -216,9 +233,9 @@
 }
 
 @media (max-width: 430px) {
-  .modal-project-text-container {
+  /* .modal-project-text-container {
     top: 30%;
-  }
+  } */
 }
 
 /* @media (min-width: 3000px) {

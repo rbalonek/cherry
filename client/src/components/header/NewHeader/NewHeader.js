@@ -97,14 +97,16 @@ export default function NewHeader(props) {
                   animationOutDuration={500}
                   isVisible={inView}
                 >
-                  <p className="airtable-header-text">
-                    {props.headerText[0].fields.paragraph1}
-                    <span> </span>
-                    <span className="airtable-header-text-underlined">
-                      {" "}
-                      {props.headerText[0].fields.underlined}
-                    </span>
-                  </p>
+                  <div style={{ height: "100vh" }}>
+                    <p className="airtable-header-text">
+                      {props.headerText[0].fields.paragraph1}
+                      <span> </span>
+                      <span className="airtable-header-text-underlined">
+                        {" "}
+                        {props.headerText[0].fields.underlined}
+                      </span>
+                    </p>
+                  </div>
                 </Animated>
               ) : (
                 <Animated

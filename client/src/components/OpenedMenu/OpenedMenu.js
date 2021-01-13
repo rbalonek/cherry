@@ -41,7 +41,12 @@ export default function OpenedMenu() {
       </h1>
       <h1 className=" hover-animation branding">Branding</h1>
       <h1 className=" hover-animation packaging ">Packaging</h1>
-      <h1 className=" hover-animation ideas">Ideas</h1>
+      <h1
+        className=" hover-animation ideas"
+        onClick={() => history.push("/projectsscreen")}
+      >
+        B-Side
+      </h1>
       <h1 className=" hover-animation about sayhi">Say Hi</h1>
     </div>
   );
