@@ -17,14 +17,14 @@
   color: white;
   text-align: center;
   position: relative;
-  top: 50px;
+  top: 110px;
   font-family: "deregular";
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(10px + 0.7vw);
 }
 .airtable-header-text-underlined {
   text-decoration: underline;
   font-family: "deregular";
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(10px + 0.7vw);
 }
 .airtable-header-text-underlined:hover {
   cursor: pointer;
