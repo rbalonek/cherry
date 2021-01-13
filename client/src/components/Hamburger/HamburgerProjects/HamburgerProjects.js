@@ -25,11 +25,13 @@ export default function HamburgerProjects() {
 
   return (
     <div>
-      <div className={menuClosed}>
-        <OpenedMenuProj />
-      </div>
-      <div className={hambClosed} onClick={toggleHamb}>
-        <div className="menu-btn-proj__burger" />
+      <div style={{ position: "absolute", right: "0" }}>
+        <div className={menuClosed}>
+          <OpenedMenuProj />
+        </div>
+        <div className={hambClosed} onClick={toggleHamb}>
+          <div className="menu-btn-proj__burger" />
+        </div>
       </div>
     </div>
   );
