@@ -41,6 +41,7 @@ export default function ProjectsStickyHeader() {
         src={Logo}
         alt="logo"
       />
+
       <div className="hamburger-holder-project">
         <HamburgerProjects />
       </div>

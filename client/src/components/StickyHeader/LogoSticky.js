@@ -16,32 +16,34 @@ export default function HamburgerSticky(props) {
   //     hamburgerToggle("hamburger-closed");
   //   }
   // };
-  // const logoClick = () => {
-  //   window.scrollTo(0, 0);
-  //   // setIsVis(false);
-  //   // setTimeout(() => {
-  //   //   setIsVis(true);
-  //   // }, 1000);
-  // };
+  const logoClick = () => {
+    window.scrollTo(0, 0);
+    // setIsVis(false);
+    // setTimeout(() => {
+    //   setIsVis(true);
+    // }, 1000);
+  };
   // console.log(props.click);
 
   return (
     <div className="sticky-logo-container">
       {window.innerWidth > 770 ? (
         <Fade fraction={1} delay={1000}>
-          <img
-            className={props.showLogo}
-            src={Logo}
-            alt="logo"
-            // onClick={logoClick}
-          />
+          <a href="#chi">
+            <img
+              className={props.showLogo}
+              src={Logo}
+              alt="logo"
+              // onClick={logoClick}
+            />
+          </a>
         </Fade>
       ) : (
         <img
           className="logo-sticky"
           src={Logo}
           alt="logo"
-          // onClick={logoClick}
+          onClick={logoClick}
         />
       )}
     </div>

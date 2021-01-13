@@ -2,38 +2,35 @@
 .about-container {
 }
 .about-x-container {
-  width: 98%;
+  width: 96.5%;
   position: sticky;
   display: flex;
   justify-content: flex-end;
-  top: 2%;
+  top: 2.5%;
   right: 2%;
   z-index: 999;
 }
 .about-xOut {
   /* width: 50px; */
-  width: calc(16px + 2vw);
+  width: calc(16px + 1vw);
   /* position: sticky; */
   top: 10px;
   z-index: 999;
-  height: calc(16px + 2vw);
+  height: calc(16px + 1vw);
 }
 .about-xOut:hover {
   cursor: pointer;
 }
 
 .about-text-container {
-  padding: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
   position: relative;
-  /* top: -100px; */
+  padding-top: 5%;
 }
 .about-text {
   color: white;
-  /* font-family: "degular"; */
-  /* font-size: calc(10px + 2vw); */
-  /* font-size: 22px; */
   font-family: "AkzidenzGroteskBE-BoldEx";
-  /* font-family: Akzidenz; */
   font-size: calc(10px + 1vw);
   line-height: 1.4;
 }
@@ -43,13 +40,13 @@
 }
 .title {
   margin-bottom: -20px;
-  font-family: Akzidenz;
+  font-family: "AkzidenzGroteskBE-BoldEx";
   font-size: calc(8px + 1vw);
 }
 .name {
   font-size: calc(20px + 1vw);
 }
-.vid-about-hov-menu {
+/* .vid-about-hov-menu {
   position: absolute;
   opacity: 0;
   pointer-events: none;
@@ -62,53 +59,96 @@
   pointer-events: none;
   z-index: -1;
   width: 100vw;
-}
+} */
 
 .bios-container {
   display: flex;
   flex-direction: row;
-  /* position: absolute;
-  bottom: 0; */
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .bio-text {
   font-size: calc(10px + 1vw);
   font-family: "degular";
 }
 .david-bio {
-  padding: 40px;
-  /* background-color: black; */
+  padding-right: 10%;
   z-index: 999;
   border-radius: 10px;
 }
-.david-bio-hovered {
-  padding: 40px;
-  background-color: black;
-  z-index: 999;
-  border-radius: 10px;
+.david-bio:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
     auto;
 }
 
 .greg-bio {
-  padding: 40px;
+  padding-left: 10%;
   z-index: 999;
 }
-.greg-bio-hovered {
-  padding: 40px;
-  background-color: black;
-  z-index: 999;
-  border-radius: 10px;
+.greg-bio:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610047428/Cherry/Cherry%20Clients/Logos/gregface_vcajko.png),
     auto;
 }
 
-@media (min-width: 1500px) {
-  .about-container {
-    height: 100vh;
+@media (max-width: 3900px) {
+  .about-text {
+    color: white;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(10px + 0.7vw);
+    line-height: 1.4;
   }
-  .bios-container {
-    position: absolute;
-    bottom: 0;
+  .title {
+    margin-bottom: -20px;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(8px + 0.7vw);
+  }
+  .name {
+    font-size: calc(20px + 0.7vw);
+  }
+  .bio-text {
+    font-size: calc(10px + 0.7vw);
+    font-family: "degular";
+  }
+}
+@media (max-width: 1600px) {
+  .about-text {
+    color: white;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(10px + 0.5vw);
+    line-height: 1.4;
+  }
+  .title {
+    margin-bottom: -20px;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(8px + 0.3vw);
+  }
+  .name {
+    font-size: calc(20px + 0.3vw);
+  }
+  .bio-text {
+    font-size: calc(10px + 0.3vw);
+    font-family: "degular";
+  }
+}
+@media (max-width: 885px) {
+  .about-text {
+    color: white;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(10px + 0.5vw);
+    line-height: 1.4;
+  }
+  .title {
+    margin-bottom: -20px;
+    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-size: calc(8px + 0.1vw);
+  }
+  .name {
+    font-size: calc(20px + 0.1vw);
+  }
+  .bio-text {
+    font-size: calc(10px + 0.1vw);
+    font-family: "degular";
   }
 }
 
@@ -126,18 +166,18 @@
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   @media {
     .about-x-container {
-      width: 98%;
+      width: 96%;
       position: sticky;
       display: flex;
       justify-content: flex-end;
-      top: 2%;
+      top: 2.5%;
       right: 2%;
       z-index: 999;
     }
     .about-xOut {
       /* width: 50px; */
-      width: calc(16px + 2vw);
-      height: calc(16px + 2vw);
+      width: calc(16px + 1vw);
+      height: calc(16px + 1vw);
       /* position: sticky; */
       top: 10px;
       z-index: 999;
