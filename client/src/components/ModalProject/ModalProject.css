@@ -4,6 +4,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .modal-container:hover {
   cursor: pointer;
@@ -17,10 +19,10 @@
 }
 .modal-project-text-container {
   position: relative;
-  top: 25%;
-  padding-left: 10%;
+  /* top: 25%; */
+  /* padding-left: 10%; */
   padding-right: 10%;
-  left: 23%;
+  left: 32%;
   max-width: 50%;
 }
 /* .bold-container {
@@ -89,7 +91,7 @@
 
 @media screen and (max-width: 6000px) and (min-width: 4001px) {
   .modal-project-text-container {
-    top: 30%;
+    /* top: 30%; */
     max-width: 40%;
   }
   .project-keywords {
@@ -141,10 +143,10 @@
 @media screen and (max-width: 3999px) and (min-width: 3000px) {
   .modal-project-text-container {
     position: relative;
-    top: 30%;
-    padding-left: 10%;
+    /* top: 30%; */
+    /* padding-left: 10%; */
     padding-right: 10%;
-    left: 23%;
+    left: 32%;
     max-width: 50%;
   }
   .bold-text {
