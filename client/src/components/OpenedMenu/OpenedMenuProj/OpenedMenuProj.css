@@ -31,8 +31,8 @@
 .vid-about-opened-menu-proj {
   position: absolute;
   /* top: -5px; */
-  left: 0;
-  /* height: 105vh; */
+  right: 10vw;
+  height: 110vw;
 }
 
 .hover-animation-proj {
@@ -47,6 +47,7 @@
   cursor: pointer;
   margin: 0;
   margin-bottom: 2px;
+  right: 90vw;
 }
 .hover-animation-proj:after {
   content: "";

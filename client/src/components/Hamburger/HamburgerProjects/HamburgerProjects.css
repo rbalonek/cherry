@@ -1,6 +1,7 @@
 .proj-menu {
-  position: relative;
+  position: absolute;
   top: -5px;
+  /* right: 50px; */
   /* right: 95px; */
   /* margin-top: -5px; */
   /* top: -10px; */
@@ -73,9 +74,9 @@
 }
 
 @media screen and (max-width: 6000px) and (min-width: 3000px) {
-  .proj-menu {
+  /* .proj-menu {
     top: 10px;
-  }
+  } */
 }
 
 @media (max-width: 770px) {
