@@ -10,6 +10,7 @@
 }
 .logo-sticky {
   height: calc(15px + 5vw);
+  /* height: calc(15px + 5vw); */
   position: absolute;
   left: 1%;
   top: 0px;
@@ -100,8 +101,12 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 6000px) and (min-width: 2800px) {
-  /* .logo-sticky {
-    height: calc(80px + 5vw);
-  } */
+@media (min-width: 1000px) {
+  .logo-sticky {
+    /* height: 130px; */
+    height: calc(15px + 7vw);
+    position: absolute;
+    left: 1%;
+    top: 0px;
+  }
 }
