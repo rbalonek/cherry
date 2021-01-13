@@ -70,7 +70,7 @@
 }
 .what-did-container {
   margin-top: 50px;
-  width: fit-content;
+  width: 50%;
 }
 .what-did-container:hover {
   cursor: pointer;

@@ -76,6 +76,7 @@
   transform: rotate(-45deg);
 }
 /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+
 @media (min-width: 4500px) {
   .hamburger-helper {
     right: 2.9%;
@@ -92,10 +93,10 @@
     height: 7px;
   }
   .menu-btn__burger::before {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
   }
   .menu-btn__burger::after {
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
   .menu-btn-cursor-container {
     height: 500px;
@@ -157,7 +158,7 @@
   }
   .hamburger-helper {
     right: 3%;
-    top: 65px;
+    top: 90px;
   }
   .menu-btn__burger {
     width: 70px;
@@ -185,7 +186,7 @@
   }
   .hamburger-helper {
     right: 3%;
-    top: 50px;
+    top: 60px;
   }
   .menu-btn__burger {
     width: 50px;
@@ -224,7 +225,7 @@
   .hamburger-helper {
     /* right: 35px; */
     right: 2.8%;
-    top: 28px;
+    top: 35px;
   }
 }
 
