@@ -35,25 +35,29 @@ export default function Hamburger(props) {
   // console.log(props.showHamburger);
   return (
     <div>
-      <div className={menuHide + open} onClick={clicked}>
-        {window.innerWidth > 770 ? (
-          <Animated
-            animationIn="fadeInDownBig"
-            animationInDelay={1000}
-            animationInDuration={1500}
-            triggerOnce={true}
+      <div className="hamburger-helper">
+        <div className={menuHide + open} onClick={clicked}>
+          {window.innerWidth > 770 ? (
+            <div style={{ position: "absolute", right: "0" }}>
+              <Animated
+                animationIn="fadeInDownBig"
+                animationInDelay={1000}
+                animationInDuration={1500}
+                triggerOnce={true}
 
-            // isVisible={true}
-          >
-            <div className="menu-btn__burger">
-              <div className="menu-btn-cursor-container"></div>
+                // isVisible={true}
+              >
+                <div className="menu-btn__burger">
+                  <div className="menu-btn-cursor-container"></div>
+                </div>
+              </Animated>
             </div>
-          </Animated>
-        ) : (
-          <div>
-            <div className="menu-btn__burger"></div>
-          </div>
-        )}
+          ) : (
+            <div>
+              <div className="menu-btn__burger"></div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
