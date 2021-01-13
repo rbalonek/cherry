@@ -1,28 +1,12 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { Fade } from "react-awesome-reveal";
-import { Animated } from "react-animated-css";
-import { AnimatedOnScroll } from "react-animated-css-onscroll";
-
-import ProjectsNavBar from "./ProjectsNavBar/ProjectsNavBar";
 import ProjectsStickyHeader from "./ProjectsStickyHeader/ProjectsStickyHeader";
-import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
-import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
-import Slider from "../../slider/Slider";
 import { useHistory } from "react-router-dom";
 
 export default function Projects(props) {
-  const [hiddenCarousel, setHiddenCarousel] = useState("hide-element");
   const projects = props.projects;
   const history = useHistory();
-
-  const toggleCarousel = () => {
-    if (hiddenCarousel === "hide-element") {
-      setHiddenCarousel("full-screen-carousel");
-    } else {
-      setHiddenCarousel("hide-element");
-    }
-  };
 
   return (
     <div className="projects-screen-container">
