@@ -33,6 +33,17 @@
   width: 900px;
 }
 /*  */
+
+.masonry-img {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+  /* background-color: green; */
+  /* justify-content: center; */
+}
+
 .masonry-brick-img {
   flex: auto;
   height: 500px;

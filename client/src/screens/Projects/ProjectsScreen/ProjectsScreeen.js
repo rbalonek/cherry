@@ -75,7 +75,7 @@ export default function ProjectsScreeen(props) {
         </Fade>
       </div>
 
-      <div class="masonry">
+      <div class="masonry-img">
         {props.projects.map((project) => (
           <Fade
             direction={"up"}
