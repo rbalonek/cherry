@@ -35,7 +35,7 @@ export default function ProjectsStickyHeader() {
           position: "relative",
           left: "20px",
           top: "20px",
-          width: "calc(150px + 1.5vw)",
+          height: " calc(15px + 7vw)",
           cursor: "pointer",
         }}
         src={Logo}
