@@ -3,151 +3,100 @@ import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjectsScreen.css";
 import { Fade } from "react-awesome-reveal";
 
-export default function ProjectsScreeen() {
+export default function ProjectsScreeen(props) {
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader />
       <div class="masonry">
-        <div class="masonry-brick centered-text">Masonry Fixed 1</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 3</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 4</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 1</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 3</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 4</div>
-      </div>
-      <div class="masonry">
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609811738/Cherry/Cherry%20Clients/IMAGES/Billions%20S3/1st-carousel-Portfolio-2018-FILMTV174_copy_goxidf.jpg)",
-          }}
-        />
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
 
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
-        <div class="masonry-brick centered-text">Masonry Fixed 4</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 1</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 3</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
+        <Fade
+          direction={"up"}
+          fraction={Math.random()}
+          triggerOnce={true}
+          className="masonry-brick centered-text"
+        >
+          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
+        </Fade>
       </div>
-      <div class="masonry">
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609811738/Cherry/Cherry%20Clients/IMAGES/Billions%20S3/1st-carousel-Portfolio-2018-FILMTV174_copy_goxidf.jpg)",
-          }}
-        />
 
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
-        <div class="masonry-brick centered-text">Masonry Fixed 4</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 1</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 3</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
-      </div>
       <div class="masonry">
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609811738/Cherry/Cherry%20Clients/IMAGES/Billions%20S3/1st-carousel-Portfolio-2018-FILMTV174_copy_goxidf.jpg)",
-          }}
-        />
-
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
-        <div class="masonry-brick centered-text">Masonry Fixed 4</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 1</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 2</div>
-        <div class="masonry-brick centered-text">Masonry Fixed 3</div>
-        <div
-          class="masonry-brick-img centered-text"
-          style={{
-            // backgroundSize: "100% 100%",
-            backgroundSize: "cover",
-            backgroundPosition: "50% 50%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundImage:
-              "url(https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609347981/Cherry/Cherry%20Clients/IMAGES/Happyish%20S1/CHERRYPortfolio-2020-FILMTV1_tftc6j.jpg)",
-          }}
-        />
+        {props.projects.map((project) => (
+          <Fade
+            direction={"up"}
+            fraction={Math.random()}
+            triggerOnce={true}
+            className="masonry-brick-img"
+            x
+          >
+            <div
+              class="masonry-brick-img "
+              style={{
+                // backgroundSize: "100% 100%",
+                backgroundSize: "cover",
+                backgroundPosition: "50% 50%",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundImage: `url(${project.fields.img1})`,
+              }}
+            />
+          </Fade>
+        ))}
       </div>
     </div>
   );
