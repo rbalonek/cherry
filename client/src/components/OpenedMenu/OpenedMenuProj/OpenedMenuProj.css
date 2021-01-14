@@ -116,7 +116,7 @@
   margin-bottom: 2px;
 }
 
-@media screen and (max-width: 5999px) and (min-width: 3000px) {
+@media screen and (max-width: 5999px) and (min-width: 4000px) {
   .hover-animation-proj {
     font-size: calc(40px + 3vw);
   }
@@ -140,7 +140,7 @@
     transform: scaleX(0.25);
   }
 }
-@media screen and (max-width: 2999px) and (min-width: 1000px) {
+@media screen and (max-width: 3999px) and (min-width: 3000px) {
   .hover-animation-proj {
     font-size: calc(40px + 3vw);
   }
@@ -149,19 +149,96 @@
     bottom: 9px;
   }
   .about-proj:hover:after {
+    transform: scaleX(0.16);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.18);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.18);
+  }
+  .branding-proj:hover:after {
+    transform: scaleX(0.24);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.28);
+  }
+}
+@media screen and (max-width: 5999px) and (min-width: 4000px) {
+  .hover-animation-proj {
+    font-size: calc(10px + 4vw);
+  }
+  .hover-animation-proj:after {
+    height: 3px;
+    bottom: 30px;
+  }
+  .about-proj:hover:after {
+    transform: scaleX(0.18);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.21);
+  }
+
+  .branding-proj:hover:after {
+    transform: scaleX(0.26);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.3);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.19);
+  }
+}
+@media screen and (max-width: 3999px) and (min-width: 2000px) {
+  .hover-animation-proj {
+    font-size: calc(10px + 4vw);
+  }
+  .hover-animation-proj:after {
+    height: 3px;
+    bottom: 10px;
+  }
+
+  .about-proj:hover:after {
+    transform: scaleX(0.18);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.21);
+  }
+
+  .branding-proj:hover:after {
+    transform: scaleX(0.26);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.3);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.19);
+  }
+}
+@media screen and (max-width: 1999px) and (min-width: 1000px) {
+  .hover-animation-proj {
+    font-size: calc(10px + 4vw);
+  }
+  .hover-animation-proj:after {
+    height: 3px;
+    bottom: 7px;
+  }
+
+  .about-proj:hover:after {
     transform: scaleX(0.19);
   }
   .keyart-proj:hover:after {
-    transform: scaleX(0.19);
+    transform: scaleX(0.23);
   }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.17);
-  }
+
   .branding-proj:hover:after {
-    transform: scaleX(0.25);
+    transform: scaleX(0.29);
   }
   .packaging-proj:hover:after {
-    transform: scaleX(0.29);
+    transform: scaleX(0.33);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.2);
   }
 }
 
