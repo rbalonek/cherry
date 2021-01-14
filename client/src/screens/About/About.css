@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/qnu7szh.css");
 .about-container {
+  min-height: 100vh;
 }
 .about-x-container {
   width: 96.5%;

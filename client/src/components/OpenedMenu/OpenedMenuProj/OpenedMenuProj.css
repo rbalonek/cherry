@@ -116,19 +116,55 @@
   margin-bottom: 2px;
 }
 
-/* @media screen and (max-width: 5999px) and (min-width: 2000px) {
-  .hover-animation-proj {
-    font-size: calc(40px + 7vw);
-  }
-}
-@media screen and (max-width: 1999px) and (min-width: 1000px) {
+@media screen and (max-width: 5999px) and (min-width: 3000px) {
   .hover-animation-proj {
     font-size: calc(40px + 3vw);
   }
+  .hover-animation-proj:after {
+    height: 4px;
+    bottom: 9px;
+  }
+  .about-proj:hover:after {
+    transform: scaleX(0.15);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.18);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.16);
+  }
+  .branding-proj:hover:after {
+    transform: scaleX(0.21);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.25);
+  }
+}
+@media screen and (max-width: 2999px) and (min-width: 1000px) {
+  .hover-animation-proj {
+    font-size: calc(40px + 3vw);
+  }
+  .hover-animation-proj:after {
+    height: 4px;
+    bottom: 9px;
+  }
+  .about-proj:hover:after {
+    transform: scaleX(0.19);
+  }
+  .keyart-proj:hover:after {
+    transform: scaleX(0.19);
+  }
+  .ideas-proj:hover:after {
+    transform: scaleX(0.17);
+  }
+  .branding-proj:hover:after {
+    transform: scaleX(0.25);
+  }
+  .packaging-proj:hover:after {
+    transform: scaleX(0.29);
+  }
 }
 
-
-} */
 @media (max-width: 770px) {
   .about-proj:hover:after {
     transform: scaleX(0.25);
