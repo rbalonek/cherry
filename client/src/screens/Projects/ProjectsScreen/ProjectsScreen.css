@@ -114,46 +114,20 @@
 
 /*  */
 
-/* .proj-div-split {
-  display: flex;
-  flex-wrap: wrap;
-} */
+.hide-element {
+  display: none;
+}
 
-/* .proj-div-left {
-  background-color: green;
+.show-project-info {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
   display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  cursor: pointer;
 }
-.proj-div-right {
-  background-color: green;
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  flex-direction: row-reverse;
-  justify-content: center;
-} */
-
-/* .big {
-  height: calc(600px + 1vw);
-  width: calc(1000px + 1vw);
-  background-color: red;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-}
-.small {
-  height: 300px;
-  width: 500px;
-  background-color: orange;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-}
-.long {
-  height: 300px;
-  width: 1000px;
-  background-color: blueviolet;
-} */
