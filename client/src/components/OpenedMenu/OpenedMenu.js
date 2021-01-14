@@ -5,6 +5,18 @@ import "./OpenedMenu.css";
 export default function OpenedMenu() {
   const history = useHistory();
 
+  const bSidePress = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+
+    setTimeout(() => {
+      history.push("/projectsscreen");
+    }, 500);
+  };
+
   const clickedAbout = () => {
     window.scroll({
       top: 0,
@@ -41,10 +53,7 @@ export default function OpenedMenu() {
       </h1>
       <h1 className=" hover-animation branding">Branding</h1>
       <h1 className=" hover-animation packaging ">Packaging</h1>
-      <h1
-        className=" hover-animation ideas"
-        onClick={() => history.push("/projectsscreen")}
-      >
+      <h1 className=" hover-animation ideas" onClick={bSidePress}>
         B-Side
       </h1>
       <h1 className=" hover-animation about sayhi">Say Hi</h1>
