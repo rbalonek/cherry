@@ -2,9 +2,10 @@
   /* margin: 0% calc(0.01px + 0.2vw);
   width: calc(0.5px + 0.5vw);
   height: calc(0.5px + 0.5vw); */
-  margin: 0% 1px;
-  width: 5px;
-  height: 5px;
+  margin: 0.5% calc(0.5px + 0.08vw);
+
+  width: calc(0.01px + 0.5vw);
+  height: calc(0.01px + 0.5vw);
 }
 .carousel .control-dots .dot {
   box-shadow: none;
@@ -159,44 +160,40 @@
 
 @media screen and (max-width: 5999px) and (min-width: 4000px) {
   .carousel .control-dots .dot {
-    margin: 1% 3px;
-    width: 20px;
-    height: 20px;
+    margin: calc(0.5% + 0.5vw) calc(0.5px + 0.07vw);
   }
 }
 
 @media screen and (max-width: 3999px) and (min-width: 2500px) {
   .carousel .control-dots .dot {
-    margin: 1% 2px;
-    width: 15px;
-    height: 15px;
+    margin: calc(0.5% + 0.5vw) calc(0.5px + 0.07vw);
   }
 }
 
 @media screen and (max-width: 2499px) and (min-width: 2000px) {
   .carousel .control-dots .dot {
-    margin: 0.5% 2px;
-    width: 10px;
-    height: 10px;
+    margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw);
   }
 }
 @media screen and (max-width: 1999px) and (min-width: 1700px) {
   .carousel .control-dots .dot {
-    margin: 0.5% 1px;
-    width: 9px;
-    height: 9px;
+    margin: calc(0.05% + 0.5vw) calc(0.5px + 0.07vw);
   }
 }
 
 @media screen and (max-width: 1699px) and (min-width: 1300px) {
   .carousel .control-dots .dot {
-    margin: 0.5% 1px;
-    width: 7px;
-    height: 7px;
+    margin: calc(0.05% + 0.5vw) calc(0.5px + 0.07vw);
   }
 }
 
 @media (max-width: 770px) {
+  .carousel .control-dots .dot {
+    margin: calc(0.05% + 0.5vw) 1.5px;
+    /* width: calc(0.1px + 0.5vw); */
+    /* height: calc(0.1px + 0.5vw); */
+  }
+
   .carousel-container {
     contain: content;
   }

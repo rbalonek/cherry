@@ -4,6 +4,17 @@ import "./OpenedMenuProj.css";
 
 export default function OpenedMenuProj() {
   const history = useHistory();
+  const bsidePress = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+
+    setTimeout(() => {
+      history.push("/projectsscreen");
+    }, 500);
+  };
 
   const clickedAbout = () => {
     window.scroll({
@@ -41,7 +52,9 @@ export default function OpenedMenuProj() {
           </h1>
           <h1 className=" hover-animation-proj branding-proj">Branding</h1>
           <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
-          <h1 className=" hover-animation-proj ideas-proj">Ideas</h1>
+          <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
+            B-Side
+          </h1>
           <h1 className=" hover-animation-proj about-proj sayhi-proj">
             Say Hi
           </h1>
@@ -62,7 +75,9 @@ export default function OpenedMenuProj() {
           </h1>
           <h1 className=" hover-animation-proj branding-proj">Branding</h1>
           <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
-          <h1 className=" hover-animation-proj ideas-proj">Ideas</h1>
+          <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
+            B-Side
+          </h1>
           <h1 className=" hover-animation-proj about-proj sayhi-proj-mobile">
             Say Hi
           </h1>

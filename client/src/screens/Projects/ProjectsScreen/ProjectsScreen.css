@@ -1,10 +1,16 @@
+/* For Example titles */
+.centered-text {
+  text-align: center;
+}
+
 .masonry {
-  width: 1000px;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   margin-left: -8px; /* Adjustment for the gutter */
   width: 100%;
   background-color: green;
+  /* justify-content: center; */
 }
 .masonry-brick {
   flex: auto;
@@ -13,83 +19,115 @@
   margin: 0 8px 8px 0; /* Some gutter */
   background-color: red;
 }
+
+.masonry-brick:nth-child(1) {
+  width: 100%;
+}
+.masonry-brick:nth-child(2) {
+  width: 500px;
+}
+.masonry-brick:nth-child(3) {
+  width: 900px;
+}
+.masonry-brick:nth-child(4) {
+  width: 900px;
+}
+/*  */
+
+.masonry-img {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+  /* background-color: green; */
+  /* justify-content: center; */
+}
+
 .masonry-brick-img {
   flex: auto;
   height: 500px;
   min-width: 500px;
-  max-width: 1000px;
+  /* max-width: 800px; */
   margin: 0 8px 8px 0; /* Some gutter */
 }
-.masonry-brick:nth-child(4n + 1) {
-  width: 650px;
+
+.masonry-brick-img:nth-child(1) {
+  width: 100%;
 }
-.masonry-brick:nth-child(4n + 1):nth-child(4n + 2) {
-  width: 625px;
+.masonry-brick-img:nth-child(2) {
+  width: 500px;
 }
-.masonry-brick:nth-child(4n + 1):nth-child(4n + 3) {
-  width: 680px;
+.masonry-brick-img:nth-child(3) {
+  width: 900px;
 }
-.masonry-brick:nth-child(4n + 1):nth-child(4n + 4) {
-  width: 680px;
+.masonry-brick-img:nth-child(4) {
+  width: 900px;
+}
+.masonry-brick-img:nth-child(5) {
+  width: 900px;
+}
+.masonry-brick-img:nth-child(6) {
+  width: 500px;
+}
+.masonry-brick-img:nth-child(7) {
+  width: 900px;
+}
+.masonry-brick-img:nth-child(8) {
+  width: 500px;
 }
 
-.centered-text {
-  text-align: center;
+@media (max-height: 1925px) {
+  .masonry-brick-img {
+    flex: auto;
+    height: 400px;
+    min-width: 350px;
+    /* max-width: 800px; */
+    margin: 0 8px 8px 0; /* Some gutter */
+  }
+
+  .masonry-brick-img:nth-child(1) {
+    width: 100%;
+  }
+  .masonry-brick-img:nth-child(2n) {
+    width: 350px;
+  }
+  .masonry-brick-img:nth-child(3n) {
+    width: 600px;
+  }
+  .masonry-brick-img:nth-child(4) {
+    width: 500px;
+  }
+  .masonry-brick-img:nth-child(5) {
+    width: 350px;
+  }
+  .masonry-brick-img:nth-child(6) {
+    width: 350px;
+  }
+  .masonry-brick-img:nth-child(7) {
+    width: 350px;
+  }
+  .masonry-brick-img:nth-child(8) {
+    width: 350px;
+  }
 }
 
 /*  */
 
-.proj-div-split {
-  /* display: flex;
-  width: 100vw;
-  background-color: white; */
-  display: flex;
-  flex-wrap: wrap;
+.hide-element {
+  display: none;
 }
 
-.proj-div-left {
-  background-color: green;
+.show-project-info {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
   display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: center;
-  /* justify-content: flex-start; */
-}
-.proj-div-right {
-  background-color: green;
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  flex-direction: row-reverse;
-  justify-content: center;
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  background-color: blue;
-  justify-content: center;
-  justify-content: flex-start; */
-  /* justify-content: flex-end; */
-}
-
-.big {
-  height: calc(600px + 1vw);
-  width: calc(1000px + 1vw);
-  background-color: red;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-}
-.small {
-  height: 300px;
-  width: 500px;
-  background-color: orange;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-}
-.long {
-  height: 300px;
-  width: 1000px;
-  background-color: blueviolet;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  cursor: pointer;
 }

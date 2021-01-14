@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/qnu7szh.css");
 .about-container {
+  min-height: 100vh;
 }
 .about-x-container {
   width: 96.5%;
@@ -42,6 +43,7 @@
   margin-bottom: -20px;
   font-family: "AkzidenzGroteskBE-BoldEx";
   font-size: calc(8px + 1vw);
+  width: max-content;
 }
 .name {
   font-size: calc(20px + 1vw);
@@ -73,7 +75,7 @@
   font-family: "degular";
 }
 .david-bio {
-  padding-right: 10%;
+  padding-right: 5%;
   z-index: 999;
   border-radius: 10px;
 }
@@ -83,7 +85,7 @@
 }
 
 .greg-bio {
-  padding-left: 10%;
+  padding-left: 5%;
   z-index: 999;
 }
 .greg-bio:hover {
@@ -92,7 +94,7 @@
 }
 
 @media (max-width: 3900px) {
-  .about-text {
+  /* .about-text {
     color: white;
     font-family: "AkzidenzGroteskBE-BoldEx";
     font-size: calc(10px + 0.7vw);
@@ -109,10 +111,10 @@
   .bio-text {
     font-size: calc(10px + 0.7vw);
     font-family: "degular";
-  }
+  } */
 }
 @media (max-width: 1600px) {
-  .about-text {
+  /* .about-text {
     color: white;
     font-family: "AkzidenzGroteskBE-BoldEx";
     font-size: calc(10px + 0.5vw);
@@ -129,10 +131,10 @@
   .bio-text {
     font-size: calc(10px + 0.3vw);
     font-family: "degular";
-  }
+  } */
 }
 @media (max-width: 885px) {
-  .about-text {
+  /* .about-text {
     color: white;
     font-family: "AkzidenzGroteskBE-BoldEx";
     font-size: calc(10px + 0.5vw);
@@ -149,7 +151,7 @@
   .bio-text {
     font-size: calc(10px + 0.1vw);
     font-family: "degular";
-  }
+  } */
 }
 
 @media (max-width: 600px) {

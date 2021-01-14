@@ -3,21 +3,25 @@ import "./ProjectsStickyHeader.css";
 import Logo from "../../../assets/logo/Cherry-Logo.png";
 import { useHistory } from "react-router-dom";
 import HamburgerProjects from "../../../components/Hamburger/HamburgerProjects/HamburgerProjects";
-
+import zenscroll from "zenscroll";
 // import Hamburger from "../../../components/Hamburger/Hamburger";
 // import OpenedMenu from "../../../components/OpenedMenu/OpenedMenu";
 
 export default function ProjectsStickyHeader() {
-  // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
   const history = useHistory();
 
-  // const toggleHamb = () => {
-  //   if (hamburgerClosed === "hamburger-closed") {
-  //     hamburgerToggle("hamburger-opened-sticky");
-  //   } else {
-  //     hamburgerToggle("hamburger-closed");
-  //   }
-  // };
+  const backToFirstProj = () => {
+    let pageHeight = window.innerHeight;
+    history.push("/");
+
+    setTimeout(() => {
+      zenscroll.toY(pageHeight);
+    }, 900);
+    // zenscroll.intoView(chi);
+    // zenscroll.to(chi);
+    // window.scrollBy(0, pageHeight);
+    // console.log(pageHeight);
+  };
 
   return (
     <div
@@ -29,13 +33,13 @@ export default function ProjectsStickyHeader() {
       }}
     >
       <img
-        onClick={() => history.push("/")}
+        onClick={backToFirstProj}
         style={{
           // width: "150px",
           position: "relative",
           left: "20px",
           top: "20px",
-          width: "calc(150px + 1.5vw)",
+          height: " calc(15px + 7vw)",
           cursor: "pointer",
         }}
         src={Logo}

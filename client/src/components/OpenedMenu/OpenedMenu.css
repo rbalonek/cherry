@@ -131,7 +131,7 @@
   }
 
   .ideas:hover:after {
-    transform: scaleX(0.5);
+    transform: scaleX(0.6);
   }
 
   .branding:hover:after {

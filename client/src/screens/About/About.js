@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import "./About.css";
+import zenscroll from "zenscroll";
 
 import xOut from "../../assets/logo/Website-Asset_X.png";
 
@@ -19,10 +20,16 @@ export default function About() {
   const history = useHistory();
 
   const xClicked = () => {
+    let pageHeight = window.innerHeight;
     setVisible(false);
+
     setTimeout(() => {
       history.push("/");
-    }, 500);
+    }, 1000);
+
+    setTimeout(() => {
+      zenscroll.toY(pageHeight);
+    }, 2000);
   };
 
   // const hovDavid = () => {
