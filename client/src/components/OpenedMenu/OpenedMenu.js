@@ -36,7 +36,7 @@ export default function OpenedMenu() {
           autoPlay
           loop
           muted
-          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610664010/Cherry/Videos/vidTurned_rrnxeo.mov"
         />
       ) : (
         <div></div>
