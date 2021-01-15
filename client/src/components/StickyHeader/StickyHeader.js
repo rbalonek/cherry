@@ -37,7 +37,7 @@ export default function StickyHeader(props) {
       <div className={hamburgerClosed}>
         <div className="hamburger-text-container">
           <Fade>
-            <OpenedMenu />
+            <OpenedMenu videoBackground={props.videoBackground} />
           </Fade>
         </div>
       </div>

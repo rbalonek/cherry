@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import MainContainer from "./containers/MainContainer";
@@ -8,13 +8,71 @@ import About from "./screens/About/About";
 import Home from "./screens/home/Home.jsx";
 import Projects from "./screens/Projects/Projects";
 import ProjLogos from "./screens/Projects/ProjLogos/ProjLogos";
+import axios from "axios";
 
 function App() {
+  const [projects, inVokeProjects] = useState([]);
+  const [headerText, invokeHeaderText] = useState([]);
+  const [videoBackground, setVideoBackground] = useState([]);
+
+  useEffect(() => {
+    const apiCallText = async () => {
+      const data = await axios.get(
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          },
+        }
+      );
+      invokeHeaderText(data.data.records);
+      setVideoBackground(
+        "https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610505964/Cherry/Videos/trees_dw5jim.mov"
+      );
+
+      // console.log(headerText);
+      // const arr = [];
+
+      // arr.push();
+      // setVideoBackground(headerText[0].fields.VideoTwo);
+      // console.log(headerText[0].fields.VideoTwo);
+      // setVideoBackground(headerText[0].fields.VideoTwo);
+      // console.log(headerText);
+      // setTimeout(() => {
+      //   const arr = [];
+      //   arr.push(headerText[0].fields.VideoOne);
+      //   arr.push(headerText[0].fields.VideoTwo);
+      //   arr.push(headerText[0].fields.VideoThree);
+      //   arr.push(headerText[0].fields.VideoFour);
+      //   var videoForSession = arr[Math.floor(Math.random() * arr.length)];
+      //   setVideoBackground(videoForSession);
+      // }, 2000);
+    };
+    const apiCall = async () => {
+      const data = await axios.get(
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/items?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          },
+        }
+      );
+      inVokeProjects(data.data.records);
+      // console.log(projects);
+    };
+    apiCallText();
+    apiCall();
+  }, []);
+
   return (
     <Layout>
       <Switch>
         <Route path="/" component={Home}>
-          <MainContainer />
+          <MainContainer
+            headerText={headerText}
+            projects={projects}
+            videoBackground={videoBackground}
+          />
         </Route>
       </Switch>
     </Layout>

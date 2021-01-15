@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./OpenedMenuProj.css";
 
-export default function OpenedMenuProj() {
+export default function OpenedMenuProj(props) {
   const history = useHistory();
   const bsidePress = () => {
     window.scroll({
@@ -36,7 +36,8 @@ export default function OpenedMenuProj() {
             autoPlay
             loop
             muted
-            src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610664010/Cherry/Videos/vidTurned_rrnxeo.mov"
+            src={props.videoBackground}
+            // "https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610664010/Cherry/Videos/vidTurned_rrnxeo.mov"
           />
           <h1
             className=" hover-animation-proj about-proj"

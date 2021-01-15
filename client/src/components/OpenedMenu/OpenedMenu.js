@@ -2,8 +2,9 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./OpenedMenu.css";
 
-export default function OpenedMenu() {
+export default function OpenedMenu(props) {
   const history = useHistory();
+  // console.log("VID for HAMB", props.videoBackground);
 
   const bSidePress = () => {
     window.scroll({
@@ -36,7 +37,8 @@ export default function OpenedMenu() {
           autoPlay
           loop
           muted
-          src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610664010/Cherry/Videos/vidTurned_rrnxeo.mov"
+          src={props.videoBackground}
+          //"https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610664010/Cherry/Videos/vidTurned_rrnxeo.mov"
         />
       ) : (
         <div></div>
