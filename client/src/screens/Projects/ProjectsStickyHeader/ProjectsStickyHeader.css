@@ -1,8 +1,8 @@
 .hamburger-holder-project {
   position: absolute;
-  top: 40%;
+  top: 20%;
 
-  right: 8%;
+  right: 5%;
   z-index: 999;
 }
 /* 
@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 770px) {ß
   .hamburger-holder-project {
     position: absolute;
     right: 70px;
