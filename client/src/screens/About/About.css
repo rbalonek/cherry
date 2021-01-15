@@ -31,7 +31,8 @@
 }
 .about-text {
   color: white;
-  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: "AkzidenzGroteskBE-BoldEx"; */
+  font-family: "Rubik";
   font-size: calc(10px + 1vw);
   line-height: 1.4;
 }
@@ -72,7 +73,9 @@
 }
 .bio-text {
   font-size: calc(10px + 1vw);
-  font-family: "degular";
+  /* font-family: "degular"; */
+
+  font-family: "Rubik"; /* , sans-serif; */
 }
 .david-bio {
   padding-right: 5%;
