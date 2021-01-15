@@ -18,9 +18,9 @@ export default function MainContainer() {
   const [projects, inVokeProjects] = useState([]);
   const [headerText, invokeHeaderText] = useState([]);
 
-  useEffect(() => {
-    setTimeout(() => {}, 500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {}, 500);
+  // }, []);
 
   useEffect(() => {
     const apiCallText = async () => {
