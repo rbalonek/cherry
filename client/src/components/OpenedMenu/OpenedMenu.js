@@ -45,20 +45,20 @@ export default function OpenedMenu(props) {
       )}
 
       <h1 className=" hover-animation about" onClick={clickedAbout}>
-        About
+        ABOUT
       </h1>
       <h1
         className=" hover-animation keyart"
         onClick={() => history.push("/keyart")}
       >
-        Key Art
+        KEY ART
       </h1>
-      <h1 className=" hover-animation branding">Branding</h1>
-      <h1 className=" hover-animation packaging ">Packaging</h1>
+      <h1 className=" hover-animation branding">BRANDING</h1>
+      <h1 className=" hover-animation packaging ">DESIGN</h1>
       <h1 className=" hover-animation ideas" onClick={bSidePress}>
-        B-Side
+        B-SIDES
       </h1>
-      <h1 className=" hover-animation about sayhi">Say Hi</h1>
+      <h1 className=" hover-animation about sayhi">SAY HI</h1>
     </div>
   );
 }

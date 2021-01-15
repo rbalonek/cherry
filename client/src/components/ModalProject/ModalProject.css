@@ -35,53 +35,62 @@
   left: 50px;
 } */
 .bold-text {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  /* font-family: Akzidenz; */
+  font-family: "Rubik";
+  font-weight: 900;
   color: white;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(5px + 0.5vw);
   align-self: flex-end;
   margin-bottom: 1%;
+}
+
+.show-name-modal {
+  font-size: calc(10px + 0.5vw);
+  color: white;
+  font-family: "Rubik";
+  font-weight: 900;
 }
 .challenge {
   margin-top: 20px;
 }
 
 .client-name {
-  font-family: "degular";
-  /* font-size: calc(23px + 1.5vw); */
-  font-size: calc(10px + 0.5vw);
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: calc(5px + 0.5vw);
   position: relative;
-  margin-top: -8px;
+  margin-top: -1.5%;
 }
 
 .description-text-container {
-  margin-top: -15px;
+  /* margin-top: -10px; */
 }
 
 .description-text {
   color: white;
-  /* font-size: calc(15px + 1.5vw); */
-  font-size: calc(10px + 0.5vw);
-  font-family: "degular";
-  /* font-family: Deregular; */
+  font-size: calc(4px + 0.5vw);
+  font-family: "Rubik";
+  font-weight: 400;
   position: relative;
-  top: 0px;
+
   width: 80%;
 }
 .what-did-container {
-  margin-top: 50px;
-  width: 50%;
+  margin-top: 4%;
+  width: 20%;
+  /* height: 200px; */
+  /* background-color: red; */
 }
 .what-did-container:hover {
   cursor: pointer;
 }
 
 .project-keywords {
-  font-family: "degular";
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(4px + 0.5vw);
+  font-family: "Rubik";
+  font-weight: 400;
   text-decoration: underline;
-  margin-top: -5px;
-  margin-bottom: -3px;
+  margin-top: -0.05%;
+  margin-bottom: -0.05%;
   color: grey;
 }
 .project-keywords:hover {

@@ -5,6 +5,7 @@ import "./About.css";
 import zenscroll from "zenscroll";
 
 import xOut from "../../assets/logo/Website-Asset_X.png";
+import Footer from "../../components/Footer/Footer";
 
 // <img
 // alt="logo"
@@ -66,7 +67,7 @@ export default function About() {
 
       <div className="about-text-container">
         <p className="about-text">
-          We're Cherry.
+          This is Cherry.
           <br />
           <br /> We are an independent design and communications studio that
           combines creativity and craft into ideas and experiences that improve
@@ -75,10 +76,6 @@ export default function About() {
           experiences that improve people’s lives.
           <br />
           <br /> To make brands that can’t be ignored.
-          <br />
-          <br /> To accelerate growth.
-          <br />
-          <br /> To build better futures at scale.
         </p>
       </div>
       <div className="bios-container">
@@ -87,8 +84,9 @@ export default function About() {
           // onMouseEnter={hovDavid}
           // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
+          <h2 className="white name">DAVID IRLANDA</h2>
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
-          <h2 className="white name">David Irlanda</h2>
+
           <p className="white bio-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -111,8 +109,9 @@ export default function About() {
           // onMouseEnter={hovGreg}
           // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
         >
+          <h2 className="white name">GREG ZADROZNY</h2>
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
-          <h2 className="white name">Greg Zadrozny</h2>
+
           <p className="white bio-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -131,6 +130,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

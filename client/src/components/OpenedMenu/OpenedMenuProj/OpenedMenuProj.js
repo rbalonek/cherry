@@ -43,21 +43,21 @@ export default function OpenedMenuProj(props) {
             className=" hover-animation-proj about-proj"
             onClick={clickedAbout}
           >
-            About
+            ABOUT
           </h1>
           <h1
             className=" hover-animation-proj keyart-proj"
             onClick={() => history.push("/keyart")}
           >
-            Key Art
+            KEY ART
           </h1>
-          <h1 className=" hover-animation-proj branding-proj">Branding</h1>
-          <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
+          <h1 className=" hover-animation-proj branding-proj">BRANDING</h1>
+          <h1 className=" hover-animation-proj packaging-proj">DESIGN</h1>
           <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
-            B-Side
+            B-SIDES
           </h1>
           <h1 className=" hover-animation-proj about-proj sayhi-proj">
-            Say Hi
+            SAY HI
           </h1>
         </div>
       ) : (
@@ -66,21 +66,21 @@ export default function OpenedMenuProj(props) {
             className=" hover-animation-proj-mobile about-proj"
             onClick={clickedAbout}
           >
-            About
+            ABOUT
           </h1>
           <h1
             className=" hover-animation-proj-mobile keyart-proj"
             onClick={() => history.push("/keyart")}
           >
-            Key Art
+            KEY ART
           </h1>
-          <h1 className=" hover-animation-proj branding-proj">Branding</h1>
-          <h1 className=" hover-animation-proj packaging-proj">Packaging</h1>
+          <h1 className=" hover-animation-proj branding-proj">BRANDING</h1>
+          <h1 className=" hover-animation-proj packaging-proj">DESIGN</h1>
           <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
-            B-Side
+            B-SIDES
           </h1>
           <h1 className=" hover-animation-proj about-proj sayhi-proj-mobile">
-            Say Hi
+            SAY HI
           </h1>
         </div>
       )}

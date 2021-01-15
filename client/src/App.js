@@ -29,24 +29,6 @@ function App() {
       setVideoBackground(
         "https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610505964/Cherry/Videos/trees_dw5jim.mov"
       );
-
-      // console.log(headerText);
-      // const arr = [];
-
-      // arr.push();
-      // setVideoBackground(headerText[0].fields.VideoTwo);
-      // console.log(headerText[0].fields.VideoTwo);
-      // setVideoBackground(headerText[0].fields.VideoTwo);
-      // console.log(headerText);
-      // setTimeout(() => {
-      //   const arr = [];
-      //   arr.push(headerText[0].fields.VideoOne);
-      //   arr.push(headerText[0].fields.VideoTwo);
-      //   arr.push(headerText[0].fields.VideoThree);
-      //   arr.push(headerText[0].fields.VideoFour);
-      //   var videoForSession = arr[Math.floor(Math.random() * arr.length)];
-      //   setVideoBackground(videoForSession);
-      // }, 2000);
     };
     const apiCall = async () => {
       const data = await axios.get(

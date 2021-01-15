@@ -16,9 +16,9 @@ import ProjectsScreeen from "../screens/Projects/ProjectsScreen/ProjectsScreeen"
 
 export default function MainContainer(props) {
   // console.log("PROPS", props.headerText);
-  const arr = [];
-  props.headerText.map((vid) => arr.push(vid.fields.Video));
-  var videoForSession = arr[Math.floor(Math.random() * arr.length)];
+  const VideoArr = [];
+  props.headerText.map((vid) => VideoArr.push(vid.fields.Video));
+  var videoForSession = VideoArr[Math.floor(Math.random() * VideoArr.length)];
   // console.log("VIDEO", videoForSession);
 
   return (
