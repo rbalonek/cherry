@@ -1,7 +1,8 @@
 .footer-container {
   width: 100%;
   text-align: -webkit-center;
-  margin-top: 5%;
+  position: fixed;
+  bottom: 0;
 }
 .footer-text-container {
   width: 30vw;
@@ -28,3 +29,13 @@
     font-size: calc(3px + 0.5vw);
   }
 }
+
+/* @media (min-width: 4000px) {
+  .footer-container {
+    width: 100%;
+    text-align: -webkit-center;
+    margin-top: 0%;
+    position: fixed;
+    bottom: 0;
+  }
+} */
