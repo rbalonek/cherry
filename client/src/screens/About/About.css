@@ -13,11 +13,11 @@
 }
 .about-xOut {
   /* width: 50px; */
-  width: calc(25px + 1vw);
+  width: calc(20px + 1vw);
   /* position: sticky; */
   top: 10px;
   z-index: 999;
-  height: calc(25px + 1vw);
+  height: calc(20px + 1vw);
 }
 .about-xOut:hover {
   cursor: pointer;
