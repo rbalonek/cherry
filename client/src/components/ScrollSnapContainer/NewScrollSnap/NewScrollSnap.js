@@ -32,7 +32,7 @@ export default function NewScrollSnap() {
   }, []);
 
   const handleClick = () => {
-    if (showLogo == "logo-sticky") {
+    if (showLogo === "logo-sticky") {
       toggleShowLogo("show-none");
     } else {
       toggleShowLogo("logo-sticky");

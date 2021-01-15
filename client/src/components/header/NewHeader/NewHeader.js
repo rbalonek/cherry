@@ -9,34 +9,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 export default function NewHeader(props) {
   const [inView, setInView] = useState(true);
-  // const [fetchVideo, invokeFetchVideo] = useState([]);
-  // const [visible, setVisible] = useState(true);
-  // const [classSet, setClassSet] = useState("fade-out-onLoad");
-  // const [headerText, invokeHeaderText] = useState([]);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const apiCall = async () => {
-  //       const data = await axios.get(
-  //         "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
-  //         {
-  //           headers: {
-  //             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //           },
-  //         }
-  //       );
-  //       invokeHeaderText(data.data.records);
-  //       // console.log(headerText);
-  //     };
-  //     apiCall();
-  //   }, 1000);
-  // }, []);
-
-  // const [imgHeight, newImgHeight] = useState("new-header-logo");
-  // var chi = document.getElementById("chi");
-  // const Chi = document.getElementById("chi");
-
-  let pageHeight = window.innerHeight;
+  console.log(props);
 
   const DownArrowCell = () => {
     let pageHeight = window.innerHeight;
@@ -52,35 +25,14 @@ export default function NewHeader(props) {
   };
 
   const DownArrowClick = () => {
-    document.getElementById("chi").scrollIntoView();
+    let pageHeight = window.innerHeight;
+    zenscroll.toY(pageHeight);
+    // document.getElementById("chi").scrollIntoView();
     setInView(false);
     setTimeout(() => {
       setInView(true);
     }, 1000);
-    // setInView(false);
-    // newImgHeight("new-header-logo-clicked");
-    // setTimeout(() => {
-    //   setInView(true);
-    //   newImgHeight("new-header-logo");
-    // }, 1000);
   };
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log("This will run after 3 seconds!");
-  //     setClassSet("fade-out");
-  //   }, 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
-
-  // <div className="header-text-container">
-  //       <Fade delay={1000}>
-  // <p className="header-text">
-  //   Design, illustration, strong opinions and wannabe do-gooders.
-  //   <span> </span>
-  //   <span class="underline">Say hi</span>
-  // </p>
-  //       </Fade>
 
   return (
     <>
