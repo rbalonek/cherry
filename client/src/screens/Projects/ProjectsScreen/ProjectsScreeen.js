@@ -31,13 +31,8 @@ export default function ProjectsScreeen(props) {
                   el.classList.toggle("show-proj-info");
                   el.classList.toggle("hide-element");
                 }}
-                class="masonry-brick-img "
+                class="masonry-brick-img"
                 style={{
-                  // backgroundSize: "100% 100%",
-                  backgroundSize: "cover",
-                  backgroundPosition: "50% 50%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
                   backgroundImage: `url(${project.fields.img1})`,
                 }}
               >
