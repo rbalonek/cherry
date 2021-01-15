@@ -19,24 +19,22 @@ export default function MainContainer() {
   const [headerText, invokeHeaderText] = useState([]);
 
   useEffect(() => {
-    setTimeout(() => {
-      const apiCall = async () => {
-        const data = await axios.get(
-          "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-            },
-          }
-        );
-        invokeHeaderText(data.data.records);
-        // console.log(headerText);
-      };
-      apiCall();
-    }, 500);
+    setTimeout(() => {}, 500);
   }, []);
 
   useEffect(() => {
+    const apiCallText = async () => {
+      const data = await axios.get(
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          },
+        }
+      );
+      invokeHeaderText(data.data.records);
+      // console.log(headerText);
+    };
     const apiCall = async () => {
       const data = await axios.get(
         "https://api.airtable.com/v0/appVey7bH2bLRXZsC/items?view=Grid%20view",
@@ -49,6 +47,7 @@ export default function MainContainer() {
       inVokeProjects(data.data.records);
       // console.log(projects);
     };
+    apiCallText();
     apiCall();
   }, []);
 
