@@ -9,7 +9,11 @@ import { FiChevronDown } from "react-icons/fi";
 
 export default function NewHeader(props) {
   const [inView, setInView] = useState(true);
-  console.log(props);
+  // console.log("Try 1", props.videoBackground);
+
+  // setTimeout(() => {
+  //   console.log("Try TWO", props.videoBackground);
+  // }, 2000);
 
   const DownArrowCell = () => {
     let pageHeight = window.innerHeight;
@@ -94,7 +98,8 @@ export default function NewHeader(props) {
                   autoPlay
                   loop
                   muted
-                  src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+                  src={props.videoBackground}
+                  //"https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
                 />
               </Animated>
               <img

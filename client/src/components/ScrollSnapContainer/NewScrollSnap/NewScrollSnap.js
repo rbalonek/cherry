@@ -28,10 +28,16 @@ export default function NewScrollSnap(props) {
 
   return (
     <div className="new-scrollsnap-container">
-      <StickyHeader showHamburger={showHamburger} />
+      <StickyHeader
+        showHamburger={showHamburger}
+        videoBackground={props.videoBackground}
+      />
 
       <div id="header" className="new-header-container">
-        <NewHeader headerText={props.headerText} />
+        <NewHeader
+          headerText={props.headerText}
+          videoBackground={props.videoBackground}
+        />
       </div>
 
       {window.innerWidth < 770 && (

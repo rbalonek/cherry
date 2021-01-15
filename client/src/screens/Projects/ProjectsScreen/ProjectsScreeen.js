@@ -8,7 +8,7 @@ export default function ProjectsScreeen(props) {
   const history = useHistory();
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
-      <ProjectsStickyHeader />
+      <ProjectsStickyHeader videoBackground={props.videoBackground} />
       <div class="masonry">
         <Fade
           direction={"up"}

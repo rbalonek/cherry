@@ -12,7 +12,10 @@ import "./Home.css";
 export default function Home(props) {
   return (
     <div className="home-container">
-      <NewScrollSnap headerText={props.headerText} />
+      <NewScrollSnap
+        headerText={props.headerText}
+        videoBackground={props.videoBackground}
+      />
     </div>
   );
 }
