@@ -7,7 +7,7 @@ import zenscroll from "zenscroll";
 // import Hamburger from "../../../components/Hamburger/Hamburger";
 // import OpenedMenu from "../../../components/OpenedMenu/OpenedMenu";
 
-export default function ProjectsStickyHeader() {
+export default function ProjectsStickyHeader(props) {
   const history = useHistory();
 
   const backToFirstProj = () => {
@@ -47,7 +47,7 @@ export default function ProjectsStickyHeader() {
       />
 
       <div className="hamburger-holder-project">
-        <HamburgerProjects />
+        <HamburgerProjects videoBackground={props.videoBackground} />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import OpenedMenuProj from "../../OpenedMenu/OpenedMenuProj/OpenedMenuProj";
 
 import { useLockBodyScroll, useToggle } from "react-use";
 
-export default function HamburgerProjects() {
+export default function HamburgerProjects(props) {
   const [hambClosed, hambToggle] = useState("menu-btn-proj proj-menu");
   const [menuClosed, toggleMenu] = useState("closed-menu");
   const [locked, toggleLocked] = useToggle(false);
@@ -28,7 +28,7 @@ export default function HamburgerProjects() {
   return (
     <div style={{ width: "100%" }}>
       <div className={menuClosed}>
-        <OpenedMenuProj />
+        <OpenedMenuProj videoBackground={props.videoBackground} />
       </div>
 
       <div className={hambClosed} onClick={toggleHamb}>

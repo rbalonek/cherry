@@ -9,34 +9,11 @@ import { FiChevronDown } from "react-icons/fi";
 
 export default function NewHeader(props) {
   const [inView, setInView] = useState(true);
-  // const [fetchVideo, invokeFetchVideo] = useState([]);
-  // const [visible, setVisible] = useState(true);
-  // const [classSet, setClassSet] = useState("fade-out-onLoad");
-  // const [headerText, invokeHeaderText] = useState([]);
+  // console.log("Try 1", props.videoBackground);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const apiCall = async () => {
-  //       const data = await axios.get(
-  //         "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
-  //         {
-  //           headers: {
-  //             Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-  //           },
-  //         }
-  //       );
-  //       invokeHeaderText(data.data.records);
-  //       // console.log(headerText);
-  //     };
-  //     apiCall();
-  //   }, 1000);
-  // }, []);
-
-  // const [imgHeight, newImgHeight] = useState("new-header-logo");
-  // var chi = document.getElementById("chi");
-  // const Chi = document.getElementById("chi");
-
-  let pageHeight = window.innerHeight;
+  // setTimeout(() => {
+  //   console.log("Try TWO", props.videoBackground);
+  // }, 2000);
 
   const DownArrowCell = () => {
     let pageHeight = window.innerHeight;
@@ -52,35 +29,14 @@ export default function NewHeader(props) {
   };
 
   const DownArrowClick = () => {
-    document.getElementById("chi").scrollIntoView();
+    let pageHeight = window.innerHeight;
+    zenscroll.toY(pageHeight);
+    // document.getElementById("chi").scrollIntoView();
     setInView(false);
     setTimeout(() => {
       setInView(true);
     }, 1000);
-    // setInView(false);
-    // newImgHeight("new-header-logo-clicked");
-    // setTimeout(() => {
-    //   setInView(true);
-    //   newImgHeight("new-header-logo");
-    // }, 1000);
   };
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log("This will run after 3 seconds!");
-  //     setClassSet("fade-out");
-  //   }, 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
-
-  // <div className="header-text-container">
-  //       <Fade delay={1000}>
-  // <p className="header-text">
-  //   Design, illustration, strong opinions and wannabe do-gooders.
-  //   <span> </span>
-  //   <span class="underline">Say hi</span>
-  // </p>
-  //       </Fade>
 
   return (
     <>
@@ -89,13 +45,16 @@ export default function NewHeader(props) {
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
               {props.headerText.length ? (
-                <Animated
-                  animationInDelay={2000}
-                  animationIn="fadeIn"
-                  animationOut="fadeOut"
-                  animationInDuration={1000}
+                <Fade
+                  delay={500}
+                  // animationIn="fadeIn"
+                  // animationOut="fadeOut"
+                  duration={2000}
+                  triggerOnce={true}
+                  // animationInDuration={5000}
                   animationOutDuration={500}
                   isVisible={inView}
+                  className="airtable-header-text"
                 >
                   <div style={{ height: "100vh" }}>
                     <p className="airtable-header-text">
@@ -107,7 +66,7 @@ export default function NewHeader(props) {
                       </span>
                     </p>
                   </div>
-                </Animated>
+                </Fade>
               ) : (
                 <Animated
                   animationInDelay={2000}
@@ -130,10 +89,10 @@ export default function NewHeader(props) {
             </div>
             <div className="vid-logo-container">
               <Animated
-                animationInDelay={1000}
+                animationInDelay={2000}
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                animationInDuration={1000}
+                animationInDuration={3000}
                 animationOutDuration={500}
                 isVisible={inView}
               >
@@ -142,7 +101,8 @@ export default function NewHeader(props) {
                   autoPlay
                   loop
                   muted
-                  src="https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
+                  src={props.videoBackground}
+                  //"https://res.cloudinary.com/bobalobbadingdong/video/upload/v1609886317/Cherry/Cherry%20Clients/Logos/AdobeStock_326483459_Video_HD_Preview_vahjce.mp4"
                 />
               </Animated>
               <img
