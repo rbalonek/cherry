@@ -16,6 +16,26 @@ import ProjectsScreeen from "../screens/Projects/ProjectsScreen/ProjectsScreeen"
 
 export default function MainContainer() {
   const [projects, inVokeProjects] = useState([]);
+  const [headerText, invokeHeaderText] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      const apiCall = async () => {
+        const data = await axios.get(
+          "https://api.airtable.com/v0/appVey7bH2bLRXZsC/headertext?view=Grid%20view",
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+            },
+          }
+        );
+        invokeHeaderText(data.data.records);
+        // console.log(headerText);
+      };
+      apiCall();
+    }, 500);
+  }, []);
+
   useEffect(() => {
     const apiCall = async () => {
       const data = await axios.get(
@@ -35,7 +55,7 @@ export default function MainContainer() {
   return (
     <Switch>
       <Route exact path="/" component={Home}>
-        <Home />
+        <Home headerText={headerText} />
       </Route>
       <Route path="/about" component={About}>
         <About />

@@ -9,10 +9,10 @@ import ScrollSnapContainer from "../../components/ScrollSnapContainer/ScrollSnap
 import "./Home.css";
 // import testSnap from "./testSnap";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="home-container">
-      <NewScrollSnap />
+      <NewScrollSnap headerText={props.headerText} />
     </div>
   );
 }
