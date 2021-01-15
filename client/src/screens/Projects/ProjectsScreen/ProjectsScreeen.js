@@ -129,7 +129,7 @@ export default function ProjectsScreeen(props) {
                     <p
                       style={{
                         color: "white",
-                        fontFamily: "degular",
+                        fontFamily: "Rubik",
                         fontSize: "calc(15px + 1vw)",
                         marginTop: "-20%",
                       }}
