@@ -24,30 +24,34 @@
 }
 
 .about-text-container {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 25%;
+  padding-right: 25%;
   position: relative;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 .about-text {
   color: white;
   /* font-family: "AkzidenzGroteskBE-BoldEx"; */
   font-family: "Rubik";
-  font-size: calc(10px + 1vw);
-  line-height: 1.4;
+  font-weight: 300;
+  font-size: calc(15px + 1vw);
+  line-height: 1;
 }
 .white {
   color: white;
   z-index: 999;
 }
 .title {
-  margin-bottom: -20px;
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  font-size: calc(8px + 1vw);
+  margin-top: -3%;
+  font-family: "Rubik";
+  font-weight: 900;
+  font-size: calc(1px + 0.75vw);
   width: max-content;
 }
 .name {
-  font-size: calc(20px + 1vw);
+  font-size: calc(3px + 1vw);
+  font-family: "Rubik";
+  font-weight: 300;
 }
 /* .vid-about-hov-menu {
   position: absolute;
@@ -67,13 +71,12 @@
 .bios-container {
   display: flex;
   flex-direction: row;
-  padding-top: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
+  /* padding-top: 5%; */
+  padding-left: 25%;
+  padding-right: 25%;
 }
 .bio-text {
-  font-size: calc(10px + 1vw);
-  /* font-family: "degular"; */
+  font-size: calc(1px + 0.8vw);
 
   font-family: "Rubik"; /* , sans-serif; */
 }
@@ -116,24 +119,25 @@
     font-family: "degular";
   } */
 }
-@media (max-width: 1600px) {
-  /* .about-text {
-    color: white;
-    font-family: "AkzidenzGroteskBE-BoldEx";
-    font-size: calc(10px + 0.5vw);
-    line-height: 1.4;
+@media (max-width: 1100px) {
+  .about-text {
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: calc(22px + 0.05vw);
+    line-height: 1.2;
   }
-  .title {
-    margin-bottom: -20px;
-    font-family: "AkzidenzGroteskBE-BoldEx";
-    font-size: calc(8px + 0.3vw);
+  /* .title {
+    font-weight: 900;
+    font-size: calc(3px + 0.5vw);
+    width: max-content;
   }
   .name {
-    font-size: calc(20px + 0.3vw);
+    font-size: calc(8px + 0.5vw);
+    font-family: "Rubik";
+    font-weight: 300;
   }
   .bio-text {
-    font-size: calc(10px + 0.3vw);
-    font-family: "degular";
+    font-size: calc(4px + 0.5vw);
   } */
 }
 @media (max-width: 885px) {
