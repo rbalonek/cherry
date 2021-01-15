@@ -3,13 +3,16 @@ import "./ModalProject.css";
 import { useHistory } from "react-router-dom";
 
 export default function ModalProject(props) {
+  const Name = props.name.toUpperCase();
+  const Client = props.client.toUpperCase();
+
   const history = useHistory();
   return (
     <div className="modal-container clickable-modal">
       <div className="modal-project-text-container">
-        <h2 className="bold-text">CLIENT</h2>
-        <p className="modal-text client-name">{props.client}</p>
-        <h2 className="bold-text challenge">CHALLENGE</h2>
+        <h2 className="show-name-modal">{Name}</h2>
+        <p className="modal-text client-name">{Client}</p>
+
         <div className="description-text-container">
           <p className="description-text"> {props.description} </p>
 
