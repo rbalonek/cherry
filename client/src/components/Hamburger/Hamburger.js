@@ -41,8 +41,8 @@ export default function Hamburger(props) {
             <div style={{ position: "absolute", right: "0" }}>
               <Animated
                 animationIn="fadeInDownBig"
-                animationInDelay={1000}
-                animationInDuration={1500}
+                animationInDelay={500}
+                animationInDuration={1000}
                 triggerOnce={true}
 
                 // isVisible={true}

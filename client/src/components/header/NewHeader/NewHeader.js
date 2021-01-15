@@ -45,13 +45,16 @@ export default function NewHeader(props) {
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
               {props.headerText.length ? (
-                <Animated
-                  animationInDelay={2000}
-                  animationIn="fadeIn"
-                  animationOut="fadeOut"
-                  animationInDuration={1000}
+                <Fade
+                  delay={500}
+                  // animationIn="fadeIn"
+                  // animationOut="fadeOut"
+                  duration={2000}
+                  triggerOnce={true}
+                  // animationInDuration={5000}
                   animationOutDuration={500}
                   isVisible={inView}
+                  className="airtable-header-text"
                 >
                   <div style={{ height: "100vh" }}>
                     <p className="airtable-header-text">
@@ -63,7 +66,7 @@ export default function NewHeader(props) {
                       </span>
                     </p>
                   </div>
-                </Animated>
+                </Fade>
               ) : (
                 <Animated
                   animationInDelay={2000}
@@ -86,10 +89,10 @@ export default function NewHeader(props) {
             </div>
             <div className="vid-logo-container">
               <Animated
-                animationInDelay={1000}
+                animationInDelay={2000}
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                animationInDuration={1000}
+                animationInDuration={3000}
                 animationOutDuration={500}
                 isVisible={inView}
               >
