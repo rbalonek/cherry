@@ -6,7 +6,7 @@ import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 
 export default function ProjCopy(props) {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader />
       <ProjectsNavBar />
       {props.projects.map((project) => (

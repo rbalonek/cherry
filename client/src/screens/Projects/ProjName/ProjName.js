@@ -31,7 +31,7 @@ export default function ProjName(props) {
         >
           <img
             className="back-arrow-proj-name"
-            onClick={() => history.push("/projects")}
+            onClick={() => history.push("/projectsscreen")}
             src={arrow}
             alt="back-arrow"
           />
