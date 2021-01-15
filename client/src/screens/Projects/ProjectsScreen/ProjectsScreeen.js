@@ -9,83 +9,16 @@ export default function ProjectsScreeen(props) {
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
-      <div class="masonry">
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-        <Fade
-          direction={"up"}
-          fraction={Math.random()}
-          triggerOnce={true}
-          className="masonry-brick centered-text"
-        >
-          <div className="masonry-brick centered-text">Masonry Fixed 1</div>
-        </Fade>
-      </div>
 
       <div class="masonry-img">
         {props.projects.map((project) => (
           <>
             <Fade
               direction={"up"}
+              duration={2000}
               fraction={Math.random()}
               triggerOnce={true}
               className="masonry-brick-img"
-              x
             >
               <div
                 onMouseEnter={() => {
@@ -98,13 +31,8 @@ export default function ProjectsScreeen(props) {
                   el.classList.toggle("show-proj-info");
                   el.classList.toggle("hide-element");
                 }}
-                class="masonry-brick-img "
+                class="masonry-brick-img"
                 style={{
-                  // backgroundSize: "100% 100%",
-                  backgroundSize: "cover",
-                  backgroundPosition: "50% 50%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
                   backgroundImage: `url(${project.fields.img1})`,
                 }}
               >

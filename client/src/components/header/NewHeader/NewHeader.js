@@ -46,7 +46,7 @@ export default function NewHeader(props) {
             <div>
               {props.headerText.length ? (
                 <Fade
-                  delay={500}
+                  delay={1000}
                   // animationIn="fadeIn"
                   // animationOut="fadeOut"
                   duration={2000}
@@ -89,7 +89,7 @@ export default function NewHeader(props) {
             </div>
             <div className="vid-logo-container">
               <Animated
-                animationInDelay={2000}
+                animationInDelay={3000}
                 animationIn="fadeIn"
                 animationOut="fadeOut"
                 animationInDuration={3000}
