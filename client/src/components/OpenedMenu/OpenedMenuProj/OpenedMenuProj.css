@@ -12,6 +12,7 @@
   height: 100vh;
   width: 100vw;
   justify-content: center;
+  align-items: center;
   /* max-width: 100vw; */
 }
 .opened-menu-container-proj-cell {
@@ -38,15 +39,17 @@
 .hover-animation-proj {
   display: inline-block;
   position: relative;
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  /* font-family: Akzidenz; */
+  font-family: "Rubik";
+  font-weight: 900;
   color: white;
-  font-size: 50px;
-  width: 100%;
+  /* font-size: 50px; */
+  font-size: calc(10px + 4vw);
+  /* width: 100%; */
+  width: fit-content;
   text-align: center;
   cursor: pointer;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: -1.5%;
   right: 90vw;
 }
 .hover-animation-proj:after {
@@ -54,8 +57,9 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
+  /* height: 2px; */
+  height: calc(2px + 0.05vw);
+  bottom: 15%;
   left: 0;
   background-color: #fff;
   transform-origin: center;
@@ -66,8 +70,8 @@
   transform-origin: center;
 }
 .hamburger-open-text-proj {
-  font-family: "AkzidenzGroteskBE-BoldEx";
-  /* font-family: Akzidenz; */
+  font-family: "Rubik";
+  font-weight: 900;
   color: white;
   font-size: 50px;
   width: 100%;
@@ -81,22 +85,22 @@
   cursor: pointer;
 }
 .about-proj:hover:after {
-  transform: scaleX(0.22);
+  transform: scaleX(1);
 }
 .keyart-proj:hover:after {
-  transform: scaleX(0.25);
+  transform: scaleX(1);
 }
 .branding-proj:hover:after {
-  transform: scaleX(0.33);
+  transform: scaleX(1);
 }
 .packaging-proj:hover:after {
-  transform: scaleX(0.38);
+  transform: scaleX(1);
 }
 /* .identity-proj:hover:after {
   transform: scaleX(0.4);
 } */
 .ideas-proj:hover:after {
-  transform: scaleX(0.2);
+  transform: scaleX(1);
 }
 .sayhi-proj:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
@@ -115,150 +119,19 @@
   margin: 0;
   margin-bottom: 2px;
 }
-
 @media screen and (max-width: 5999px) and (min-width: 4000px) {
+  .hover-animation-proj:after {
+    height: 10px;
+    bottom: 15%;
+  }
   .hover-animation-proj {
     font-size: calc(40px + 3vw);
-  }
-  .hover-animation-proj:after {
-    height: 4px;
-    bottom: 9px;
-  }
-  .about-proj:hover:after {
-    transform: scaleX(0.15);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.18);
-  }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.16);
-  }
-  .branding-proj:hover:after {
-    transform: scaleX(0.21);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.25);
+    margin-bottom: -1%;
+    right: 95vw;
   }
 }
 @media screen and (max-width: 3999px) and (min-width: 3000px) {
   .hover-animation-proj {
     font-size: calc(40px + 3vw);
-  }
-  .hover-animation-proj:after {
-    height: 4px;
-    bottom: 9px;
-  }
-  .about-proj:hover:after {
-    transform: scaleX(0.16);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.18);
-  }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.18);
-  }
-  .branding-proj:hover:after {
-    transform: scaleX(0.24);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.28);
-  }
-}
-@media screen and (max-width: 5999px) and (min-width: 4000px) {
-  .hover-animation-proj {
-    font-size: calc(10px + 4vw);
-  }
-  .hover-animation-proj:after {
-    height: 3px;
-    bottom: 30px;
-  }
-  .about-proj:hover:after {
-    transform: scaleX(0.18);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.21);
-  }
-
-  .branding-proj:hover:after {
-    transform: scaleX(0.26);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.3);
-  }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.19);
-  }
-}
-@media screen and (max-width: 3999px) and (min-width: 2000px) {
-  .hover-animation-proj {
-    font-size: calc(10px + 4vw);
-  }
-  .hover-animation-proj:after {
-    height: 3px;
-    bottom: 10px;
-  }
-
-  .about-proj:hover:after {
-    transform: scaleX(0.18);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.21);
-  }
-
-  .branding-proj:hover:after {
-    transform: scaleX(0.26);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.3);
-  }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.19);
-  }
-}
-@media screen and (max-width: 1999px) and (min-width: 1000px) {
-  .hover-animation-proj {
-    font-size: calc(10px + 4vw);
-  }
-  .hover-animation-proj:after {
-    height: 3px;
-    bottom: 7px;
-  }
-
-  .about-proj:hover:after {
-    transform: scaleX(0.19);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.23);
-  }
-
-  .branding-proj:hover:after {
-    transform: scaleX(0.29);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.33);
-  }
-  .ideas-proj:hover:after {
-    transform: scaleX(0.2);
-  }
-}
-
-@media (max-width: 770px) {
-  .about-proj:hover:after {
-    transform: scaleX(0.25);
-  }
-  .keyart-proj:hover:after {
-    transform: scaleX(0.25);
-  }
-  .branding-proj:hover:after {
-    transform: scaleX(0.4);
-  }
-  .packaging-proj:hover:after {
-    transform: scaleX(0.45);
-  }
-  /* .identity-proj:hover:after {
-  transform: scaleX(0.4);
-} */
-  .ideas-proj:hover:after {
-    transform: scaleX(0.25);
   }
 }

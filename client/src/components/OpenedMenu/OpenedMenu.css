@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: "AkzidenzGroteskBE-BoldEx";
   font-style: normal;
   font-weight: normal;
   src: local("AkzidenzGroteskBE-BoldEx"),
     url(../../assets/fonts//AkzidenzGroteskBE-BoldEx.otf) format("opentype");
-}
+} */
 
 .opened-menu-container {
   display: flex;
