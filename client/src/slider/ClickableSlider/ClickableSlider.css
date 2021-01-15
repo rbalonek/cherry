@@ -4,8 +4,8 @@
   height: calc(0.5px + 0.5vw); */
   margin: 0.5% calc(0.5px + 0.08vw);
 
-  width: calc(0.01px + 0.5vw);
-  height: calc(0.01px + 0.5vw);
+  width: calc(0.01px + 0.45vw);
+  height: calc(0.01px + 0.45vw);
 }
 .carousel .control-dots .dot {
   box-shadow: none;
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 5999px) and (min-width: 4000px) {
   .carousel .control-dots .dot {
-    margin: calc(0.5% + 0.5vw) calc(0.5px + 0.07vw);
+    margin: calc(0.5% + 0.5vw) calc(0.05px + 0.07vw);
   }
 }
 
