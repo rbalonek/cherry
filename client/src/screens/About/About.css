@@ -3,7 +3,7 @@
   min-height: 100vh;
 }
 .about-x-container {
-  width: 96.5%;
+  width: 96.8%;
   position: sticky;
   display: flex;
   justify-content: flex-end;
@@ -13,11 +13,11 @@
 }
 .about-xOut {
   /* width: 50px; */
-  width: calc(16px + 1vw);
+  width: calc(25px + 1vw);
   /* position: sticky; */
   top: 10px;
   z-index: 999;
-  height: calc(16px + 1vw);
+  height: calc(25px + 1vw);
 }
 .about-xOut:hover {
   cursor: pointer;
@@ -171,7 +171,7 @@
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   @media {
     .about-x-container {
-      width: 96%;
+      width: 96.5%;
       position: sticky;
       display: flex;
       justify-content: flex-end;
