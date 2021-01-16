@@ -86,19 +86,19 @@
   z-index: 999;
   border-radius: 10px;
 }
-.david-bio:hover {
+/* .david-bio:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610044093/Cherry/Cherry%20Clients/Logos/davidHead_nunkby.png),
     auto;
-}
+} */
 
 .greg-bio {
   padding-left: 5%;
   z-index: 999;
 }
-.greg-bio:hover {
+/* .greg-bio:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_50/v1610047428/Cherry/Cherry%20Clients/Logos/gregface_vcajko.png),
     auto;
-}
+} */
 
 @media (min-width: 2500px) {
   .about-x-container {
