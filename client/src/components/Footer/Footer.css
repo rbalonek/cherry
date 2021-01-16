@@ -1,18 +1,27 @@
 .footer-container {
   width: 100%;
   text-align: -webkit-center;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
+  margin-top: 5%;
 }
 .footer-text-container {
-  width: 30vw;
+  width: 20vw;
   display: flex;
   justify-content: space-around;
 }
+
 .footer-text {
   color: white;
   font-family: "rubik";
   font-weight: 900;
+  letter-spacing: 1px;
+  font-size: calc(1px + 0.75vw);
+}
+.footer-text-or {
+  color: white;
+  font-family: "rubik";
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: calc(1px + 0.75vw);
 }
