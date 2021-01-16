@@ -1,16 +1,37 @@
 .carousel .control-dots .dot {
-  /* margin: 0% calc(0.01px + 0.2vw);
-  width: calc(0.5px + 0.5vw);
-  height: calc(0.5px + 0.5vw); */
-  margin: 0.5% calc(1px + 0.2vw);
+  margin: 0.5% 0.15%;
+  /* width: calc(5px + 0.02vw);
+  height: calc(5px + 0.02vw); */
+  width: 0.4em;
+  height: 0.4em;
 
-  width: calc(1px + 0.5vw);
+  /* margin: calc(0.05% + 0.1vw) calc(1px + 0.08vw);
+  width: calc(0.1px + 0.25vw);
+  height: calc(0.1px + 0.25vw); */
+
   /* height: auto; */
-  height: calc(1px + 0.5vw);
+
+  /* in: calc(0.05% + 0.1vw) calc(1px + 0.08vw);
+  width: calc(0.1px + 0.25vw);
+  heig */
 }
+
+.carousel .control-dots {
+  /* bottom: calc(2px + .7vw); */
+  bottom: 0;
+}
+
 .carousel .control-dots .dot {
   box-shadow: none;
 }
+/* .carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5%;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+} */
 /* .carousel .control-dots .dot.selected,
 .carousel .control-dots .dot:hover {
   opacity: 1;
@@ -114,6 +135,7 @@
 .modalClosed {
   display: none;
 }
+
 /*  OLD VERSION.modalOpen {
   position: absolute;
   display: flex;
@@ -158,12 +180,33 @@
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
     auto;
 }
-
-/* @media screen and (max-width: 5999px) and (min-width: 4000px) {
+@media screen and (max-width: 5999px) and (min-width: 4000px) {
   .carousel .control-dots .dot {
-    margin: calc(0.5% + 0.5vw) calc(0.05px + 0.07vw);
+    margin: 0.8% 0.15%;
+    /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
+    width: 1em;
+    height: 1em;
   }
 }
+@media screen and (max-width: 3999px) and (min-width: 3000px) {
+  .carousel .control-dots .dot {
+    margin: 0.7% 0.15%;
+    /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
+    width: 0.7em;
+    height: 0.7em;
+  }
+}
+
+@media screen and (max-width: 2999px) and (min-width: 2000px) {
+  .carousel .control-dots .dot {
+    margin: 0.5% 0.15%;
+    /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
+    width: 0.5em;
+    height: 0.5em;
+  }
+}
+
+/* 
 
 @media screen and (max-width: 3999px) and (min-width: 2500px) {
   .carousel .control-dots .dot {
@@ -187,11 +230,11 @@
     margin: calc(0.05% + 0.5vw) calc(0.5px + 0.07vw);
   }
 } */
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
   .carousel .control-dots .dot {
-    margin: -0% calc(1px + 0.15vw);
+    /* margin: -0% calc(1px + 0.15vw);
     width: 6px;
-    height: 6px;
+    height: 6px; */
     /* width: calc(1px + 0.4vw);
     height: calc(1px + 0.4vw); */
   }
