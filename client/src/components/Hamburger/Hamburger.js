@@ -39,21 +39,19 @@ export default function Hamburger(props) {
         <div className={menuHide + open} onClick={clicked}>
           {window.innerWidth > 770 ? (
             <div style={{ position: "absolute", right: "0" }}>
-              <Fade
-                delay={1000}
-                // animationIn="fadeInDownBig"
-                // animationInDelay={1000}
-                // animationInDuration={2000}
-                duration={2000}
-                direction="down"
-                triggerOnce={true}
-
+              <Animated
+                // delay={1500}
+                // duration={2000}
+                // triggerOnce={true}
+                animationIn="fadeInDownBig"
+                // animationInDelay={800}
+                animationInDuration={2000}
                 // isVisible={true}
               >
                 <div className="menu-btn__burger">
                   <div className="menu-btn-cursor-container"></div>
                 </div>
-              </Fade>
+              </Animated>
             </div>
           ) : (
             <div>

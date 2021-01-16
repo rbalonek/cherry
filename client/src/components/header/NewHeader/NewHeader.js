@@ -45,13 +45,13 @@ export default function NewHeader(props) {
             <div>
               {props.headerText.length ? (
                 <Fade
-                  delay={1000}
+                  delay={1500}
                   // animationIn="fadeIn"
                   // animationOut="fadeOut"
                   duration={2000}
                   triggerOnce={true}
                   // animationInDuration={5000}
-                  animationOutDuration={500}
+                  // animationOutDuration={500}
                   // isVisible={inView}
                   className="airtable-header-text"
                 >

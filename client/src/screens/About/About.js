@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Animated } from "react-animated-css";
+import { Rotate } from "react-awesome-reveal";
 import "./About.css";
 import zenscroll from "zenscroll";
 
@@ -45,7 +46,9 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="about-x-container" onClick={xClicked}>
-        <AboutHamburger />
+        <Rotate>
+          <AboutHamburger />
+        </Rotate>
       </div>
 
       <div className="about-text-container">

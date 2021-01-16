@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <div className="header-container">
       <div className="header-text-container">
-        <Fade delay={1000}>
+        <Fade delay={2000} duration={2000}>
           <p className="header-text">
             Design, illustration, strong opinions and wannabe do-gooders.
             <span> </span>
