@@ -123,14 +123,14 @@
     height: 10px;
     bottom: 15%;
   }
-  .hover-animation-proj {
+  /* .hover-animation-proj {
     font-size: calc(40px + 3vw);
     margin-bottom: -1%;
     right: 95vw;
-  }
+  } */
 }
 @media screen and (max-width: 3999px) and (min-width: 3000px) {
-  .hover-animation-proj {
+  /* .hover-animation-proj {
     font-size: calc(40px + 3vw);
-  }
+  } */
 }
