@@ -40,11 +40,12 @@ export default function Hamburger(props) {
           {window.innerWidth > 770 ? (
             <div style={{ position: "absolute", right: "0" }}>
               <Animated
+                // delay={1500}
+                // duration={2000}
+                // triggerOnce={true}
                 animationIn="fadeInDownBig"
-                // animationInDelay={1000}
+                // animationInDelay={800}
                 animationInDuration={2000}
-                triggerOnce={true}
-
                 // isVisible={true}
               >
                 <div className="menu-btn__burger">

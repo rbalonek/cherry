@@ -47,7 +47,8 @@ export default function ProjectsScreeen(props) {
                     <p
                       style={{
                         color: "white",
-                        fontFamily: "AkzidenzGroteskBE-BoldEx",
+                        fontFamily: "Rubik",
+                        fontWeight: "900",
                         fontSize: "calc(15px + 1vw)",
                       }}
                     >
@@ -58,8 +59,9 @@ export default function ProjectsScreeen(props) {
                       style={{
                         color: "white",
                         fontFamily: "Rubik",
-                        fontSize: "calc(15px + 1vw)",
-                        marginTop: "-20%",
+                        fontWeight: "300",
+                        fontSize: "calc(5px + 1vw)",
+                        marginTop: "-30%",
                       }}
                     >
                       {project.fields.client}

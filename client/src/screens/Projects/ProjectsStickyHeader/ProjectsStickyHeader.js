@@ -11,12 +11,12 @@ export default function ProjectsStickyHeader(props) {
   const history = useHistory();
 
   const backToFirstProj = () => {
-    let pageHeight = window.innerHeight;
+    // let pageHeight = window.innerHeight;
     history.push("/");
 
-    setTimeout(() => {
-      zenscroll.toY(pageHeight);
-    }, 900);
+    // setTimeout(() => {
+    //   zenscroll.toY(pageHeight);
+    // }, 900);
     // zenscroll.intoView(chi);
     // zenscroll.to(chi);
     // window.scrollBy(0, pageHeight);
@@ -28,7 +28,7 @@ export default function ProjectsStickyHeader(props) {
       style={{
         position: "sticky",
         top: "-1%",
-        marginBottom: "5%",
+        marginBottom: "-8%",
         zIndex: "999",
       }}
     >

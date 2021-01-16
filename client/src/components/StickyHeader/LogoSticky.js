@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Fade } from "react-awesome-reveal";
 import Hamburger from "../Hamburger/Hamburger";
 import "./LogoSticky.css";
@@ -8,6 +9,14 @@ import Logo from "../../assets/logo/Cherry-Logo.png";
 export default function HamburgerSticky(props) {
   // const [showElement, toggleElement] = useState("logo-sticky");
   // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
+
+  const clickedLogo = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   // const toggleHamb = () => {
   //   if (hamburgerClosed === "hamburger-closed") {
@@ -29,14 +38,12 @@ export default function HamburgerSticky(props) {
     <div className="sticky-logo-container">
       {window.innerWidth > 770 ? (
         <Fade fraction={1} delay={1000}>
-          <a href="#chi">
-            <img
-              className={props.showLogo}
-              src={Logo}
-              alt="logo"
-              // onClick={logoClick}
-            />
-          </a>
+          <img
+            className={props.showLogo}
+            src={Logo}
+            alt="logo"
+            onClick={clickedLogo}
+          />
         </Fade>
       ) : (
         <img
