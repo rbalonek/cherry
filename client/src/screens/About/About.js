@@ -21,16 +21,16 @@ export default function About() {
   const history = useHistory();
 
   const xClicked = () => {
-    let pageHeight = window.innerHeight;
+    // let pageHeight = window.innerHeight;
     setVisible(false);
 
     setTimeout(() => {
       history.push("/");
     }, 1000);
 
-    setTimeout(() => {
-      zenscroll.toY(pageHeight);
-    }, 2000);
+    // setTimeout(() => {
+    //   zenscroll.toY(pageHeight);
+    // }, 2000);
   };
 
   // const hovDavid = () => {
