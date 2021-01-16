@@ -28,7 +28,7 @@ export default function ProjectsStickyHeader(props) {
       style={{
         position: "sticky",
         top: "-1%",
-        marginBottom: "5%",
+        marginBottom: "-7%",
         zIndex: "999",
       }}
     >

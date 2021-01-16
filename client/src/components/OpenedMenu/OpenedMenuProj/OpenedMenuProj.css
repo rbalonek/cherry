@@ -59,11 +59,11 @@
   transform: scaleX(0);
   /* height: 2px; */
   height: calc(2px + 0.05vw);
-  bottom: 15%;
+  bottom: 13%;
   left: 0;
   background-color: #fff;
-  transform-origin: center;
-  transition: transform 0.25s ease-out;
+  /* transform-origin: center;
+  transition: transform 0.25s ease-out; */
 }
 .hover-animation-proj:hover:after {
   transform: scaleX(1);
@@ -103,8 +103,7 @@
   transform: scaleX(1);
 }
 .sayhi-proj:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
-    auto;
+  cursor: pointer;
 }
 .hover-animation-proj-mobile {
   display: inline-block;
