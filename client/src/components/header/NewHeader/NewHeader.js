@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
-
 import { Animated } from "react-animated-css";
 import { Fade } from "react-awesome-reveal";
 import { FiChevronDown } from "react-icons/fi";
