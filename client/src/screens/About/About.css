@@ -10,7 +10,7 @@
   position: sticky;
   display: flex;
   justify-content: flex-end;
-  top: 2.5%;
+  top: 4%;
   right: 2%;
   z-index: 999;
 }

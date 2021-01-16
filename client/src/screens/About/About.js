@@ -6,6 +6,7 @@ import zenscroll from "zenscroll";
 
 import xOut from "../../assets/logo/Website-Asset_X.png";
 import Footer from "../../components/Footer/Footer";
+import AboutHamburger from "../../components/Hamburger/AboutHamburger/AboutHamburger";
 
 // <img
 // alt="logo"
@@ -17,16 +18,12 @@ export default function About() {
   // const [background, changeBackground] = useState("vid-about-hov-menu ");
   // const [davidBio, changeDavidBio] = useState("david-bio");
   // const [gregBio, changeGregBio] = useState("greg-bio");
-  const [visible, setVisible] = useState(true);
+  // const [visible, setVisible] = useState(true);
   const history = useHistory();
 
   const xClicked = () => {
     // let pageHeight = window.innerHeight;
-    setVisible(false);
-
-    setTimeout(() => {
-      history.push("/");
-    }, 1000);
+    history.push("/");
 
     // setTimeout(() => {
     //   zenscroll.toY(pageHeight);
@@ -47,22 +44,8 @@ export default function About() {
   // style={{ height: "100vh" }}
   return (
     <div className="about-container">
-      <div className="about-x-container">
-        <Animated
-          className="about-xOut"
-          animationIn="rotateIn"
-          animationOut="rotateOut"
-          animationInDuration={500}
-          animationOutDuration={1000}
-          isVisible={visible}
-        >
-          <img
-            alt="xOut"
-            src={xOut}
-            className="about-xOut"
-            onClick={xClicked}
-          />
-        </Animated>
+      <div className="about-x-container" onClick={xClicked}>
+        <AboutHamburger />
       </div>
 
       <div className="about-text-container">
