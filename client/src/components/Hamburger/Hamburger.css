@@ -64,11 +64,11 @@
 }
 .menu-btn__burger::before {
   /* transform: translateY(-10px); */
-  transform: translateY(-9px);
+  transform: translateY(-10px);
 }
 .menu-btn__burger::after {
   /* transform: translateY(10px); */
-  transform: translateY(9px);
+  transform: translateY(10px);
 }
 /* ANIMATION */
 
@@ -216,10 +216,10 @@
     height: 3px;
   }
   .menu-btn__burger::before {
-    transform: translateY(-9px);
+    transform: translateY(-10px);
   }
   .menu-btn__burger::after {
-    transform: translateY(9px);
+    transform: translateY(10px);
   }
 }
 @media screen and (max-width: 1499px) and (min-width: 999px) {
