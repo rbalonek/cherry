@@ -19,13 +19,15 @@
   position: relative;
   /* top: 110px; */
   top: 15%;
-  font-family: "deregular";
-  font-size: calc(10px + 0.7vw);
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: calc(7px + 0.5vw);
 }
 .airtable-header-text-underlined {
   text-decoration: underline;
-  font-family: "deregular";
-  font-size: calc(10px + 0.7vw);
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: calc(7px + 0.5vw);
 }
 .airtable-header-text-underlined:hover {
   cursor: pointer;
@@ -99,8 +101,8 @@
 }
 .new-header-text {
   color: white;
-  font-family: "degular";
-  align-self: center;
+  font-family: "Rubik";
+  font-weight: 300;
   padding-left: 5%;
   padding-right: 10%;
   /* 
@@ -141,21 +143,21 @@
 }
 
 @media screen and (max-width: 5999px) and (min-width: 2500px) {
-  .airtable-header-text {
+  /* .airtable-header-text {
     font-size: calc(10px + 1vw);
   }
   .airtable-header-text-underlined {
     font-size: calc(10px + 1vw);
-  }
+  } */
 }
 
 @media screen and (max-width: 2499px) and (min-width: 1000px) {
-  .airtable-header-text {
+  /* .airtable-header-text {
     font-size: calc(10px + 0.8vw);
   }
   .airtable-header-text-underlined {
     font-size: calc(10px + 0.8vw);
-  }
+  } */
 }
 
 /* @media (max-width: 770px) {
