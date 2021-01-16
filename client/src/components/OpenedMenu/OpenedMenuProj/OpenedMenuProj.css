@@ -43,14 +43,14 @@
   font-weight: 900;
   color: white;
   /* font-size: 50px; */
-  font-size: calc(10px + 4vw);
+  font-size: calc(10px + 3vw);
   /* width: 100%; */
   width: fit-content;
   text-align: center;
   cursor: pointer;
   margin: 0;
-  margin-bottom: -1.5%;
-  right: 90vw;
+  margin-bottom: -1%;
+  right: 95vw;
 }
 .hover-animation-proj:after {
   content: "";
