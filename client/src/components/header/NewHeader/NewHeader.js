@@ -8,7 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 // import axios from "axios";
 
 export default function NewHeader(props) {
-  const [inView, setInView] = useState(true);
+  // const [inView, setInView] = useState(true);
   // console.log("Try 1", props.videoBackground);
 
   // setTimeout(() => {
@@ -18,10 +18,10 @@ export default function NewHeader(props) {
   const DownArrowCell = () => {
     let pageHeight = window.innerHeight;
     zenscroll.toY(pageHeight);
-    setInView(false);
-    setTimeout(() => {
-      setInView(true);
-    }, 1000);
+    // setInView(false);
+    // setTimeout(() => {
+    //   setInView(true);
+    // }, 1000);
     // zenscroll.intoView(chi);
     // zenscroll.to(chi);
     // window.scrollBy(0, pageHeight);
@@ -32,10 +32,10 @@ export default function NewHeader(props) {
     let pageHeight = window.innerHeight;
     zenscroll.toY(pageHeight);
     // document.getElementById("chi").scrollIntoView();
-    setInView(false);
-    setTimeout(() => {
-      setInView(true);
-    }, 1000);
+    // setInView(false);
+    // setTimeout(() => {
+    //   setInView(true);
+    // }, 1000);
   };
 
   return (
@@ -53,7 +53,7 @@ export default function NewHeader(props) {
                   triggerOnce={true}
                   // animationInDuration={5000}
                   animationOutDuration={500}
-                  isVisible={inView}
+                  // isVisible={inView}
                   className="airtable-header-text"
                 >
                   <div style={{ height: "100vh" }}>
@@ -74,7 +74,8 @@ export default function NewHeader(props) {
                   animationOut="fadeOut"
                   animationInDuration={1000}
                   animationOutDuration={500}
-                  isVisible={inView}
+                  // isVisible={inView}
+                  triggerOnce={true}
                 >
                   <p className="airtable-header-text">
                     Design, illustration, strong opinions and wannabe
@@ -92,9 +93,10 @@ export default function NewHeader(props) {
                 animationInDelay={3000}
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                animationInDuration={3000}
+                animationInDuration={2000}
                 animationOutDuration={500}
-                isVisible={inView}
+                triggerOnce={true}
+                // isVisible={inView}
               >
                 <video
                   className="vid-about"
