@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/qnu7szh.css");
 .about-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about-x-container {
   width: 96.8%;
@@ -81,7 +84,7 @@
 }
 .bio-text {
   /* font-size: calc(1px + 0.8vw); */
-  font-size: 0.6vw;
+  font-size: 0.8vw;
 
   font-family: "Rubik"; /* , sans-serif; */
 }
@@ -105,7 +108,7 @@
 } */
 
 @media (min-width: 2500px) {
-  .about-x-container {
+  /* .about-x-container {
     position: absolute;
     right: 2.8%;
   }
@@ -120,48 +123,50 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
 }
-@media (max-width: 1100px) {
-  /* .about-text {
+@media (max-width: 2000px) {
+  .about-text {
     font-family: "Rubik";
     font-weight: 300;
-    font-size: calc(22px + 0.05vw);
-    line-height: 1.2;
-  } */
-  /* .title {
+    font-size: 30px;
+  }
+  .title {
     font-weight: 900;
-    font-size: calc(3px + 0.5vw);
+    font-size: 14px;
     width: max-content;
   }
   .name {
-    font-size: calc(8px + 0.5vw);
+    font-size: 20px;
     font-family: "Rubik";
     font-weight: 300;
   }
   .bio-text {
-    font-size: calc(4px + 0.5vw);
-  } */
+    font-size: 16px;
+  }
 }
-@media (max-width: 885px) {
-  /* .about-text {
-    color: white;
-    font-family: "AkzidenzGroteskBE-BoldEx";
-    font-size: calc(10px + 0.5vw);
-    line-height: 1.4;
+@media (max-width: 1500px) {
+  .about-text {
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 2vw;
   }
   .title {
-    margin-bottom: -20px;
-    font-family: "AkzidenzGroteskBE-BoldEx";
-    font-size: calc(8px + 0.1vw);
+    font-weight: 900;
+    font-size: 14px;
+    width: max-content;
+    font-size: 0.95vw;
   }
   .name {
-    font-size: calc(20px + 0.1vw);
+    font-size: 20px;
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 1.35vw;
   }
   .bio-text {
-    font-size: calc(10px + 0.1vw);
-    font-family: "degular";
-  } */
+    font-size: 16px;
+    font-size: 1.05vw;
+  }
 }
 
 @media (max-width: 600px) {
