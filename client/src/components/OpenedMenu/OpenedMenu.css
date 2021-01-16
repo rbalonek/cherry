@@ -26,7 +26,7 @@
   font-family: "Rubik";
   font-weight: 900;
   color: white;
-  font-size: calc(10px + 4vw);
+  font-size: calc(10px + 3vw);
   width: fit-content;
   text-align: center;
   cursor: pointer;
@@ -84,65 +84,6 @@
     auto;
 }
 
-/* @media screen and (max-width: 5999px) and (min-width: 2000px) {
-  .hover-animation {
-    font-size: calc(40px + 7vw);
-  }
-  .hover-animation:after {
-    height: calc(3px + 0.5vw);
-    bottom: 15px;
-  }
-  .about:hover:after {
-    transform: scaleX(0.6);
-  }
-  .keyart:hover:after {
-    transform: scaleX(0.69);
-  }
-
-  .ideas:hover:after {
-    transform: scaleX(0.5);
-  }
-
-  .branding:hover:after {
-    transform: scaleX(0.85);
-  }
-  .packaging:hover:after {
-    transform: scaleX(1);
-  }
-  vid-about-opened-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-  }
-} */
-
-@media screen and (max-width: 5999px) and (min-width: 1000px) {
-  .hover-animation {
-    font-size: calc(40px + 3vw);
-  }
-  /* .hover-animation:after {
-    height: 4px;
-    bottom: 9px;
-  } */
-  /* .about:hover:after {
-    transform: scaleX(0.6);
-  }
-  .keyart:hover:after {
-    transform: scaleX(0.69);
-  }
-
-  .ideas:hover:after {
-    transform: scaleX(0.6);
-  }
-
-  .branding:hover:after {
-    transform: scaleX(0.85);
-  }
-  .packaging:hover:after {
-    transform: scaleX(1);
-  } */
-}
 @media (max-width: 770px) {
   .opened-menu-container {
     height: 100vh;
