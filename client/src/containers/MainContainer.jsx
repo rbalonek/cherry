@@ -36,9 +36,6 @@ export default function MainContainer(props) {
       <Route path="/projects" component={Projects}>
         <Projects projects={props.projects} />
       </Route>
-      <Route path="/bsides" component={BSides}>
-        <BSides projects={props.projects} videoBackground={videoForSession} />
-      </Route>
 
       <Route path="/logos" component={ProjLogos}>
         <ProjLogos projects={props.projects} />
@@ -48,6 +45,9 @@ export default function MainContainer(props) {
           projects={props.projects}
           videoBackground={props.videoBackground}
         />
+      </Route>
+      <Route path="/bsides" component={BSides}>
+        <BSides projects={props.projects} videoBackground={videoForSession} />
       </Route>
       <Route path="/branding" component={Branding}>
         <Branding projects={props.projects} videoBackground={videoForSession} />

@@ -4,6 +4,7 @@ import "./OpenedMenuProj.css";
 
 export default function OpenedMenuProj(props) {
   const history = useHistory();
+
   const bsidePress = () => {
     window.scroll({
       top: 0,
