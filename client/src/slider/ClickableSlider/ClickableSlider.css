@@ -1,9 +1,9 @@
 .carousel .control-dots .dot {
-  margin: 0.5% 0.15%;
+  margin: 0.5% 0.12%;
   /* width: calc(5px + 0.02vw);
   height: calc(5px + 0.02vw); */
-  width: 0.3em;
-  height: 0.3em;
+  width: 0.7vh;
+  height: 0.7vh;
 
   /* margin: calc(0.05% + 0.1vw) calc(1px + 0.08vw);
   width: calc(0.1px + 0.25vw);
@@ -184,16 +184,16 @@
   .carousel .control-dots .dot {
     margin: 0.8% 0.15%;
     /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
-    width: 1em;
-    height: 1em;
+    /* width: 1em;
+    height: 1em; */
   }
 }
 @media screen and (max-width: 3999px) and (min-width: 3000px) {
   .carousel .control-dots .dot {
     margin: 0.7% 0.15%;
     /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
-    width: 0.7em;
-    height: 0.7em;
+    /* width: 0.7em;
+    height: 0.7em; */
   }
 }
 
@@ -201,8 +201,8 @@
   .carousel .control-dots .dot {
     margin: 0.5% 0.15%;
     /* margin: calc(0.05% + 0.5vw) calc(0.5px + 0.08vw); */
-    width: 0.5em;
-    height: 0.5em;
+    /* width: 0.5em;
+    height: 0.5em; */
   }
 }
 

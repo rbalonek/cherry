@@ -6,6 +6,59 @@
     url(../../assets/fonts//AkzidenzGroteskBE-BoldEx.otf) format("opentype");
 } */
 
+.opened-menu-text-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-hidden {
+  display: none;
+}
+.show {
+  display: inline;
+  z-index: 999;
+}
+/* .input {
+  margin-top: 5%;
+  height: calc(10px + 3vw);
+  background-color: black;
+  z-index: 999;
+  border: none;
+  font-family: "Rubik";
+  font-weight: 900;
+  color: white;
+  font-size: calc(10px + 3vw);
+  text-align: center;
+} */
+.input {
+  margin-top: 5%;
+  height: calc(10px + 3vw);
+  background: transparent;
+  z-index: 999;
+  border: none;
+  font-family: "Rubik";
+  font-weight: 900;
+  color: white;
+  font-size: calc(10px + 3vw);
+  /* width: fit-content; */
+  text-align: center;
+  /* border-color: black; */
+  border-bottom-style: double;
+  border-top: transparent;
+  caret-color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.hide-b-sides {
+  display: none;
+}
+
 .opened-menu-container {
   display: flex;
   flex-direction: column;
@@ -31,7 +84,8 @@
   text-align: center;
   cursor: pointer;
   margin: 0;
-  margin-bottom: -6%;
+  /* margin-bottom: -5%; */
+  margin-bottom: -3%;
 }
 .hover-animation:after {
   content: "";
@@ -39,18 +93,18 @@
   width: 100%;
   transform: scaleX(0);
   height: 3px;
-  bottom: 15%;
+  bottom: 13%;
   left: 0;
   background-color: #fff;
-  transform-origin: center;
-  transition: transform 0.25s ease-out;
+  /* transform-origin: center;
+  transition: transform 0.25s ease-out; */
 }
 .hover-animation:hover:after {
   transform: scaleX(1);
   transform-origin: center;
 }
 .hamburger-open-text {
-  font-family: "AkzidenzGroteskBE-BoldEx";
+  /* font-family: "AkzidenzGroteskBE-BoldEx"; */
   /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
@@ -80,8 +134,7 @@
   transform: scaleX(1);
 }
 .sayhi:hover {
-  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_100/v1610050290/Cherry/Cherry%20Clients/Logos/sayhi_ozneon.png),
-    auto;
+  cursor: pointer;
 }
 
 @media (max-width: 770px) {
