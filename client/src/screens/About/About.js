@@ -24,7 +24,8 @@ export default function About() {
 
   const xClicked = () => {
     // let pageHeight = window.innerHeight;
-    history.push("/");
+    // history.push("/");
+    history.push.goBack();
 
     // setTimeout(() => {
     //   zenscroll.toY(pageHeight);
