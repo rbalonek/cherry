@@ -13,6 +13,10 @@ import ProjIdentity from "../screens/Projects/ProjIdentity/ProjIdentity";
 import ProjKeyArt from "../screens/Projects/ProjKeyArt/ProjKeyArt";
 import ProjName from "../screens/Projects/ProjName/ProjName";
 import ProjectsScreeen from "../screens/Projects/ProjectsScreen/ProjectsScreeen";
+import KeyArt from "../screens/KeyArt/KeyArt";
+import Branding from "../screens/Branding/Branding";
+import Design from "../screens/DesignScreen/Design";
+import BSides from "../screens/Bsides/BSides";
 
 export default function MainContainer(props) {
   // console.log("PROPS", props.headerText);
@@ -32,35 +36,24 @@ export default function MainContainer(props) {
       <Route path="/projects" component={Projects}>
         <Projects projects={props.projects} />
       </Route>
-      <Route path="/projectsscreen" component={ProjectsScreeen}>
-        <ProjectsScreeen
-          projects={props.projects}
-          videoBackground={videoForSession}
-        />
-      </Route>
-      <Route path={"/project"} component={ProjName}>
-        <ProjName projects={props.projects} />
-      </Route>
+
       <Route path="/logos" component={ProjLogos}>
         <ProjLogos projects={props.projects} />
       </Route>
-      <Route path="/keyart" component={ProjKeyArt}>
-        <ProjKeyArt projects={props.projects} />
+      <Route path="/keyart" component={KeyArt}>
+        <KeyArt
+          projects={props.projects}
+          videoBackground={props.videoBackground}
+        />
       </Route>
-      <Route path="/identity" component={ProjIdentity}>
-        <ProjIdentity projects={props.projects} />
+      <Route path="/bsides" component={BSides}>
+        <BSides projects={props.projects} videoBackground={videoForSession} />
       </Route>
-      <Route path="/motiongfx" component={ProjMotionGfx}>
-        <ProjMotionGfx projects={props.projects} />
+      <Route path="/branding" component={Branding}>
+        <Branding projects={props.projects} videoBackground={videoForSession} />
       </Route>
-      <Route path="/copy" component={ProjCopy}>
-        <ProjCopy projects={props.projects} />
-      </Route>
-      <Route path="/retouching" component={ProjRetouching}>
-        <ProjRetouching projects={props.projects} />
-      </Route>
-      <Route path="/photoartdirection" component={ProjPhotoArtDirection}>
-        <ProjPhotoArtDirection projects={props.projects} />
+      <Route path="/design" component={Design}>
+        <Design projects={props.projects} videoBackground={videoForSession} />
       </Route>
     </Switch>
   );
