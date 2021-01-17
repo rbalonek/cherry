@@ -11,7 +11,15 @@ export default function Design(props) {
       <div>
         {props.projects.map((project) => (
           <>
-            {project.fields.design === true && (
+            {(project.fields.design === true) |
+              (project.fields.BookDesign === true) |
+              (project.fields.OutOfHome === true) |
+              (project.fields.Apparel === true) |
+              (project.fields.Digital === true) |
+              (project.fields.CustomType === true) |
+              (project.fields.MotionGFX === true) |
+              (project.fields.OpeningCredits === true) |
+              (project.fields.Packaging === true) && (
               <Fade
                 direction={"up"}
                 duration={2000}
