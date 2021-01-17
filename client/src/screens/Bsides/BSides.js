@@ -7,66 +7,86 @@ export default function BSides(props) {
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
-      <h1 style={{ color: "white", textAlign: "center" }}>B-Sides Screen</h1>
-      <div>
-        {props.projects.map((project) => (
-          <>
-            {project.fields.BsidesPage === true && (
-              <Fade
-                direction={"up"}
-                duration={2000}
-                fraction={Math.random()}
-                triggerOnce={true}
-                className="masonry-brick-img-full"
-              >
-                <div
-                  onMouseEnter={() => {
-                    var el = document.getElementById(project.fields.id);
-                    el.classList.toggle("show-proj-info");
-                    el.classList.toggle("hide-element");
-                  }}
-                  onMouseLeave={() => {
-                    var el = document.getElementById(project.fields.id);
-                    el.classList.toggle("show-proj-info");
-                    el.classList.toggle("hide-element");
-                  }}
-                  class="masonry-brick-img-full"
-                  style={{
-                    backgroundImage: `url(${project.fields.img1})`,
-                  }}
-                >
-                  <div id={project.fields.id} className="hide-element">
-                    <Fade direction={"up"} duration={500} cascade={true}>
-                      <p
-                        style={{
-                          color: "white",
-                          fontFamily: "Rubik",
-                          fontWeight: "900",
-                          fontSize: "calc(15px + 1vw)",
-                        }}
-                      >
-                        {project.fields.projectname}
-                      </p>
+      <div className="project-full-width" />
+      <div className="list-container">
+        <div className="container-split">
+          <div className="list-left">
+            <div className="project-left-small" />
+            <div className="project-left-small" />
+            <div className="project-left-small" />
+            <div className="project-left-small" />
+            <div className="project-left-large" />
+          </div>
 
-                      <p
-                        style={{
-                          color: "white",
-                          fontFamily: "Rubik",
-                          fontWeight: "300",
-                          fontSize: "calc(5px + 1vw)",
-                          marginTop: "-30%",
-                        }}
-                      >
-                        {project.fields.client}
-                      </p>
-                    </Fade>
-                  </div>
-                </div>
-              </Fade>
-            )}
-          </>
-        ))}
+          <div className="list-right">
+            <div className="project-right-small" />
+            <div className="project-right-tall" />
+            <div className="project-right-small" />
+            <div className="project-right-small" />
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+// <h1 style={{ color: "white", textAlign: "center" }}>B-Sides Screen</h1>
+//       <div>
+//         {props.projects.map((project) => (
+//           <>
+//             {project.fields.BsidesPage === true && (
+//               <Fade
+//                 direction={"up"}
+//                 duration={2000}
+//                 fraction={Math.random()}
+//                 triggerOnce={true}
+//                 className="masonry-brick-img-full"
+//               >
+//                 <div
+//                   onMouseEnter={() => {
+//                     var el = document.getElementById(project.fields.id);
+//                     el.classList.toggle("show-proj-info");
+//                     el.classList.toggle("hide-element");
+//                   }}
+//                   onMouseLeave={() => {
+//                     var el = document.getElementById(project.fields.id);
+//                     el.classList.toggle("show-proj-info");
+//                     el.classList.toggle("hide-element");
+//                   }}
+//                   class="masonry-brick-img-full"
+//                   style={{
+//                     backgroundImage: `url(${project.fields.img1})`,
+//                   }}
+//                 >
+//                   <div id={project.fields.id} className="hide-element">
+//                     <Fade direction={"up"} duration={500} cascade={true}>
+//                       <p
+//                         style={{
+//                           color: "white",
+//                           fontFamily: "Rubik",
+//                           fontWeight: "900",
+//                           fontSize: "calc(15px + 1vw)",
+//                         }}
+//                       >
+//                         {project.fields.projectname}
+//                       </p>
+
+//                       <p
+//                         style={{
+//                           color: "white",
+//                           fontFamily: "Rubik",
+//                           fontWeight: "300",
+//                           fontSize: "calc(5px + 1vw)",
+//                           marginTop: "-30%",
+//                         }}
+//                       >
+//                         {project.fields.client}
+//                       </p>
+//                     </Fade>
+//                   </div>
+//                 </div>
+//               </Fade>
+//             )}
+//           </>
+//         ))}
+//       </div>

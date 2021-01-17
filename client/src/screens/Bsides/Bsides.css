@@ -1,0 +1,63 @@
+.list-container {
+  width: 100%;
+  display: flex;
+}
+.container-split {
+  display: flex;
+  width: 100vw;
+  background-color: indigo;
+}
+.list-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  width: 70%;
+  justify-content: center;
+  justify-content: space-around;
+  /* background-color: blue; */
+}
+.list-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  width: 30%;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: gray;
+}
+
+.project-full-width {
+  height: 500px;
+  width: 100%;
+  background-color: blue;
+}
+
+.project-left-small {
+  flex: auto;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  margin: 0 8px 8px 0;
+}
+
+.project-left-large {
+  flex: auto;
+  height: 600px;
+  width: 600px;
+  background-color: green;
+  margin: 0 8px 8px 0;
+}
+.project-right-small {
+  flex: auto;
+  height: 300px;
+  width: 300px;
+  background-color: orange;
+  margin: 0 8px 8px 0;
+}
+.project-right-tall {
+  flex: auto;
+  height: 600px;
+  width: 300px;
+  background-color: pink;
+  margin: 0 8px 8px 0;
+}
