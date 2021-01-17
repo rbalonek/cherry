@@ -13,17 +13,17 @@
   position: absolute;
   right: 3%;
   margin-top: 2%;
-  z-index: 999;
+  z-index: 998;
 }
 
 .menu-btn-cursor-container {
-  height: 75px;
+  height: 60px;
   width: 100px;
   cursor: pointer;
   position: absolute;
-  top: -10px;
+  top: -30px;
   left: -30px;
-  /* background-color: red; */
+  /* background-color: blue; */
   opacity: 0.2;
   border-radius: 30%;
 }
@@ -102,17 +102,14 @@
     transform: translateY(27px);
   }
   .menu-btn-cursor-container {
-    height: 500px;
-    width: 500px;
-    /* background-color: red;
-    opacity: 0.7; */
+    height: 200px;
+    width: 300px;
     cursor: pointer;
     position: absolute;
     top: -100px;
-    left: -300px;
-
+    left: -100px;
     border-radius: 30%;
-    z-index: 999;
+    z-index: 994;
   }
 }
 
@@ -134,23 +131,23 @@
     transform: translateY(23px);
   }
   .menu-btn-cursor-container {
-    height: 300px;
+    height: 150px;
     width: 300px;
     /* background-color: red; */
     cursor: pointer;
     position: absolute;
     top: -70px;
-    left: -150px;
+    left: -100px;
     /* opacity: 0.7; */
     border-radius: 30%;
-    z-index: 999;
+    z-index: 998;
   }
 }
 @media screen and (max-width: 3999px) and (min-width: 3000px) {
   .menu-btn-cursor-container {
     top: -50px;
     left: -100px;
-    height: 250px;
+    height: 150px;
     width: 250px;
     /* background-color: red;
     opacity: 0.7; */
@@ -175,9 +172,10 @@
 
 @media screen and (max-width: 2999px) and (min-width: 2000px) {
   .menu-btn-cursor-container {
-    left: -150px;
-    height: 250px;
-    width: 250px;
+    left: -30px;
+    top: -30px;
+    height: 70px;
+    width: 100px;
   }
   /* .hamburger-helper {
     right: 3%;

@@ -16,7 +16,7 @@
 .masonry-brick-img {
   flex: auto;
   height: 500px;
-  min-width: 500px;
+  min-width: 200px;
   /* max-width: 800px; */
   margin: 0 8px 8px 0; /* Some gutter */
   /* background-size: 100% 100%; */
@@ -26,31 +26,40 @@
   background-repeat: no-repeat;
 }
 
-.masonry-brick-img:nth-child(1) {
+/* .masonry-brick-img:nth-child(1) {
   width: 100%;
 }
 .masonry-brick-img:nth-child(2) {
-  width: 500px;
+  width: 800px;
 }
 .masonry-brick-img:nth-child(3) {
   width: 900px;
 }
 .masonry-brick-img:nth-child(4) {
-  width: 900px;
+  width: 500px;
 }
 .masonry-brick-img:nth-child(5) {
-  width: 900px;
+  width: 200px;
 }
-.masonry-brick-img:nth-child(6) {
+.masonry-brick-img:nth-child(6n) {
   width: 500px;
 }
-.masonry-brick-img:nth-child(7) {
+.masonry-brick-img:nth-child(7n) {
   width: 900px;
 }
-.masonry-brick-img:nth-child(8) {
+.masonry-brick-img:nth-child(8n) {
   width: 500px;
 }
-@media screen and (max-width: 5999px) and (min-width: 3500px) {
+.masonry-brick-img:nth-child(9n) {
+  width: 200px;
+}
+.masonry-brick-img:nth-child(10n) {
+  width: 500px;
+}
+.masonry-brick-img:nth-child(11n) {
+  width: 800px;
+} */
+/* @media screen and (max-width: 5999px) and (min-width: 3500px) {
   .masonry-img {
     width: 100%;
     display: flex;
@@ -198,7 +207,50 @@
   .masonry-brick-img:nth-child(8) {
     width: 350px;
   }
+} */
+
+/* TEST  */
+
+.masonry-brick-img-full {
+  flex: auto;
+  height: 500px;
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
 }
+
+.masonry-brick-img-wide {
+  flex: auto;
+  height: 500px;
+  min-width: 800px;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.masonry-brick-img-sm {
+  flex: auto;
+  height: 500px;
+  width: 400px;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+/* TEST  */
 
 @media (max-width: 771px) {
   .masonry-brick-img {

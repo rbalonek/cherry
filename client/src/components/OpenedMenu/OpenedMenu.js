@@ -21,10 +21,15 @@ export default function OpenedMenu(props) {
 
   const confirm = (e) => {
     e.preventDefault();
-    password === "cherry"
+    (password === "cherry") | (password === "Cherry")
       ? history.push("/projectsscreen")
       : toggleInputHidden("input-hidden");
     toggleShowBsides("hover-animation ideas");
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
   };
 
   const bSidePress = () => {
@@ -110,8 +115,8 @@ export default function OpenedMenu(props) {
       <div
         onMouseEnter={clickAway}
         style={{
-          height: "200px",
-          width: "200px",
+          height: "10%",
+          width: "10%",
           // backgroundColor: "red",
           position: "absolute",
           top: ".5%",
