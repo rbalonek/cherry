@@ -21,7 +21,10 @@ export default function OpenedMenu(props) {
 
   const confirm = (e) => {
     e.preventDefault();
-    password === "cherry" ? console.log("yaaas") : console.log("NO");
+    password === "cherry"
+      ? history.push("/projectsscreen")
+      : toggleInputHidden("input-hidden");
+    toggleShowBsides("hover-animation ideas");
   };
 
   const bSidePress = () => {
