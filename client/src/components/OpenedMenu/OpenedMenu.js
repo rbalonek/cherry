@@ -115,8 +115,8 @@ export default function OpenedMenu(props) {
       <div
         onMouseEnter={clickAway}
         style={{
-          height: "200px",
-          width: "200px",
+          height: "10%",
+          width: "10%",
           // backgroundColor: "red",
           position: "absolute",
           top: ".5%",
