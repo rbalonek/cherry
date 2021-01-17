@@ -10,7 +10,7 @@ import { useLockBodyScroll, useToggle } from "react-use";
 export default function StickyHeader(props) {
   // const [IsVis, setIsVis] = useState(true);
   const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
-  // const [logo, logoToggle] = useState('logo-sticky')
+  // const [childState, setChildState] = useState("input-hidden");
   const [locked, toggleLocked] = useToggle(false);
   useLockBodyScroll(locked);
 
@@ -21,6 +21,14 @@ export default function StickyHeader(props) {
     } else {
       hamburgerToggle("hamburger-closed");
       toggleLocked();
+      // setChildState("input-hidden");
+      // var inputForm = document.getElementById("form-opened-menu");
+      // inputForm.classList.add("input-hidden");
+      // inputForm.classList.remove("show");
+
+      // var bSidesToggle = document.getElementById("b-sides");
+      // bSidesToggle.classList.add("hover-animation");
+      // bSidesToggle.classList.remove("hide-b-sides");
     }
   };
 
@@ -37,7 +45,10 @@ export default function StickyHeader(props) {
       <div className={hamburgerClosed}>
         <div className="hamburger-text-container">
           <Fade>
-            <OpenedMenu videoBackground={props.videoBackground} />
+            <OpenedMenu
+              // childState={childState}
+              videoBackground={props.videoBackground}
+            />
           </Fade>
         </div>
       </div>

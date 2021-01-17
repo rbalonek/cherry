@@ -16,7 +16,10 @@
 .input-hidden {
   display: none;
 }
-
+.show {
+  display: inline;
+  z-index: 999;
+}
 /* .input {
   margin-top: 5%;
   height: calc(10px + 3vw);
