@@ -107,7 +107,7 @@ export default function OpenedMenu(props) {
   const clickAway = () => {
     toggleInputHidden("input-hidden");
     toggleShowBsides("hover-animation ideas");
-    // console.log("clicked!");
+    console.log("clicked!");
   };
 
   return (
@@ -115,9 +115,9 @@ export default function OpenedMenu(props) {
       <div
         onMouseEnter={clickAway}
         style={{
-          height: "200px",
-          width: "200px",
-          // backgroundColor: "red",
+          height: "10%",
+          width: "10%",
+          backgroundColor: "red",
           position: "absolute",
           top: ".5%",
           right: ".5%",
