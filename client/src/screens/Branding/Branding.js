@@ -4,6 +4,8 @@ import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStick
 import "./Branding.css";
 
 export default function Branding(props) {
+  // console.log(props);
+
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
@@ -11,7 +13,8 @@ export default function Branding(props) {
       <div>
         {props.projects.map((project) => (
           <>
-            {project.fields.branding === true && (
+            {(project.fields.branding === true) |
+              (project.fields.logo === true) && (
               <Fade
                 direction={"up"}
                 duration={2000}
