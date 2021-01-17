@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import { Rotate } from "react-awesome-reveal";
 import "./About.css";
@@ -24,7 +24,8 @@ export default function About() {
 
   const xClicked = () => {
     // let pageHeight = window.innerHeight;
-    history.push("/");
+    // history.push("/");
+    history.goBack();
 
     // setTimeout(() => {
     //   zenscroll.toY(pageHeight);
