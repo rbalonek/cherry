@@ -12,7 +12,7 @@ export default function OpenedMenuProj(props) {
     });
 
     setTimeout(() => {
-      history.push("/projectsscreen");
+      history.push("/bsides");
     }, 500);
   };
 
@@ -51,8 +51,18 @@ export default function OpenedMenuProj(props) {
           >
             KEY ART
           </h1>
-          <h1 className=" hover-animation-proj branding-proj">BRANDING</h1>
-          <h1 className=" hover-animation-proj packaging-proj">DESIGN</h1>
+          <h1
+            className=" hover-animation-proj branding-proj"
+            onClick={() => history.push("/branding")}
+          >
+            BRANDING
+          </h1>
+          <h1
+            className=" hover-animation-proj packaging-proj"
+            onClick={() => history.push("/design")}
+          >
+            DESIGN
+          </h1>
           <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
             B-SIDES
           </h1>
