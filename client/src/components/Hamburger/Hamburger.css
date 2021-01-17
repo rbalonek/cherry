@@ -23,7 +23,7 @@
   position: absolute;
   top: -30px;
   left: -30px;
-  background-color: blue;
+  /* background-color: blue; */
   opacity: 0.2;
   border-radius: 30%;
 }
