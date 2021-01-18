@@ -13,32 +13,43 @@ export default function ProjName(props) {
   let projName = window.location.pathname;
   let n = 9;
   projName = projName.substring(n);
-  console.log(props.projects);
+  console.log(projName);
 
   return (
-    <div>
-      <Carousel>
-        {props.projects.map((project) => (
-          <>
-            {project.fields.projectname === projName && (
-              <>
-                <div>
-                  <img
-                    style={{
-                      width: "600px",
-                      height: "600px",
-                      padding: "20px",
-                      textAlign: "center",
-                    }}
-                    alt={project.fields.img1}
-                    src={project.fields.img1}
-                  />
-                </div>
-              </>
-            )}
-          </>
-        ))}
-      </Carousel>
+    <div style={{ height: "100%", width: "100vw" }}>
+      <div style={{ marginBottom: "7%" }}>
+        <ProjectsStickyHeader videoBackground={props.videoBackground} />
+      </div>
+      <div className="holder">
+        <Carousel>
+          {props.projects.map((project) => (
+            <>
+              {project.fields.projectname === projName && (
+                <>
+                  <div>
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        padding: "20px",
+                        textAlign: "center",
+                        backgroundSize: "cover",
+                        backgroundPosition: "50% 50%",
+                        backgroundRepeat: "no-repeat",
+                        // textAlign: "-webkit-center",
+                        // display: "flex",
+                        // justifyContent: "center",
+                      }}
+                      alt={project.fields.img1}
+                      src={project.fields.img1}
+                    />
+                  </div>
+                </>
+              )}
+            </>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }
