@@ -6,7 +6,7 @@
   display: flex;
   width: 100%;
 
-  background-color: indigo;
+  /* background-color: indigo; */
 }
 .list-left {
   display: flex;
@@ -16,7 +16,7 @@
   width: 70%;
   justify-content: center;
   justify-content: space-around;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .list-right {
   display: flex;
@@ -25,7 +25,7 @@
   width: 30%;
   justify-content: center;
   justify-content: space-around;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .masonry-img {
@@ -127,7 +127,7 @@
   flex: auto;
   height: 500px;
   width: 400px;
-  background-color: orange;
+  /* background-color: orange; */
   margin: 0 8px 8px 0;
   background-size: cover;
   background-position: 50% 50%;
@@ -137,10 +137,11 @@
 .project-right-tall {
   flex: auto;
   height: 1200px;
-  width: 300px;
-  background-color: pink;
+  width: 100%;
+  /* background-color: pink; */
   margin: 0 8px 8px 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
 }

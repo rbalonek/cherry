@@ -145,10 +145,135 @@ export default function BSides(props) {
           </div>
 
           <div className="list-right">
-            <div className="project-right-small" />
-            <div className="project-right-tall" />
-            <div className="project-right-small" />
-            <div className="project-right-small" />
+            <div class="masonry-img">
+              {props.projects.map((project) => (
+                <>
+                  {project.fields.SmallRightBox === true && (
+                    <Fade
+                      direction={"up"}
+                      duration={2000}
+                      fraction={Math.random()}
+                      triggerOnce={true}
+                      className="project-right-small"
+                    >
+                      <div
+                        onMouseEnter={() => {
+                          var el = document.getElementById(project.fields.id);
+                          el.classList.toggle("show-proj-info");
+                          el.classList.toggle("hide-element");
+                        }}
+                        onMouseLeave={() => {
+                          var el = document.getElementById(project.fields.id);
+                          el.classList.toggle("show-proj-info");
+                          el.classList.toggle("hide-element");
+                        }}
+                        class="project-right-small"
+                        style={{
+                          backgroundImage: `url(${project.fields.img1})`,
+                        }}
+                      >
+                        <div
+                          id={project.fields.id}
+                          className="hide-element"
+                          // onClick={() =>
+                          //   history.push(
+                          //     `/project/${project.fields.projectname}`
+                          //   )
+                          // }
+                        >
+                          <Fade direction={"up"} duration={500} cascade={true}>
+                            <p
+                              style={{
+                                color: "white",
+                                fontFamily: "Rubik",
+                                fontWeight: "900",
+                                fontSize: "calc(15px + 1vw)",
+                              }}
+                            >
+                              {project.fields.projectname}
+                            </p>
+
+                            <p
+                              style={{
+                                color: "white",
+                                fontFamily: "Rubik",
+                                fontWeight: "300",
+                                fontSize: "calc(5px + 1vw)",
+                                marginTop: "-30%",
+                              }}
+                            >
+                              {project.fields.client}
+                            </p>
+                          </Fade>
+                        </div>
+                      </div>
+                    </Fade>
+                  )}
+
+                  {project.fields.LongRightBox === true && (
+                    <Fade
+                      direction={"up"}
+                      duration={2000}
+                      fraction={Math.random()}
+                      triggerOnce={true}
+                      className="project-right-tall"
+                    >
+                      <div
+                        onMouseEnter={() => {
+                          var el = document.getElementById(project.fields.id);
+                          el.classList.toggle("show-proj-info");
+                          el.classList.toggle("hide-element");
+                        }}
+                        onMouseLeave={() => {
+                          var el = document.getElementById(project.fields.id);
+                          el.classList.toggle("show-proj-info");
+                          el.classList.toggle("hide-element");
+                        }}
+                        class="project-right-tall"
+                        style={{
+                          backgroundImage: `url(${project.fields.img1})`,
+                        }}
+                      >
+                        <div
+                          id={project.fields.id}
+                          className="hide-element"
+                          // onClick={() =>
+                          //   history.push(
+                          //     `/project/${project.fields.projectname}`
+                          //   )
+                          // }
+                        >
+                          <Fade direction={"up"} duration={500} cascade={true}>
+                            <p
+                              style={{
+                                color: "white",
+                                fontFamily: "Rubik",
+                                fontWeight: "900",
+                                fontSize: "calc(15px + 1vw)",
+                              }}
+                            >
+                              {project.fields.projectname}
+                            </p>
+
+                            <p
+                              style={{
+                                color: "white",
+                                fontFamily: "Rubik",
+                                fontWeight: "300",
+                                fontSize: "calc(5px + 1vw)",
+                                marginTop: "-30%",
+                              }}
+                            >
+                              {project.fields.client}
+                            </p>
+                          </Fade>
+                        </div>
+                      </div>
+                    </Fade>
+                  )}
+                </>
+              ))}
+            </div>
           </div>
         </div>
       </div>
