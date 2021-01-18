@@ -2,6 +2,7 @@ import React from "react";
 import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjName.css";
 import { useHistory } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
 import { AttentionSeeker } from "react-awesome-reveal";
 
 import arrow from "../../../assets/logo/Website-Asset_ProjectSlideshow_ArrowLeft.png";
@@ -12,56 +13,47 @@ export default function ProjName(props) {
   let projName = window.location.pathname;
   let n = 9;
   projName = projName.substring(n);
-  // console.log(props.projects);
+  // console.log(projName);
+
+  // let arr = props.projects.fields.projectname.includes("Billions");
+  console.log(props);
+  const arr = [];
+  props.projects.map(
+    (project) => project.fields.projectname === projName && arr.push(project)
+  );
+  console.log(arr);
 
   return (
     <div>
-      <div
-        style={{
-          width: "100%",
-          textAlign: "center",
-          position: "sticky",
-          top: "20px",
-        }}
-      >
-        <AttentionSeeker
-          effect={"jello"}
-          delay={1000}
-          className="back-arrow-proj-name"
-        >
-          <img
-            className="back-arrow-proj-name"
-            onClick={() => history.push("/projectsscreen")}
-            src={arrow}
-            alt="back-arrow"
-          />
-        </AttentionSeeker>
+      <div>
+        <ProjectsStickyHeader videoBackground={props.videoBackground} />
       </div>
-
-      <ProjectsStickyHeader />
-      <div style={{ width: "100%", textAlign: "center" }}>
-        <h1 style={{ color: "white", fontFamily: "AkzidenzGroteskBE-BoldEx" }}>
-          {projName}
-        </h1>
-      </div>
-      <div style={{ textAlign: "center" }}>
-        {props.projects.map((project) => (
-          <>
-            {project.fields.projectname === projName && (
-              <>
+      <div className="holder">
+        <Carousel>
+          {arr.map((project) => (
+            <>
+              <div className="centering">
                 <img
+                  className="img-center"
                   style={{
-                    width: "600px",
-                    padding: "20px",
+                    width: "100%",
+                    height: "100%",
+                    // padding: "20px",
                     textAlign: "center",
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    backgroundRepeat: "no-repeat",
+                    // textAlign: "-webkit-center",
+                    // display: "flex",
+                    // justifyContent: "center",
                   }}
                   alt={project.fields.img1}
                   src={project.fields.img1}
                 />
-              </>
-            )}
-          </>
-        ))}
+              </div>
+            </>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

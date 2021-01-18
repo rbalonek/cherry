@@ -22,7 +22,7 @@ export default function OpenedMenu(props) {
   const confirm = (e) => {
     e.preventDefault();
     (password === "cherry") | (password === "Cherry")
-      ? history.push("/projectsscreen")
+      ? history.push("/bsides")
       : toggleInputHidden("input-hidden");
     toggleShowBsides("hover-animation ideas");
     window.scroll({
@@ -85,7 +85,7 @@ export default function OpenedMenu(props) {
       behavior: "auto",
     });
     setTimeout(() => {
-      // history.push("/keyart");
+      history.push("/branding");
       toggleInputHidden("input-hidden");
       toggleShowBsides("hover-animation ideas");
     }, 400);
@@ -97,8 +97,9 @@ export default function OpenedMenu(props) {
       left: 0,
       behavior: "auto",
     });
+
     setTimeout(() => {
-      // history.push("/keyart");
+      history.push("/design");
       toggleInputHidden("input-hidden");
       toggleShowBsides("hover-animation ideas");
     }, 400);

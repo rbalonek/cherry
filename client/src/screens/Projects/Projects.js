@@ -90,6 +90,7 @@ export default function Projects(props) {
                             </Fade>
                           </>
                         )}
+
                         {project.fields.mainPhotoSmall === true && (
                           <>
                             <Fade
@@ -160,6 +161,7 @@ export default function Projects(props) {
                             </Fade>
                           </>
                         )}
+
                         {project.fields.mainPhotoWide === true && (
                           <Fade
                             direction={"up"}
