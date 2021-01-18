@@ -1,20 +1,22 @@
 .list-container {
-  width: 100%;
+  width: 100vw;
   display: flex;
 }
 .container-split {
   display: flex;
-  width: 100vw;
+  width: 100%;
+
   background-color: indigo;
 }
 .list-left {
   display: flex;
+  flex-flow: row wrap;
   flex-wrap: wrap;
   align-content: start;
   width: 70%;
   justify-content: center;
   justify-content: space-around;
-  /* background-color: blue; */
+  background-color: blue;
 }
 .list-right {
   display: flex;
@@ -26,18 +28,87 @@
   background-color: gray;
 }
 
-.project-full-width {
+.masonry-img {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+  /* background-color: green; */
+  /* justify-content: center; */
+}
+
+.masonry-brick-img {
+  flex: auto;
+  height: 500px;
+  min-width: 200px;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.masonry-brick-img-full {
+  flex: auto;
   height: 500px;
   width: 100%;
-  background-color: blue;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.masonry-brick-img-wide {
+  flex: auto;
+  height: 500px;
+  min-width: 800px;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.masonry-brick-img-sm {
+  flex: auto;
+  height: 500px;
+  width: 400px;
+  /* max-width: 800px; */
+  margin: 0 8px 8px 0; /* Some gutter */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.project-full-width {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /* background-color: blue; */
 }
 
 .project-left-small {
   flex: auto;
+  flex-wrap: wrap;
   height: 300px;
   width: 300px;
   background-color: red;
   margin: 0 8px 8px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .project-left-large {
@@ -46,6 +117,9 @@
   width: 600px;
   background-color: green;
   margin: 0 8px 8px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .project-right-small {
   flex: auto;
@@ -53,6 +127,9 @@
   width: 300px;
   background-color: orange;
   margin: 0 8px 8px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 .project-right-tall {
   flex: auto;
@@ -60,4 +137,7 @@
   width: 300px;
   background-color: pink;
   margin: 0 8px 8px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
