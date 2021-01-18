@@ -42,14 +42,11 @@ export default function KeyArt(props) {
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
                     }}
+                    // onClick={history.push(
+                    //   `/project/${project.fields.projectname}`
+                    // )}
                   >
-                    <div
-                      id={project.fields.id}
-                      className="hide-element"
-                      onClick={() =>
-                        history.push(`/project/${project.fields.projectname}`)
-                      }
-                    >
+                    <div id={project.fields.id} className="hide-element">
                       <Fade direction={"up"} duration={500} cascade={true}>
                         <p
                           style={{
@@ -100,9 +97,9 @@ export default function KeyArt(props) {
                       el.classList.toggle("show-proj-info");
                       el.classList.toggle("hide-element");
                     }}
-                    onClick={() =>
-                      history.push(`/project/${project.fields.projectname}`)
-                    }
+                    // onClick={history.push(
+                    //   `/project/${project.fields.projectname}`
+                    // )}
                     class="masonry-brick-img-wide"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,

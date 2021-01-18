@@ -1,16 +1,20 @@
 .hide-element {
   display: none;
 }
+.hide-element-modal-car {
+  display: none;
+}
 
 .modal-carousel-holder {
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: sticky;
   top: 0px;
   left: 0px;
   z-index: 999;
   background-color: black;
   opacity: 0.8;
+  margin-top: -100vh;
 }
 
 .show-project-info {
