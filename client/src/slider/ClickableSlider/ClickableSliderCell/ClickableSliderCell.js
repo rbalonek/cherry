@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./ClickableSliderCell.css";
 import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
-import zenscroll from "zenscroll";
-import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
+// import zenscroll from "zenscroll";
+// import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Animated } from "react-animated-css";
 import { useLockBodyScroll, useToggle } from "react-use";
@@ -26,47 +26,47 @@ export default function ClickableSliderCell(props) {
     toggleLocked();
   };
 
-  let pageHeight = window.innerHeight;
-  let common = document.getElementById("common");
+  // let pageHeight = window.innerHeight;
+  // let common = document.getElementById("common");
 
-  var up = props.scrollToUp;
-  var scrollingDown = props.scrollToDown;
-  // console.log("up", props.scrollToUp);
-  // console.log("up", props.scrollToUp);
-  // console.log("down", scrollingDown);
-  const ArrowUp100Vh = () => {
-    // zenscroll.toY(pageHeight * props.scrollToUp);
-    // zenscroll.intoView(common);
-    zenscroll.to(up);
-    // window.scrollBy(0, pageHeight);
-    // console.log("up");
-  };
-  // console.log(pageHeight * props.scrollToDown);
-  // console.log("down scrolls", props.scrollToDown);
+  // var up = props.scrollToUp;
+  // // var scrollingDown = props.scrollToDown;
+  // // console.log("up", props.scrollToUp);
+  // // console.log("up", props.scrollToUp);
+  // // console.log("down", scrollingDown);
+  // const ArrowUp100Vh = () => {
+  //   // zenscroll.toY(pageHeight * props.scrollToUp);
+  //   // zenscroll.intoView(common);
+  //   zenscroll.to(up);
+  //   // window.scrollBy(0, pageHeight);
+  //   // console.log("up");
+  // };
+  // // console.log(pageHeight * props.scrollToDown);
+  // // console.log("down scrolls", props.scrollToDown);
 
-  const ArrowDown100Vh = () => {
-    zenscroll.toY(pageHeight * (props.scrollToDown + 1));
-    // zenscroll.intoView(common);
-    // zenscroll.to(scrollingDown);
-    // window.scrollBy(0, pageHeight);
-    // console.log("down");
-  };
-  const ScrollUp100Vh = () => {
-    // zenscroll.toY(window.innerHeight * props.scrollToUp);
-    // zenscroll.toY(pageHeight);
-    // zenscroll.intoView(chi);
-    // zenscroll.to(up);
-    // window.scrollBy(0, pageHeight);
-    // console.log("up");
-  };
-  const ScrollDown100Vh = () => {
-    // zenscroll.toY(pageHeight);
-    zenscroll.intoView(common);
-    // zenscroll.to(scrollingDown);
-    // zenscroll.toY(0, pageHeight);
-    // console.log("down");
-    // window.scrollBy(0, pageHeight);
-  };
+  // const ArrowDown100Vh = () => {
+  //   zenscroll.toY(pageHeight * (props.scrollToDown + 1));
+  //   // zenscroll.intoView(common);
+  //   // zenscroll.to(scrollingDown);
+  //   // window.scrollBy(0, pageHeight);
+  //   // console.log("down");
+  // };
+  // const ScrollUp100Vh = () => {
+  //   // zenscroll.toY(window.innerHeight * props.scrollToUp);
+  //   // zenscroll.toY(pageHeight);
+  //   // zenscroll.intoView(chi);
+  //   // zenscroll.to(up);
+  //   // window.scrollBy(0, pageHeight);
+  //   // console.log("up");
+  // };
+  // const ScrollDown100Vh = () => {
+  //   // zenscroll.toY(pageHeight);
+  //   zenscroll.intoView(common);
+  //   // zenscroll.to(scrollingDown);
+  //   // zenscroll.toY(0, pageHeight);
+  //   // console.log("down");
+  //   // window.scrollBy(0, pageHeight);
+  // };
 
   // var scrollableElement = document.body; //document.getElementById("carousel-container-cell"); //
 
