@@ -22,7 +22,7 @@ export default function BSides(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-wide"
+                      className="project-left-large"
                     >
                       <div
                         onMouseEnter={() => {
@@ -35,7 +35,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="masonry-brick-img-wide"
+                        class="project-left-large"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}
@@ -84,7 +84,7 @@ export default function BSides(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-sm"
+                      className="project-left-small"
                     >
                       <div
                         onMouseEnter={() => {
@@ -97,7 +97,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="masonry-brick-img-sm"
+                        class="project-left-small"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}

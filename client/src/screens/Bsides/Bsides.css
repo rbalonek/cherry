@@ -102,38 +102,41 @@
 .project-left-small {
   flex: auto;
   flex-wrap: wrap;
-  height: 300px;
-  width: 300px;
-  background-color: red;
+  height: 500px;
+  width: 400px;
+  /* background-color: red; */
   margin: 0 8px 8px 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  text-align: -webkit-center;
 }
 
 .project-left-large {
   flex: auto;
-  height: 600px;
-  width: 600px;
-  background-color: green;
+  height: 800px;
+  width: 800px;
+  /* background-color: green; */
   margin: 0 8px 8px 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  text-align: -webkit-center;
 }
 .project-right-small {
   flex: auto;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   background-color: orange;
   margin: 0 8px 8px 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  text-align: -webkit-center;
 }
 .project-right-tall {
   flex: auto;
-  height: 600px;
+  height: 1200px;
   width: 300px;
   background-color: pink;
   margin: 0 8px 8px 0;
