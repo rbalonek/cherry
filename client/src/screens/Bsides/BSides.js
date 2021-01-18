@@ -2,10 +2,10 @@ import React from "react";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";
 import "./Bsides.css";
 import { Fade } from "react-awesome-reveal";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 export default function BSides(props) {
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
