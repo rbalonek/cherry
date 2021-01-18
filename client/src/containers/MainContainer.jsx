@@ -17,6 +17,7 @@ import KeyArt from "../screens/KeyArt/KeyArt";
 import Branding from "../screens/Branding/Branding";
 import Design from "../screens/DesignScreen/Design";
 import BSides from "../screens/Bsides/BSides";
+import ModalCarousel from "../components/ModalCarousel/ModalCarousel";
 
 export default function MainContainer(props) {
   // console.log("PROPS", props.headerText);
@@ -32,9 +33,6 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/about" component={About}>
         <About />
-      </Route>
-      <Route path="/projects" component={Projects}>
-        <Projects projects={props.projects} />
       </Route>
 
       <Route path="/logos" component={ProjLogos}>
@@ -54,6 +52,12 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/design" component={Design}>
         <Design projects={props.projects} videoBackground={videoForSession} />
+      </Route>
+      <Route path="/project" component={ProjName}>
+        <ProjName projects={props.projects} videoBackground={videoForSession} />
+      </Route>
+      <Route path="/projects" component={Projects}>
+        <Projects projects={props.projects} />
       </Route>
     </Switch>
   );
