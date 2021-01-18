@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProjectsBody.css";
 import axios from "axios";
-import zenscroll from "zenscroll";
+// import zenscroll from "zenscroll";
 
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
@@ -25,10 +25,10 @@ export default function ProjectsBody(props) {
     apiCall();
   }, [invokeFetch]);
 
-  let pageHeight = window.innerHeight;
+  // let pageHeight = window.innerHeight;
   // var up = document.getElementById({project.fields.scrollToUp});
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
-  let common = document.getElementById("common");
+  // let common = document.getElementById("common");
   // const ScrollUp100Vh = () => {
   //   // zenscroll.toY(window.innerHeight * props.scrollToUp);
   //   // zenscroll.toY(pageHeight);
