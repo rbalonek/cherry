@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";

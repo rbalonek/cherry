@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Animated } from "react-animated-css";
-import { Rotate, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
 import DownArrow from "../../assets/logo/Website-Asset_DownArrow.png";

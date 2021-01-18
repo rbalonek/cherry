@@ -1,5 +1,5 @@
 import React from "react";
-import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
+// import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 
 export default function ModalCarousel(props) {
   // console.log(props);

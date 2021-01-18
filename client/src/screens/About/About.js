@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useHistory, Link } from "react-router-dom";
-import { Animated } from "react-animated-css";
+import React from "react";
+import { useHistory } from "react-router-dom";
+// import { Animated } from "react-animated-css";
 import { Rotate } from "react-awesome-reveal";
 import "./About.css";
-import zenscroll from "zenscroll";
+// import zenscroll from "zenscroll";
 
-import xOut from "../../assets/logo/Website-Asset_X.png";
+// import xOut from "../../assets/logo/Website-Asset_X.png";
 import Footer from "../../components/Footer/Footer";
 import AboutHamburger from "../../components/Hamburger/AboutHamburger/AboutHamburger";
 

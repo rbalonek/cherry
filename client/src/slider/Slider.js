@@ -24,7 +24,6 @@ export default function Slider(props) {
         useKeyboardArrows
         swipeable={true}
         // showArrows={false}
-        showIndicators
       >
         <div>
           <img className="car-img" alt="1" src={props.img1} />

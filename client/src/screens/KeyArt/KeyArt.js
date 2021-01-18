@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
-import ModalCarousel from "../../components/ModalCarousel/ModalCarousel";
+// import ModalCarousel from "../../components/ModalCarousel/ModalCarousel";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";
 import "./KeyArt.css";
-import zenscroll from "zenscroll";
+// import zenscroll from "zenscroll";
 import { useHistory } from "react-router-dom";
 
 export default function KeyArt(props) {

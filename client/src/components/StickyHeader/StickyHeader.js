@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./StickyHeader.css";
-import { Bounce, Rotate, Zoom, Fade } from "react-awesome-reveal";
-import { Animated } from "react-animated-css";
+import { Fade } from "react-awesome-reveal";
+// import { Animated } from "react-animated-css";
 // import Logo from "../../assets/logo/Cherry-Logo.png";
 import Hamburger from "../Hamburger/Hamburger";
 import OpenedMenu from "../OpenedMenu/OpenedMenu";

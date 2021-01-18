@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ProjectsStickyHeader.css";
 import Logo from "../../../assets/logo/Cherry-Logo.png";
 import { useHistory } from "react-router-dom";
 import HamburgerProjects from "../../../components/Hamburger/HamburgerProjects/HamburgerProjects";
-import zenscroll from "zenscroll";
+// import zenscroll from "zenscroll";
 // import Hamburger from "../../../components/Hamburger/Hamburger";
 // import OpenedMenu from "../../../components/OpenedMenu/OpenedMenu";
 

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Fade } from "react-awesome-reveal";
-import Hamburger from "../Hamburger/Hamburger";
+// import Hamburger from "../Hamburger/Hamburger";
 import "./LogoSticky.css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";

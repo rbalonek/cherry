@@ -29,22 +29,22 @@ export default function ProjectsBody(props) {
   // var up = document.getElementById({project.fields.scrollToUp});
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
   let common = document.getElementById("common");
-  const ScrollUp100Vh = () => {
-    // zenscroll.toY(window.innerHeight * props.scrollToUp);
-    // zenscroll.toY(pageHeight);
-    zenscroll.intoView(common);
-    // zenscroll.to(up);
-    // window.scrollBy(0, pageHeight);
-    // console.log("up");
-  };
+  // const ScrollUp100Vh = () => {
+  //   // zenscroll.toY(window.innerHeight * props.scrollToUp);
+  //   // zenscroll.toY(pageHeight);
+  //   zenscroll.intoView(common);
+  //   // zenscroll.to(up);
+  //   // window.scrollBy(0, pageHeight);
+  //   // console.log("up");
+  // };
 
-  const ScrollDown100Vh = () => {
-    zenscroll.toY(pageHeight);
-    // zenscroll.intoView(chi);
-    // zenscroll.to(scrollingDown);
-    // window.scrollBy(0, pageHeight);
-    // console.log("down");
-  };
+  // const ScrollDown100Vh = () => {
+  //   zenscroll.toY(pageHeight);
+  //   // zenscroll.intoView(chi);
+  //   // zenscroll.to(scrollingDown);
+  //   // window.scrollBy(0, pageHeight);
+  //   // console.log("down");
+  // };
 
   return (
     <div className="scroll-snap-container">

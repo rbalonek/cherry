@@ -12,7 +12,7 @@
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
-  align-content: start;
+  align-content: flex-start;
   width: 70%;
   justify-content: center;
   justify-content: space-around;
@@ -21,7 +21,7 @@
 .list-right {
   display: flex;
   flex-wrap: wrap;
-  align-content: start;
+  align-content: flex-start;
   width: 30%;
   justify-content: center;
   justify-content: space-around;

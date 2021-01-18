@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Fade } from "react-awesome-reveal";
+// import { Fade } from "react-awesome-reveal";
 import { Animated } from "react-animated-css";
 import "./Hamburger.css";
 

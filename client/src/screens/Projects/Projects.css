@@ -9,7 +9,7 @@
 .project-list-left {
   display: flex;
   flex-wrap: wrap;
-  align-content: start;
+  align-content: flex-start;
   width: 50%;
   justify-content: center;
   justify-content: space-around;
@@ -18,7 +18,7 @@
 .project-list-right {
   display: flex;
   flex-wrap: wrap;
-  align-content: start;
+  align-content: flex-start;
   width: 50%;
   justify-content: center;
   justify-content: space-around;
@@ -94,7 +94,7 @@
   .project-list-left {
     display: flex;
     flex-wrap: wrap;
-    align-content: start;
+    align-content: flex-start;
     width: 60%;
     justify-content: center;
     justify-content: space-around;
@@ -103,7 +103,7 @@
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    align-content: start;
+    align-content: flex-start;
     width: 40%;
     justify-content: center;
     justify-content: space-around;

@@ -3,8 +3,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
-import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
-import zenscroll from "zenscroll";
+// import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
+// import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { useLockBodyScroll, useToggle } from "react-use";
 
@@ -31,7 +31,7 @@ export default function ClickableSlider(props) {
     toggleLocked();
   };
 
-  let pageHeight = window.innerHeight;
+  // let pageHeight = window.innerHeight;
 
   // var up = document.getElementById(`#${props.scrollToUp}`);
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
