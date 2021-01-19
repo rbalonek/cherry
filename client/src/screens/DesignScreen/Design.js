@@ -7,7 +7,7 @@ export default function Design(props) {
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
-      <h1 style={{ color: "white", textAlign: "center" }}>Design Screen</h1>
+
       <div>
         {props.projects.map((project) => (
           <>
