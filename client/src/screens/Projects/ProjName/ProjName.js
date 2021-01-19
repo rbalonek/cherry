@@ -66,8 +66,8 @@ export default function ProjName(props) {
                   <img
                     className="img-center"
                     style={{
-                      width: "100%",
-                      height: "100vh",
+                      // width: "100vw",
+                      // height: "100vh",
 
                       // padding: "20px",
                       textAlign: "center",
