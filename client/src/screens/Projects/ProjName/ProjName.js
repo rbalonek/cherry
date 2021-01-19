@@ -5,10 +5,11 @@ import { useHistory } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import { Animated } from "react-animated-css";
 import ModalProject from "../../../components/ModalProject/ModalProject";
+import ModalProjectProjName from "../../../components/ModalProject/ModalProjectProjName/ModalProjectProjName";
 // import { AttentionSeeker } from "react-awesome-reveal";
 
 export default function ProjName(props) {
-  console.log(props);
+  // console.log(props);
   const history = useHistory();
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
@@ -35,7 +36,7 @@ export default function ProjName(props) {
   // console.log(projName);
 
   // let arr = props.projects.fields.projectname.includes("Billions");
-  console.log(props);
+  // console.log(props);
   const arr = [];
   props.projects.map(
     (project) => project.fields.projectname === projName && arr.push(project)
@@ -89,12 +90,13 @@ export default function ProjName(props) {
                     animationOut="fadeOut"
                     animationOutDuration={100}
                   >
-                    <ModalProject
+                    <ModalProjectProjName
                       name={project.fields.name}
                       client={project.fields.client}
                       description={project.fields.description}
                       descriptionTwo={project.fields.descriptionTwo}
                       keyart={project.fields.keyart}
+                      Logo={project.fields.Logo}
                       Branding={project.fields.Branding}
                       BookDesign={project.fields.BookDesign}
                       OutOfHome={project.fields.OutOfHome}
