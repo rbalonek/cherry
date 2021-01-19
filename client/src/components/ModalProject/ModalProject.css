@@ -1,5 +1,8 @@
 @import url("https://use.typekit.net/qnu7szh.css");
 
+.upper-case {
+  text-transform: uppercase;
+}
 .modal-container {
   position: absolute;
   height: 100%;
