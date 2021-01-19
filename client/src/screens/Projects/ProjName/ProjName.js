@@ -3,9 +3,7 @@ import ProjectsStickyHeader from "../ProjectsStickyHeader/ProjectsStickyHeader";
 import "./ProjName.css";
 import { useHistory } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
-import { AttentionSeeker } from "react-awesome-reveal";
-
-import arrow from "../../../assets/logo/Website-Asset_ProjectSlideshow_ArrowLeft.png";
+// import { AttentionSeeker } from "react-awesome-reveal";
 
 export default function ProjName(props) {
   const history = useHistory();

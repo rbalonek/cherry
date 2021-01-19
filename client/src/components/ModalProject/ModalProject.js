@@ -6,7 +6,7 @@ export default function ModalProject(props) {
   const Name = props.name;
   const Client = props.client;
 
-  console.log(props);
+  // console.log(props);
 
   const history = useHistory();
   return (
