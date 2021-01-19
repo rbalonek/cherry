@@ -45,7 +45,7 @@
   /* width: fit-content; */
   text-align: center;
   /* border-color: black; */
-  border-bottom-style: double;
+  border-bottom-style: solid;
   border-top: transparent;
   caret-color: white;
 }

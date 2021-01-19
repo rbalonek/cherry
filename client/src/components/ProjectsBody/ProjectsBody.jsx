@@ -69,11 +69,19 @@ export default function ProjectsBody(props) {
               description={project.fields.description}
               descriptionTwo={project.fields.descriptionTwo}
               keyart={project.fields.keyart}
-              identity={project.fields.identity}
-              motiongfx={project.fields.motiongfx}
-              copy={project.fields.copy}
-              retouching={project.fields.retouching}
-              photoartdirection={project.fields.photoartdirection}
+              Branding={project.fields.Branding}
+              BookDesign={project.fields.BookDesign}
+              OutOfHome={project.fields.OutOfHome}
+              Apparel={project.fields.Apparel}
+              Digital={project.fields.Digital}
+              CustomType={project.fields.CustomType}
+              MotionGFX={project.fields.MotionGFX}
+              OpeningCredits={project.fields.OpeningCredits}
+              Packaging={project.fields.Packaging}
+              Copy={project.fields.Copy}
+              Retouching={project.fields.Retouching}
+              PhotoArtDirection={project.fields.PhotoArtDirection}
+              BsidesPage={project.fields.BsidesPage}
             />
           ) : (
             <div>

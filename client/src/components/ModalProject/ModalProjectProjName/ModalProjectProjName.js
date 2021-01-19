@@ -1,31 +1,33 @@
 import React from "react";
-import "./ModalProject.css";
+import "./ModalProjectProjName.css";
 import { useHistory } from "react-router-dom";
 
-export default function ModalProject(props) {
+export default function ModalProjectProjName(props) {
   const Name = props.name;
   const Client = props.client;
-
-  // console.log(props);
-
   const history = useHistory();
+
   return (
-    <div className="modal-container clickable-modal">
-      <div className="modal-project-text-container">
-        <h2 className="show-name-modal upper-case">{Name}</h2>
-        <p className="modal-text client-name upper-case">{Client}</p>
+    <div className="modal-container-proj-name clickable-modal-proj-name">
+      <div className="modal-project-text-container-proj-name">
+        <h2 className="show-name-modal-proj-name upper-case-proj-name">
+          {Name}
+        </h2>
+        <p className="modal-text-proj-name client-name-proj-name upper-case-proj-name">
+          {Client}
+        </p>
 
-        <div className="description-text-container">
-          <p className="description-text"> {props.description} </p>
+        <div className="description-text-container-proj-name">
+          <p className="description-text-proj-name"> {props.description} </p>
 
-          <p className="description-text"> {props.descriptionTwo} </p>
+          <p className="description-text-proj-name"> {props.descriptionTwo} </p>
         </div>
-        <div className="what-did-container">
-          <h2 className="bold-text">WHAT WE DID</h2>
+        <div className="what-did-container-proj-name">
+          <h2 className="bold-text-proj-name">WHAT WE DID</h2>
 
           {props.Logo === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/branding")}
             >
               Logos
@@ -34,7 +36,7 @@ export default function ModalProject(props) {
 
           {props.keyart === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/keyart")}
             >
               Key Art
@@ -43,7 +45,7 @@ export default function ModalProject(props) {
 
           {props.Branding === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/branding")}
             >
               Branding
@@ -52,7 +54,7 @@ export default function ModalProject(props) {
 
           {props.BookDesign === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Book Design
@@ -61,7 +63,7 @@ export default function ModalProject(props) {
 
           {props.OutOfHome === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Out of Home
@@ -70,7 +72,7 @@ export default function ModalProject(props) {
 
           {props.Apparel === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Apparel
@@ -79,7 +81,7 @@ export default function ModalProject(props) {
 
           {props.Digital === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Digital
@@ -88,7 +90,7 @@ export default function ModalProject(props) {
 
           {props.CustomType === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Custom Type
@@ -97,7 +99,7 @@ export default function ModalProject(props) {
 
           {props.MotionGFX === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Motion GFX
@@ -106,7 +108,7 @@ export default function ModalProject(props) {
 
           {props.OpeningCredits === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Opening Credits
@@ -115,7 +117,7 @@ export default function ModalProject(props) {
 
           {props.Packaging === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Packaging
@@ -124,7 +126,7 @@ export default function ModalProject(props) {
 
           {props.PhotoArtDirection === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Photo Art Direction
@@ -133,7 +135,7 @@ export default function ModalProject(props) {
 
           {props.Copy === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Copy
@@ -142,7 +144,7 @@ export default function ModalProject(props) {
 
           {props.Retouching === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
             >
               Retouching
@@ -151,7 +153,7 @@ export default function ModalProject(props) {
 
           {props.BsidesPage === true && (
             <p
-              className="modal-text project-keywords"
+              className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/bsides")}
             >
               Unused Concepts
@@ -162,18 +164,3 @@ export default function ModalProject(props) {
     </div>
   );
 }
-
-// <div className="bold-container">
-//         <h2 className="bold-text">CLIENT</h2>
-//         <h2 className="bold-text">CHALLENGE</h2>
-//         <h2 className="bold-text">WHAT WE DID</h2>
-//       </div>
-//       <div className="props-container">
-//         <p className="modal-text client-name">{props.client}</p>
-//         <p className="modal-text project-name">{props.name}</p>
-//         <div className="description-text-container">
-//           <p className="description-text"> {props.description} </p>
-//           <br />
-//           <p className="description-text"> {props.descriptionTwo} </p>
-//         </div>
-//       </div>

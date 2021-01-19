@@ -82,11 +82,19 @@ export default function ClickableSlider(props) {
                 description={props.description}
                 descriptionTwo={props.descriptionTwo}
                 keyart={props.keyart}
-                identity={props.identity}
-                motiongfx={props.motiongfx}
-                copy={props.copy}
-                retouching={props.retouching}
-                photoartdirection={props.photoartdirection}
+                Branding={props.Branding}
+                BookDesign={props.BookDesign}
+                OutOfHome={props.OutOfHome}
+                Apparel={props.Apparel}
+                Digital={props.Digital}
+                CustomType={props.CustomType}
+                MotionGFX={props.MotionGFX}
+                OpeningCredits={props.OpeningCredits}
+                Packaging={props.Packaging}
+                Copy={props.Copy}
+                Retouching={props.Retouching}
+                PhotoArtDirection={props.PhotoArtDirection}
+                BsidesPage={props.BsidesPage}
                 // img1={props.img1}
               />
             </Animated>
