@@ -41,6 +41,10 @@ export default function KeyArt(props) {
                     class="masonry-brick-img-full"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
+                      backgroundSize: "100% 100%",
+                      backgroundPosition: "center",
+                      objectFit: "cover",
+                      backgroundRepeat: "no-repeat",
                     }}
                   >
                     <div
@@ -103,9 +107,13 @@ export default function KeyArt(props) {
                     onClick={() =>
                       history.push(`/project/${project.fields.projectname}`)
                     }
-                    class="masonry-brick-img-wide"
+                    className="masonry-brick-img-wide"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
+                      backgroundSize: "100% 100%",
+                      backgroundPosition: "center",
+                      objectFit: "cover",
+                      backgroundRepeat: "no-repeat",
                     }}
                   >
                     <div id={project.fields.id} className="hide-element">
