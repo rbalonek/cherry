@@ -33,7 +33,7 @@ export default function Branding(props) {
                     el.classList.toggle("show-proj-info");
                     el.classList.toggle("hide-element");
                   }}
-                  class="masonry-brick-img-full"
+                  className="masonry-brick-img-full"
                   style={{
                     backgroundImage: `url(${project.fields.img1})`,
                   }}

@@ -15,7 +15,7 @@ export default function KeyArt(props) {
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
 
-      <div class="masonry-img">
+      <div className="masonry-img">
         {props.projects.map((project) => (
           <>
             {project.fields.mainPhotoLarge === true && (
@@ -38,7 +38,7 @@ export default function KeyArt(props) {
                       el.classList.toggle("show-proj-info");
                       el.classList.toggle("hide-element");
                     }}
-                    class="masonry-brick-img-full"
+                    className="masonry-brick-img-full"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
                     }}
@@ -100,7 +100,7 @@ export default function KeyArt(props) {
                     // onClick={history.push(
                     //   `/project/${project.fields.projectname}`
                     // )}
-                    class="masonry-brick-img-wide"
+                    className="masonry-brick-img-wide"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
                     }}
@@ -161,7 +161,7 @@ export default function KeyArt(props) {
 //         el.classList.toggle("show-proj-info");
 //         el.classList.toggle("hide-element");
 //       }}
-//       class="masonry-brick-img-sm"
+//       className="masonry-brick-img-sm"
 //       style={{
 //         backgroundImage: `url(${project.fields.img1})`,
 //       }}

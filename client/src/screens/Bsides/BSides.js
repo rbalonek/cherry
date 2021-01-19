@@ -13,7 +13,7 @@ export default function BSides(props) {
       <div className="list-container">
         <div className="container-split">
           <div className="list-left">
-            <div class="masonry-img">
+            <div className="masonry-img">
               {props.projects.map((project) => (
                 <>
                   {project.fields.mainPhotoWide === true && (
@@ -35,7 +35,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="project-left-large"
+                        className="project-left-large"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}
@@ -97,7 +97,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="project-left-small"
+                        className="project-left-small"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}
@@ -145,7 +145,7 @@ export default function BSides(props) {
           </div>
 
           <div className="list-right">
-            <div class="masonry-img">
+            <div className="masonry-img">
               {props.projects.map((project) => (
                 <>
                   {project.fields.SmallRightBox === true && (
@@ -167,7 +167,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="project-right-small"
+                        className="project-right-small"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}
@@ -229,7 +229,7 @@ export default function BSides(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        class="project-right-tall"
+                        className="project-right-tall"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                         }}
