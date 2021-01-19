@@ -15,7 +15,7 @@ export default function KeyArt(props) {
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
 
-      <div class="masonry-img">
+      <div className="masonry-img">
         {props.projects.map((project) => (
           <>
             {project.fields.mainPhotoLarge === true && (
@@ -38,7 +38,7 @@ export default function KeyArt(props) {
                       el.classList.toggle("show-proj-info");
                       el.classList.toggle("hide-element");
                     }}
-                    class="masonry-brick-img-full"
+                    className="masonry-brick-img-full"
                     style={{
                       backgroundImage: `url(${project.fields.img1})`,
                       backgroundSize: "100% 100%",
