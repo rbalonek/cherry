@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 // import ModalCarousel from "../../components/ModalCarousel/ModalCarousel";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";

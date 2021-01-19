@@ -2,6 +2,7 @@ import React from "react";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";
 import "./Design.css";
 import { Fade } from "react-awesome-reveal";
+import { useHistory } from "react-router-dom";
 
 export default function Design(props) {
   return (
