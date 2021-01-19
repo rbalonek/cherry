@@ -7,6 +7,12 @@ import "./KeyArt.css";
 import { useHistory } from "react-router-dom";
 
 export default function KeyArt(props) {
+  // document.body.style.cursor = "none";
+
+  // setTimeout(function () {
+  //   document.body.style.cursor = "unset";
+  // }, 1000);
+
   // console.log(props);
   const history = useHistory();
   // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
