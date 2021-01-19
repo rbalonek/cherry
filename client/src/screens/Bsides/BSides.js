@@ -9,7 +9,15 @@ export default function BSides(props) {
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
-      <div className="project-full-width" />
+      <Fade
+        direction={"up"}
+        duration={2000}
+        fraction={Math.random()}
+        triggerOnce={true}
+        className="project-full-width"
+      >
+        <div className="project-full-width" />
+      </Fade>
       <div className="list-container">
         <div className="container-split">
           <div className="list-left">
