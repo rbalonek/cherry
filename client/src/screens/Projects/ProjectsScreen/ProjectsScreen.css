@@ -9,6 +9,7 @@
   flex-flow: row wrap;
   margin-left: -8px; /* Adjustment for the gutter */
   width: 100%;
+  align-items: center;
   /* background-color: green; */
   /* justify-content: center; */
 }
@@ -211,18 +212,15 @@
 
 /* TEST  */
 
-.masonry-brick-img-full {
+/* .masonry-brick-img-full {
   flex: auto;
   height: 500px;
   width: 100%;
-  /* max-width: 800px; */
-  margin: 0 8px 8px 0; /* Some gutter */
-  /* background-size: 100% 100%; */
+  margin: 0 8px 8px 0; 
   background-size: cover;
   background-position: 50% 50%;
-  /* background-position: center; */
   background-repeat: no-repeat;
-}
+} */
 
 .masonry-brick-img-wide {
   flex: auto;
