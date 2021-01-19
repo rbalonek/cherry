@@ -178,14 +178,65 @@
 @media (max-width: 2000px) {
   .masonry-brick-img-full-key-art {
     flex: auto;
-    height: 500px;
+    height: 700px;
     width: 100%;
     margin: 0 8px 8px 0; /* Some gutter */
     object-fit: cover;
     background-position: 50% 50%;
     /* background-position: center; */
     background-repeat: no-repeat;
-    /* margin-bottom: 100px; */
     background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .masonry-brick-img-full-key-art {
+    flex: auto;
+    height: 400px;
+    width: 100%;
+    margin: 0 8px 8px 0; /* Some gutter */
+    object-fit: cover;
+    background-position: 50% 50%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 771px) {
+  .masonry-brick-img-full-key-art {
+    flex: auto;
+    height: 200px;
+    width: 100%;
+    margin: 0 8px 8px 0; /* Some gutter */
+    object-fit: cover;
+    background-position: 50% 50%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+  }
+
+  .masonry-brick-img-wide-key-art {
+    flex: auto;
+    height: 200px;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 0 8px 8px 0; /* Some gutter */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-position: 50% 50%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+  }
+
+  .masonry-brick-img-sm-key-art {
+    flex: auto;
+    height: 200px;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 0 8px 8px 0; /* Some gutter */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-position: 50% 50%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
   }
 }
