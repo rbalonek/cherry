@@ -5,6 +5,15 @@ import ProjectsBody from "../../ProjectsBody/ProjectsBody";
 import NewHeader from "../../header/NewHeader/NewHeader";
 import LogoSticky from "../../StickyHeader/LogoSticky";
 import CellTextBlock from "../../CellTextBlock/CellTextBlock";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+  isChrome,
+  isFirefox,
+  isSafari,
+} from "react-device-detect";
 
 export default function NewScrollSnap(props) {
   const [showLogo, toggleShowLogo] = useState("logo-sticky");
@@ -40,11 +49,10 @@ export default function NewScrollSnap(props) {
         />
       </div>
 
-      {window.innerWidth < 770 && (
-        <CellTextBlock headerText={props.headerText} />
-      )}
+      {isMobile && <CellTextBlock headerText={props.headerText} />}
 
-      <LogoSticky showLogo={showLogo} />
+      {isChrome | isFirefox && <LogoSticky showLogo={showLogo} />}
+
       <ProjectsBody
         handleClick={handleClick}
         handleClickHamburger={handleClickHamburger}

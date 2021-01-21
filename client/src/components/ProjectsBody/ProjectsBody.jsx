@@ -9,6 +9,7 @@ import {
   isMobile,
   isSafari,
 } from "react-device-detect";
+// import LogoSticky from "../StickyHeader/LogoSticky.js";
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
 
