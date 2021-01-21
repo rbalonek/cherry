@@ -33,7 +33,7 @@ export default function KeyArt(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className=" masonry-brick-img-full-key-art"
+                      className=" masonry-brick-img-full-key-art-play"
                     >
                       <div
                         onMouseEnter={() => {
@@ -46,7 +46,7 @@ export default function KeyArt(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        className=" masonry-brick-img-full-key-art"
+                        className=" masonry-brick-img-full-key-art-play"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           // backgroundSize: "100% 100%",
@@ -101,7 +101,7 @@ export default function KeyArt(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-wide-key-art"
+                      className="masonry-brick-img-wide-key-art-play"
                     >
                       <div
                         onMouseEnter={() => {
@@ -117,7 +117,7 @@ export default function KeyArt(props) {
                         onClick={() =>
                           history.push(`/project/${project.fields.projectname}`)
                         }
-                        className="masonry-brick-img-wide-key-art"
+                        className="masonry-brick-img-wide-key-art-play"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           backgroundSize: "100% 100%",
@@ -164,7 +164,7 @@ export default function KeyArt(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-sm-key-art"
+                      className="masonry-brick-img-sm-key-art-play"
                     >
                       <div
                         onMouseEnter={() => {
@@ -180,7 +180,7 @@ export default function KeyArt(props) {
                         onClick={() =>
                           history.push(`/project/${project.fields.projectname}`)
                         }
-                        className="masonry-brick-img-sm-key-art"
+                        className="masonry-brick-img-sm-key-art-play"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           // backgroundSize: "100% 100%",
