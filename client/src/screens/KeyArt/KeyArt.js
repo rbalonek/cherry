@@ -7,18 +7,16 @@ import "./KeyArt.css";
 import { useHistory } from "react-router-dom";
 
 export default function KeyArt(props) {
-  // document.body.style.cursor = "none";
-
-  // setTimeout(function () {
-  //   document.body.style.cursor = "unset";
-  // }, 1000);
+  setTimeout(() => {
+    document.getElementById("key-art-id").style.pointerEvents = "auto";
+  }, 2000);
 
   // console.log(props);
   const history = useHistory();
   // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
 
   return (
-    <div style={{ width: "100vw", minHeight: "100vh" }}>
+    <div id="key-art-id" style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
 
       <div className="masonry-img">

@@ -7,6 +7,10 @@ import "./Design.css";
 import { useHistory } from "react-router-dom";
 
 export default function Design(props) {
+  setTimeout(() => {
+    document.getElementById("design-id").style.pointerEvents = "auto";
+  }, 2000);
+
   // document.body.style.cursor = "none";
 
   // setTimeout(function () {
@@ -18,7 +22,7 @@ export default function Design(props) {
   // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
 
   return (
-    <div style={{ width: "100vw", minHeight: "100vh" }}>
+    <div id="design-id" style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
 
       <div className="masonry-img">

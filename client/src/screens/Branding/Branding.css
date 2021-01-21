@@ -1,3 +1,6 @@
+#branding-id {
+  pointer-events: none;
+}
 .hide-element {
   display: none;
 }

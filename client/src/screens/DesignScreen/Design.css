@@ -1,3 +1,7 @@
+#design-id {
+  pointer-events: none;
+}
+
 .hide-element {
   display: none;
 }
