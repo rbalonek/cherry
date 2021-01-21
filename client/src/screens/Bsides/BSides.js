@@ -7,6 +7,9 @@ import "./Bsides.css";
 import { useHistory } from "react-router-dom";
 
 export default function BSides(props) {
+  setTimeout(() => {
+    document.getElementById("b-sides-id").style.pointerEvents = "auto";
+  }, 2000);
   // document.body.style.cursor = "none";
 
   // setTimeout(function () {
@@ -18,7 +21,7 @@ export default function BSides(props) {
   // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
 
   return (
-    <div style={{ width: "100vw", minHeight: "100vh" }}>
+    <div id="b-sides-id" style={{ width: "100vw", minHeight: "100vh" }}>
       <ProjectsStickyHeader videoBackground={props.videoBackground} />
 
       <div className="masonry-img">

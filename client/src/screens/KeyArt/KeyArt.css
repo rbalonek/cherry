@@ -1,3 +1,6 @@
+#key-art-id {
+  pointer-events: none;
+}
 .hide-element {
   display: none;
 }
