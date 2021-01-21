@@ -1,67 +1,54 @@
-.list-container {
-  width: 100vw;
-  display: flex;
+.hide-element {
+  display: none;
 }
-.container-split {
-  display: flex;
-  width: 100%;
+.hide-element-modal-car {
+  display: none;
+}
 
-  /* background-color: indigo; */
+.modal-carousel-holder {
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: black;
+  opacity: 0.8;
+  margin-top: -100vh;
 }
-.list-left {
+
+.show-project-info {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
   display: flex;
-  flex-flow: row wrap;
-  flex-wrap: wrap;
-  align-content: start;
-  width: 70%;
+  flex-direction: column;
   justify-content: center;
-  justify-content: space-around;
-  /* background-color: blue; */
+  align-items: center;
+  text-align: center;
+  top: 0;
+  cursor: pointer;
 }
-.list-right {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: start;
-  width: 30%;
-  justify-content: center;
-  justify-content: space-around;
-  /* background-color: gray; */
+.centered-text {
+  text-align: center;
 }
 
 .masonry-img {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  margin-left: -8px; /* Adjustment for the gutter */
-  width: 100%;
-  /* background-color: green; */
-  /* justify-content: center; */
-}
-
-.masonry-brick-img {
-  flex: auto;
-  height: 500px;
-  min-width: 200px;
-  /* max-width: 800px; */
-  margin: 0 8px 8px 0; /* Some gutter */
-  /* background-size: 100% 100%; */
-  background-size: cover;
-  background-position: 50% 50%;
-  /* background-position: center; */
-  background-repeat: no-repeat;
 }
 
 .masonry-brick-img-full {
   flex: auto;
-  height: 500px;
+  height: 400px;
   width: 100%;
-  /* max-width: 800px; */
-  margin: 0 8px 8px 0; /* Some gutter */
-  /* background-size: 100% 100%; */
-  background-size: cover;
+  margin: 0 0px 0px 0;
+  object-fit: scale-down;
   background-position: 50% 50%;
-  /* background-position: center; */
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .masonry-brick-img-wide {
@@ -69,80 +56,93 @@
   height: 500px;
   min-width: 800px;
   /* max-width: 800px; */
-  margin: 0 8px 8px 0; /* Some gutter */
+  margin: 0 0px 0px 0;
   /* background-size: 100% 100%; */
   background-size: cover;
   background-position: 50% 50%;
   /* background-position: center; */
   background-repeat: no-repeat;
+  max-width: 1000px;
 }
 
 .masonry-brick-img-sm {
   flex: auto;
   height: 500px;
-  width: 400px;
-  /* max-width: 800px; */
-  margin: 0 8px 8px 0; /* Some gutter */
-  /* background-size: 100% 100%; */
+  min-width: 400px;
+  margin: 0 0px 0px 0;
   background-size: cover;
   background-position: 50% 50%;
-  /* background-position: center; */
   background-repeat: no-repeat;
 }
 
-.project-full-width {
-  height: 400px;
-  width: 100%;
-  background-image: url("https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609348302/Cherry/Cherry%20Clients/IMAGES/Billions%20S1/CHERRYPortfolio-2020-FILMTV83_pqcd3k.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  /* background-color: blue; */
+@media screen and (max-width: 5999px) and (min-width: 3000px) {
+  .masonry-brick-img-full {
+    flex: auto;
+    height: 800px;
+    width: 100%;
+    margin: 0 0px 0px 0;
+    object-fit: scale-down;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .masonry-brick-img-wide {
+    flex: auto;
+    height: 800px;
+    min-width: 1200px;
+    max-width: 1500px;
+    background-size: cover;
+  }
+
+  .masonry-brick-img-sm {
+    flex: auto;
+    height: 800px;
+    min-width: 700px;
+    background-size: cover;
+  }
 }
 
-.project-left-small {
-  flex: auto;
-  flex-wrap: wrap;
-  height: 500px;
-  width: 400px;
-  /* background-color: red; */
-  margin: 0 8px 8px 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  text-align: -webkit-center;
+@media (max-width: 1200px) {
+  .masonry-brick-img-full {
+    flex: auto;
+    height: 300px;
+    width: 100%;
+    margin: 0 0px 0px 0;
+    object-fit: scale-down;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .masonry-brick-img-wide {
+    flex: auto;
+    height: 300px;
+    min-width: 500px;
+    max-width: 600px;
+    background-size: cover;
+  }
+
+  .masonry-brick-img-sm {
+    flex: auto;
+    height: 300px;
+    min-width: 250px;
+    max-width: 500px;
+    background-size: cover;
+  }
 }
 
-.project-left-large {
-  flex: auto;
-  height: 800px;
-  width: 800px;
-  /* background-color: green; */
-  margin: 0 8px 8px 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  text-align: -webkit-center;
-}
-.project-right-small {
-  flex: auto;
-  height: 500px;
-  width: 400px;
-  /* background-color: orange; */
-  margin: 0 8px 8px 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  text-align: -webkit-center;
-}
-.project-right-tall {
-  flex: auto;
-  height: 1200px;
-  width: 100%;
-  /* background-color: pink; */
-  margin: 0 8px 8px 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
+@media (max-width: 771px) {
+  .masonry-brick-img-full {
+    flex: auto;
+    height: 300px;
+    width: 100vw;
+  }
+  .masonry-brick-img-wide {
+    height: 300px;
+    min-width: 100%;
+  }
+
+  .masonry-brick-img-sm {
+    height: 300px;
+    min-width: 100%;
+  }
 }

@@ -1,12 +1,21 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+// import ModalCarousel from "../../components/ModalCarousel/ModalCarousel";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";
 import "./Branding.css";
+// import zenscroll from "zenscroll";
 import { useHistory } from "react-router-dom";
 
 export default function Branding(props) {
+  // document.body.style.cursor = "none";
+
+  // setTimeout(function () {
+  //   document.body.style.cursor = "unset";
+  // }, 1000);
+
   // console.log(props);
   const history = useHistory();
+  // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
 
   return (
     <div style={{ width: "100vw", minHeight: "100vh" }}>
@@ -25,7 +34,7 @@ export default function Branding(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className=" masonry-brick-img-full-key-art"
+                      className=" masonry-brick-img-full"
                     >
                       <div
                         onMouseEnter={() => {
@@ -38,7 +47,7 @@ export default function Branding(props) {
                           el.classList.toggle("show-proj-info");
                           el.classList.toggle("hide-element");
                         }}
-                        className=" masonry-brick-img-full-key-art"
+                        className=" masonry-brick-img-full"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           // backgroundSize: "100% 100%",
@@ -93,7 +102,7 @@ export default function Branding(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-wide-key-art"
+                      className="masonry-brick-img-wide"
                     >
                       <div
                         onMouseEnter={() => {
@@ -109,7 +118,7 @@ export default function Branding(props) {
                         onClick={() =>
                           history.push(`/project/${project.fields.projectname}`)
                         }
-                        className="masonry-brick-img-wide-key-art"
+                        className="masonry-brick-img-wide"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           backgroundSize: "100% 100%",
@@ -156,7 +165,7 @@ export default function Branding(props) {
                       duration={2000}
                       fraction={Math.random()}
                       triggerOnce={true}
-                      className="masonry-brick-img-sm-key-art"
+                      className="masonry-brick-img-sm"
                     >
                       <div
                         onMouseEnter={() => {
@@ -172,7 +181,7 @@ export default function Branding(props) {
                         onClick={() =>
                           history.push(`/project/${project.fields.projectname}`)
                         }
-                        className="masonry-brick-img-sm-key-art"
+                        className="masonry-brick-img-sm"
                         style={{
                           backgroundImage: `url(${project.fields.img1})`,
                           // backgroundSize: "100% 100%",
@@ -212,7 +221,6 @@ export default function Branding(props) {
                   </>
                 )}
               </>
-            )}
             )}
           </>
         ))}
