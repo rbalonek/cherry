@@ -24,7 +24,8 @@ export default function Branding(props) {
       <div className="masonry-img">
         {props.projects.map((project) => (
           <>
-            {project.fields.Branding === true && (
+            {(project.fields.Branding === true) |
+              (project.fields.Logo === true) && (
               <>
                 {project.fields.mainPhotoLarge === true && (
                   <>
