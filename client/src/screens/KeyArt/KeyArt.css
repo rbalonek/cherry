@@ -40,7 +40,7 @@
   flex-flow: row wrap;
 }
 
-.masonry-brick-img-full-key-art-play {
+.masonry-brick-img-full {
   flex: auto;
   height: 400px;
   width: 100%;
@@ -51,7 +51,7 @@
   background-size: cover;
 }
 
-.masonry-brick-img-wide-key-art-play {
+.masonry-brick-img-wide {
   flex: auto;
   height: 500px;
   min-width: 800px;
@@ -65,7 +65,7 @@
   max-width: 1000px;
 }
 
-.masonry-brick-img-sm-key-art-play {
+.masonry-brick-img-sm {
   flex: auto;
   height: 500px;
   min-width: 400px;
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 5999px) and (min-width: 3000px) {
-  .masonry-brick-img-full-key-art-play {
+  .masonry-brick-img-full {
     flex: auto;
     height: 800px;
     width: 100%;
@@ -86,7 +86,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .masonry-brick-img-wide-key-art-play {
+  .masonry-brick-img-wide {
     flex: auto;
     height: 800px;
     min-width: 1200px;
@@ -94,7 +94,7 @@
     background-size: cover;
   }
 
-  .masonry-brick-img-sm-key-art-play {
+  .masonry-brick-img-sm {
     flex: auto;
     height: 800px;
     min-width: 700px;
@@ -103,7 +103,7 @@
 }
 
 @media (max-width: 1200px) {
-  .masonry-brick-img-full-key-art-play {
+  .masonry-brick-img-full {
     flex: auto;
     height: 300px;
     width: 100%;
@@ -113,7 +113,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .masonry-brick-img-wide-key-art-play {
+  .masonry-brick-img-wide {
     flex: auto;
     height: 300px;
     min-width: 500px;
@@ -121,7 +121,7 @@
     background-size: cover;
   }
 
-  .masonry-brick-img-sm-key-art-play {
+  .masonry-brick-img-sm {
     flex: auto;
     height: 300px;
     min-width: 250px;
@@ -131,17 +131,17 @@
 }
 
 @media (max-width: 771px) {
-  .masonry-brick-img-full-key-art-play {
+  .masonry-brick-img-full {
     flex: auto;
     height: 300px;
     width: 100vw;
   }
-  .masonry-brick-img-wide-key-art-play {
+  .masonry-brick-img-wide {
     height: 300px;
     min-width: 100%;
   }
 
-  .masonry-brick-img-sm-key-art-play {
+  .masonry-brick-img-sm {
     height: 300px;
     min-width: 100%;
   }
