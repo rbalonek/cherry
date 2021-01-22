@@ -110,3 +110,12 @@
     top: 0px;
   }
 }
+@media (max-width: 771px) {
+  .logo-sticky {
+    /* height: 130px; */
+    height: calc(40px + 7vw);
+    position: absolute;
+    left: 1%;
+    top: 0px;
+  }
+}

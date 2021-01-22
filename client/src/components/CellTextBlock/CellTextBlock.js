@@ -1,4 +1,5 @@
 import React from "react";
+import "./CellTextBlock.css";
 import { FiChevronDown } from "react-icons/fi";
 import zenscroll from "zenscroll";
 
@@ -11,28 +12,8 @@ export default function CellTextBlock(props) {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100vw",
-        backgroundColor: "black",
-        position: "relative",
-        display: "flex",
-        alignItems: "center",
-        scrollSnapAlign: "start",
-      }}
-    >
-      <p
-        style={{
-          color: "white",
-          textAlign: "center",
-          paddingLeft: "20px",
-          paddingRight: "20px",
-          width: "100%",
-          fontSize: "calc(15px + 1vw)",
-          fontFamily: "deregular",
-        }}
-      >
+    <div className="cell-text-block-container">
+      <p className="cell-text-block-text">
         {props.headerText.length ? (
           <p>{props.headerText[0].fields.cellBlurb}</p>
         ) : (

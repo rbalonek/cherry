@@ -264,7 +264,7 @@
   .hamburger-helper {
     position: absolute;
     right: 12%;
-    margin-top: 5%;
+    margin-top: 8%;
     z-index: 998;
   }
 }
