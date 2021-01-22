@@ -40,6 +40,30 @@
   position: relative;
   left: 500px;
 }
+.arrow-down-cell-container {
+  position: relative;
+  bottom: 135px;
+  left: 85vw;
+  z-index: -0.5;
+  background-color: black;
+  opacity: 0.5;
+  width: 10%;
+  height: 10%;
+  border-radius: 25%;
+  text-align: center;
+}
+.arrow-up-cell-container {
+  position: relative;
+  bottom: 100px;
+  left: 70vw;
+  z-index: -0.5;
+  background-color: black;
+  opacity: 0.5;
+  width: 10%;
+  height: 10%;
+  border-radius: 25%;
+  text-align: center;
+}
 
 .car-img-cell {
   height: 100vh;

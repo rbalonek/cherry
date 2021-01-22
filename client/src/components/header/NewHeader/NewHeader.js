@@ -21,16 +21,7 @@ export default function NewHeader(props) {
   // }, 2000);
 
   const DownArrowCell = () => {
-    let pageHeight = window.innerHeight;
-    // zenscroll.toY(pageHeight);
-    // setInView(false);
-    // setTimeout(() => {
-    //   setInView(true);
-    // }, 1000);
     zenscroll.intoView(document.getElementById("cell-text-block"));
-    // zenscroll.to(chi);
-    // window.scrollBy(0, pageHeight);
-    // console.log(pageHeight);
   };
 
   const DownArrowClick = () => {
@@ -122,7 +113,7 @@ export default function NewHeader(props) {
         </div>
       ) : (
         <div>
-          <div className="new-header-container">
+          <div id="header" className="new-header-container">
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <div className="vid-about-mobile"></div>
