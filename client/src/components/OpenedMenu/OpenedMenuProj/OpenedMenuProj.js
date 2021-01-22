@@ -85,12 +85,25 @@ export default function OpenedMenuProj(props) {
           >
             KEY ART
           </h1>
-          <h1 className=" hover-animation-proj branding-proj">BRANDING</h1>
-          <h1 className=" hover-animation-proj packaging-proj">DESIGN</h1>
-          <h1 className=" hover-animation-proj ideas-proj" onClick={bsidePress}>
+          <h1
+            className=" hover-animation-proj-mobile branding-proj"
+            onClick={() => history.push("/branding")}
+          >
+            BRANDING
+          </h1>
+          <h1
+            className=" hover-animation-proj-mobile packaging-proj"
+            onClick={() => history.push("/design")}
+          >
+            DESIGN
+          </h1>
+          <h1
+            className=" hover-animation-proj-mobile ideas-proj"
+            onClick={bsidePress}
+          >
             B-SIDES
           </h1>
-          <h1 className=" hover-animation-proj about-proj sayhi-proj-mobile">
+          <h1 className=" hover-animation-proj-mobile about-proj sayhi-proj-mobile">
             SAY HI
           </h1>
         </div>

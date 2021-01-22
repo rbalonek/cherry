@@ -13,10 +13,12 @@
   }
 }
 
+ */
 @media (max-width: 770px) {
   .hamburger-holder-project {
     position: absolute;
-    right: 70px;
-    top: 25px;
+    top: 20%;
+    right: 15%;
+    z-index: 999;
   }
-} */
+}
