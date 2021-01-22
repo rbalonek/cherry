@@ -181,7 +181,7 @@
   }
   .about-x-container {
     /* width: 96.8%; */
-    position: absolute;
+    position: sticky;
     /* display: flex; */
     /* justify-content: flex-end; */
     top: 30px;
