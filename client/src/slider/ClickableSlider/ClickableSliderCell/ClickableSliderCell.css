@@ -40,6 +40,12 @@
   position: relative;
   left: 500px;
 }
+.arrow-down-cell-container {
+  position: relative;
+  bottom: 125px;
+  left: 80vw;
+  z-index: -0.5;
+}
 
 .car-img-cell {
   height: 100vh;
