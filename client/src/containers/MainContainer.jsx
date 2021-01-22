@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import About from "../screens/About/About";
 import Home from "../screens/home/Home";
 import Projects from "../screens/Projects/Projects";
 import ProjLogos from "../screens/Projects/ProjLogos/ProjLogos";
 
-import ProjPhotoArtDirection from "../screens/Projects/ProjPhotoArtDirection/ProjPhotoArtDirection";
-import ProjRetouching from "../screens/Projects/ProjRetouching/ProjRetouching";
-import ProjCopy from "../screens/Projects/ProjCopy/ProjCopy";
-import ProjMotionGfx from "../screens/Projects/ProjMotionGfx/ProjMotionGfx";
-import ProjIdentity from "../screens/Projects/ProjIdentity/ProjIdentity";
-import ProjKeyArt from "../screens/Projects/ProjKeyArt/ProjKeyArt";
 import ProjName from "../screens/Projects/ProjName/ProjName";
-import ProjectsScreeen from "../screens/Projects/ProjectsScreen/ProjectsScreeen";
 import KeyArt from "../screens/KeyArt/KeyArt";
 import Branding from "../screens/Branding/Branding";
 import Design from "../screens/DesignScreen/Design";
 import BSides from "../screens/Bsides/BSides";
-import ModalCarousel from "../components/ModalCarousel/ModalCarousel";
 
 export default function MainContainer(props) {
   // console.log("PROPS", props.headerText);
