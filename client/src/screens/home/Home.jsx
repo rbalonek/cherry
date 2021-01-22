@@ -13,6 +13,7 @@ export default function Home(props) {
   return (
     <div className="home-container">
       <NewScrollSnap
+        projects={props.projects}
         headerText={props.headerText}
         videoBackground={props.videoBackground}
       />

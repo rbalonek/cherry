@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ClickableSliderCell.css";
 import { Carousel } from "react-responsive-carousel";
 import ModalProject from "../../../components/ModalProject/ModalProject";
-// import zenscroll from "zenscroll";
+import zenscroll from "zenscroll";
 // import arrowDown from "../../../assets/logo/Website-Asset_DownArrow.png";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Animated } from "react-animated-css";
@@ -11,46 +11,40 @@ import { useLockBodyScroll, useToggle } from "react-use";
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
-  const [locked, toggleLocked] = useToggle(false);
-  useLockBodyScroll(locked);
-
+  // const [locked, toggleLocked] = useToggle(true);
+  useLockBodyScroll(true);
+  console.log(props);
   const toggleOpen = () => {
-    modalToggle("modalOpen clickable-modal");
+    modalToggle("modalOpen-cell clickable-modal");
     modalTextToggle("modal-text-open");
-    toggleLocked();
+    // toggleLocked();
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
-    toggleLocked();
+    // toggleLocked();
   };
 
   // let pageHeight = window.innerHeight;
-  // let common = document.getElementById("common");
-
+  let prevSlide = document.getElementById(props.PrevSlide);
+  let nextSlide = document.getElementById(props.NextSlide);
+  console.log("next", nextSlide);
+  console.log("prev", prevSlide);
   // var up = props.scrollToUp;
-  // // var scrollingDown = props.scrollToDown;
+  // var scrollingDown = props.scrollToDown;
   // // console.log("up", props.scrollToUp);
   // // console.log("up", props.scrollToUp);
   // // console.log("down", scrollingDown);
-  // const ArrowUp100Vh = () => {
-  //   // zenscroll.toY(pageHeight * props.scrollToUp);
-  //   // zenscroll.intoView(common);
-  //   zenscroll.to(up);
-  //   // window.scrollBy(0, pageHeight);
-  //   // console.log("up");
-  // };
+  const ArrowUp100Vh = () => {
+    zenscroll.center(document.getElementById(props.PrevSlide));
+  };
   // // console.log(pageHeight * props.scrollToDown);
   // // console.log("down scrolls", props.scrollToDown);
 
-  // const ArrowDown100Vh = () => {
-  //   zenscroll.toY(pageHeight * (props.scrollToDown + 1));
-  //   // zenscroll.intoView(common);
-  //   // zenscroll.to(scrollingDown);
-  //   // window.scrollBy(0, pageHeight);
-  //   // console.log("down");
-  // };
+  const ArrowDown100Vh = () => {
+    zenscroll.center(document.getElementById(props.NextSlide));
+  };
   // const ScrollUp100Vh = () => {
   //   // zenscroll.toY(window.innerHeight * props.scrollToUp);
   //   // zenscroll.toY(pageHeight);
@@ -126,11 +120,11 @@ export default function ClickableSliderCell(props) {
             useKeyboardArrows={false}
             swipeable
           >
-            <div className="clickable-cell">
+            <div onClick={toggleOpen} className="clickable-cell">
               <img className="car-img-cell" alt="1" src={props.img1} />
             </div>
             <div>
-              <div className="clickable-cell">
+              <div onClick={toggleOpen} className="clickable-cell">
                 <img className="car-img-cell " alt="2" src={props.img2} />
               </div>
             </div>
@@ -147,16 +141,16 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div className="clickable-cell">
+                <div onClick={toggleOpen} className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
                 </div>
@@ -171,21 +165,21 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div className="clickable-cell">
+                <div onClick={toggleOpen} className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="4" src={props.img4} />
                   </div>
                 </div>
@@ -194,8 +188,23 @@ export default function ClickableSliderCell(props) {
           </>
         )}
       </div>
-      <div className="AiOutlineInfoCircle-container" onClick={toggleOpen}>
-        <AiOutlineInfoCircle color="white" size="2em" />
+      <div onClick={ArrowUp100Vh} className="arrow-up-cell-container">
+        <img
+          style={{
+            textAlign: "center",
+            position: "relative",
+            top: "2px",
+          }}
+          src="https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_30,w_30/v1611017756/Cherry/Cherry%20Clients/Graphic%20Assets/UpArrow_pefwf1.png"
+          alt="cursor-up"
+        />
+      </div>
+      <div onClick={ArrowDown100Vh} className="arrow-down-cell-container">
+        <img
+          style={{ position: "relative", justifyContent: "center", top: "2px" }}
+          src="https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_30,w_30/v1611016884/CursorDown.png"
+          alt="cursor-down"
+        />
       </div>
     </div>
   );

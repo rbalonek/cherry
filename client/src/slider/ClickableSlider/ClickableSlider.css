@@ -52,12 +52,17 @@
 .carousel-container {
   contain: content;
 }
+.carousel-container-safari {
+  contain: content;
+  max-height: 100vh;
+}
+
 .arrow-up-container {
   width: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 0%;
+  top: 10vh;
 }
 .arrow-up {
   height: 25vh;
@@ -80,6 +85,43 @@
   z-index: 998;
 }
 .arrow-down-container:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_100,w_100/v1611018057/Cherry/Cherry%20Clients/Graphic%20Assets/DownArrow_vjka53.png),
+    auto;
+}
+.arrow-up-container-safari {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* background-color: red; */
+  opacity: 0.5;
+  top: 55vh;
+  z-index: 800;
+  left: 30vw;
+}
+.arrow-up-safari {
+  height: 25vh;
+  width: 100%;
+  /* background-color: green; */
+
+  z-index: 999;
+}
+.arrow-up-safari:hover {
+  cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_100,w_100/v1611017756/Cherry/Cherry%20Clients/Graphic%20Assets/UpArrow_pefwf1.png),
+    auto;
+}
+
+.arrow-down-container-safari {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  /* background-color: blue; */
+  opacity: 0.5;
+  z-index: 998;
+  top: 100vh;
+}
+.arrow-down-container-safari:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_100,w_100/v1611018057/Cherry/Cherry%20Clients/Graphic%20Assets/DownArrow_vjka53.png),
     auto;
 }
@@ -359,6 +401,17 @@
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
       auto;
   }
+  /* .modalOpen {
+    position: relative;
+    display: flex;
+    height: 85vh;
+    width: 90vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    top: 100vh;
+    right: 5%;
+  } */
 }
 
 /* @media (min-width: 1500px) {

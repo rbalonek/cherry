@@ -7,19 +7,22 @@ import { Animated } from "react-animated-css";
 import ModalProject from "../../../components/ModalProject/ModalProject";
 import ModalProjectProjName from "../../../components/ModalProject/ModalProjectProjName/ModalProjectProjName";
 // import { AttentionSeeker } from "react-awesome-reveal";
+import { useLockBodyScroll, useToggle } from "react-use";
 
 export default function ProjName(props) {
   // console.log(props);
   const history = useHistory();
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
+  const [locked, toggleLocked] = useToggle(true);
+  useLockBodyScroll(locked);
 
   const toggleOpen = () => {
     modalToggle("modalOpen clickable-modal");
     modalTextToggle("modal-text-open");
     // props.handleClickHamburger("show-none");
     // props.handleClick("show-none");
-    // toggleLocked();
+    toggleLocked();
   };
 
   const toggleClosed = () => {
@@ -27,7 +30,7 @@ export default function ProjName(props) {
     modalTextToggle("modal-text-closed");
     // props.handleClick("logo-sticky");
     // props.handleClickHamburger("menu-btn");
-    // toggleLocked();
+    toggleLocked();
   };
 
   let projName = window.location.pathname;
@@ -71,7 +74,7 @@ export default function ProjName(props) {
 
                       // padding: "20px",
                       textAlign: "center",
-                      objectFit: "cover",
+                      // objectFit: "cover",
                       backgroundPosition: "50% 50%",
                       backgroundRepeat: "no-repeat",
                       // textAlign: "-webkit-center",

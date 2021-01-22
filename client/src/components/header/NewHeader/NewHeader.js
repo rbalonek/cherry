@@ -4,6 +4,12 @@ import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { Fade } from "react-awesome-reveal";
 import { FiChevronDown } from "react-icons/fi";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 // import axios from "axios";
 
 export default function NewHeader(props) {
@@ -15,16 +21,7 @@ export default function NewHeader(props) {
   // }, 2000);
 
   const DownArrowCell = () => {
-    let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight);
-    // setInView(false);
-    // setTimeout(() => {
-    //   setInView(true);
-    // }, 1000);
-    // zenscroll.intoView(chi);
-    // zenscroll.to(chi);
-    // window.scrollBy(0, pageHeight);
-    // console.log(pageHeight);
+    zenscroll.intoView(document.getElementById("cell-text-block"));
   };
 
   const DownArrowClick = () => {
@@ -39,7 +36,7 @@ export default function NewHeader(props) {
 
   return (
     <>
-      {window.innerWidth > 770 ? (
+      {isBrowser ? (
         <div>
           <div className="new-header-container" onClick={DownArrowClick}>
             <div>
@@ -116,7 +113,7 @@ export default function NewHeader(props) {
         </div>
       ) : (
         <div>
-          <div className="new-header-container">
+          <div id="header" className="new-header-container">
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <div className="vid-about-mobile"></div>

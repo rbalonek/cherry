@@ -40,6 +40,30 @@
   position: relative;
   left: 500px;
 }
+.arrow-down-cell-container {
+  position: relative;
+  bottom: 135px;
+  left: 85vw;
+  z-index: -0.5;
+  background-color: black;
+  opacity: 0.5;
+  width: 10%;
+  height: 10%;
+  border-radius: 25%;
+  text-align: center;
+}
+.arrow-up-cell-container {
+  position: relative;
+  bottom: 100px;
+  left: 70vw;
+  z-index: -0.5;
+  background-color: black;
+  opacity: 0.5;
+  width: 10%;
+  height: 10%;
+  border-radius: 25%;
+  text-align: center;
+}
 
 .car-img-cell {
   height: 100vh;
@@ -59,7 +83,7 @@
   z-index: 999;
   opacity: 0.89;
 } */
-.modalOpen {
+/* .modalOpen-cell {
   position: absolute;
   display: flex;
   height: 85vh;
@@ -69,8 +93,29 @@
   opacity: 1;
   top: 7%;
   right: 5%;
+} */
+/* .modalOpen-cell {
+  position: absolute;
+  display: flex;
+  height: 480vh;
+  width: 95vw;
+  background-color: black;
+  z-index: 999;
+  opacity: 1;
+  top: 200vh;
+  right: 2.5%;
+} */
+.modalOpen-cell {
+  position: absolute;
+  display: flex;
+  height: 8000vh;
+  width: 95vw;
+  background-color: black;
+  z-index: 999;
+  opacity: 1;
+  /* top: 205vh; */
+  right: 2.5%;
 }
-
 .modal-text-closed {
   display: none;
 }
@@ -83,6 +128,16 @@
   z-index: 999;
   position: absolute;
   font-family: "degular";
+}
+@media (max-width: 770px) {
+  .carousel .control-dots .dot {
+    margin: 12% 2px;
+    width: calc(7px + 0.5vw);
+    height: calc(7px + 0.5vw);
+  }
+}
+
+@media (max-width: 420px) {
 }
 @media (max-width: 380px) {
   .AiOutlineInfoCircle-container {
@@ -106,13 +161,7 @@
   }
 }
 
-/* @media (max-width: 770px) {
-  .carousel .control-dots .dot {
-    margin: -1.5% calc(1.01px + 0.25vw);
-    width: calc(8px + 0.5vw);
-    height: calc(8px + 0.5vw);
-  }
-}
+/*
 
 @media (max-width: 500px) {
   .carousel .control-dots .dot {

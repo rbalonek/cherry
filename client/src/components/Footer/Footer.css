@@ -40,12 +40,23 @@
   }
 }
 
-/* @media (min-width: 4000px) {
-  .footer-container {
-    width: 100%;
-    text-align: -webkit-center;
-    margin-top: 0%;
-    position: fixed;
-    bottom: 0;
+@media (max-width: 771px) {
+  .footer-text {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 3vw;
   }
-} */
+  .footer-text-or {
+    font-size: 3vw;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .footer-text-container {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+}
