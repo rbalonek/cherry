@@ -1,0 +1,29 @@
+.cell-text-block-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.cell-text-block-text {
+  color: white;
+  /* text-align: center; */
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  font-size: calc(15px + 1vw);
+  font-family: "Rubik";
+}
+
+@media (max-width: 415px) {
+  .cell-text-block-text {
+    margin-top: -20%;
+  }
+  .cell-down-arrow-container {
+    position: absolute;
+    bottom: 200px;
+  }
+}

@@ -12,6 +12,7 @@ import {
 // import LogoSticky from "../StickyHeader/LogoSticky.js";
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
+import NewHeader from "../header/NewHeader/NewHeader";
 
 export default function ProjectsBody(props) {
   const [fetchFullScreenProjects, invokeFetch] = useState([]);
@@ -59,7 +60,7 @@ export default function ProjectsBody(props) {
         <div className="scroll-snap-container-safari">
           {fetchFullScreenProjects.map((project) => (
             <div id={project.fields.idname} className="non-sticky-section">
-              {window.innerWidth > 770 ? (
+              {isBrowser ? (
                 <ClickableSlider
                   handleClick={props.handleClick}
                   handleClickHamburger={props.handleClickHamburger}
@@ -122,7 +123,7 @@ export default function ProjectsBody(props) {
         <div className="scroll-snap-container">
           {fetchFullScreenProjects.map((project) => (
             <div id={project.fields.idname} className="non-sticky-section">
-              {window.innerWidth > 770 ? (
+              {isBrowser ? (
                 <ClickableSlider
                   handleClick={props.handleClick}
                   handleClickHamburger={props.handleClickHamburger}
