@@ -11,8 +11,8 @@ import { useLockBodyScroll, useToggle } from "react-use";
 export default function ClickableSliderCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
-  const [locked, toggleLocked] = useToggle(true);
-  useLockBodyScroll(locked);
+  // const [locked, toggleLocked] = useToggle(true);
+  useLockBodyScroll(true);
   console.log(props);
   const toggleOpen = () => {
     modalToggle("modalOpen-cell clickable-modal");

@@ -178,6 +178,8 @@ export default function ProjectsBody(props) {
                     copy={project.fields.copy}
                     retouching={project.fields.retouching}
                     photoartdirection={project.fields.photoartdirection}
+                    PrevSlide={project.fields.PrevSlide}
+                    NextSlide={project.fields.NextSlide}
                   />
                 </div>
               )}
