@@ -92,7 +92,7 @@ export default function NewScrollSnap(props) {
             />
           </div>
 
-          {isChrome | isFirefox && <LogoSticky showLogo={showLogo} />}
+          <LogoSticky showLogo={showLogo} />
 
           <ProjectsBody
             handleClick={handleClick}
