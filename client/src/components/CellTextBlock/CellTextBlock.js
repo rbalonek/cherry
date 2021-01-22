@@ -8,11 +8,11 @@ export default function CellTextBlock(props) {
 
   const DownArrowCell = () => {
     let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight * 2);
+    zenscroll.toY(pageHeight * 2.35);
   };
 
   return (
-    <div className="cell-text-block-container">
+    <div id="cell-text-block" className="cell-text-block-container">
       <p className="cell-text-block-text">
         {props.headerText.length ? (
           <p>{props.headerText[0].fields.cellBlurb}</p>
