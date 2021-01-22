@@ -129,6 +129,14 @@
   position: absolute;
   font-family: "degular";
 }
+@media (max-width: 770px) {
+  .carousel .control-dots .dot {
+    margin: 12% 2px;
+    width: calc(7px + 0.5vw);
+    height: calc(7px + 0.5vw);
+  }
+}
+
 @media (max-width: 420px) {
 }
 @media (max-width: 380px) {
@@ -153,13 +161,7 @@
   }
 }
 
-/* @media (max-width: 770px) {
-  .carousel .control-dots .dot {
-    margin: -1.5% calc(1.01px + 0.25vw);
-    width: calc(8px + 0.5vw);
-    height: calc(8px + 0.5vw);
-  }
-}
+/*
 
 @media (max-width: 500px) {
   .carousel .control-dots .dot {
