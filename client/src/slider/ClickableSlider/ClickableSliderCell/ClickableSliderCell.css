@@ -59,7 +59,7 @@
   z-index: 999;
   opacity: 0.89;
 } */
-.modalOpen {
+/* .modalOpen-cell {
   position: absolute;
   display: flex;
   height: 85vh;
@@ -69,8 +69,29 @@
   opacity: 1;
   top: 7%;
   right: 5%;
+} */
+/* .modalOpen-cell {
+  position: absolute;
+  display: flex;
+  height: 480vh;
+  width: 95vw;
+  background-color: black;
+  z-index: 999;
+  opacity: 1;
+  top: 200vh;
+  right: 2.5%;
+} */
+.modalOpen-cell {
+  position: absolute;
+  display: flex;
+  height: 8000vh;
+  width: 95vw;
+  background-color: black;
+  z-index: 999;
+  opacity: 1;
+  top: 205vh;
+  right: 2.5%;
 }
-
 .modal-text-closed {
   display: none;
 }
@@ -83,6 +104,8 @@
   z-index: 999;
   position: absolute;
   font-family: "degular";
+}
+@media (max-width: 420px) {
 }
 @media (max-width: 380px) {
   .AiOutlineInfoCircle-container {
