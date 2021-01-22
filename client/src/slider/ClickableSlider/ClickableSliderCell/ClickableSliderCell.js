@@ -36,26 +36,14 @@ export default function ClickableSliderCell(props) {
   // // console.log("up", props.scrollToUp);
   // // console.log("up", props.scrollToUp);
   // // console.log("down", scrollingDown);
-  // const ArrowUp100Vh = () => {
-  //   // zenscroll.toY(pageHeight * props.scrollToUp);
-  //   // zenscroll.intoView(common);
-  //   zenscroll.to(up);
-  //   // window.scrollBy(0, pageHeight);
-  //   // console.log("up");
-  // };
+  const ArrowUp100Vh = () => {
+    zenscroll.center(document.getElementById(props.PrevSlide));
+  };
   // // console.log(pageHeight * props.scrollToDown);
   // // console.log("down scrolls", props.scrollToDown);
 
   const ArrowDown100Vh = () => {
-    // let pageHeight = window.innerHeight;
-    // zenscroll.toY(pageHeight * scrollingDown + pageHeight);
-    // console.log(pageHeight * scrollingDown + pageHeight);
-    // zenscroll.intoView(nextSlide);
-    zenscroll.intoView(document.getElementById(props.NextSlide));
-    // zenscroll.to(scrollingDown);
-    // zenscroll.toY(pageHeight);
-    // window.scrollBy(0, pageHeight * 1.2);
-    // console.log("down");
+    zenscroll.center(document.getElementById(props.NextSlide));
   };
   // const ScrollUp100Vh = () => {
   //   // zenscroll.toY(window.innerHeight * props.scrollToUp);
@@ -200,8 +188,20 @@ export default function ClickableSliderCell(props) {
           </>
         )}
       </div>
+      <div onClick={ArrowUp100Vh} className="arrow-up-cell-container">
+        <img
+          style={{
+            textAlign: "center",
+            position: "relative",
+            top: "2px",
+          }}
+          src="https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_30,w_30/v1611017756/Cherry/Cherry%20Clients/Graphic%20Assets/UpArrow_pefwf1.png"
+          alt="cursor-up"
+        />
+      </div>
       <div onClick={ArrowDown100Vh} className="arrow-down-cell-container">
         <img
+          style={{ position: "relative", justifyContent: "center" }}
           src="https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_30,w_30/v1611016884/CursorDown.png"
           alt="cursor-down"
         />

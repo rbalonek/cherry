@@ -21,7 +21,11 @@ export default function MainContainer(props) {
   return (
     <Switch>
       <Route exact path="/" component={Home}>
-        <Home headerText={props.headerText} videoBackground={videoForSession} />
+        <Home
+          headerText={props.headerText}
+          projects={props.projects}
+          videoBackground={videoForSession}
+        />
       </Route>
       <Route path="/about" component={About}>
         <About />
