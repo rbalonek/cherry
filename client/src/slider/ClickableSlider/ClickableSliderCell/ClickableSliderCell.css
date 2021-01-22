@@ -89,7 +89,7 @@
   background-color: black;
   z-index: 999;
   opacity: 1;
-  top: 205vh;
+  /* top: 205vh; */
   right: 2.5%;
 }
 .modal-text-closed {
