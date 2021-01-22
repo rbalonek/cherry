@@ -401,6 +401,17 @@
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),
       auto;
   }
+  /* .modalOpen {
+    position: relative;
+    display: flex;
+    height: 85vh;
+    width: 90vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    top: 100vh;
+    right: 5%;
+  } */
 }
 
 /* @media (min-width: 1500px) {

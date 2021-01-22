@@ -126,11 +126,11 @@ export default function ClickableSliderCell(props) {
             useKeyboardArrows={false}
             swipeable
           >
-            <div className="clickable-cell">
+            <div onClick={toggleOpen} className="clickable-cell">
               <img className="car-img-cell" alt="1" src={props.img1} />
             </div>
             <div>
-              <div className="clickable-cell">
+              <div onClick={toggleOpen} className="clickable-cell">
                 <img className="car-img-cell " alt="2" src={props.img2} />
               </div>
             </div>
@@ -147,16 +147,16 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div className="clickable-cell">
+                <div onClick={toggleOpen} className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
                 </div>
@@ -171,21 +171,21 @@ export default function ClickableSliderCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div className="clickable-cell">
+                <div onClick={toggleOpen} className="clickable-cell">
                   <img className="car-img-cell" alt="1" src={props.img1} />
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="2" src={props.img2} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="3" src={props.img3} />
                   </div>
                 </div>
                 <div>
-                  <div className="clickable-cell">
+                  <div onClick={toggleOpen} className="clickable-cell">
                     <img className="car-img-cell " alt="4" src={props.img4} />
                   </div>
                 </div>
@@ -193,9 +193,6 @@ export default function ClickableSliderCell(props) {
             )}
           </>
         )}
-      </div>
-      <div className="AiOutlineInfoCircle-container" onClick={toggleOpen}>
-        <AiOutlineInfoCircle color="white" size="2em" />
       </div>
     </div>
   );
