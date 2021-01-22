@@ -14,7 +14,7 @@ export default function ProjName(props) {
   const history = useHistory();
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
-  const [locked, toggleLocked] = useToggle(false);
+  const [locked, toggleLocked] = useToggle(true);
   useLockBodyScroll(locked);
 
   const toggleOpen = () => {
