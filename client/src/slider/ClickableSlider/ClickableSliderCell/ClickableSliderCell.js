@@ -201,7 +201,7 @@ export default function ClickableSliderCell(props) {
       </div>
       <div onClick={ArrowDown100Vh} className="arrow-down-cell-container">
         <img
-          style={{ position: "relative", justifyContent: "center" }}
+          style={{ position: "relative", justifyContent: "center", top: "2px" }}
           src="https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_30,w_30/v1611016884/CursorDown.png"
           alt="cursor-down"
         />
