@@ -232,20 +232,49 @@
     top: 15%;
   } */
   .bold-text-proj-name {
-    font-size: 18px;
+    font-size: 10px;
   }
   .client-name-proj-name {
-    font-size: 15px;
-    margin-top: -5px;
+    font-size: 10px;
+    margin-top: 0px;
+    top: -40px;
   }
   .description-text-proj-name {
-    font-size: 15px;
-    /* top: 5px; */
+    color: white;
+    font-size: 11px;
+    font-family: "Rubik";
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    width: 100%;
   }
   .project-keywords-proj-name {
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 3px;
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+  }
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: -50px;
+  }
+  .description-text-container-proj-name {
+    /* margin-top: -10px; */
+    width: 60%;
+    position: relative;
+    left: 25%;
+  }
+  .modal-project-text-container-proj-name {
+    position: relative;
+    /* top: 25%; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    /* left: 32%; */
+    width: 100%;
+    top: -20px;
   }
 }
 

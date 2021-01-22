@@ -71,7 +71,7 @@ export default function ProjName(props) {
 
                       // padding: "20px",
                       textAlign: "center",
-                      objectFit: "cover",
+                      // objectFit: "cover",
                       backgroundPosition: "50% 50%",
                       backgroundRepeat: "no-repeat",
                       // textAlign: "-webkit-center",
