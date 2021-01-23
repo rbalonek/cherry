@@ -6,6 +6,7 @@ import { Animated } from "react-animated-css";
 import { useLockBodyScroll, useToggle } from "react-use";
 import ModalProjectProjName from "../../components/ModalProject/ModalProjectProjName/ModalProjectProjName";
 import ModalProject from "../../components/ModalProject/ModalProject";
+import AboutHamburger from "../../components/Hamburger/AboutHamburger/AboutHamburger";
 // import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
 
 export default function HighlightedProjCell(props) {
@@ -42,6 +43,9 @@ export default function HighlightedProjCell(props) {
 
   return (
     <div style={{ width: "100vw" }}>
+      <div onClick={() => history.goBack()} className="highlight-proj-cell-x">
+        <AboutHamburger />
+      </div>
       <div id="carousel-container-cell" className="carousel-container-cell">
         <div className={modal} onClick={toggleClosed}></div>
 

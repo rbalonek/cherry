@@ -3,3 +3,9 @@
   width: 100%;
   object-fit: cover;
 }
+.highlight-proj-cell-x {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  z-index: 998;
+}

@@ -47,9 +47,7 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="about-x-container" onClick={xClicked}>
-        <Rotate>
-          <AboutHamburger />
-        </Rotate>
+        <AboutHamburger />
       </div>
 
       <div className="about-text-container">
