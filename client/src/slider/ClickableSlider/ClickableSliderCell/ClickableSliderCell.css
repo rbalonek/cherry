@@ -108,32 +108,54 @@
 .modalOpen-cell {
   position: absolute;
   display: flex;
-  height: 8000vh;
+  height: 80vh;
   width: 95vw;
   background-color: black;
   z-index: 999;
   opacity: 1;
-  /* top: 205vh; */
+  margin-top: 10vh;
   right: 2.5%;
 }
 .modal-text-closed {
   display: none;
 }
 
-.modal-text-open {
+.modal-text-open-cell {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   z-index: 999;
   position: absolute;
-  font-family: "degular";
+  font-family: "Rubik";
+  margin-top: 5vh;
 }
 @media (max-width: 770px) {
   .carousel .control-dots .dot {
     margin: 12% 2px;
     width: calc(7px + 0.5vw);
     height: calc(7px + 0.5vw);
+  }
+  .modal-text-open-cell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    font-family: "Rubik";
+    margin-top: 5vh;
+  }
+  .modalOpen-cell {
+    position: absolute;
+    display: flex;
+    height: 80vh;
+    width: 95vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    margin-top: 10vh;
+    right: 2.5%;
   }
 }
 

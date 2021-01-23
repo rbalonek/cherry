@@ -79,13 +79,13 @@ export default function NewScrollSnap(props) {
   return (
     <>
       <BrowserView>
-        <div className="new-scrollsnap-container">
+        <div id="header" className="new-scrollsnap-container">
           <StickyHeader
             showHamburger={showHamburger}
             videoBackground={props.videoBackground}
           />
 
-          <div id="header" className="new-header-container">
+          <div className="new-header-container">
             <NewHeader
               headerText={props.headerText}
               videoBackground={props.videoBackground}
@@ -102,12 +102,13 @@ export default function NewScrollSnap(props) {
       </BrowserView>
 
       <MobileView>
-        <div className="new-scrollsnap-container">
+        <div id="header" className="new-scrollsnap-container">
           <StickyHeader
             showHamburger={showHamburger}
             videoBackground={props.videoBackground}
           />
           <NewHeader
+            // id="top"
             headerText={props.headerText}
             videoBackground={props.videoBackground}
           />

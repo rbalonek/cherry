@@ -13,6 +13,7 @@ import {
 // import axios from "axios";
 
 export default function NewHeader(props) {
+  console.log(props);
   // const [inView, setInView] = useState(true);
   // console.log("Try 1", props.videoBackground);
 
@@ -25,8 +26,9 @@ export default function NewHeader(props) {
   };
 
   const DownArrowClick = () => {
-    let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight);
+    zenscroll.center(document.getElementById("chi"));
+    // let pageHeight = window.innerHeight;
+    // zenscroll.toY(pageHeight);
     // document.getElementById("chi").scrollIntoView();
     // setInView(false);
     // setTimeout(() => {
@@ -38,7 +40,11 @@ export default function NewHeader(props) {
     <>
       {isBrowser ? (
         <div>
-          <div className="new-header-container" onClick={DownArrowClick}>
+          <div
+            // id="header"
+            className="new-header-container"
+            onClick={DownArrowClick}
+          >
             <div>
               {props.headerText.length ? (
                 <Fade
@@ -113,7 +119,10 @@ export default function NewHeader(props) {
         </div>
       ) : (
         <div>
-          <div id="header" className="new-header-container">
+          <div
+            // id="header"
+            className="new-header-container"
+          >
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <div className="vid-about-mobile"></div>
