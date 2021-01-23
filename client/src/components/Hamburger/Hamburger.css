@@ -263,7 +263,7 @@
 @media (max-width: 600px) {
   .hamburger-helper {
     position: absolute;
-    right: 12%;
+    right: 13%;
     margin-top: 7%;
     z-index: 998;
   }
