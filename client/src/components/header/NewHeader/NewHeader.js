@@ -1,61 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { Fade } from "react-awesome-reveal";
-import { FiChevronDown } from "react-icons/fi";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
-// import axios from "axios";
+import { isBrowser } from "react-device-detect";
 
 export default function NewHeader(props) {
-  // console.log(props);
-  // const [inView, setInView] = useState(true);
-  // console.log("Try 1", props.videoBackground);
-
-  // setTimeout(() => {
-  //   console.log("Try TWO", props.videoBackground);
-  // }, 2000);
-
-  // const firstSlide = props.highlightedProjects[0].fields.idname;
-  // console.log(props.highlightedProjects[0].fields.idname);
   const DownArrowCell = () => {
-    // const firstSlide = props.highlightedProjects[0].fields.idname;
     zenscroll.to(
       document.getElementById(props.highlightedProjects[0].fields.idname)
     );
-    // zenscroll.intoView(document.getElementById("cell-text-block"));
-    // let pageHeight = window.innerHeight;
-    // zenscroll.toY(pageHeight);
   };
 
   const DownArrowClick = () => {
     zenscroll.center(
       document.getElementById(props.highlightedProjects[0].fields.idname)
     );
-    // zenscroll.center(document.getElementById("chi"));
-    // let pageHeight = window.innerHeight;
-    // zenscroll.toY(pageHeight);
-    // document.getElementById("chi").scrollIntoView();
-    // setInView(false);
-    // setTimeout(() => {
-    //   setInView(true);
-    // }, 1000);
   };
 
   return (
     <>
       {isBrowser ? (
         <div>
-          <div
-            // id="header"
-            className="new-header-container"
-            onClick={DownArrowClick}
-          >
+          <div className="new-header-container" onClick={DownArrowClick}>
             <div>
               {props.headerText.length ? (
                 <Fade
