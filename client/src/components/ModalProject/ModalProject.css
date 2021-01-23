@@ -19,6 +19,7 @@
 }
 .modal-text {
   color: white;
+  font-family: "rubik";
 }
 .modal-project-text-container {
   position: relative;
@@ -44,6 +45,7 @@
   font-size: calc(5px + 0.5vw);
   align-self: flex-end;
   margin-bottom: 1%;
+  font-family: "rubik";
 }
 
 .show-name-modal {
@@ -113,14 +115,16 @@
     font-size: calc(23px + 1vw);
   }
   .bold-text {
-    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-family: "Rubik";
+    font-weight: 900;
     font-size: calc(50px + 0.5vw);
     margin-bottom: 1%;
   }
   .description-text {
     color: white;
     font-size: calc(40px + 0.5vw);
-    font-family: "degular";
+    font-family: "rubik";
+    font-weight: 300;
     position: relative;
     top: 0px;
     width: 100%;
