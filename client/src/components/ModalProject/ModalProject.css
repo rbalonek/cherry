@@ -249,7 +249,8 @@
     font-weight: 900;
   }
   .what-did-container {
-    width: 100%;
+    width: 40%;
+    /* background-color: red; */
   }
   .modal-project-text-container {
     position: relative;

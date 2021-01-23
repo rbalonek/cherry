@@ -14,6 +14,7 @@ export default function HighlightedProjCell(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
   const [locked, toggleLocked] = useToggle(false);
+  const [xOut, toggleXOut] = useState("highlight-proj-cell-x");
   useLockBodyScroll(locked);
 
   let projName = window.location.pathname;
@@ -32,18 +33,20 @@ export default function HighlightedProjCell(props) {
   const toggleOpen = () => {
     modalToggle("modalOpen-cell clickable-modal");
     modalTextToggle("modal-text-open-cell");
+    toggleXOut("hide");
     // toggleLocked();
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
+    toggleXOut("highlight-proj-cell-x");
     // toggleLocked();
   };
 
   return (
     <div style={{ width: "100vw" }}>
-      <div onClick={() => history.goBack()} className="highlight-proj-cell-x">
+      <div onClick={() => history.goBack()} className={xOut}>
         <AboutHamburger />
       </div>
       <div id="carousel-container-cell" className="carousel-container-cell">
