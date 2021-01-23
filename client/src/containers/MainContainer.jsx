@@ -57,7 +57,6 @@ export default function MainContainer(props) {
       <Route path="/highlight" component={ProjName}>
         <HighlightedProjCell
           projects={props.projects}
-          videoBackground={videoForSession}
           highlightedProjects={props.highlightedProjects}
         />
       </Route>

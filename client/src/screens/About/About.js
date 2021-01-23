@@ -1,49 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { useHistory, Link } from "react-router-dom";
-import { Animated } from "react-animated-css";
-import { Rotate } from "react-awesome-reveal";
+import React from "react";
+import { useHistory } from "react-router-dom";
 import "./About.css";
-import zenscroll from "zenscroll";
-
-import xOut from "../../assets/logo/Website-Asset_X.png";
 import Footer from "../../components/Footer/Footer";
 import AboutHamburger from "../../components/Hamburger/AboutHamburger/AboutHamburger";
 
-// <img
-// alt="logo"
-// src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609886302/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO3_gfxqdi.png"
-// className="about-logo"
-// />
-
 export default function About() {
-  // const [background, changeBackground] = useState("vid-about-hov-menu ");
-  // const [davidBio, changeDavidBio] = useState("david-bio");
-  // const [gregBio, changeGregBio] = useState("greg-bio");
-  // const [visible, setVisible] = useState(true);
   const history = useHistory();
 
   const xClicked = () => {
-    // let pageHeight = window.innerHeight;
-    // history.push("/");
     history.goBack();
-
-    // setTimeout(() => {
-    //   zenscroll.toY(pageHeight);
-    // }, 2000);
   };
 
-  // const hovDavid = () => {
-  //   changeBackground("vid-about-hovered-menu");
-  //   changeDavidBio("david-bio-hovered");
-  //   changeGregBio("greg-bio");
-  //   // changeBackground("vid-about-hov-menu")
-  // };
-  // const hovGreg = () => {
-  //   changeBackground("vid-about-hovered-menu");
-  //   changeGregBio("greg-bio-hovered");
-  //   changeDavidBio("david-bio");
-  // };
-  // style={{ height: "100vh" }}
   return (
     <div className="about-container">
       <div className="about-x-container" onClick={xClicked}>
@@ -64,11 +31,7 @@ export default function About() {
         </p>
       </div>
       <div className="bios-container">
-        <div
-          className="david-bio"
-          // onMouseEnter={hovDavid}
-          // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
-        >
+        <div className="david-bio">
           <h2 className="white name">DAVID IRLANDA</h2>
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
 
@@ -89,11 +52,7 @@ export default function About() {
             pariatur.
           </p>
         </div>
-        <div
-          className="greg-bio"
-          // onMouseEnter={hovGreg}
-          // onMouseLeave={() => changeBackground("vid-about-hov-menu")}
-        >
+        <div className="greg-bio">
           <h2 className="white name">GREG ZADROZNY</h2>
           <p className="white title">PARTNER/CREATIVE DIRECTOR</p>
 
