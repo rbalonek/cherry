@@ -92,6 +92,8 @@ export default function ProjectsBody(props) {
                   Retouching={project.fields.Retouching}
                   PhotoArtDirection={project.fields.PhotoArtDirection}
                   BsidesPage={project.fields.BsidesPage}
+                  PrevSlide={project.fields.PrevSlide}
+                  NextSlide={project.fields.NextSlide}
                 />
               ) : (
                 <div>
@@ -157,6 +159,8 @@ export default function ProjectsBody(props) {
                   Retouching={project.fields.Retouching}
                   PhotoArtDirection={project.fields.PhotoArtDirection}
                   BsidesPage={project.fields.BsidesPage}
+                  PrevSlide={project.fields.PrevSlide}
+                  NextSlide={project.fields.NextSlide}
                 />
               ) : (
                 <div>
@@ -178,6 +182,8 @@ export default function ProjectsBody(props) {
                     copy={project.fields.copy}
                     retouching={project.fields.retouching}
                     photoartdirection={project.fields.photoartdirection}
+                    PrevSlide={project.fields.PrevSlide}
+                    NextSlide={project.fields.NextSlide}
                     PrevSlide={project.fields.PrevSlide}
                     NextSlide={project.fields.NextSlide}
                   />
