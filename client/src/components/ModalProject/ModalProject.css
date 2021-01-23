@@ -79,14 +79,31 @@
 
   width: 80%;
 }
-.what-did-container {
+/* .what-did-container {
   margin-top: 4%;
   width: 20%;
-  /* height: 200px; */
+} */
+.what-did-container {
+  display: flex;
+  margin-top: 4%;
+  width: 100%;
   /* background-color: red; */
 }
+
 .what-did-container:hover {
   cursor: pointer;
+}
+.what-did-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.what-did-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
 }
 
 .project-keywords {
@@ -253,7 +270,7 @@
     font-weight: 900;
   }
   .what-did-container {
-    width: 40%;
+    /* width: 40%; */
     /* background-color: red; */
   }
   .modal-project-text-container {
