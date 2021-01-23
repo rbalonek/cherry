@@ -62,11 +62,20 @@ export default function HighlightedProjCell(props) {
               description={arr[0].fields.description}
               descriptionTwo={arr[0].fields.descriptionTwo}
               keyart={arr[0].fields.keyart}
-              identity={arr[0].fields.identity}
-              motiongfx={arr[0].fields.motiongfx}
-              copy={arr[0].fields.copy}
-              retouching={arr[0].fields.retouching}
-              photoartdirection={arr[0].fields.photoartdirection}
+              Logo={arr[0].fields.Logo}
+              MotionGFX={arr[0].fields.MotionGFX}
+              Copy={arr[0].fields.Copy}
+              Retouching={arr[0].fields.Retouching}
+              PhotoArtDirection={arr[0].fields.PhotoArtDirection}
+              Branding={arr[0].fields.Branding}
+              BookDesign={arr[0].fields.BookDesign}
+              OutOfHome={arr[0].fields.OutOfHome}
+              Apparel={arr[0].fields.Apparel}
+              Digital={arr[0].fields.Digital}
+              CustomType={arr[0].fields.CustomType}
+              OpeningCredits={arr[0].fields.OpeningCredits}
+              Packaging={arr[0].fields.Packaging}
+              BsidesPage={arr[0].fields.BsidesPage}
             />
           </Animated>
         </div>
