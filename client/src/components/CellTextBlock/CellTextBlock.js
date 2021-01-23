@@ -4,7 +4,7 @@ import { FiChevronDown } from "react-icons/fi";
 import zenscroll from "zenscroll";
 
 export default function CellTextBlock(props) {
-  let pageHeight = window.innerHeight;
+  // let pageHeight = window.innerHeight;
 
   const DownArrowCell = () => {
     zenscroll.center(document.getElementById("chi"));

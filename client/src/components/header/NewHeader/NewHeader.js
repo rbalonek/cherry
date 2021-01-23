@@ -13,6 +13,7 @@ import {
 // import axios from "axios";
 
 export default function NewHeader(props) {
+  console.log(props);
   // const [inView, setInView] = useState(true);
   // console.log("Try 1", props.videoBackground);
 
@@ -118,7 +119,10 @@ export default function NewHeader(props) {
         </div>
       ) : (
         <div>
-          <div id="header" className="new-header-container">
+          <div
+            // id="header"
+            className="new-header-container"
+          >
             <div className="vid-logo-container">
               <Fade delay={1000}>
                 <div className="vid-about-mobile"></div>
