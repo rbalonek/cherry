@@ -146,10 +146,20 @@ export default function NewHeader(props) {
               paddingRight: "10%",
             }}
           >
-            <p style={{ color: "white" }}>
-              We're an art & design studio specializing in branding for film &
-              television.
-            </p>
+            <Animated
+              animationInDelay={2000}
+              animationIn="fadeIn"
+              animationOut="fadeOut"
+              animationInDuration={1000}
+              animationOutDuration={500}
+              // isVisible={inView}
+              triggerOnce={true}
+            >
+              <p style={{ color: "white" }}>
+                We're an art & design studio specializing in branding for film &
+                television.
+              </p>
+            </Animated>
           </div>
         </div>
       )}
