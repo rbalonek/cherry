@@ -55,7 +55,7 @@
 .vid-logo-container {
   width: 100vw;
   position: absolute;
-  top: 30%;
+  top: 37%;
 }
 .vid-about {
   width: 94vw;
@@ -78,7 +78,7 @@
 .about-logo {
   position: absolute;
   width: 95vw;
-  top: -20px;
+  /* top: -20px; */
   left: 3%;
 }
 

@@ -13,7 +13,7 @@ import {
 // import axios from "axios";
 
 export default function NewHeader(props) {
-  console.log(props);
+  // console.log(props);
   // const [inView, setInView] = useState(true);
   // console.log("Try 1", props.videoBackground);
 
@@ -22,7 +22,9 @@ export default function NewHeader(props) {
   // }, 2000);
 
   const DownArrowCell = () => {
-    zenscroll.intoView(document.getElementById("cell-text-block"));
+    // zenscroll.intoView(document.getElementById("cell-text-block"));
+    let pageHeight = window.innerHeight;
+    zenscroll.toY(pageHeight);
   };
 
   const DownArrowClick = () => {
@@ -120,6 +122,7 @@ export default function NewHeader(props) {
       ) : (
         <div>
           <div
+            onClick={DownArrowCell}
             // id="header"
             className="new-header-container"
           >
@@ -133,14 +136,20 @@ export default function NewHeader(props) {
                 className="about-logo"
               />
             </div>
-            <div className="cell-down-arrow-container" onClick={DownArrowCell}>
-              <FiChevronDown
-                className="cell-down-arrow"
-                color="white"
-                opacity=".5"
-                alt="cell-down"
-              />
-            </div>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              bottom: "37vh",
+              textAlign: "center",
+              paddingLeft: "10%",
+              paddingRight: "10%",
+            }}
+          >
+            <p style={{ color: "white" }}>
+              We're an art & design studio specializing in branding for film &
+              television.
+            </p>
           </div>
         </div>
       )}

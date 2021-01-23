@@ -112,10 +112,6 @@ export default function NewScrollSnap(props) {
             headerText={props.headerText}
             videoBackground={props.videoBackground}
           />
-          <CellTextBlock
-            projects={props.projects}
-            headerText={props.headerText}
-          />
 
           <LogoSticky showLogo={showLogo} />
 
