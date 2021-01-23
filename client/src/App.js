@@ -14,6 +14,7 @@ function App() {
   const [projects, inVokeProjects] = useState([]);
   const [headerText, invokeHeaderText] = useState([]);
   const [videoBackground, setVideoBackground] = useState([]);
+  const [fetchHighlightedProjects, invokeFetch] = useState([]);
 
   useEffect(() => {
     const apiCallText = async () => {
@@ -30,6 +31,7 @@ function App() {
         "https://res.cloudinary.com/bobalobbadingdong/video/upload/v1610505964/Cherry/Videos/trees_dw5jim.mov"
       );
     };
+
     const apiCall = async () => {
       const data = await axios.get(
         "https://api.airtable.com/v0/appVey7bH2bLRXZsC/items?view=Grid%20view",
@@ -42,15 +44,32 @@ function App() {
       inVokeProjects(data.data.records);
       // console.log(projects);
     };
+
+    const apiCallHighlightedProjects = async () => {
+      const data = await axios.get(
+        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/HighlightedProjects?view=Grid%20view",
+        {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+          },
+        }
+      );
+      invokeFetch(data.data.records);
+      // console.log(fetchFullScreenProjects);
+    };
+
     apiCallText();
     apiCall();
+    apiCallHighlightedProjects();
   }, []);
 
+  // console.log(fetchHighlightedProjects);
   return (
     <Layout>
       <Switch>
         <Route path="/" component={Home}>
           <MainContainer
+            highlightedProjects={fetchHighlightedProjects}
             headerText={headerText}
             projects={projects}
             videoBackground={videoBackground}
