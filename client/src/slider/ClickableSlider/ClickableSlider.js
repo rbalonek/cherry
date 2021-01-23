@@ -30,6 +30,14 @@ export default function ClickableSlider(props) {
     toggleLocked();
   };
 
+  const toggleOpenSafari = () => {
+    modalToggle("modalOpen-safari clickable-modal");
+    modalTextToggle("modal-text-open-safari");
+    props.handleClickHamburger("show-none");
+    props.handleClick("show-none");
+    toggleLocked();
+  };
+
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
@@ -120,10 +128,10 @@ export default function ClickableSlider(props) {
                 useKeyboardArrows={true}
                 swipeable
               >
-                <div onClick={toggleOpen} className="clickable">
+                <div onClick={toggleOpenSafari} className="clickable">
                   <img className="car-img" alt="1" src={props.img1} />
                 </div>
-                <div onClick={toggleOpen}>
+                <div onClick={toggleOpenSafari}>
                   <div className="clickable">
                     <img className="car-img " alt="2" src={props.img2} />
                   </div>
@@ -141,15 +149,15 @@ export default function ClickableSlider(props) {
                     useKeyboardArrows={true}
                     swipeable
                   >
-                    <div onClick={toggleOpen} className="clickable">
+                    <div onClick={toggleOpenSafari} className="clickable">
                       <img className="car-img" alt="1" src={props.img1} />
                     </div>
-                    <div onClick={toggleOpen}>
+                    <div onClick={toggleOpenSafari}>
                       <div className="clickable">
                         <img className="car-img " alt="2" src={props.img2} />
                       </div>
                     </div>
-                    <div onClick={toggleOpen}>
+                    <div onClick={toggleOpenSafari}>
                       <div className="clickable">
                         <img className="car-img " alt="3" src={props.img3} />
                       </div>
@@ -165,20 +173,20 @@ export default function ClickableSlider(props) {
                     useKeyboardArrows={true}
                     swipeable
                   >
-                    <div onClick={toggleOpen} className="clickable">
+                    <div onClick={toggleOpenSafari} className="clickable">
                       <img className="car-img" alt="1" src={props.img1} />
                     </div>
-                    <div onClick={toggleOpen}>
+                    <div onClick={toggleOpenSafari}>
                       <div className="clickable">
                         <img className="car-img " alt="2" src={props.img2} />
                       </div>
                     </div>
-                    <div onClick={toggleOpen}>
+                    <div onClick={toggleOpenSafari}>
                       <div className="clickable">
                         <img className="car-img " alt="3" src={props.img3} />
                       </div>
                     </div>
-                    <div onClick={toggleOpen}>
+                    <div onClick={toggleOpenSafari}>
                       <div className="clickable">
                         <img className="car-img " alt="4" src={props.img4} />
                       </div>

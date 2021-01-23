@@ -16,7 +16,7 @@ export default function ClickableSliderCell(props) {
   console.log(props);
   const toggleOpen = () => {
     modalToggle("modalOpen-cell clickable-modal");
-    modalTextToggle("modal-text-open");
+    modalTextToggle("modal-text-open-cell");
     // toggleLocked();
   };
 
