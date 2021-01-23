@@ -16,6 +16,7 @@ export default function Home(props) {
         projects={props.projects}
         headerText={props.headerText}
         videoBackground={props.videoBackground}
+        highlightedProjects={props.highlightedProjects}
       />
     </div>
   );

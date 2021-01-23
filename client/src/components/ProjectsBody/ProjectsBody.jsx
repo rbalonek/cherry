@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./ProjectsBody.css";
-import axios from "axios";
 import zenscroll from "zenscroll";
 import {
   BrowserView,
@@ -9,30 +8,10 @@ import {
   isMobile,
   isSafari,
 } from "react-device-detect";
-// import LogoSticky from "../StickyHeader/LogoSticky.js";
 import ClickableSlider from "../../slider/ClickableSlider/ClickableSlider";
 import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
-import NewHeader from "../header/NewHeader/NewHeader";
 
 export default function ProjectsBody(props) {
-  const [fetchFullScreenProjects, invokeFetch] = useState([]);
-
-  useEffect(() => {
-    const apiCall = async () => {
-      const data = await axios.get(
-        "https://api.airtable.com/v0/appVey7bH2bLRXZsC/HighlightedProjects?view=Grid%20view",
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-          },
-        }
-      );
-      invokeFetch(data.data.records);
-      // console.log(fetchFullScreenProjects);
-    };
-    apiCall();
-  }, [invokeFetch]);
-
   let pageHeight = window.innerHeight;
   // var up = document.getElementById({project.fields.scrollToUp});
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
@@ -58,7 +37,7 @@ export default function ProjectsBody(props) {
     <>
       {isSafari ? (
         <div className="scroll-snap-container-safari">
-          {fetchFullScreenProjects.map((project) => (
+          {props.highlightedProjects.map((project) => (
             <div id={project.fields.idname} className="non-sticky-section">
               {isBrowser ? (
                 <ClickableSlider
@@ -125,7 +104,7 @@ export default function ProjectsBody(props) {
         </div>
       ) : (
         <div className="scroll-snap-container">
-          {fetchFullScreenProjects.map((project) => (
+          {props.highlightedProjects.map((project) => (
             <div id={project.fields.idname} className="non-sticky-section">
               {isBrowser ? (
                 <ClickableSlider

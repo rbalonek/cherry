@@ -89,6 +89,7 @@ export default function NewScrollSnap(props) {
             <NewHeader
               headerText={props.headerText}
               videoBackground={props.videoBackground}
+              highlightedProjects={props.highlightedProjects}
             />
           </div>
 
@@ -97,6 +98,7 @@ export default function NewScrollSnap(props) {
           <ProjectsBody
             handleClick={handleClick}
             handleClickHamburger={handleClickHamburger}
+            highlightedProjects={props.highlightedProjects}
           ></ProjectsBody>
         </div>
       </BrowserView>
@@ -111,6 +113,7 @@ export default function NewScrollSnap(props) {
             // id="top"
             headerText={props.headerText}
             videoBackground={props.videoBackground}
+            highlightedProjects={props.highlightedProjects}
           />
 
           <LogoSticky showLogo={showLogo} />
@@ -118,6 +121,7 @@ export default function NewScrollSnap(props) {
           <ProjectsBody
             handleClick={handleClick}
             handleClickHamburger={handleClickHamburger}
+            highlightedProjects={props.highlightedProjects}
           ></ProjectsBody>
         </div>
       </MobileView>

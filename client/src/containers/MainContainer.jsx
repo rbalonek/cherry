@@ -25,6 +25,7 @@ export default function MainContainer(props) {
           headerText={props.headerText}
           projects={props.projects}
           videoBackground={videoForSession}
+          highlightedProjects={props.highlightedProjects}
         />
       </Route>
       <Route path="/about" component={About}>
