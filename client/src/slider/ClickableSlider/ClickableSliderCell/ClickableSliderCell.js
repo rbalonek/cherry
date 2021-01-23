@@ -13,7 +13,7 @@ export default function ClickableSliderCell(props) {
   const [modalText, modalTextToggle] = useState("modal-text-closed");
   // const [locked, toggleLocked] = useToggle(true);
   useLockBodyScroll(true);
-  console.log(props);
+  // console.log(props);
   const toggleOpen = () => {
     modalToggle("modalOpen-cell clickable-modal");
     modalTextToggle("modal-text-open-cell");
