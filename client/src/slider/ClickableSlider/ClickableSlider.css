@@ -111,7 +111,7 @@
   position: relative;
   /* background-color: red; */
   opacity: 0.5;
-  top: 55vh;
+  top: 0;
   z-index: 800;
   left: 30vw;
 }
@@ -131,11 +131,11 @@
   height: 30vh;
   width: 100%;
   position: relative;
-  bottom: 0;
+  /* bottom: 0; */
   /* background-color: blue; */
   opacity: 0.5;
   z-index: 998;
-  top: 100vh;
+  top: 43vh;
 }
 .arrow-down-container-safari:hover {
   cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,h_100,w_100/v1611018057/Cherry/Cherry%20Clients/Graphic%20Assets/DownArrow_vjka53.png),
