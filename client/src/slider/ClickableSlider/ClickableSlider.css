@@ -56,6 +56,21 @@
   contain: content;
   max-height: 100vh;
 }
+@media (min-width: 1000px) {
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media {
+      .carousel-container-safari {
+        /* contain: content; */
+        max-height: 100vh;
+        position: relative;
+      }
+      .carousel-root {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
 
 .arrow-up-container {
   width: 100%;
