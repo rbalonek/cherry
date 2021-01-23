@@ -15,6 +15,7 @@ export default function HighlightedProjCell(props) {
   const [modalText, modalTextToggle] = useState("modal-text-closed");
   const [locked, toggleLocked] = useToggle(false);
   const [xOut, toggleXOut] = useState("highlight-proj-cell-x");
+  const [projInfo, toggleProjInfo] = useState("proj-info-text-holder");
   useLockBodyScroll(locked);
 
   let projName = window.location.pathname;
@@ -34,6 +35,7 @@ export default function HighlightedProjCell(props) {
     modalToggle("modalOpen-cell clickable-modal");
     modalTextToggle("modal-text-open-cell");
     toggleXOut("hide");
+    toggleProjInfo("hide");
     // toggleLocked();
   };
 
@@ -41,6 +43,7 @@ export default function HighlightedProjCell(props) {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
     toggleXOut("highlight-proj-cell-x");
+    toggleProjInfo("proj-info-text-holder");
     // toggleLocked();
   };
 
@@ -93,7 +96,7 @@ export default function HighlightedProjCell(props) {
             useKeyboardArrows={false}
             swipeable
           >
-            <div onClick={toggleOpen} className="clickable-cell">
+            <div className="clickable-cell">
               <img
                 className="car-img-cell"
                 alt="1"
@@ -101,7 +104,7 @@ export default function HighlightedProjCell(props) {
               />
             </div>
             <div>
-              <div onClick={toggleOpen} className="clickable-cell">
+              <div className="clickable-cell">
                 <img
                   className="car-img-cell "
                   alt="2"
@@ -122,7 +125,7 @@ export default function HighlightedProjCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div onClick={toggleOpen} className="clickable-cell">
+                <div className="clickable-cell">
                   <img
                     className="car-img-cell"
                     alt="1"
@@ -130,7 +133,7 @@ export default function HighlightedProjCell(props) {
                   />
                 </div>
                 <div>
-                  <div onClick={toggleOpen} className="clickable-cell">
+                  <div className="clickable-cell">
                     <img
                       className="car-img-cell "
                       alt="2"
@@ -139,7 +142,7 @@ export default function HighlightedProjCell(props) {
                   </div>
                 </div>
                 <div>
-                  <div onClick={toggleOpen} className="clickable-cell">
+                  <div className="clickable-cell">
                     <img
                       className="car-img-cell "
                       alt="3"
@@ -158,7 +161,7 @@ export default function HighlightedProjCell(props) {
                 useKeyboardArrows={false}
                 swipeable
               >
-                <div onClick={toggleOpen} className="clickable-cell">
+                <div className="clickable-cell">
                   <img
                     className="car-img-cell"
                     alt="1"
@@ -166,7 +169,7 @@ export default function HighlightedProjCell(props) {
                   />
                 </div>
                 <div>
-                  <div onClick={toggleOpen} className="clickable-cell">
+                  <div className="clickable-cell">
                     <img
                       className="car-img-cell "
                       alt="2"
@@ -184,7 +187,7 @@ export default function HighlightedProjCell(props) {
                   </div>
                 </div>
                 <div>
-                  <div onClick={toggleOpen} className="clickable-cell">
+                  <div className="clickable-cell">
                     <img
                       className="car-img-cell "
                       alt="4"
@@ -196,6 +199,9 @@ export default function HighlightedProjCell(props) {
             )}
           </>
         )}
+      </div>
+      <div onClick={toggleOpen} className={projInfo}>
+        <h3 style={{ color: "white" }}>Project Info</h3>
       </div>
     </div>
   );
