@@ -7,7 +7,7 @@ export default function ProjectBodyMobile(props) {
       {props.highlightedProjects.map((project) => (
         <div>
           <img
-            style={{ height: "300px", width: "100%" }}
+            className="mobile-highlighted-proj-img"
             id={project.fields.idname}
             alt={project.fields.idname}
             src={project.fields.cellimg1}
