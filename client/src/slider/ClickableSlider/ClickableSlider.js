@@ -46,12 +46,12 @@ export default function ClickableSlider(props) {
     toggleLocked();
   };
 
-  let pageHeight = window.innerHeight;
+  // let pageHeight = window.innerHeight;
 
   // var up = document.getElementById(`#${props.scrollToUp}`);
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
   const ArrowUp100Vh = () => {
-    zenscroll.center(document.getElementById(props.PrevSlide));
+    zenscroll.to(document.getElementById(props.PrevSlide));
     // let pageHeight = window.innerHeight;
     // window.scrollBy(0, -pageHeight);
     // zenscroll.toY(pageHeight * props.scrollToUp);
@@ -62,12 +62,6 @@ export default function ClickableSlider(props) {
 
   const ArrowDown100Vh = () => {
     zenscroll.center(document.getElementById(props.NextSlide));
-    // let pageHeight = window.innerHeight;
-    // window.scrollBy(0, pageHeight);
-    // zenscroll.toY(pageHeight * props.scrollToDown);
-    // zenscroll.intoView(chi);
-    // zenscroll.to(scrollingDown);
-    // console.log("down");
   };
 
   // console.log(props.img3);

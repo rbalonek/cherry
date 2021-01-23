@@ -25,8 +25,9 @@ export default function NewHeader(props) {
   };
 
   const DownArrowClick = () => {
-    let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight);
+    zenscroll.center(document.getElementById("chi"));
+    // let pageHeight = window.innerHeight;
+    // zenscroll.toY(pageHeight);
     // document.getElementById("chi").scrollIntoView();
     // setInView(false);
     // setTimeout(() => {

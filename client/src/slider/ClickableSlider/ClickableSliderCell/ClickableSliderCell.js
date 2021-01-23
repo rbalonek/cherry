@@ -27,10 +27,10 @@ export default function ClickableSliderCell(props) {
   };
 
   // let pageHeight = window.innerHeight;
-  let prevSlide = document.getElementById(props.PrevSlide);
-  let nextSlide = document.getElementById(props.NextSlide);
-  console.log("next", nextSlide);
-  console.log("prev", prevSlide);
+  // let prevSlide = document.getElementById(props.PrevSlide);
+  // let nextSlide = document.getElementById(props.NextSlide);
+  // console.log("next", nextSlide);
+  // console.log("prev", prevSlide);
   // var up = props.scrollToUp;
   // var scrollingDown = props.scrollToDown;
   // // console.log("up", props.scrollToUp);
