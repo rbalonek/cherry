@@ -38,7 +38,11 @@ export default function NewHeader(props) {
     <>
       {isBrowser ? (
         <div>
-          <div className="new-header-container" onClick={DownArrowClick}>
+          <div
+            // id="header"
+            className="new-header-container"
+            onClick={DownArrowClick}
+          >
             <div>
               {props.headerText.length ? (
                 <Fade

@@ -78,7 +78,8 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 10vh;
+  top: 0;
+  /* background-color: blue; */
 }
 .arrow-up {
   height: 25vh;
