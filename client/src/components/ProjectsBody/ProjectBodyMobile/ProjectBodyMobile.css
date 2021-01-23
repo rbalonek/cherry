@@ -1,0 +1,30 @@
+.mobile-highlighted-proj-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.highlight-proj-cell-x {
+  position: absolute;
+  top: 0%;
+  right: 1vw;
+  z-index: 998;
+  /* background-color: black;
+  opacity: 0.5; */
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  z-index: -1;
+  height: 0;
+}
+.proj-info-text-holder {
+  position: absolute;
+  /* top: 83vh;
+  width: 100%;
+  text-align: center; */
+  left: 10vw;
+  top: 90vh;
+}

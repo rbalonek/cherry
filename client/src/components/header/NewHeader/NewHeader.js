@@ -1,52 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { Fade } from "react-awesome-reveal";
-import { FiChevronDown } from "react-icons/fi";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
-// import axios from "axios";
+import { isBrowser } from "react-device-detect";
 
 export default function NewHeader(props) {
-  // console.log(props);
-  // const [inView, setInView] = useState(true);
-  // console.log("Try 1", props.videoBackground);
-
-  // setTimeout(() => {
-  //   console.log("Try TWO", props.videoBackground);
-  // }, 2000);
-
   const DownArrowCell = () => {
-    // zenscroll.intoView(document.getElementById("cell-text-block"));
-    let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight);
+    zenscroll.to(
+      document.getElementById(props.highlightedProjects[0].fields.idname)
+    );
   };
 
   const DownArrowClick = () => {
-    zenscroll.center(document.getElementById("chi"));
-    // let pageHeight = window.innerHeight;
-    // zenscroll.toY(pageHeight);
-    // document.getElementById("chi").scrollIntoView();
-    // setInView(false);
-    // setTimeout(() => {
-    //   setInView(true);
-    // }, 1000);
+    zenscroll.center(
+      document.getElementById(props.highlightedProjects[0].fields.idname)
+    );
   };
 
   return (
     <>
       {isBrowser ? (
         <div>
-          <div
-            // id="header"
-            className="new-header-container"
-            onClick={DownArrowClick}
-          >
+          <div className="new-header-container" onClick={DownArrowClick}>
             <div>
               {props.headerText.length ? (
                 <Fade
@@ -124,7 +100,7 @@ export default function NewHeader(props) {
           <div
             onClick={DownArrowCell}
             // id="header"
-            className="new-header-container"
+            className="new-header-container-cell"
           >
             <div className="vid-logo-container">
               <Fade delay={1000}>
@@ -146,10 +122,20 @@ export default function NewHeader(props) {
               paddingRight: "10%",
             }}
           >
-            <p style={{ color: "white" }}>
-              We're an art & design studio specializing in branding for film &
-              television.
-            </p>
+            <Animated
+              animationInDelay={2000}
+              animationIn="fadeIn"
+              animationOut="fadeOut"
+              animationInDuration={1000}
+              animationOutDuration={500}
+              // isVisible={inView}
+              triggerOnce={true}
+            >
+              <p style={{ color: "white" }}>
+                We're an art & design studio specializing in branding for film &
+                television.
+              </p>
+            </Animated>
           </div>
         </div>
       )}
