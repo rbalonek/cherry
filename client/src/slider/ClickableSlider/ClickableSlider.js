@@ -51,22 +51,22 @@ export default function ClickableSlider(props) {
   // var up = document.getElementById(`#${props.scrollToUp}`);
   // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
   const ArrowUp100Vh = () => {
-    let pageHeight = window.innerHeight;
+    zenscroll.center(document.getElementById(props.PrevSlide));
+    // let pageHeight = window.innerHeight;
+    // window.scrollBy(0, -pageHeight);
     // zenscroll.toY(pageHeight * props.scrollToUp);
-
     // zenscroll.intoView(chi);
     // zenscroll.to(up);
-    window.scrollBy(0, -pageHeight);
     // console.log("up");
   };
 
   const ArrowDown100Vh = () => {
-    let pageHeight = window.innerHeight;
+    zenscroll.center(document.getElementById(props.NextSlide));
+    // let pageHeight = window.innerHeight;
+    // window.scrollBy(0, pageHeight);
     // zenscroll.toY(pageHeight * props.scrollToDown);
-
     // zenscroll.intoView(chi);
     // zenscroll.to(scrollingDown);
-    window.scrollBy(0, pageHeight);
     // console.log("down");
   };
 
