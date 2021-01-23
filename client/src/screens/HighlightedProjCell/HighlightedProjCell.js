@@ -5,13 +5,14 @@ import { Carousel } from "react-responsive-carousel";
 import { Animated } from "react-animated-css";
 import { useLockBodyScroll, useToggle } from "react-use";
 import ModalProjectProjName from "../../components/ModalProject/ModalProjectProjName/ModalProjectProjName";
+import ModalProject from "../../components/ModalProject/ModalProject";
 // import ClickableSliderCell from "../../slider/ClickableSlider/ClickableSliderCell/ClickableSliderCell";
 
 export default function HighlightedProjCell(props) {
   const history = useHistory();
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
-  const [locked, toggleLocked] = useToggle(true);
+  const [locked, toggleLocked] = useToggle(false);
   useLockBodyScroll(locked);
 
   let projName = window.location.pathname;
@@ -23,94 +24,162 @@ export default function HighlightedProjCell(props) {
   props.highlightedProjects.map(
     (project) => project.fields.idname === projName && arr.push(project)
   );
-  // console.log(arr);
+  // console.log(arr[0].fields.cellimg1);
 
+  useLockBodyScroll(true);
+  // console.log(props);
   const toggleOpen = () => {
-    modalToggle("modalOpen clickable-modal");
-    modalTextToggle("modal-text-open");
-    // props.handleClickHamburger("show-none");
-    // props.handleClick("show-none");
-    toggleLocked();
+    modalToggle("modalOpen-cell clickable-modal");
+    modalTextToggle("modal-text-open-cell");
+    // toggleLocked();
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
-    // props.handleClick("logo-sticky");
-    // props.handleClickHamburger("menu-btn");
-    toggleLocked();
+    // toggleLocked();
   };
 
   return (
-    <div>
-      <div className="holder">
-        <Carousel
-          showStatus={false}
-          infiniteLoop
-          showIndicators={true}
-          showThumbs={false}
-          autoPlay={false}
-          useKeyboardArrows={true}
-          swipeable
-        >
-          {arr.map((project) => (
-            <>
-              <div className="centering">
-                <div onClick={toggleOpen} className="clickable">
-                  <img
-                    className="img-center"
-                    style={{
-                      // width: "100vw",
-                      // height: "100vh",
+    <div style={{ width: "100vw" }}>
+      <div id="carousel-container-cell" className="carousel-container-cell">
+        <div className={modal} onClick={toggleClosed}></div>
 
-                      // padding: "20px",
-                      textAlign: "center",
-                      // objectFit: "cover",
-                      backgroundPosition: "50% 50%",
-                      backgroundRepeat: "no-repeat",
-                      // textAlign: "-webkit-center",
-                      // display: "flex",
-                      // justifyContent: "center",
-                    }}
-                    alt={project.fields.img1}
-                    src={project.fields.img1}
+        <div className={modalText} onClick={toggleClosed}>
+          <Animated
+            animationIn="fadeIn"
+            animationInDuration={2000}
+            animationOut="fadeOut"
+            animationOutDuration={100}
+          >
+            <ModalProject
+              client={arr[0].fields.client}
+              name={arr[0].fields.name}
+              description={arr[0].fields.description}
+              descriptionTwo={arr[0].fields.descriptionTwo}
+              keyart={arr[0].fields.keyart}
+              identity={arr[0].fields.identity}
+              motiongfx={arr[0].fields.motiongfx}
+              copy={arr[0].fields.copy}
+              retouching={arr[0].fields.retouching}
+              photoartdirection={arr[0].fields.photoartdirection}
+            />
+          </Animated>
+        </div>
+
+        {arr[0].fields.cellimg3 === undefined ? (
+          <Carousel
+            showStatus={false}
+            infiniteLoop
+            showIndicators={true}
+            showThumbs={false}
+            autoPlay={false}
+            useKeyboardArrows={false}
+            swipeable
+          >
+            <div onClick={toggleOpen} className="clickable-cell">
+              <img
+                className="car-img-cell"
+                alt="1"
+                src={arr[0].fields.cellimg1}
+              />
+            </div>
+            <div>
+              <div onClick={toggleOpen} className="clickable-cell">
+                <img
+                  className="car-img-cell "
+                  alt="2"
+                  src={arr[0].fields.cellimg2}
+                />
+              </div>
+            </div>
+          </Carousel>
+        ) : (
+          <>
+            {arr[0].fields.cellimg4 === undefined ? (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img
+                    className="car-img-cell"
+                    alt="1"
+                    src={arr[0].fields.cellimg1}
                   />
                 </div>
-                <div className={modal} onClick={toggleClosed}></div>
-                <div className={modalText} onClick={toggleClosed}>
-                  <Animated
-                    animationIn="fadeIn"
-                    animationInDuration={2000}
-                    animationOut="fadeOut"
-                    animationOutDuration={100}
-                  >
-                    <ModalProjectProjName
-                      name={project.fields.name}
-                      client={project.fields.client}
-                      description={project.fields.description}
-                      descriptionTwo={project.fields.descriptionTwo}
-                      keyart={project.fields.keyart}
-                      Logo={project.fields.Logo}
-                      Branding={project.fields.Branding}
-                      BookDesign={project.fields.BookDesign}
-                      OutOfHome={project.fields.OutOfHome}
-                      Apparel={project.fields.Apparel}
-                      Digital={project.fields.Digital}
-                      CustomType={project.fields.CustomType}
-                      MotionGFX={project.fields.MotionGFX}
-                      OpeningCredits={project.fields.OpeningCredits}
-                      Packaging={project.fields.Packaging}
-                      Copy={project.fields.Copy}
-                      Retouching={project.fields.Retouching}
-                      PhotoArtDirection={project.fields.PhotoArtDirection}
-                      BsidesPage={project.fields.BsidesPage}
+                <div>
+                  <div onClick={toggleOpen} className="clickable-cell">
+                    <img
+                      className="car-img-cell "
+                      alt="2"
+                      src={arr[0].fields.cellimg2}
                     />
-                  </Animated>
+                  </div>
                 </div>
-              </div>
-            </>
-          ))}
-        </Carousel>
+                <div>
+                  <div onClick={toggleOpen} className="clickable-cell">
+                    <img
+                      className="car-img-cell "
+                      alt="3"
+                      src={arr[0].fields.cellimg3}
+                    />
+                  </div>
+                </div>
+              </Carousel>
+            ) : (
+              <Carousel
+                showStatus={false}
+                infiniteLoop
+                showIndicators={true}
+                showThumbs={false}
+                autoPlay={false}
+                useKeyboardArrows={false}
+                swipeable
+              >
+                <div onClick={toggleOpen} className="clickable-cell">
+                  <img
+                    className="car-img-cell"
+                    alt="1"
+                    src={arr[0].fields.cellimg1}
+                  />
+                </div>
+                <div>
+                  <div onClick={toggleOpen} className="clickable-cell">
+                    <img
+                      className="car-img-cell "
+                      alt="2"
+                      src={arr[0].fields.cellimg2}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div onClick={toggleOpen} className="clickable-cell">
+                    <img
+                      className="car-img-cell "
+                      alt="3"
+                      src={arr[0].fields.cellimg3}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div onClick={toggleOpen} className="clickable-cell">
+                    <img
+                      className="car-img-cell "
+                      alt="4"
+                      src={arr[0].fields.cellimg4}
+                    />
+                  </div>
+                </div>
+              </Carousel>
+            )}
+          </>
+        )}
       </div>
     </div>
   );
