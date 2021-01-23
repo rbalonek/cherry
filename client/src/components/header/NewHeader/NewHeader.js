@@ -124,7 +124,7 @@ export default function NewHeader(props) {
           <div
             onClick={DownArrowCell}
             // id="header"
-            className="new-header-container"
+            className="new-header-container-cell"
           >
             <div className="vid-logo-container">
               <Fade delay={1000}>

@@ -13,6 +13,15 @@
     auto;
 }
 
+.new-header-container-cell {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+}
+
 .airtable-header-text {
   color: white;
   text-align: center;
