@@ -21,14 +21,23 @@ export default function NewHeader(props) {
   //   console.log("Try TWO", props.videoBackground);
   // }, 2000);
 
+  // const firstSlide = props.highlightedProjects[0].fields.idname;
+  // console.log(props.highlightedProjects[0].fields.idname);
   const DownArrowCell = () => {
+    // const firstSlide = props.highlightedProjects[0].fields.idname;
+    zenscroll.to(
+      document.getElementById(props.highlightedProjects[0].fields.idname)
+    );
     // zenscroll.intoView(document.getElementById("cell-text-block"));
-    let pageHeight = window.innerHeight;
-    zenscroll.toY(pageHeight);
+    // let pageHeight = window.innerHeight;
+    // zenscroll.toY(pageHeight);
   };
 
   const DownArrowClick = () => {
-    zenscroll.center(document.getElementById("chi"));
+    zenscroll.center(
+      document.getElementById(props.highlightedProjects[0].fields.idname)
+    );
+    // zenscroll.center(document.getElementById("chi"));
     // let pageHeight = window.innerHeight;
     // zenscroll.toY(pageHeight);
     // document.getElementById("chi").scrollIntoView();
