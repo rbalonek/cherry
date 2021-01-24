@@ -24,14 +24,7 @@ export default function ProjectsStickyHeader(props) {
   };
 
   return (
-    <div
-      style={{
-        position: "sticky",
-        top: "-1%",
-        marginBottom: "-8%",
-        zIndex: "999",
-      }}
-    >
+    <div className="proj-sticky-header-container">
       <img
         onClick={backToFirstProj}
         style={{
