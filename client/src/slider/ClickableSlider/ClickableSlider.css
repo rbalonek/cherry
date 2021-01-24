@@ -433,7 +433,6 @@
     height: 100%;
     z-index: 999;
     position: absolute;
-    /* font-family: "degular"; */
   }
   .modal-text-open:hover {
     cursor: url(https://res.cloudinary.com/bobalobbadingdong/image/upload/c_scale,w_120/v1609018415/Cherry/Chi/Website-Asset_X_1_ltkmzn.png),

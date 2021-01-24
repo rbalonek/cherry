@@ -118,14 +118,15 @@
     font-size: calc(23px + 1vw);
   }
   .bold-text-proj-name {
-    font-family: "AkzidenzGroteskBE-BoldEx";
+    font-family: "Rubik";
+    font-weight: 900;
     font-size: calc(50px + 0.5vw);
     margin-bottom: 1%;
   }
   .description-text-proj-name {
     color: white;
     font-size: calc(40px + 0.5vw);
-    font-family: "degular";
+    font-family: "rubik";
     position: relative;
     top: 0px;
     width: 100%;
