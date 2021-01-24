@@ -45,9 +45,12 @@
   /* width: fit-content; */
   text-align: center;
   /* border-color: black; */
-  border-bottom-style: solid;
+  /* border-bottom-style: solid; */
+  border-bottom-style: inset;
   border-top: transparent;
   caret-color: white;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 textarea:focus,
@@ -177,6 +180,11 @@ input:focus {
   }
   .ideas:hover:after {
     transform: scaleX(1);
+  }
+  .input {
+    font-size: 40px;
+    height: 30px;
+    width: 50vw;
   }
 }
 
