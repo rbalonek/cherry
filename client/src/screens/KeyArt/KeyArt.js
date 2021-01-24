@@ -25,7 +25,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className=" masonry-brick-img-full"
@@ -97,7 +97,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className="masonry-brick-img-wide"
@@ -166,7 +166,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className="masonry-brick-img-sm"
@@ -245,7 +245,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className=" masonry-brick-img-full"
@@ -273,7 +273,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className="masonry-brick-img-wide"
@@ -301,7 +301,7 @@ export default function KeyArt(props) {
                     <>
                       <Fade
                         direction={"up"}
-                        duration={2000}
+                        duration={2500}
                         fraction={Math.random()}
                         triggerOnce={true}
                         className="masonry-brick-img-sm"
