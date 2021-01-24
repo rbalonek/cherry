@@ -8,6 +8,7 @@ import ModalProject from "../../../components/ModalProject/ModalProject";
 import ModalProjectProjName from "../../../components/ModalProject/ModalProjectProjName/ModalProjectProjName";
 // import { AttentionSeeker } from "react-awesome-reveal";
 import { useLockBodyScroll, useToggle } from "react-use";
+import AboutHamburger from "../../../components/Hamburger/AboutHamburger/AboutHamburger";
 
 export default function ProjName(props) {
   // console.log(props);
@@ -15,41 +16,50 @@ export default function ProjName(props) {
   const [modal, modalToggle] = useState("modalClosed");
   const [modalText, modalTextToggle] = useState("modal-text-closed");
   const [locked, toggleLocked] = useToggle(true);
+  const [xOut, toggleXOut] = useState("projname-proj-x");
+  const [infoText, toggleInfoText] = useState("proj-info-text-projname");
   useLockBodyScroll(locked);
-
+  const carouselArrows = document.getElementsByClassName("control-arrow");
+  const controlDots = document.getElementsByClassName("control-dots");
+  // console.log(controlDots);
   const toggleOpen = () => {
-    modalToggle("modalOpen clickable-modal");
+    modalToggle("modalOpen-projname clickable-modal");
     modalTextToggle("modal-text-open");
-    // props.handleClickHamburger("show-none");
-    // props.handleClick("show-none");
-    toggleLocked();
+
+    carouselArrows[0].classList.toggle("hide");
+    carouselArrows[1].classList.toggle("hide");
+    controlDots[0].classList.toggle("hide");
+    toggleXOut("hide");
+    toggleInfoText("hide");
+    // toggleLocked();
   };
 
   const toggleClosed = () => {
     modalToggle("modalClosed");
     modalTextToggle("modal-text-closed");
-    // props.handleClick("logo-sticky");
-    // props.handleClickHamburger("menu-btn");
-    toggleLocked();
+    toggleXOut("projname-proj-x");
+    toggleInfoText("proj-info-text-projname");
+
+    carouselArrows[0].classList.toggle("hide");
+    carouselArrows[1].classList.toggle("hide");
+    controlDots[0].classList.toggle("hide");
+
+    // toggleLocked();
   };
 
   let projName = window.location.pathname;
   let n = 9;
   projName = projName.substring(n);
-  // console.log(projName);
 
-  // let arr = props.projects.fields.projectname.includes("Billions");
-  // console.log(props);
   const arr = [];
   props.projects.map(
     (project) => project.fields.projectname === projName && arr.push(project)
   );
-  // console.log(arr);
 
   return (
     <div>
-      <div>
-        <ProjectsStickyHeader videoBackground={props.videoBackground} />
+      <div onClick={() => history.goBack()} className={xOut}>
+        <AboutHamburger />
       </div>
 
       <div className="holder">
@@ -65,7 +75,10 @@ export default function ProjName(props) {
           {arr.map((project) => (
             <>
               <div className="centering">
-                <div onClick={toggleOpen} className="clickable">
+                <div
+                // onClick={toggleOpen}
+                // className="clickable"
+                >
                   <img
                     className="img-center"
                     style={{
@@ -120,6 +133,9 @@ export default function ProjName(props) {
             </>
           ))}
         </Carousel>
+      </div>
+      <div onClick={toggleOpen} className="proj-info-container-projname">
+        <h3 className={infoText}>Project Info</h3>
       </div>
     </div>
   );

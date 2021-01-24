@@ -26,6 +26,48 @@
   /* width: 100vw; */
 }
 
+.proj-info-container-projname {
+  position: relative;
+  z-index: 999;
+  bottom: 10vh;
+  left: 2vw;
+}
+.proj-info-text-projname {
+  color: white;
+  font-family: "rubik";
+}
+.proj-info-text-projname:hover {
+  cursor: pointer;
+}
+
+.projname-proj-x {
+  position: absolute;
+  top: 4vh;
+  right: 1.5vw;
+  z-index: 998;
+  /* background-color: black;
+  opacity: 0.5; */
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalOpen-projname {
+  position: absolute;
+  display: flex;
+  height: 96vh;
+  width: 96vw;
+  background-color: black;
+  z-index: 999;
+  opacity: 1;
+  top: 3vh;
+  right: 2vw;
+}
+.hide {
+  display: none;
+}
+
 @media (min-width: 4000px) {
   .img-center {
     height: 100%;
