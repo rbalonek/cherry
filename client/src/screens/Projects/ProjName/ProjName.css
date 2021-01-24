@@ -35,6 +35,7 @@
 .proj-info-text-projname {
   color: white;
   font-family: "rubik";
+  font-size: 1.5vw;
 }
 .proj-info-text-projname:hover {
   cursor: pointer;
@@ -68,14 +69,27 @@
   display: none;
 }
 
-@media (min-width: 4000px) {
+@media (min-width: 3200px) {
   .img-center {
-    height: 100%;
+    /* height: 100%;
     position: relative;
-    top: 10%;
+    top: 10%; */
+    object-fit: cover;
+    height: auto;
   }
   .holder {
     align-items: center;
+  }
+  .modalOpen-projname {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 96vw;
+    background-color: black;
+    z-index: 999;
+    opacity: 1;
+    top: -10vh;
+    right: 2vw;
   }
 }
 

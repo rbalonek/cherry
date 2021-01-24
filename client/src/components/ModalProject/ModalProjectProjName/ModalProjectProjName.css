@@ -65,7 +65,7 @@
   font-size: 1.5vw;
   position: relative;
   right: 16.4vw;
-  top: -4vh;
+  margin-top: -2.5%;
 }
 
 .description-text-container-proj-name {
@@ -103,8 +103,8 @@
   /* height: 200px; */
   /* background-color: red; */
   position: relative;
-  /* right: 6vw; */
-  top: 5vh;
+  right: 6vw;
+  margin-top: 3%;
 }
 .what-did-container-proj-name:hover {
   cursor: pointer;
@@ -112,10 +112,12 @@
 .what-did-proj-name-left {
   position: relative;
   right: 5vw;
+  text-align: left;
 }
 .what-did-proj-name-right {
   position: relative;
   left: 5vw;
+  text-align: left;
 }
 
 .project-keywords-proj-name {
@@ -123,8 +125,8 @@
   font-family: "Rubik";
   font-weight: 400;
   text-decoration: underline;
-  margin-top: 0.5%;
-  /* margin-bottom: 0.5%; */
+  margin-top: 0.2%;
+  margin-bottom: 2%;
   color: grey;
 }
 .project-keywords-proj-name:hover {
