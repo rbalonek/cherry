@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./StickyHeader.css";
-import { Bounce, Rotate, Zoom, Fade } from "react-awesome-reveal";
-import { Animated } from "react-animated-css";
+import { Fade } from "react-awesome-reveal";
+// import { Animated } from "react-animated-css";
 // import Logo from "../../assets/logo/Cherry-Logo.png";
 import Hamburger from "../Hamburger/Hamburger";
 import OpenedMenu from "../OpenedMenu/OpenedMenu";
@@ -21,24 +21,8 @@ export default function StickyHeader(props) {
     } else {
       hamburgerToggle("hamburger-closed");
       toggleLocked();
-      // setChildState("input-hidden");
-      // var inputForm = document.getElementById("form-opened-menu");
-      // inputForm.classList.add("input-hidden");
-      // inputForm.classList.remove("show");
-
-      // var bSidesToggle = document.getElementById("b-sides");
-      // bSidesToggle.classList.add("hover-animation");
-      // bSidesToggle.classList.remove("hide-b-sides");
     }
   };
-
-  // const logoClick = () => {
-  //   window.scrollTo(0, 0);
-  //   // setIsVis(false);
-  //   // setTimeout(() => {
-  //   //   setIsVis(true);
-  //   // }, 1000);
-  // };
 
   return (
     <div className="sticky-header-container">

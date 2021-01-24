@@ -108,7 +108,8 @@
 .hover-animation-proj-mobile {
   display: inline-block;
   position: relative;
-  font-family: "AkzidenzGroteskBE-BoldEx";
+  font-family: "Rubik";
+  font-weight: 900;
   /* font-family: Akzidenz; */
   color: white;
   font-size: 50px;
@@ -133,4 +134,18 @@
   /* .hover-animation-proj {
     font-size: calc(40px + 3vw);
   } */
+}
+
+@media (max-width: 770px) {
+  .hover-animation-proj-mobile {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 2px;
+  }
 }

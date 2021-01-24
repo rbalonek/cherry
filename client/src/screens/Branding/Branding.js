@@ -35,7 +35,7 @@ export default function Branding(props) {
                   <>
                     <Fade
                       direction={"up"}
-                      duration={2000}
+                      duration={2500}
                       fraction={Math.random()}
                       triggerOnce={true}
                       className=" masonry-brick-img-full"

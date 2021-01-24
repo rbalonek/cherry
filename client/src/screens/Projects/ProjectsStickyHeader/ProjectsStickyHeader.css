@@ -5,20 +5,20 @@
   right: 5%;
   z-index: 999;
 }
-/* 
-@media (max-width: 999px) {
-  .hamburger-holder-project {
-    position: absolute;
-    top: 15px;
-  }
+.proj-sticky-header-container {
+  position: sticky;
+  top: -1%;
+  margin-bottom: -9%;
+  z-index: 999;
 }
-
- */
 @media (max-width: 770px) {
   .hamburger-holder-project {
     position: absolute;
     top: 20%;
     right: 15%;
     z-index: 999;
+  }
+  .proj-sticky-header-container {
+    margin-bottom: -11.5%;
   }
 }
