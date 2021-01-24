@@ -169,16 +169,6 @@
   } */
 }
 
-/* @media (max-width: 770px) {
-  .new-header-text {
-    color: white;
-    font-family: "degular";
-    align-self: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 7.5vw;
-  }
-}
 
 @media (max-width: 600px) {
   .airtable-header-text,
