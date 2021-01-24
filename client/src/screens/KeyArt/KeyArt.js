@@ -1,15 +1,8 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-// import ModalCarousel from "../../components/ModalCarousel/ModalCarousel";
 import ProjectsStickyHeader from "../Projects/ProjectsStickyHeader/ProjectsStickyHeader";
 import "./KeyArt.css";
-// import zenscroll from "zenscroll";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 import { useHistory } from "react-router-dom";
 
 export default function KeyArt(props) {
@@ -17,9 +10,7 @@ export default function KeyArt(props) {
     document.getElementById("key-art-id").style.pointerEvents = "auto";
   }, 2000);
 
-  // console.log(props);
   const history = useHistory();
-  // const [modalCar, toggleModalCar] = useState("hide-element-modal-car");
 
   return (
     <div id="key-art-id" style={{ width: "100vw", minHeight: "100vh" }}>
