@@ -149,12 +149,12 @@
   .modalOpen-cell {
     position: absolute;
     display: flex;
-    height: 80vh;
+    height: 96vh;
     width: 95vw;
     background-color: black;
     z-index: 999;
     opacity: 1;
-    margin-top: 10vh;
+    margin-top: 2vh;
     right: 2.5%;
   }
 }

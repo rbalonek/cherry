@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import "./OpenedMenu.css";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 export default function OpenedMenu(props) {
   const history = useHistory();
   const [inputHidden, toggleInputHidden] = useState("input-hidden");
   const [showBsides, toggleShowBsides] = useState("hover-animation ideas");
-  // console.log("VID for HAMB", props.videoBackground);
   const [password, confirmPassword] = useState("");
-
-  // if (document.getElementById("about").style.visibility) {
-  //   toggleInputHidden("hover-animation ideas");
-  // }
-  // function myFunction() {
-  //   var x = document.getElementById("about");
-  //   if (window.getComputedStyle(x).display === "none") {
-  //     toggleInputHidden("hover-animation ideas");
-  //   }
-  // }
 
   const confirm = (e) => {
     e.preventDefault();
@@ -33,23 +28,11 @@ export default function OpenedMenu(props) {
   };
 
   const bSidePress = () => {
-    // var bSidesToggle = document.getElementById("b-sides"); NOT THE WAY
-    // bSidesToggle.classList.remove("hover-animation");
-    // bSidesToggle.classList.add("hide-b-sides");
     toggleInputHidden("show");
     toggleShowBsides("hide-b-sides ideas");
     setTimeout(() => {
       document.getElementById("password-field").focus();
     }, 500);
-
-    // window.scroll({
-    //   top: 0,
-    //   left: 0,
-    //   behavior: "auto",
-    // });
-    // setTimeout(() => {
-    //   history.push("/projectsscreen");
-    // }, 500);
   };
 
   const clickedAbout = () => {
@@ -125,7 +108,7 @@ export default function OpenedMenu(props) {
           zIndex: "999",
         }}
       />
-      {window.innerWidth > 770 ? (
+      {isBrowser ? (
         <video
           // onPlay={myFunction()}
           className="vid-about-opened-menu"

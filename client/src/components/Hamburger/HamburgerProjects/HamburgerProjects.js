@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HamburgerProjects.css";
-import OpenedMenu from "../../OpenedMenu/OpenedMenu";
+// import OpenedMenu from "../../OpenedMenu/OpenedMenu";
 import OpenedMenuProj from "../../OpenedMenu/OpenedMenuProj/OpenedMenuProj";
 
 import { useLockBodyScroll, useToggle } from "react-use";
@@ -10,6 +10,12 @@ export default function HamburgerProjects(props) {
   const [menuClosed, toggleMenu] = useState("closed-menu");
   const [locked, toggleLocked] = useToggle(false);
   useLockBodyScroll(locked);
+
+  function handleChildClick() {
+    toggleMenu("closed-menu");
+    hambToggle("menu-btn-proj proj-menu");
+    toggleLocked();
+  }
 
   const toggleHamb = () => {
     if (hambClosed === "menu-btn-proj proj-menu") {
@@ -28,7 +34,10 @@ export default function HamburgerProjects(props) {
   return (
     <div style={{ width: "100%" }}>
       <div className={menuClosed}>
-        <OpenedMenuProj videoBackground={props.videoBackground} />
+        <OpenedMenuProj
+          onChildClick={handleChildClick}
+          videoBackground={props.videoBackground}
+        />
       </div>
 
       <div className={hambClosed} onClick={toggleHamb}>

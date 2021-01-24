@@ -14,6 +14,7 @@ import {
   isFirefox,
   isSafari,
 } from "react-device-detect";
+import ProjectBodyMobile from "../../ProjectsBody/ProjectBodyMobile/ProjectBodyMobile";
 
 export default function NewScrollSnap(props) {
   const [showLogo, toggleShowLogo] = useState("logo-sticky");
@@ -89,6 +90,7 @@ export default function NewScrollSnap(props) {
             <NewHeader
               headerText={props.headerText}
               videoBackground={props.videoBackground}
+              highlightedProjects={props.highlightedProjects}
             />
           </div>
 
@@ -97,32 +99,28 @@ export default function NewScrollSnap(props) {
           <ProjectsBody
             handleClick={handleClick}
             handleClickHamburger={handleClickHamburger}
+            highlightedProjects={props.highlightedProjects}
           ></ProjectsBody>
         </div>
       </BrowserView>
 
       <MobileView>
-        <div id="header" className="new-scrollsnap-container">
+        <div id="header" className="new-scrollsnap-container-cell">
           <StickyHeader
             showHamburger={showHamburger}
             videoBackground={props.videoBackground}
           />
           <NewHeader
-            // id="top"
             headerText={props.headerText}
             videoBackground={props.videoBackground}
-          />
-          <CellTextBlock
-            projects={props.projects}
-            headerText={props.headerText}
+            highlightedProjects={props.highlightedProjects}
           />
 
           <LogoSticky showLogo={showLogo} />
 
-          <ProjectsBody
-            handleClick={handleClick}
-            handleClickHamburger={handleClickHamburger}
-          ></ProjectsBody>
+          <ProjectBodyMobile
+            highlightedProjects={props.highlightedProjects}
+          ></ProjectBodyMobile>
         </div>
       </MobileView>
     </>

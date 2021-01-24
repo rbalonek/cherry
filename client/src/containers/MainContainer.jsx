@@ -10,6 +10,7 @@ import KeyArt from "../screens/KeyArt/KeyArt";
 import Branding from "../screens/Branding/Branding";
 import Design from "../screens/DesignScreen/Design";
 import BSides from "../screens/Bsides/BSides";
+import HighlightedProjCell from "../screens/HighlightedProjCell/HighlightedProjCell";
 
 export default function MainContainer(props) {
   // console.log("PROPS", props.headerText);
@@ -25,6 +26,7 @@ export default function MainContainer(props) {
           headerText={props.headerText}
           projects={props.projects}
           videoBackground={videoForSession}
+          highlightedProjects={props.highlightedProjects}
         />
       </Route>
       <Route path="/about" component={About}>
@@ -51,6 +53,12 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/project" component={ProjName}>
         <ProjName projects={props.projects} videoBackground={videoForSession} />
+      </Route>
+      <Route path="/highlight" component={ProjName}>
+        <HighlightedProjCell
+          projects={props.projects}
+          highlightedProjects={props.highlightedProjects}
+        />
       </Route>
       <Route path="/projects" component={Projects}>
         <Projects projects={props.projects} />

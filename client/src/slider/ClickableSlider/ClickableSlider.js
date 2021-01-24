@@ -3,17 +3,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ModalProject from "../../components/ModalProject/ModalProject";
 import "./ClickableSlider.css";
-import ClickableSliderCell from "./ClickableSliderCell/ClickableSliderCell";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
 import { useLockBodyScroll, useToggle } from "react-use";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  isSafari,
-} from "react-device-detect";
+import { isSafari } from "react-device-detect";
 
 export default function ClickableSlider(props) {
   const [modal, modalToggle] = useState("modalClosed");
@@ -46,25 +39,13 @@ export default function ClickableSlider(props) {
     toggleLocked();
   };
 
-  // let pageHeight = window.innerHeight;
-
-  // var up = document.getElementById(`#${props.scrollToUp}`);
-  // var scrollingDown = document.getElementById(`#${props.scrollToDown}`);
   const ArrowUp100Vh = () => {
     zenscroll.to(document.getElementById(props.PrevSlide));
-    // let pageHeight = window.innerHeight;
-    // window.scrollBy(0, -pageHeight);
-    // zenscroll.toY(pageHeight * props.scrollToUp);
-    // zenscroll.intoView(chi);
-    // zenscroll.to(up);
-    // console.log("up");
   };
 
   const ArrowDown100Vh = () => {
     zenscroll.center(document.getElementById(props.NextSlide));
   };
-
-  // console.log(props.img3);
 
   return (
     <>
@@ -107,7 +88,6 @@ export default function ClickableSlider(props) {
                   Retouching={props.Retouching}
                   PhotoArtDirection={props.PhotoArtDirection}
                   BsidesPage={props.BsidesPage}
-                  // img1={props.img1}
                 />
               </Animated>
             </div>

@@ -1,9 +1,19 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./OpenedMenuProj.css";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 export default function OpenedMenuProj(props) {
   const history = useHistory();
+
+  function handleClick() {
+    props.onChildClick();
+  }
 
   const bsidePress = () => {
     window.scroll({
@@ -14,6 +24,7 @@ export default function OpenedMenuProj(props) {
 
     setTimeout(() => {
       history.push("/bsides");
+      handleClick();
     }, 500);
   };
 
@@ -28,9 +39,45 @@ export default function OpenedMenuProj(props) {
     }, 400);
   };
 
+  const clickedKeyArt = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+    setTimeout(() => {
+      history.push("/keyart");
+      handleClick();
+    }, 400);
+  };
+
+  const clickedBranding = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+    setTimeout(() => {
+      history.push("/branding");
+      handleClick();
+    }, 400);
+  };
+
+  const clickedDesign = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+    setTimeout(() => {
+      history.push("/design");
+      handleClick();
+    }, 400);
+  };
+
   return (
     <>
-      {window.innerWidth > 770 ? (
+      {isBrowser ? (
         <div className="opened-menu-container-proj">
           <video
             className="vid-about-opened-menu-proj"
@@ -48,19 +95,19 @@ export default function OpenedMenuProj(props) {
           </h1>
           <h1
             className=" hover-animation-proj keyart-proj"
-            onClick={() => history.push("/keyart")}
+            onClick={clickedKeyArt}
           >
             KEY ART
           </h1>
           <h1
             className=" hover-animation-proj branding-proj"
-            onClick={() => history.push("/branding")}
+            onClick={clickedBranding}
           >
             BRANDING
           </h1>
           <h1
             className=" hover-animation-proj packaging-proj"
-            onClick={() => history.push("/design")}
+            onClick={clickedDesign}
           >
             DESIGN
           </h1>
@@ -81,19 +128,19 @@ export default function OpenedMenuProj(props) {
           </h1>
           <h1
             className=" hover-animation-proj-mobile keyart-proj"
-            onClick={() => history.push("/keyart")}
+            onClick={clickedKeyArt}
           >
             KEY ART
           </h1>
           <h1
             className=" hover-animation-proj-mobile branding-proj"
-            onClick={() => history.push("/branding")}
+            onClick={clickedBranding}
           >
             BRANDING
           </h1>
           <h1
             className=" hover-animation-proj-mobile packaging-proj"
-            onClick={() => history.push("/design")}
+            onClick={clickedDesign}
           >
             DESIGN
           </h1>

@@ -20,143 +20,146 @@ export default function ModalProject(props) {
 
           <p className="description-text"> {props.descriptionTwo} </p>
         </div>
+        <h2 className="bold-text">WHAT WE DID</h2>
         <div className="what-did-container">
-          <h2 className="bold-text">WHAT WE DID</h2>
+          <div className="what-did-left">
+            {props.Logo === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/branding")}
+              >
+                Logos
+              </p>
+            )}
 
-          {props.Logo === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/branding")}
-            >
-              Logos
-            </p>
-          )}
+            {props.keyart === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/keyart")}
+              >
+                Key Art
+              </p>
+            )}
 
-          {props.keyart === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/keyart")}
-            >
-              Key Art
-            </p>
-          )}
+            {props.Branding === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/branding")}
+              >
+                Branding
+              </p>
+            )}
 
-          {props.Branding === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/branding")}
-            >
-              Branding
-            </p>
-          )}
+            {props.BookDesign === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Book Design
+              </p>
+            )}
 
-          {props.BookDesign === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Book Design
-            </p>
-          )}
+            {props.OutOfHome === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Out of Home
+              </p>
+            )}
 
-          {props.OutOfHome === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Out of Home
-            </p>
-          )}
+            {props.Apparel === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Apparel
+              </p>
+            )}
 
-          {props.Apparel === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Apparel
-            </p>
-          )}
+            {props.Digital === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Digital
+              </p>
+            )}
+          </div>
 
-          {props.Digital === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Digital
-            </p>
-          )}
+          <div className="what-did-right">
+            {props.CustomType === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Custom Type
+              </p>
+            )}
 
-          {props.CustomType === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Custom Type
-            </p>
-          )}
+            {props.MotionGFX === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Motion GFX
+              </p>
+            )}
 
-          {props.MotionGFX === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Motion GFX
-            </p>
-          )}
+            {props.OpeningCredits === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Opening Credits
+              </p>
+            )}
 
-          {props.OpeningCredits === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Opening Credits
-            </p>
-          )}
+            {props.Packaging === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Packaging
+              </p>
+            )}
 
-          {props.Packaging === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Packaging
-            </p>
-          )}
+            {props.PhotoArtDirection === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Photo Art Direction
+              </p>
+            )}
 
-          {props.PhotoArtDirection === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Photo Art Direction
-            </p>
-          )}
+            {props.Copy === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Copy
+              </p>
+            )}
 
-          {props.Copy === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Copy
-            </p>
-          )}
+            {props.Retouching === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/design")}
+              >
+                Retouching
+              </p>
+            )}
 
-          {props.Retouching === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/design")}
-            >
-              Retouching
-            </p>
-          )}
-
-          {props.BsidesPage === true && (
-            <p
-              className="modal-text project-keywords"
-              onClick={() => history.push("/bsides")}
-            >
-              Unused Concepts
-            </p>
-          )}
+            {props.BsidesPage === true && (
+              <p
+                className="modal-text project-keywords"
+                onClick={() => history.push("/bsides")}
+              >
+                Unused Concepts
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>
