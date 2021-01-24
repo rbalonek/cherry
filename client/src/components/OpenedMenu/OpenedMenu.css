@@ -110,6 +110,8 @@ input:focus {
   font-size: 50px;
   width: 100%;
   text-align: center;
+  font-family: "Rubik";
+  font-weight: 900;
 }
 .hamburger-open-text:hover {
   color: white;
@@ -152,7 +154,7 @@ input:focus {
     font-family: "Rubik";
     font-weight: 900;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     width: -moz-fit-content;
     width: fit-content;
     text-align: center;
