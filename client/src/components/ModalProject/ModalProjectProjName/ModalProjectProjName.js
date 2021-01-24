@@ -3,7 +3,8 @@ import "./ModalProjectProjName.css";
 import { useHistory } from "react-router-dom";
 
 export default function ModalProjectProjName(props) {
-  const Name = props.name;
+  // console.log(props);
+  const Name = props.projectname;
   const Client = props.client;
   const history = useHistory();
 
@@ -25,7 +26,7 @@ export default function ModalProjectProjName(props) {
         <div className="what-did-container-proj-name">
           <h2 className="bold-text-proj-name">WHAT WE DID</h2>
 
-          {props.Logo === true && (
+          {props.keywordsArray.includes("Logo") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/branding")}
@@ -34,7 +35,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.keyart === true && (
+          {props.keywordsArray.includes("keyart") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/keyart")}
@@ -43,7 +44,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Branding === true && (
+          {props.keywordsArray.includes("Branding") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/branding")}
@@ -52,7 +53,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.BookDesign === true && (
+          {props.keywordsArray.includes("BookDesign") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -61,7 +62,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.OutOfHome === true && (
+          {props.keywordsArray.includes("OutOfHome") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -70,7 +71,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Apparel === true && (
+          {props.keywordsArray.includes("Apparel") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -79,7 +80,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Digital === true && (
+          {props.keywordsArray.includes("Digital") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -88,7 +89,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.CustomType === true && (
+          {props.keywordsArray.includes("CustomType") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -97,7 +98,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.MotionGFX === true && (
+          {props.keywordsArray.includes("MotionGFX") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -106,7 +107,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.OpeningCredits === true && (
+          {props.keywordsArray.includes("OpeningCredits") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -115,7 +116,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Packaging === true && (
+          {props.keywordsArray.includes("Packaging") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -124,7 +125,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.PhotoArtDirection === true && (
+          {props.keywordsArray.includes("PhotoArtDirection") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -133,7 +134,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Copy === true && (
+          {props.keywordsArray.includes("Copy") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -142,7 +143,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.Retouching === true && (
+          {props.keywordsArray.includes("Retouching") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/design")}
@@ -151,7 +152,7 @@ export default function ModalProjectProjName(props) {
             </p>
           )}
 
-          {props.BsidesPage === true && (
+          {props.keywordsArray.includes("BsidesPage") === true && (
             <p
               className="modal-text-proj-name project-keywords-proj-name"
               onClick={() => history.push("/bsides")}

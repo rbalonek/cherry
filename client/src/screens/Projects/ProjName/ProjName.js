@@ -55,6 +55,127 @@ export default function ProjName(props) {
   props.projects.map(
     (project) => project.fields.projectname === projName && arr.push(project)
   );
+  // console.log(arr);
+
+  let keywordArray = [];
+
+  var branding;
+  for (branding = 0; branding < arr.length; branding++) {
+    if (arr[branding].fields.Branding === true) {
+      keywordArray.push("Branding");
+    }
+  }
+  var KeyArt;
+  for (KeyArt = 0; KeyArt < arr.length; KeyArt++) {
+    if (arr[KeyArt].fields.keyart === true) {
+      keywordArray.push("keyart");
+    }
+  }
+
+  var OpeningCredits;
+  for (OpeningCredits = 0; OpeningCredits < arr.length; OpeningCredits++) {
+    if (arr[OpeningCredits].fields.OpeningCredits === true) {
+      keywordArray.push("OpeningCredits");
+    }
+  }
+  var Packaging;
+  for (KeyArt = 0; Packaging < arr.length; Packaging++) {
+    if (arr[Packaging].fields.Packaging === true) {
+      keywordArray.push("Packaging");
+    }
+  }
+  var CustomType;
+  for (CustomType = 0; CustomType < arr.length; CustomType++) {
+    if (arr[CustomType].fields.CustomType === true) {
+      keywordArray.push("CustomType");
+    }
+  }
+  var Digital;
+  for (Digital = 0; Digital < arr.length; Digital++) {
+    if (arr[Digital].fields.Digital === true) {
+      keywordArray.push("Digital");
+    }
+  }
+  var Apparel;
+  for (Apparel = 0; Apparel < arr.length; Apparel++) {
+    if (arr[Apparel].fields.Apparel === true) {
+      keywordArray.push("Apparel");
+    }
+  }
+  var OutOfHome;
+  for (OutOfHome = 0; OutOfHome < arr.length; OutOfHome++) {
+    if (arr[OutOfHome].fields.OutOfHome === true) {
+      keywordArray.push("OutOfHome");
+    }
+  }
+  var BookDesign;
+  for (BookDesign = 0; BookDesign < arr.length; BookDesign++) {
+    if (arr[BookDesign].fields.BookDesign === true) {
+      keywordArray.push("BookDesign");
+    }
+  }
+  var Design;
+  for (Design = 0; Design < arr.length; Design++) {
+    if (arr[Design].fields.Design === true) {
+      keywordArray.push("Design");
+    }
+  }
+  var PhotoArtDirection;
+  for (
+    PhotoArtDirection = 0;
+    PhotoArtDirection < arr.length;
+    PhotoArtDirection++
+  ) {
+    if (arr[PhotoArtDirection].fields.PhotoArtDirection === true) {
+      keywordArray.push("PhotoArtDirection");
+    }
+  }
+  var Retouching;
+  for (Retouching = 0; Retouching < arr.length; Retouching++) {
+    if (arr[Retouching].fields.Retouching === true) {
+      keywordArray.push("Retouching");
+    }
+  }
+  var Copy;
+  for (Copy = 0; Copy < arr.length; Copy++) {
+    if (arr[Copy].fields.Copy === true) {
+      keywordArray.push("Copy");
+    }
+  }
+  var MotionGFX;
+  for (MotionGFX = 0; MotionGFX < arr.length; MotionGFX++) {
+    if (arr[MotionGFX].fields.MotionGFX === true) {
+      keywordArray.push("MotionGFX");
+    }
+  }
+  var Logo;
+  for (Logo = 0; Logo < arr.length; Logo++) {
+    if (arr[Logo].fields.Logo === true) {
+      keywordArray.push("Logo");
+    }
+  }
+  var BsidesPage;
+  for (BsidesPage = 0; BsidesPage < arr.length; BsidesPage++) {
+    if (arr[BsidesPage].fields.BsidesPage === true) {
+      keywordArray.push("BsidesPage");
+    }
+  }
+
+  // console.log(keywordArray);
+
+  let uniqueChars = keywordArray.filter((c, index) => {
+    return keywordArray.indexOf(c) === index;
+  });
+
+  // console.log(uniqueChars);
+
+  // if (keywordArray.includes("Branding")) {
+  //   console.log("Yeaaah we got branding");
+  //   return thisBranding=true
+  // }
+  // if (keywordArray.includes("keyart")) {
+  //   console.log("AND Keyart");
+  // }
 
   return (
     <div>
@@ -107,25 +228,27 @@ export default function ProjName(props) {
                     animationOutDuration={100}
                   >
                     <ModalProjectProjName
-                      name={project.fields.name}
+                      keywordsArray={uniqueChars}
+                      projectname={project.fields.projectname}
+                      // name={project.fields.name}
                       client={project.fields.client}
                       description={project.fields.description}
                       descriptionTwo={project.fields.descriptionTwo}
-                      keyart={project.fields.keyart}
-                      Logo={project.fields.Logo}
-                      Branding={project.fields.Branding}
-                      BookDesign={project.fields.BookDesign}
-                      OutOfHome={project.fields.OutOfHome}
-                      Apparel={project.fields.Apparel}
-                      Digital={project.fields.Digital}
-                      CustomType={project.fields.CustomType}
-                      MotionGFX={project.fields.MotionGFX}
-                      OpeningCredits={project.fields.OpeningCredits}
-                      Packaging={project.fields.Packaging}
-                      Copy={project.fields.Copy}
-                      Retouching={project.fields.Retouching}
-                      PhotoArtDirection={project.fields.PhotoArtDirection}
-                      BsidesPage={project.fields.BsidesPage}
+                      // keyart={project.fields.keyart}
+                      // Logo={project.fields.Logo}
+                      // Branding={project.fields.Branding}
+                      // BookDesign={project.fields.BookDesign}
+                      // OutOfHome={project.fields.OutOfHome}
+                      // Apparel={project.fields.Apparel}
+                      // Digital={project.fields.Digital}
+                      // CustomType={project.fields.CustomType}
+                      // MotionGFX={project.fields.MotionGFX}
+                      // OpeningCredits={project.fields.OpeningCredits}
+                      // Packaging={project.fields.Packaging}
+                      // Copy={project.fields.Copy}
+                      // Retouching={project.fields.Retouching}
+                      // PhotoArtDirection={project.fields.PhotoArtDirection}
+                      // BsidesPage={project.fields.BsidesPage}
                     />
                   </Animated>
                 </div>
