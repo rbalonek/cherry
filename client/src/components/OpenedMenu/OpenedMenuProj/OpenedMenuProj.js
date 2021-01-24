@@ -11,6 +11,10 @@ import {
 export default function OpenedMenuProj(props) {
   const history = useHistory();
 
+  function handleClick() {
+    props.onChildClick();
+  }
+
   const bsidePress = () => {
     window.scroll({
       top: 0,
@@ -20,6 +24,7 @@ export default function OpenedMenuProj(props) {
 
     setTimeout(() => {
       history.push("/bsides");
+      handleClick();
     }, 500);
   };
 
@@ -42,6 +47,7 @@ export default function OpenedMenuProj(props) {
     });
     setTimeout(() => {
       history.push("/keyart");
+      handleClick();
     }, 400);
   };
 
@@ -53,6 +59,7 @@ export default function OpenedMenuProj(props) {
     });
     setTimeout(() => {
       history.push("/branding");
+      handleClick();
     }, 400);
   };
 
@@ -64,6 +71,7 @@ export default function OpenedMenuProj(props) {
     });
     setTimeout(() => {
       history.push("/design");
+      handleClick();
     }, 400);
   };
 
