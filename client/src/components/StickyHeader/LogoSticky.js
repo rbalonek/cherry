@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-
+import React from "react";
+import zenscroll from "zenscroll";
 import { Fade } from "react-awesome-reveal";
-import Hamburger from "../Hamburger/Hamburger";
+// import Hamburger from "../Hamburger/Hamburger";
 import "./LogoSticky.css";
 
 import Logo from "../../assets/logo/Cherry-Logo.png";
@@ -11,11 +11,12 @@ export default function HamburgerSticky(props) {
   // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
 
   const clickedLogo = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
+    zenscroll.toY(0);
+    // window.scroll({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
   };
 
   // const toggleHamb = () => {
@@ -36,23 +37,14 @@ export default function HamburgerSticky(props) {
 
   return (
     <div className="sticky-logo-container">
-      {window.innerWidth > 770 ? (
-        <Fade fraction={1} delay={1000}>
-          <img
-            className={props.showLogo}
-            src={Logo}
-            alt="logo"
-            onClick={clickedLogo}
-          />
-        </Fade>
-      ) : (
+      <Fade fraction={1} delay={1000}>
         <img
-          className="logo-sticky"
+          className={props.showLogo}
           src={Logo}
           alt="logo"
-          onClick={logoClick}
+          onClick={clickedLogo}
         />
-      )}
+      </Fade>
     </div>
   );
 }
