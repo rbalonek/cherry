@@ -48,15 +48,21 @@
     letter-spacing: 2px;
     font-size: 3vw;
   }
-  .footer-text-or {
-    font-size: 3vw;
-    margin-right: 15px;
-    margin-left: 15px;
+  .footer-text {
+    font-size: 5vw;
+    margin-top: -6px;
   }
   .footer-text-container {
     width: 20vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 50px;
+  }
+  .footer-container {
+    width: 100%;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 10%;
   }
 }
