@@ -18,15 +18,15 @@
   letter-spacing: 1px;
   text-decoration: underline;
   /* font-size: calc(1px + 0.75vw); */
-  font-size: 0.7vw;
+  font-size: 1vw;
 }
-.footer-text-or {
+/* .footer-text-or {
   color: white;
   font-family: "rubik";
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 0.7vw;
-}
+} */
 .footer-text:hover {
   cursor: pointer;
 }
@@ -35,7 +35,7 @@
   font-family: "rubik";
   font-weight: 300;
   letter-spacing: 1px;
-  font-size: 0.7vw;
+  font-size: 1vw;
 }
 
 @media (max-width: 1100px) {
