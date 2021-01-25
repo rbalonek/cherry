@@ -151,13 +151,13 @@
   width: 50px;
 }
 
-@media screen and (max-width: 5999px) and (min-width: 2500px) {
-  /* .airtable-header-text {
-    font-size: calc(10px + 1vw);
+@media screen and (max-width: 1610px) and (min-width: 1110px) {
+  .vid-about {
+    width: 94vw;
+    position: absolute;
+    top: 2px;
+    left: 3.5%;
   }
-  .airtable-header-text-underlined {
-    font-size: calc(10px + 1vw);
-  } */
 }
 
 @media screen and (max-width: 770px) and (min-width: 765px) {
