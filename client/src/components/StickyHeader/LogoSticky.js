@@ -36,23 +36,14 @@ export default function HamburgerSticky(props) {
 
   return (
     <div className="sticky-logo-container">
-      {window.innerWidth > 770 ? (
-        <Fade fraction={1} delay={1000}>
-          <img
-            className={props.showLogo}
-            src={Logo}
-            alt="logo"
-            onClick={clickedLogo}
-          />
-        </Fade>
-      ) : (
+      <Fade fraction={1} delay={1000}>
         <img
-          className="logo-sticky"
+          className={props.showLogo}
           src={Logo}
           alt="logo"
-          onClick={logoClick}
+          onClick={clickedLogo}
         />
-      )}
+      </Fade>
     </div>
   );
 }
