@@ -221,44 +221,13 @@
   }
 }
 @media screen and (max-width: 1499px) and (min-width: 999px) {
-  /* .hamburger-helper {
-    right: 2.8%;
-    top: 35px;
-  } */
 }
-
-/* @media screen and (max-width: 1999px) and (min-width: 1500px) {
-  .menu-btn {
+@media screen and (max-width: 770px) and (min-width: 765px) {
+  .hamburger-helper {
+    right: 8vw;
     top: 30px;
-    left: 95.5vw;
   }
 }
-@media (max-width: 1499px) {
-  .menu-btn {
-    top: 20px;
-    left: 95vw;
-    height: 30px;
-  }
-}
-@media (max-width: 1199px) {
-  .menu-btn {
-    top: 15px;
-    left: 94.5vw;
-    height: 30px;
-  }
-}
-
-
-@media (max-width: 770px) {
-  .menu-btn {
-    top: 0px;
-    left: 97vw;
-    height: 50px;
-  }
-  .leftIsh {
-    left: -25px;
-  }
-} */
 
 @media (max-width: 600px) {
   .hamburger-helper {
