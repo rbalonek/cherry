@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import zenscroll from "zenscroll";
 import { Fade } from "react-awesome-reveal";
 import Hamburger from "../Hamburger/Hamburger";
 import "./LogoSticky.css";
@@ -11,11 +11,12 @@ export default function HamburgerSticky(props) {
   // const [hamburgerClosed, hamburgerToggle] = useState("hamburger-closed");
 
   const clickedLogo = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
+    zenscroll.toY(0);
+    // window.scroll({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
   };
 
   // const toggleHamb = () => {

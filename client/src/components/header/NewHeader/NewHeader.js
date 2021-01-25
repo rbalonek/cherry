@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewHeader.css";
 import zenscroll from "zenscroll";
 import { Animated } from "react-animated-css";
@@ -6,10 +6,16 @@ import { Fade } from "react-awesome-reveal";
 import { isBrowser } from "react-device-detect";
 
 export default function NewHeader(props) {
+  const [inView, setInView] = useState(true);
+
   const DownArrowCell = () => {
+    setInView(false);
     zenscroll.to(
       document.getElementById(props.highlightedProjects[0].fields.idname)
     );
+    setTimeout(() => {
+      setInView(true);
+    }, 1000);
   };
 
   const DownArrowClick = () => {
@@ -76,7 +82,7 @@ export default function NewHeader(props) {
                 animationInDuration={2000}
                 animationOutDuration={500}
                 triggerOnce={true}
-                // isVisible={inView}
+                isVisible={inView}
               >
                 <video
                   className="vid-about"
@@ -103,9 +109,17 @@ export default function NewHeader(props) {
             className="new-header-container-cell"
           >
             <div className="vid-logo-container">
-              <Fade delay={1000}>
+              <Animated
+                animationInDelay={1000}
+                animationIn="fadeIn"
+                animationOut="fadeOut"
+                animationInDuration={1000}
+                animationOutDuration={500}
+                isVisible={inView}
+                triggerOnce={true}
+              >
                 <div className="vid-about-mobile"></div>
-              </Fade>
+              </Animated>
               <img
                 alt="logo"
                 src="https://res.cloudinary.com/bobalobbadingdong/image/upload/v1609959569/Cherry/Cherry%20Clients/Logos/Cherry_Logo_KO4_z46it6.png"
@@ -128,7 +142,7 @@ export default function NewHeader(props) {
               animationOut="fadeOut"
               animationInDuration={1000}
               animationOutDuration={500}
-              // isVisible={inView}
+              isVisible={inView}
               triggerOnce={true}
             >
               <p style={{ color: "white" }}>
