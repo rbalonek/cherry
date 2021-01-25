@@ -119,4 +119,9 @@
     object-fit: contain;
     /* width: 100vw; */
   }
+  .proj-info-text-projname {
+    color: white;
+    font-family: "rubik";
+    font-size: 15px;
+  }
 }

@@ -224,37 +224,266 @@
   }
 } */
 @media (max-width: 770px) {
-  .bold-text-proj-name {
+  /* .bold-text-proj-name {
     font-size: calc(12px + 0.5vw);
   }
   .client-name-proj-name {
-    /* font-size: 20px; */
     font-size: calc(10px + 0.5vw);
     margin-top: -13px;
   }
   .description-text-proj-name {
-    /* font-size: 20px; */
     font-size: calc(10px + 0.5vw);
-    /* top: 5px; */
   }
   .project-keywords-proj-name {
-    /* font-size: 20px; */
     font-size: calc(10px + 0.5vw);
     margin-top: 0px;
     margin-bottom: 5px;
+  } */
+}
+@media (max-width: 771px) {
+  .projname-proj-x {
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+    z-index: 998;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .show-name-modal-proj-name {
+    font-size: 25px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 17vw;
+  }
+
+  .client-name-proj-name {
+    font-size: 15px;
+    margin-top: 0px;
+    top: -1vh;
+    right: 20vw;
+  }
+  .bold-text-proj-name {
+    font-size: 10px;
+  }
+  .description-text-proj-name {
+    color: white;
+    font-size: 15px;
+    font-family: "Rubik";
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    line-height: 1.4;
+  }
+  .project-keywords-proj-name {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .description-text-container-proj-name {
+    width: 60%;
+    position: relative;
+    left: 25%;
+  }
+  .modal-project-text-container-proj-name {
+    position: relative;
+    width: 100%;
+    top: -20px;
+  }
+  .what-we-did-holder {
+    position: relative;
+    top: 1vh;
+    right: 16.7vw;
+  }
+  .bold-text-what-we-did {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    font-size: 2.5vw;
+  }
+  .what-did-container-proj-name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 7.3vw;
+    margin-top: 3%;
   }
 }
-@media (max-width: 600px) {
-  /* .modal-project-text-container {
-    top: 15%;
-  } */
+
+@media (max-width: 750px) {
+  .projname-proj-x {
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+    z-index: 998;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .bold-text-proj-name {
     font-size: 10px;
   }
   .client-name-proj-name {
     font-size: 10px;
     margin-top: 0px;
-    top: -40px;
+    top: -1vh;
+    right: 19vw;
+  }
+  .description-text-proj-name {
+    color: white;
+    font-size: 13px;
+    font-family: "Rubik";
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    line-height: 1.4;
+  }
+  .project-keywords-proj-name {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 14.5vw;
+  }
+  .description-text-container-proj-name {
+    width: 60%;
+    position: relative;
+    left: 25%;
+  }
+  .modal-project-text-container-proj-name {
+    position: relative;
+    width: 100%;
+    top: -20px;
+  }
+  .what-we-did-holder {
+    position: relative;
+    top: 1vh;
+    right: 17vw;
+  }
+  .bold-text-what-we-did {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    font-size: 2.5vw;
+  }
+  .what-did-container-proj-name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 3.5vw;
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 400px) {
+  .bold-text-proj-name {
+    font-size: 10px;
+  }
+  .client-name-proj-name {
+    font-size: 10px;
+    margin-top: 0px;
+    top: -1vh;
+    right: 18.5vw;
+  }
+  .description-text-proj-name {
+    color: white;
+    font-size: 12px;
+    font-family: "Rubik";
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    line-height: 1.4;
+  }
+  .project-keywords-proj-name {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 13.5vw;
+  }
+  .description-text-container-proj-name {
+    width: 60%;
+    position: relative;
+    left: 25%;
+  }
+  .modal-project-text-container-proj-name {
+    position: relative;
+    width: 100%;
+    top: 4vh;
+  }
+  .what-we-did-holder {
+    position: relative;
+    top: 1vh;
+    right: 17vw;
+  }
+  .bold-text-what-we-did {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    font-size: 2.5vw;
+  }
+  .what-did-container-proj-name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 5.5vw;
+    margin-top: 3%;
+  }
+}
+@media (max-width: 321px) {
+  .bold-text-proj-name {
+    font-size: 10px;
+  }
+  .client-name-proj-name {
+    font-size: 10px;
+    margin-top: 0px;
+    top: -1vh;
+    right: 17vw;
+  }
+
+  .project-keywords-proj-name {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 11.3vw;
+  }
+  .description-text-container-proj-name {
+    width: 60%;
+    position: relative;
+    left: 25%;
   }
   .description-text-proj-name {
     color: white;
@@ -264,41 +493,31 @@
     position: relative;
     text-align: left;
     width: 100%;
-  }
-  .project-keywords-proj-name {
-    font-size: 8px;
-    margin-top: 5px;
-    margin-bottom: 8px;
-  }
-  .show-name-modal-proj-name {
-    font-size: 18px;
-    color: white;
-    font-family: "Rubik";
-    font-weight: 900;
-    position: relative;
-    top: -50px;
-  }
-  .description-text-container-proj-name {
-    /* margin-top: -10px; */
-    width: 60%;
-    position: relative;
-    left: 25%;
+    line-height: 1.4;
   }
   .modal-project-text-container-proj-name {
     position: relative;
-    /* top: 25%; */
-    /* padding-left: 10%; */
-    /* padding-right: 10%; */
-    /* left: 32%; */
     width: 100%;
-    top: -20px;
+    top: 4vh;
   }
-}
-
-@media (max-width: 430px) {
-  /* .modal-project-text-container-proj-name {
-    top: 30%;
-  } */
+  .what-we-did-holder {
+    position: relative;
+    top: 1vh;
+    right: 17vw;
+  }
+  .bold-text-what-we-did {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    font-size: 2.5vw;
+  }
+  .what-did-container-proj-name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 5.5vw;
+    margin-top: 3%;
+  }
 }
 
 /* @media (min-width: 3000px) {
