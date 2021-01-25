@@ -5,6 +5,27 @@
   flex-direction: column;
   justify-content: center;
 }
+.logo-about-container {
+  /* position: sticky; */
+  position: relative;
+  top: 1%;
+  /* width: 20%;
+  height: 100vh; */
+  /* left: 2vw; */
+  /* background-color: blue; */
+}
+
+.logo-about {
+  height: calc(15px + 5vw);
+  position: relative;
+  left: 2%;
+
+  /* background-color: red; */
+  z-index: 999;
+}
+.logo-about:hover {
+  cursor: pointer;
+}
 .about-x-container {
   width: 96.8%;
   position: sticky;
@@ -175,6 +196,11 @@
     top: 5px;
     right: 10px;
     z-index: 999;
+  }
+  .logo-about {
+    top: 0vh;
+    left: 5vw;
+    height: calc(40px + 7vw);
   }
   .about-x-container {
     position: sticky;

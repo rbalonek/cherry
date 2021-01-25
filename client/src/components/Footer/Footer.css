@@ -16,6 +16,7 @@
   font-family: "rubik";
   font-weight: 900;
   letter-spacing: 1px;
+  text-decoration: underline;
   /* font-size: calc(1px + 0.75vw); */
   font-size: 0.7vw;
 }
