@@ -35,7 +35,14 @@ export default function ModalProject(props) {
             {props.keyart === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/keyart")}
+                onClick={() => {
+                  history.push("/keyart");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Key Art
               </p>
@@ -44,7 +51,14 @@ export default function ModalProject(props) {
             {props.Branding === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/branding")}
+                onClick={() => {
+                  history.push("/branding");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Branding
               </p>
@@ -53,7 +67,14 @@ export default function ModalProject(props) {
             {props.BookDesign === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Book Design
               </p>
@@ -62,7 +83,14 @@ export default function ModalProject(props) {
             {props.OutOfHome === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Out of Home
               </p>
@@ -71,7 +99,14 @@ export default function ModalProject(props) {
             {props.Apparel === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Apparel
               </p>
@@ -80,7 +115,14 @@ export default function ModalProject(props) {
             {props.Digital === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Digital
               </p>
@@ -91,7 +133,14 @@ export default function ModalProject(props) {
             {props.CustomType === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Custom Type
               </p>
@@ -100,7 +149,14 @@ export default function ModalProject(props) {
             {props.MotionGFX === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Motion GFX
               </p>
@@ -109,7 +165,14 @@ export default function ModalProject(props) {
             {props.OpeningCredits === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Opening Credits
               </p>
@@ -118,7 +181,14 @@ export default function ModalProject(props) {
             {props.Packaging === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Packaging
               </p>
@@ -127,7 +197,14 @@ export default function ModalProject(props) {
             {props.PhotoArtDirection === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Photo Art Direction
               </p>
@@ -136,7 +213,14 @@ export default function ModalProject(props) {
             {props.Copy === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Copy
               </p>
@@ -145,7 +229,14 @@ export default function ModalProject(props) {
             {props.Retouching === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/design")}
+                onClick={() => {
+                  history.push("/design");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Retouching
               </p>
@@ -154,7 +245,14 @@ export default function ModalProject(props) {
             {props.BsidesPage === true && (
               <p
                 className="modal-text project-keywords"
-                onClick={() => history.push("/bsides")}
+                onClick={() => {
+                  history.push("/bsides");
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "auto",
+                  });
+                }}
               >
                 Unused Concepts
               </p>

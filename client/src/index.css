@@ -24,3 +24,11 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+/* HIDES SCOLLBAR */
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
