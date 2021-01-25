@@ -29,6 +29,13 @@
 .footer-text:hover {
   cursor: pointer;
 }
+.footer-text-or {
+  color: white;
+  font-family: "rubik";
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.7vw;
+}
 
 @media (max-width: 1100px) {
   .footer-text {
@@ -64,5 +71,8 @@
     text-align: left;
     margin-top: 5%;
     padding-left: 10%;
+  }
+  .footer-text-or {
+    display: none;
   }
 }

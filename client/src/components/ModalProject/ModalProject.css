@@ -45,6 +45,7 @@
   font-size: calc(5px + 0.5vw);
   align-self: flex-end;
   margin-bottom: 1%;
+  margin-top: 3%;
   font-family: "rubik";
 }
 
@@ -85,7 +86,7 @@
 } */
 .what-did-container {
   display: flex;
-  margin-top: 4%;
+  margin-top: 1%;
   width: 100%;
   /* background-color: red; */
 }
@@ -112,7 +113,7 @@
   font-weight: 400;
   text-decoration: underline;
   margin-top: -0.05%;
-  margin-bottom: -0.05%;
+  margin-bottom: 1.05%;
   color: grey;
 }
 .project-keywords:hover {
