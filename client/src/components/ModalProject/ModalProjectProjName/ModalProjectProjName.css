@@ -134,7 +134,7 @@
   font-weight: 400;
   text-decoration: underline;
   margin-top: 0.2%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   color: grey;
 }
 .project-keywords-proj-name:hover {
@@ -183,10 +183,67 @@
   }
 }
 @media (max-width: 771px) {
+  .modal-container-proj-name {
+    top: 8%;
+  }
+  .show-name-modal-proj-name {
+    font-size: 5vw;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: absolute;
+    right: 50vw;
+    top: -25%;
+  }
+  .client-name-proj-name {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 3vw;
+    position: absolute;
+    left: 30%;
+    top: -15%;
+  }
+  .description-text-proj-name {
+    color: white;
+    font-size: 2.6vw;
+    font-family: "Rubik";
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  .what-we-did-holder {
+    position: relative;
+    top: 2vh;
+    right: 10.5vw;
+  }
+  .bold-text-what-we-did {
+    color: white;
+    font-family: "rubik";
+    font-weight: 900;
+    font-size: 3vw;
+  }
+  .what-did-container-proj-name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: -3.5vw;
+    top: 3vh;
+  }
+  .project-keywords-proj-name {
+    font-size: 2.5vw;
+    font-family: "Rubik";
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: 0.2%;
+    margin-bottom: 6%;
+    color: grey;
+  }
   .projname-proj-x {
     position: absolute;
     top: 2vh;
-    right: 5vw;
+    right: 4vw;
     z-index: 998;
     height: 50px;
     width: 50px;
@@ -194,73 +251,69 @@
     justify-content: center;
     align-items: center;
   }
+}
+@media (max-width: 765px) {
+  .modal-container-proj-name {
+    top: 8%;
+  }
   .show-name-modal-proj-name {
-    font-size: 25px;
+    font-size: 5vw;
     color: white;
     font-family: "Rubik";
     font-weight: 900;
-    position: relative;
-    top: 1vh;
-    right: 17vw;
+    position: absolute;
+    right: 50vw;
+    top: -25%;
   }
-
   .client-name-proj-name {
-    font-size: 15px;
-    margin-top: 0px;
-    top: -1vh;
-    right: 20vw;
-  }
-  .bold-text-proj-name {
-    font-size: 10px;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 3vw;
+    position: absolute;
+    left: 30%;
+    top: -17%;
   }
   .description-text-proj-name {
     color: white;
-    font-size: 15px;
+    font-size: 2.6vw;
     font-family: "Rubik";
     font-weight: 400;
     position: relative;
     text-align: left;
     width: 100%;
-    line-height: 1.4;
-  }
-  .project-keywords-proj-name {
-    font-size: 13px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  .description-text-container-proj-name {
-    width: 60%;
-    position: relative;
-    left: 25%;
-  }
-  .modal-project-text-container-proj-name {
-    position: relative;
-    width: 100%;
-    top: -20px;
+    margin: 0;
   }
   .what-we-did-holder {
     position: relative;
-    top: 1vh;
-    right: 16.7vw;
+    top: 2vh;
+    right: 10.5vw;
   }
   .bold-text-what-we-did {
     color: white;
     font-family: "rubik";
     font-weight: 900;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .what-did-container-proj-name {
     display: flex;
     justify-content: center;
     position: relative;
-    right: 7.3vw;
-    margin-top: 3%;
+    right: -7vw;
+    top: 3vh;
+  }
+  .project-keywords-proj-name {
+    font-size: 3vw;
+    font-family: "Rubik";
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: 0.2%;
+    margin-bottom: 6%;
+    color: grey;
   }
 }
 
 @media (max-width: 750px) {
-  .projname-proj-x {
+  /* .projname-proj-x {
     position: absolute;
     top: 2vh;
     right: 5vw;
@@ -331,11 +384,11 @@
     position: relative;
     left: 3.5vw;
     margin-top: 3%;
-  }
+  } */
 }
 
 @media (max-width: 400px) {
-  .bold-text-proj-name {
+  /* .bold-text-proj-name {
     font-size: 10px;
   }
   .client-name-proj-name {
@@ -395,10 +448,10 @@
     position: relative;
     left: 5.5vw;
     margin-top: 3%;
-  }
+  } */
 }
 @media (max-width: 321px) {
-  .bold-text-proj-name {
+  /* .bold-text-proj-name {
     font-size: 10px;
   }
   .client-name-proj-name {
@@ -459,7 +512,7 @@
     position: relative;
     left: 5.5vw;
     margin-top: 3%;
-  }
+  } */
 }
 
 /* @media (min-width: 3000px) {
