@@ -100,6 +100,38 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+  }
+  .img-div {
+    height: 100vh;
+    width: 100vw;
+  }
+  .centering {
+    position: relative;
+    display: flex;
+    top: 0vh;
+    justify-content: center;
+  }
+  .img-center {
+    height: 90vh;
+    object-fit: contain;
+  }
+  .proj-info-text-projname {
+    color: white;
+    font-family: "rubik";
+    font-size: 15px;
+  }
+  .show-name-modal-proj-name {
+    right: 16.2vw;
+  }
+}
+
+@media (max-width: 765px) {
+  .holder {
+    text-align: center;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     /* position: relative;
     top: -100px; */
   }
@@ -118,5 +150,68 @@
     height: 90vh;
     object-fit: contain;
     /* width: 100vw; */
+  }
+  .proj-info-text-projname {
+    color: white;
+    font-family: "rubik";
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 415px) {
+  .holder {
+    text-align: center;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    top: -100px; */
+  }
+  .img-div {
+    height: 100vh;
+    width: 100vw;
+  }
+  .centering {
+    /* max-height: 100vh; */
+    position: relative;
+    display: flex;
+    top: 0vh;
+    justify-content: center;
+  }
+  .img-center {
+    height: 90vh;
+    object-fit: contain;
+    /* width: 100vw; */
+  }
+  .proj-info-text-projname {
+    color: white;
+    font-family: "rubik";
+    font-size: 15px;
+  }
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 13.3vw;
+  }
+}
+@media (max-width: 376px) {
+  .show-name-modal-proj-name {
+    right: 12.2vw;
+  }
+}
+@media (max-width: 321px) {
+  .show-name-modal-proj-name {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik";
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    right: 10vw;
   }
 }

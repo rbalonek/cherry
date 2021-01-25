@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "./About.css";
 import Footer from "../../components/Footer/Footer";
 import AboutHamburger from "../../components/Hamburger/AboutHamburger/AboutHamburger";
-
+import Logo from "../../assets/logo/Cherry-Logo.png";
 export default function About() {
   const history = useHistory();
 
@@ -16,7 +16,14 @@ export default function About() {
       <div className="about-x-container" onClick={xClicked}>
         <AboutHamburger />
       </div>
-
+      <div className="logo-about-container">
+        <img
+          onClick={() => history.push("/")}
+          className="logo-about"
+          alt="logo"
+          src={Logo}
+        />
+      </div>
       <div className="about-text-container">
         <p className="about-text">
           This is Cherry.

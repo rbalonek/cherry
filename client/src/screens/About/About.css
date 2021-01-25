@@ -5,6 +5,27 @@
   flex-direction: column;
   justify-content: center;
 }
+.logo-about-container {
+  /* position: sticky; */
+  position: relative;
+  top: 1%;
+  /* width: 20%;
+  height: 100vh; */
+  /* left: 2vw; */
+  /* background-color: blue; */
+}
+
+.logo-about {
+  height: calc(15px + 5vw);
+  position: relative;
+  left: 2%;
+
+  /* background-color: red; */
+  z-index: 999;
+}
+.logo-about:hover {
+  cursor: pointer;
+}
 .about-x-container {
   width: 96.8%;
   position: sticky;
@@ -168,23 +189,22 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 771px) {
   .about-xOut {
-    /* width: 50px; */
     width: 30px;
     height: 30px;
-    /* position: sticky; */
     top: 5px;
     right: 10px;
     z-index: 999;
   }
+  .logo-about {
+    top: 0vh;
+    left: 5vw;
+    height: calc(40px + 7vw);
+  }
   .about-x-container {
-    /* width: 96.8%; */
     position: sticky;
-    /* display: flex; */
-    /* justify-content: flex-end; */
     top: 30px;
-    /* right: 2%; */
     z-index: 999;
     right: 10px;
   }
@@ -198,22 +218,20 @@
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
-    /* padding-top: 5%; */
   }
   .about-text {
     position: relative;
     top: 50px;
     font-family: "Rubik";
     font-weight: 300;
-    font-size: 5vw;
+    font-size: 6.5vw;
   }
   .title {
     position: relative;
-    top: 50px;
+    top: 38px;
     font-weight: 900;
-    font-size: 14px;
     width: max-content;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .name {
     position: relative;
@@ -221,21 +239,27 @@
     font-size: 20px;
     font-family: "Rubik";
     font-weight: 300;
-    font-size: 4vw;
+    font-size: 7vw;
+    right: 2px;
   }
   .bio-text {
     position: relative;
     top: 50px;
     font-size: 16px;
-    font-size: 3vw;
+    font-size: 4vw;
+    line-height: 1.4;
   }
   .bios-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 2%;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 2%;
+  }
+  .greg-bio {
+    padding-right: 5%;
+    padding-left: 0;
   }
 }
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {

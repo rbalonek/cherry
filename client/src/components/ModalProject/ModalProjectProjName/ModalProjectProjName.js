@@ -3,6 +3,7 @@ import "./ModalProjectProjName.css";
 import { useHistory } from "react-router-dom";
 
 export default function ModalProjectProjName(props) {
+  // toggleLocked();
   // console.log(props);
   const Name = props.projectname;
   const Client = props.client;
