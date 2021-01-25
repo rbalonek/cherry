@@ -46,14 +46,22 @@
   margin-bottom: 1%;
 }
 
-.show-name-modal-proj-name {
+/* .show-name-modal-proj-name {
   font-size: 3vw;
   color: white;
   font-family: "Rubik";
   font-weight: 900;
   position: relative;
-  /* top: -100px; */
-  right: 12.9vw;
+  right: 13%;
+} */
+.show-name-modal-proj-name {
+  font-size: 2vw;
+  color: white;
+  font-family: "Rubik";
+  font-weight: 900;
+  position: absolute;
+  left: 29.9vw;
+  top: -23%;
 }
 .challenge-proj-name {
   margin-top: 20px;
@@ -62,10 +70,10 @@
 .client-name-proj-name {
   font-family: "Rubik";
   font-weight: 400;
-  font-size: 1.5vw;
-  position: relative;
-  right: 16.4vw;
-  margin-top: -2.5%;
+  font-size: 1.2vw;
+  position: absolute;
+  left: 30%;
+  top: -12%;
 }
 
 .description-text-container-proj-name {
@@ -77,7 +85,7 @@
 
 .description-text-proj-name {
   color: white;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-family: "Rubik";
   font-weight: 400;
   position: relative;
@@ -88,12 +96,12 @@
   color: white;
   font-family: "rubik";
   font-weight: 900;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 .what-we-did-holder {
   position: relative;
   top: 3vh;
-  right: 14.8vw;
+  right: 16vw;
 }
 .what-did-container-proj-name {
   /* margin-top: 10%; */
@@ -103,7 +111,7 @@
   /* height: 200px; */
   /* background-color: red; */
   position: relative;
-  right: 6vw;
+  right: 7.5vw;
   margin-top: 3%;
 }
 .what-did-container-proj-name:hover {
@@ -121,7 +129,7 @@
 }
 
 .project-keywords-proj-name {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-family: "Rubik";
   font-weight: 400;
   text-decoration: underline;
@@ -133,13 +141,25 @@
   cursor: pointer;
   color: white;
 }
+
+/* FOR SAFARI */
 @media (min-width: 1000px) {
   @media not all and (min-resolution: 0.001dpcm) {
     @media {
       .show-name-modal-proj-name {
-        right: 12vw;
+        /* right: 12.7vw; */
+        /* padding-right: 26%; */
       }
-      .what-did-container-proj-name {
+      /* .show-name-modal-proj-name {
+        font-size: 3vw;
+        color: white;
+        font-family: "Rubik";
+        font-weight: 900;
+        position: absolute;
+        top: -13vh;
+        left: 29.6vw;
+      } */
+      /* .what-did-container-proj-name {
         margin-top: 3%;
       }
       .project-keywords-proj-name {
@@ -151,6 +171,14 @@
         margin-bottom: 6%;
         color: grey;
       }
+      .client-name-proj-name {
+        font-family: "Rubik";
+        font-weight: 400;
+        font-size: 1.5vw;
+        position: relative;
+        right: 16.3vw;
+        margin-top: -2.5%;
+      } */
     }
   }
 }
